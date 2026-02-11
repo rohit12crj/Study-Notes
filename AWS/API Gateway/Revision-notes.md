@@ -14,12 +14,12 @@
 
 **WebSocket API**
 - Bidirectional persistent connections
-- Routes: $connect, $disconnect, $default, custom
 - Use for: Real-time chat, streaming, notifications
 
 ## Integration Types
 
 **Lambda Proxy** - Entire request passed to Lambda, simple setup
+
 **Lambda Custom** - Use VTL mapping templates for transformation
 **HTTP Proxy** - Forward request to HTTP endpoint
 **HTTP Custom** - Transform with mapping templates
