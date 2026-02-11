@@ -1,5 +1,3 @@
-# AWS API Gateway - Quick Revision Notes
-
 ## API Types
 
 **REST API (v1)**
