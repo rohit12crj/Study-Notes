@@ -24,6 +24,8 @@ Dynamic Type as type of varibales are determined at run time rather than compile
 Immutable Dta Types -> int , float , bool , str , tuple
 Mutable --> list , dict , set
 
+Tuple cant be modified
+
 
 ## 1. Python doesn't has increment (++) or decrement (--) operator . instead use x=x+1 ?
 
