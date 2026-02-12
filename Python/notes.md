@@ -20,3 +20,9 @@ No compilation to native machine code (in CPython)
 ## 1. Is poython dynamic type or ststic type language ?
 
 Dynamic Type as type of varibales are determined at run time rather than compile time 
+
+Immutable Dta Types -> int , float , bool , str , tuple
+Mutable --> list , dict , set
+
+
+## 1. Python doesn't has increment (++) or decrement (--) operator . instead use x=x+1 ?
