@@ -32,3 +32,5 @@ Tuple cant be modified
 ## 1. Python is a tightly typed language . it doesn't do any implicit type conversion . u have to do explicit type conversion  ?
 
 ## 1. for else & while else block will run only if it doesn't encounters a break statement
+
+python doesn't has block level varibale scope. only function level scope
