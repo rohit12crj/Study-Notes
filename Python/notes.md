@@ -28,3 +28,5 @@ Mutable --> list , dict , set
 ## 1. Python doesn't has increment (++) or decrement (--) operator . instead use x=x+1 ?
 
 ## 1. Python is a tightly typed language . it doesn't do any implicit type conversion . u have to do explicit type conversion  ?
+
+## 1. for else & while else block will run only if it doesn't encounters a break statement
