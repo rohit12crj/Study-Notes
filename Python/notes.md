@@ -1,3 +1,5 @@
+https://github.com/iam-veeramalla/python-for-devops/blob/main/Day-16/README.md   --> Abhishel interview questions
+
 ## 1. Is poython compiler or interpreter ?
 
 Python is both compiled and interpreted - it's a two-step process:
