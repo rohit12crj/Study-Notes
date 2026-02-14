@@ -44,3 +44,19 @@ python doesn't has block level varibale scope. only function level scope
 Used Python Script to disable keys of IAM users which are more than 90 days old & create new keys and inform them to users . Runs once every week using eventbridge . New keys are never mailed to users . instead keys are stored in Secrets Manager & end users can retrieve them using awscli
 
 Non prod EC2 to stop on weekends ( Used Cron Jons ( Runs every Saturday & Monday ) in Eventbridge & lamnda functions )
+
+what are generators in python ?
+
+Python File handling 
+
+In Python, files can be processed without loading them into memory by iterating over the file object, reading in chunks, or using generators. This allows streaming large files efficiently with constant memory usage.
+
+with open("/var/log/app.log") as f:
+    for line in f:
+        if "ERROR" in line:
+            send_to_cloudwatch(line)
+
+Always use with open() → avoids file descriptor leaks
+Prefer text streaming for logs
+Prefer chunked reads for binary data
+Combine with generators for clean pipelines
