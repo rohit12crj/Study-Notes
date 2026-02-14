@@ -28,3 +28,5 @@ What is "Top" command and why is it used?
 memory management with respect to swap memeory 
 
 soft links vs hard links
+
+ps -ef 
