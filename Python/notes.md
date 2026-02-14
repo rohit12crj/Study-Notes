@@ -90,3 +90,13 @@ If Python code waits on IO → use multithreading or async
 
 ✅ Module vs Package
 
+✅ Call by value vs call by reference
+
+✅ OOPS ( Encapsulation , Abstraction , Inheritance , Polmorphism )
+
+✅ method overloading vs method overriding
+
+✅ exception handling
+
+✅ Duck Typing
+
