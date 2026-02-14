@@ -29,4 +29,19 @@ memory management with respect to swap memeory
 
 soft links vs hard links
 
-ps -ef 
+ps -ef | grep "amazon" | awk -F" " '{print $2}'
+
+grep command can also be used with files like below
+nano test
+grep name test
+
+set -x 
+set -e --> exists scripts when there is error
+set -o
+
+curl vs wget
+
+find command
+
+why pipe command wont work with date comamnd like below 
+date | echo "today is "
