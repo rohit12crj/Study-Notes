@@ -1,7 +1,6 @@
-https://github.com/iam-veeramalla/python-for-devops/blob/main/Day-16/README.md   --> Abhishek interview questions
+https://github.com/iam-veeramalla/python-for-devops/blob/main/Day-16/README.md   --> Interview Questions ( Abhishek )
 
-Python libraries used in your project
-https://github.com/iam-veeramalla/sandbox/blob/main/python/8-python-libraries-for-devops.md
+https://github.com/iam-veeramalla/sandbox/blob/main/python/8-python-libraries-for-devops.md --> Python libraries used in your project ( Abhishek )
 
 ## 1. Is poython compiler or interpreter ?
 
