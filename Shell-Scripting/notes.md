@@ -29,7 +29,7 @@ memory management with respect to swap memeory
 
 soft links vs hard links
 
-ps -ef | grep "amazon" | awk -F" " '{print $2}'
+ps -ef | grep "amazon" | awk -F" " '{print $2}' --> What are processes, how to list them and find process ID ?
 
 grep command can also be used with files like below
 nano test
