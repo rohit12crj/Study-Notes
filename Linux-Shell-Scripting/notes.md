@@ -54,7 +54,7 @@ how will u sort names in a file --> for particular shell scripting questions ans
 
 network troubleshooting commands 
 
-is bash dynamic or statically typed language ? --> dynamic 
+is bash dynamic or statically typed language ? --> dynamic
 
 disadvantages of shell scripting 
 
@@ -62,4 +62,4 @@ open a  file in read only mode
 
 write a script to print only errors from a remote log file --> curl pipe & grep
 
-when should u use python scripting vs linux scripting)
+when should u use python scripting vs linux scripting ? ---> Shell scripting is best for quick OS automation, while Python is preferred for complex, scalable, and maintainable automation involving APIs, data, or cloud services
