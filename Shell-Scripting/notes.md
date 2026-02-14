@@ -61,3 +61,5 @@ disadvantages of shell scripting
 open a  file in read only mode 
 
 write a script to print only errors from a remote log file --> curl pipe & grep
+
+when should u use python scripting vs linux scripting
