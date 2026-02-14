@@ -35,7 +35,7 @@ grep command can also be used with files like below
 nano test
 grep name test
 
-set -x 
+set -x --> debug shell script 
 set -e --> exists scripts when there is error
 set -o
 
@@ -47,3 +47,17 @@ why pipe command wont work with date comamnd like below
 date | echo "today is "
 
 cron syntax
+
+How do u manage logs of a system which generates 1000s of logs files --> logrotate
+
+how will u sort names in a file --> for particular shell scripting questions answer them using python
+
+network troubleshooting commands 
+
+is bash dynamic or statically typed language ? --> dynamic 
+
+disadvantages of shell scripting 
+
+open a  file in read only mode 
+
+write a script to print only errors from a remote log file --> curl pipe & grep
