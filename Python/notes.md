@@ -60,3 +60,5 @@ Always use with open() → avoids file descriptor leaks
 Prefer text streaming for logs
 Prefer chunked reads for binary data
 Combine with generators for clean pipelines
+
+✅ Difference between yield vs return
