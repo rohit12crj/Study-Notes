@@ -24,3 +24,5 @@ How to check CPU (nproc) , RAM  / memory ( free ) and disk space ( df -h ) of a 
 trapping signals in linux
 
 What is "Top" command and why is it used?
+
+memory management with respect to swap memeory 
