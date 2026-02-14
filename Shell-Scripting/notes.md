@@ -45,3 +45,5 @@ find command
 
 why pipe command wont work with date comamnd like below 
 date | echo "today is "
+
+cron syntax
