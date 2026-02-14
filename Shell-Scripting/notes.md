@@ -20,6 +20,7 @@ How to grant permissions in Linux?
 chmod command and how to use?
 
 How to check CPU and RAM of a Linux Machine?
+
 trapping signals in linux
 
 What is "Top" command and why is it used?
