@@ -36,3 +36,9 @@ Tuple cant be modified
 ## 1. for else & while else block will run only if it doesn't encounters a break statement
 
 python doesn't has block level varibale scope. only function level scope
+
+## 1. Python used in your Project ?
+
+Used Python Script to disable keys of IAM users which are more than 90 days old & create new keys and inform them to users . Runs once every week using eventbridge . New keys are never mailed to users . instead keys are stored in Secrets Manager & end users can retrieve them using awscli
+
+Non prod EC2 to stop on weekends ( Used Cron Jons ( Runs every Saturday & Monday ) in Eventbridge & lamnda functions )
