@@ -45,6 +45,10 @@ Used Python Script to disable keys of IAM users which are more than 90 days old 
 
 Non prod EC2 to stop on weekends ( Used Cron Jons ( Runs every Saturday & Monday ) in Eventbridge & lamnda functions )
 
+✅ Lambda Functions
+
+✅ Decorators
+
 ✅ list vs tuple vs set vs dictionary
 
 ✅ what are generators in python ?
@@ -75,4 +79,14 @@ If Python code is CPU-heavy → use multiprocessing
 If Python code waits on IO → use multithreading or async
 
 ✅ Memory management in Python . with focus on garbage collection
+
+✅ Shallow copy vs Deep Copy
+
+✅ Pickling
+
+✅ Serialization
+
+✅ Monkey Patching
+
+✅ Module vs Package
 
