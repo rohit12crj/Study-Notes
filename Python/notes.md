@@ -65,3 +65,7 @@ Combine with generators for clean pipelines
 
 ✅ Difference between yield vs return
 
+✅ GIL (Global Interpreter Lock)
+
+✅ Multithreading vs multiprocessing vs asyncio . focus on when to use which
+
