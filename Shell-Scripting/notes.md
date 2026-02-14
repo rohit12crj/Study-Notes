@@ -19,7 +19,7 @@ How to grant permissions in Linux?
 
 chmod command and how to use?
 
-How to check CPU and RAM of a Linux Machine?
+How to check CPU (nproc) , RAM  / memory ( free ) and disk space ( df -h ) of a Linux Machine?
 
 trapping signals in linux
 
