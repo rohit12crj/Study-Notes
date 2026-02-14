@@ -45,6 +45,8 @@ Used Python Script to disable keys of IAM users which are more than 90 days old 
 
 Non prod EC2 to stop on weekends ( Used Cron Jons ( Runs every Saturday & Monday ) in Eventbridge & lamnda functions )
 
+✅ list vs tuple vs set vs dictionary
+
 ✅ what are generators in python ?
 
 ✅ Generator vs iterator
@@ -68,4 +70,9 @@ Combine with generators for clean pipelines
 ✅ GIL (Global Interpreter Lock)
 
 ✅ Multithreading vs multiprocessing vs asyncio . focus on when to use which
+
+If Python code is CPU-heavy → use multiprocessing
+If Python code waits on IO → use multithreading or async
+
+✅ Memory management in Python . with focus on garbage collection
 
