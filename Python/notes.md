@@ -45,9 +45,11 @@ Used Python Script to disable keys of IAM users which are more than 90 days old 
 
 Non prod EC2 to stop on weekends ( Used Cron Jons ( Runs every Saturday & Monday ) in Eventbridge & lamnda functions )
 
-what are generators in python ?
+✅ what are generators in python ?
 
-Python File handling 
+✅ Generator vs iterator
+
+✅ Python File handling 
 
 In Python, files can be processed without loading them into memory by iterating over the file object, reading in chunks, or using generators. This allows streaming large files efficiently with constant memory usage.
 
@@ -62,3 +64,4 @@ Prefer chunked reads for binary data
 Combine with generators for clean pipelines
 
 ✅ Difference between yield vs return
+
