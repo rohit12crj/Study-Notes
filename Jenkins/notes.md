@@ -56,3 +56,5 @@ Jenkins pipeline language? → Groovy
 
 Default port? → 8080
 
+50 FAANG-level Jenkins interview Q&A pending in chatgpt
+
