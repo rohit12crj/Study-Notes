@@ -10,7 +10,7 @@
 
 ✅ when to use index & when to not
 
-✅ how to rollback changes made to a table data
+✅ how to rollback changes made to a table data , explain with repect to automated snapshots & pitr ( point in time recovery )
 
 ✅ someone deleted user data in table1 in db1 in aws mysql rds . how can i know who it is ?
 
