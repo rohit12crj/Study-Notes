@@ -5,3 +5,9 @@
 ✅ https://www.youtube.com/watch?v=nYmoQ4r0DVw
 
 ✅ https://www.youtube.com/watch?v=pKFo8Mqp-cU  --> Study Only This 
+
+✅ for order by to work do i need to select the select column on which i am doing order by
+
+✅ when to use index & when to not
+
+✅ how to rollback changes made to a table data
