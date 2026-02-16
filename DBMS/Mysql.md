@@ -57,3 +57,5 @@
 ✅ How does MySQL handle concurrency?
 
 ✅ What is MVCC ( Multi-Version Concurrency Control ) ?
+
+✅ There are various kind of DB . when should u use which db ?
