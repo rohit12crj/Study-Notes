@@ -26,34 +26,34 @@
 
 ✅ MySQL vs PostgreSQL? when to use which
 
-Difference between DELETE, TRUNCATE, DROP ?
+✅ Difference between DELETE, TRUNCATE, DROP ?
 
-Database is slow suddenly. how will u identify which table is causing issue and how will u resolve ?
+✅ Database is slow suddenly. how will u identify which table is causing issue and how will u resolve ?
 
-Stored procedure 
+✅ Stored procedure 
 
-Function
+✅ Function
 
-Views
+✅ Views
 
-Triggers
+✅ Triggers
 
-EXPLAIN keyword 
+✅ EXPLAIN keyword 
 
-How do you optimize a query?
+✅ How do you optimize a query?
 
-When do you denormalize?
+✅ When do you denormalize?
 
-What are transaction isolation levels?
+✅ What are transaction isolation levels?
 
-Dirty read vs Phantom read?
+✅ Dirty read vs Phantom read?
 
-What is a slow query?
+✅ What is a slow query?
 
-Logical vs Physical backup?
+✅ Logical vs Physical backup?
 
-What causes deadlocks?
+✅ What causes deadlocks?
 
-How does MySQL handle concurrency?
+✅ How does MySQL handle concurrency?
 
-What is MVCC ( Multi-Version Concurrency Control ) ?
+✅ What is MVCC ( Multi-Version Concurrency Control ) ?
