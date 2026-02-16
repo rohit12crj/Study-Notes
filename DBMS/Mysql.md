@@ -11,3 +11,9 @@
 ✅ when to use index & when to not
 
 ✅ how to rollback changes made to a table data
+
+✅ someone deleted user data in table1 in db1 in aws mysql rds . how can i know who it is ?
+
+✅ Give read only access to user1 for Table1 row no 1 to 15 from db1  
+
+✅ Db cache vs indexes when to use which
