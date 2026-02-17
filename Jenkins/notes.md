@@ -5,6 +5,8 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY
 
 ✅ explain ci & cd with different pipelines
 
+how will do unit testing , sast, dca , dast , image vulnerability scans ? explain with respect to sonarqube also ?
+
 share artifacts between different jobs and different stages in same job ?
 
 What are Jenkins jobs?
