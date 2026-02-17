@@ -1,5 +1,7 @@
 ✅ explain ci & cd with different pipelines
 
+share artifacts between different jobs and different stages in same job ?
+
 What are Jenkins jobs?
 
 What is Jenkins Pipeline?
