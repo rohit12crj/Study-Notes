@@ -93,4 +93,6 @@ Use read-only filesystem
 
 Limit CPU & memory
 
+study 50 FAANG-level Docker Q&A
+
 
