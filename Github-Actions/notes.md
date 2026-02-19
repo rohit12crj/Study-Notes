@@ -41,3 +41,5 @@ Workflow optimization
 when will u use matrix 
 
 codeql scanning
+
+in security tab , there are 3 things ( dependabots alerts --> get notified when your dependincies has a vulneribility , code scanning alerts --> automatically detect common vulnerabilities and coding errors , secret scanning alerts --> get notified when a secret is pushed to the repository )
