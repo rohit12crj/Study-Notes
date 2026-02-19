@@ -29,3 +29,49 @@ How do you undo the last commit?  --> soft & hard reset
 
 git branching startegy 
 
+What is git reflog?
+
+Difference between git reset and git revert?
+
+How do you recover deleted branch?
+
+What is git bisect?
+
+What are hooks in Git?
+
+Explain shallow clone.
+
+Someone force-pushed and broke production. What do you do?
+
+Repo size is 5GB. Clone takes 15 minutes. Fix?
+
+How does Git ensure data integrity?
+
+How does Git handle concurrency?
+
+Explain fast-forward merge.
+
+What happens if two developers push same branch simultaneously?
+
+Explain object packing in Git.
+
+Difference between index and working tree?
+
+How to squash commits?
+
+What is sparse checkout?
+
+Explain submodules vs subtree.
+
+What is orphan branch?
+
+How to sign commits?
+
+What is rebase interactive?
+
+How do you prevent secret commits?
+
+What is git blame?
+
+How to enforce branch protection?
+
