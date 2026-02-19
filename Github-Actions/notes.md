@@ -2,7 +2,7 @@
 
 ✅  how will u make pipeline faster ? explain with respect to github cache 
 
-✅ how will u invoke manual , push , pull , child & master , cron workflow
+✅ how will u invoke manual , push , pull , reusable workflow , cron workflow
 
 ✅ explain ci & cd with different pipelines
 
@@ -13,3 +13,31 @@
 ✅ explain dependabots , branch protection rules , codeowner file 
 
 ✅ Workflows --> Events --> Jobs --> Steps --> Runners
+
+✅ if one job depends on another how will u do it 
+
+✅ when will use github hosted runner vs self hosted runner
+
+✅ using roles to connect to aws
+
+✅ How do you implement approval before production deployment? explain with respect to environments , required approvers and wait timers 
+
+Secrets leaked in logs. What will you do?
+
+How do you pass data between jobs? explain artifacts and outputs
+
+Do jobs share filesystem?
+
+How do you rollback a failed deployment?
+
+What happens if a step fails? --> By default → job fails --> Can override with continue-on-error: true
+
+Concurrency control
+
+Artifact vs Cache
+
+Workflow optimization
+
+when will u use matrix 
+
+codeql scanning
