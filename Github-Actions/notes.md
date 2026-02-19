@@ -11,3 +11,5 @@
 ✅ explain sast , dca , dast , unit testing and image vulnerabilty scans with sonarqube
 
 ✅ explain dependabots , branch protection rules , codeowner file 
+
+✅ Workflows --> Events --> Jobs --> Steps --> Runners
