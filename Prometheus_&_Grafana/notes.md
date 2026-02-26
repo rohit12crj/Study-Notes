@@ -24,8 +24,6 @@ installation of prometheus , grafana , alert manager on eks cluster ( https://gi
 
 how will u install promethus on ecs cluster 
 
-how will u install promethus on eks cluster 
-
 how will u install promethus on ec2 
 
 how will u install promethus on on-prem device
