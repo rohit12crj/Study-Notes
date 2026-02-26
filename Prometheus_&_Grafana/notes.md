@@ -22,9 +22,11 @@ what metrics & custom metrics were u monitoring in your eks cluster
 
 installation of prometheus , grafana ( in the helm chart which abhishek uses both prometheus & grafana are installed ) , alert manager ( since alert manager is not a default component of prometheus , how will u install it ) on eks cluster ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
 
-difference between node exporter pod (for hardware metrics) , kube state metrics pods , appliation metrics (/metrics endpoint ) in prometheus ?
+difference between node exporter pod (for hardware metrics) , kube state metrics pods , appliation metrics (/metrics endpoint ) in prometheus ? There are also db exporters which are not installed by default ?
 
 suppose u have 5 eks custer . how will u setup 1 single setup prometheus & connect with all 5 cluster ?
+
+should prometheus be setup using terraform ?
 
 how will u install promethus on ecs cluster 
 
