@@ -121,7 +121,7 @@ what is instrumentation ? it is necessary if u wnat to find out how many users l
 
 🛠️ Implement Custom Metrics in Node.js Application: Use the prom-client library to write and expose custom metrics in the Node.js application.
 
-🚨 Set Up Alerts in Alertmanager: Configure Alertmanager to send email notifications if a container crashes more than two times.
+🚨 Set Up Alerts in Alertmanager: Configure Alertmanager to send email notifications if a container crashes more than two times. Basically u need to setup alertmanger manifest files with all rules ( what & when to fire them )
 
 📝 Set Up Logging: Implement logging on both application and cluster (node) logs for better observability using EFK stack(Elasticsearch, FluentBit, Kibana).
 
