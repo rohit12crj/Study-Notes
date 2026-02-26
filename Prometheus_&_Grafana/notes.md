@@ -122,3 +122,5 @@ https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-4/rea
 📝 Set Up Logging: Implement logging on both application and cluster (node) logs for better observability using EFK stack(Elasticsearch, FluentBit, Kibana).
 
 📸 Implement Distributed Tracing for Node.js Application: Enhance observability by instrumenting the Node.js application for distributed tracing using Jaeger. enabling better performance monitoring and troubleshooting of complex, multi-service architectures.
+
+
