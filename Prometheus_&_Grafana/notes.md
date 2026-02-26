@@ -89,7 +89,7 @@ Summary – similar to histogram but calculates quantiles on the client side
 What is the difference between rate() and irate()?
 rate() calculates the per-second average rate over the entire range window — it's smoother and better for alerting. irate() uses only the last two data points — it's more responsive to spikes, better for graphing.
 
-Where is tssb in prometheus stored actually. My Prometheus is running in eks cluster using helm charts
+Where is tsdb in prometheus stored actually. My Prometheus is running in eks cluster using helm charts
 
 since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it
 
