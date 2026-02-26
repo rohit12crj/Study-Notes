@@ -1,7 +1,16 @@
-Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) ( Abhishek ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
 
-Github Repo --> https://github.com/iam-veeramalla/observability-zero-to-hero/
+Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
+Difference between Observability and monitoring 
+
+How will u find out disk utilization of a node in a eks cluster 
+
+Distributed tracing through jaeger
+
+open telemetry concepts
+
+pagerduty
 
 how will u install promethus on ecs cluster 
 
