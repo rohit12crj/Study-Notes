@@ -1,3 +1,8 @@
+Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 )
+====================================================================
+https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+
+
 how will u install promethus on ecs cluster 
 
 how will u install promethus on eks cluster 
