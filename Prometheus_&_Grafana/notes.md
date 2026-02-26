@@ -6,8 +6,6 @@ Difference between Observability and monitoring
 
 monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
 
-How will u find out disk utilization of a node in a eks cluster 
-
 Distributed tracing through jaeger
 
 open telemetry concepts
@@ -93,4 +91,4 @@ Where is tsdb in prometheus stored actually. My Prometheus is running in eks clu
 
 since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it
 
-i want to get alerted if cpu utilization of a pod exceeds 80 % in eks cluster using prometheus . how can i do it
+i want to get alerted if cpu utilization of a pod exceeds 80 % in eks cluster using prometheus . write the promql querry . how can i do it
