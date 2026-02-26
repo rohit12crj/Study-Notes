@@ -127,4 +127,6 @@ what is instrumentation ? it is necessary if u wnat to find out how many users l
 
 📸 Implement Distributed Tracing for Node.js Application: Enhance observability by instrumenting the Node.js application for distributed tracing using Jaeger. enabling better performance monitoring and troubleshooting of complex, multi-service architectures.
 
+what exact custom metrics were u using for your app . explain in counter , guage & histogram what exactly were u using ? for ex- in histogram u can mention like duration of http requests in milliseconds ( 5 , 10 , 15 )
+
 
