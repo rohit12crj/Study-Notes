@@ -4,7 +4,7 @@ Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-ze
 
 Difference between Observability and monitoring 
 
-monitoring vs logging vs traces
+monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
 
 How will u find out disk utilization of a node in a eks cluster 
 
