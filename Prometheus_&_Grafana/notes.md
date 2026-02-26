@@ -16,6 +16,8 @@ pagerduty
 
 ebpf
 
+what metrics & custom metrics were u monitoring in your eks cluster
+
 how will u install promethus on ecs cluster 
 
 how will u install promethus on eks cluster 
