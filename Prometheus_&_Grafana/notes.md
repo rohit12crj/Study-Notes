@@ -115,7 +115,7 @@ EFK/Opensearch for Logging & Jaeger for Traceing
 
 https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-4/readme.md
 
-what is instrumentation ?
+what is instrumentation ? it is necessary if u wnat to fid out how amny users logged in to your app within last 1 hr . this can't be obtained using node exporters & kube state metrics . u need to implement custom metrics for your app
 
 🛠️ Implement Custom Metrics in Node.js Application: Use the prom-client library to write and expose custom metrics in the Node.js application.
 
