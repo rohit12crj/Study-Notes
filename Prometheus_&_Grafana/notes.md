@@ -1,6 +1,4 @@
-Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 )
-====================================================================
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
 
 Github Repo --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
