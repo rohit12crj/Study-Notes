@@ -12,3 +12,10 @@ for live pods we can exec into it & for pods which already crashed & we can't ex
 
 distributed traceing through jaeger --> --> this will tell how it is happening
 
+suppose u need to run a sidecar container in each pod along with the main app . is there a better strategy to implement this ?
+
+If I need a sidecar in every pod, I would not manually modify deployments.
+I would implement a Mutating Admission Webhook to auto-inject the sidecar based on namespace or label.
+If the use case is networking, I would prefer a service mesh.
+If it’s node-level functionality, I would use a DaemonSet instead.
+
