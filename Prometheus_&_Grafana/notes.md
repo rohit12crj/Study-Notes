@@ -92,3 +92,6 @@ Where is tsdb in prometheus stored actually. My Prometheus is running in eks clu
 since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it
 
 i want to get alerted if cpu utilization of a pod exceeds 80 % in eks cluster using prometheus . write the promql querry . how can i do it
+
+Give example of metrics in prometheus ? ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-3/readme.md ) tell me how can u find out how many configmaps are created in a k8s cluster in last 1 hr ? answer - use promql 
+& select the appropriate metric
