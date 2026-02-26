@@ -4,6 +4,8 @@ Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-ze
 
 Difference between Observability and monitoring 
 
+monitoring vs logging vs tracing
+
 How will u find out disk utilization of a node in a eks cluster 
 
 Distributed tracing through jaeger
@@ -11,6 +13,8 @@ Distributed tracing through jaeger
 open telemetry concepts
 
 pagerduty
+
+ebpf
 
 how will u install promethus on ecs cluster 
 
