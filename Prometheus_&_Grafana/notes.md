@@ -14,6 +14,8 @@ pagerduty
 
 ebpf
 
+what is prom-client ? similar like boto3 for aws SDK
+
 prometheus architecture ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
 
 what metrics & custom metrics were u monitoring in your eks cluster
