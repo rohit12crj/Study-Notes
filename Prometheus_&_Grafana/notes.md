@@ -77,7 +77,7 @@ What is the Prometheus TSDB retention period by default?
 
 since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it
 
-What are the four metric types in Prometheus?
+What are the four metric types in Prometheus? https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-4/readme.md
 
 Counter – monotonically increasing value (e.g., total requests)
 Gauge – value that can go up or down (e.g., memory usage)
