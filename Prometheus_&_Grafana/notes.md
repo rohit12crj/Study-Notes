@@ -16,6 +16,8 @@ pagerduty
 
 ebpf
 
+prometheus architecture ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
+
 what metrics & custom metrics were u monitoring in your eks cluster
 
 how will u install promethus on ecs cluster 
