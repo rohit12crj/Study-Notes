@@ -113,7 +113,12 @@ which db is grfana using since  it needs to store user RBAC ?
 EFK/Opensearch for Logging & Jaeger for Traceing
 ===================================================
 
+https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-4/readme.md
+
 🛠️ Implement Custom Metrics in Node.js Application: Use the prom-client library to write and expose custom metrics in the Node.js application.
+
 🚨 Set Up Alerts in Alertmanager: Configure Alertmanager to send email notifications if a container crashes more than two times.
+
 📝 Set Up Logging: Implement logging on both application and cluster (node) logs for better observability using EFK stack(Elasticsearch, FluentBit, Kibana).
+
 📸 Implement Distributed Tracing for Node.js Application: Enhance observability by instrumenting the Node.js application for distributed tracing using Jaeger. enabling better performance monitoring and troubleshooting of complex, multi-service architectures.
