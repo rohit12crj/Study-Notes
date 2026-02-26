@@ -10,7 +10,7 @@ Distributed tracing through jaeger
 
 open telemetry concepts
 
-pagerduty
+pagerduty --> used for instance management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE
 
 ebpf
 
