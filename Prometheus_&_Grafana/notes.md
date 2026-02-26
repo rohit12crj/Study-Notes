@@ -93,5 +93,17 @@ since the tsdb stores data for only 15 days .if i want to querry data from 30 da
 
 i want to get alerted if cpu utilization of a pod exceeds 80 % in eks cluster using prometheus . write the promql querry . how can i do it
 
-Give example of metrics in prometheus ? ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-3/readme.md ) tell me how can u find out how many configmaps are created in a k8s cluster in last 1 hr ? answer - use promql 
-& select the appropriate metric
+Give example of metrics in prometheus ? ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-3/readme.md ) tell me how can u find out how many configmaps are created in a k8s cluster in last 1 hr or how many times a particular pod crashed in 1 hr ? answer - use promql & select the appropriate metric
+
+How will u setup authentication & authorization for prometheus UI ?
+
+Grafana
+==============
+
+which built in / default dashboards were u using ?
+
+how will u connect grafana to prometheus ? --> setup up a new data connection . all can be done through UI 
+
+how will u setup custom dashboard & share ot with end users ? same process like quicksight -->  just need to find out the correct Promql querry 
+
+How will u setup authentication & authorization for grafana UI ?
