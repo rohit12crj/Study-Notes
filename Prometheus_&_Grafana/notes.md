@@ -10,8 +10,6 @@ Distributed tracing through jaeger
 
 open telemetry concepts
 
-pagerduty --> used for instance management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE --> check if anything in AWS can be used 
-
 ebpf
 
 what is push gateway ? give an example where u would use pushgateway ?
