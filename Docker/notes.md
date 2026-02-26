@@ -60,7 +60,7 @@ File permission issues
 
 What is Docker Layer Caching?
 
-how will u secure docker daemon
+what is docker daemon ? how will u secure docker daemon
 
 How do you troubleshoot a container that keeps restarting?
 
