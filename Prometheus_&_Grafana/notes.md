@@ -106,4 +106,4 @@ how will u connect grafana to prometheus ? --> setup up a new data connection . 
 
 how will u setup custom dashboard & share ot with end users ? same process like quicksight -->  just need to find out the correct Promql querry 
 
-How will u setup authentication & authorization for grafana UI ?
+How will u setup authentication & authorization for grafana UI & give different users specific access to different dashboards ?
