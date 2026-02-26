@@ -20,6 +20,8 @@ prometheus architecture ( https://github.com/iam-veeramalla/observability-zero-t
 
 what metrics & custom metrics were u monitoring in your eks cluster
 
+installation of prometheus , grafana , alert manager on eks cluster ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
+
 how will u install promethus on ecs cluster 
 
 how will u install promethus on eks cluster 
