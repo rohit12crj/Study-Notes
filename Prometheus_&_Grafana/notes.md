@@ -115,6 +115,8 @@ EFK/Opensearch for Logging & Jaeger for Traceing
 
 https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-4/readme.md
 
+what is instrumentation ?
+
 🛠️ Implement Custom Metrics in Node.js Application: Use the prom-client library to write and expose custom metrics in the Node.js application.
 
 🚨 Set Up Alerts in Alertmanager: Configure Alertmanager to send email notifications if a container crashes more than two times.
