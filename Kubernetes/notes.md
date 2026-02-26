@@ -19,3 +19,7 @@ I would implement a Mutating Admission Webhook to auto-inject the sidecar based 
 If the use case is networking, I would prefer a service mesh.
 If it’s node-level functionality, I would use a DaemonSet instead.
 
+do all manifest files in k8s create pods ? give examples of which manifests create pods & which dont
+
+in my eks email pods within email namespace , it send out email , so it needs to connect to AWS SES . the credentials of SMTP server are stored in AWS Secret manager . how will u connect to secret manager , basically which role u would be attaching the permission & how to rotate the secrets
+
