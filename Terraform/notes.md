@@ -1,9 +1,11 @@
 Terraform ( Theory + Project Playlist )
 ==============================
 https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf
-https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI   Interview Questions
+https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions
 
 ✅ when will use terraform workspaces vs directories 
+
+terraform plan shows correctly what resources will be created , however when terraform apply is used only half of the reources got created . what will u do now ? from next time how will u setup terraform rollback if even 1 resource fail to get created ?
 
 drift detection using pipeline and terraform cloud
 
