@@ -14,6 +14,8 @@ pagerduty
 
 ebpf
 
+what is push gateway ? give an example where u would use pushgateway ?
+
 what is prom-client ? similar like boto3 for aws SDK
 
 prometheus architecture ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
@@ -59,9 +61,9 @@ What is Service Discovery in Prometheus?
 
 How does Prometheus store data internally?
 
-How do you scale Prometheus?
+How do you scale Prometheus if u are not using AMP ( Amazon Managed Prometheus ) & using helm charts ?
 
-What is Federation?
+What is Federation? is it an older model ?
 
 What is the data model in Prometheus?
 
