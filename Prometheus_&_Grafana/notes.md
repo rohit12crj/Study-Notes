@@ -4,7 +4,7 @@ Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-ze
 
 Difference between Observability and monitoring 
 
-monitoring vs logging vs tracing
+monitoring vs logging vs traces
 
 How will u find out disk utilization of a node in a eks cluster 
 
