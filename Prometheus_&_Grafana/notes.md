@@ -20,7 +20,9 @@ prometheus architecture ( https://github.com/iam-veeramalla/observability-zero-t
 
 what metrics & custom metrics were u monitoring in your eks cluster
 
-installation of prometheus , grafana , alert manager on eks cluster ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
+installation of prometheus , grafana , alert manager ( since alert manager is not a default component of prometheus , how will u install it ) on eks cluster ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
+
+difference between node exporter & kube state metrics pods in prometheus ?
 
 how will u install promethus on ecs cluster 
 
