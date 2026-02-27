@@ -10,7 +10,9 @@ Distributed tracing through jaeger --> https://youtu.be/U9qInvWTe9w?si=nfmy-tpku
 
 open telemetry concepts
 
-hybrid cloud monitoring using site 24*7 --> https://youtu.be/jRc2vFmkILs?si=RAzcWPt7OJzxEJeC
+in prometheus ( specify the manifest file type of prometheus server , alertmanager , node exporter , kube state metrics )
+
+hybrid cloud monitoring using site 24*7 --> https://youtu.be/jRc2vFmkILs?si=RAzcWPt7OJzxEJeC  --> u will use helm charts to install site 24*7 agent in k8s cluster 
 
 opensearch --> https://www.youtube.com/watch?v=OSShB_cXisE&list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb&index=9  -> fetches the logs from k8s cluster using fluentbit into opensearch & visualizes using opensearch dashboards  . fluentbit needs to be deployed as daemon set with configuration of how to connect to aws managed opensearch in config maps or secrets
 
@@ -95,7 +97,7 @@ rate() calculates the per-second average rate over the entire range window — i
 
 Where is tsdb in prometheus stored actually. My Prometheus is running in eks cluster using helm charts
 
-since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it
+since the tsdb stores data for only 15 days .if i want to querry data from 30 days back how can i do it . thanos needs to run as a sidecar container along with the main application
 
 i want to get alerted if cpu utilization of a pod exceeds 80 % in eks cluster using prometheus . write the promql querry . how can i do it
 
