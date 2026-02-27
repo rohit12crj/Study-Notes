@@ -23,3 +23,5 @@ do all manifest files in k8s create pods ? give examples of which manifests crea
 
 in my eks email pods within email namespace , it send out email , so it needs to connect to AWS SES . the credentials of SMTP server are stored in AWS Secret manager . how will u connect to secret manager , basically which role u would be attaching the permission & how to rotate the secrets
 
+when u should use daemon set vs sidecar container
+
