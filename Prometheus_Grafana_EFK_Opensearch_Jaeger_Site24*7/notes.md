@@ -10,6 +10,8 @@ Distributed tracing through jaeger
 
 open telemetry concepts
 
+hybrid cloud monitoring using site 24*7
+
 ebpf
 
 what is push gateway ? give an example where u would use pushgateway ?
