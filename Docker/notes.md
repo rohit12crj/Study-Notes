@@ -93,6 +93,10 @@ Use read-only filesystem
 
 Limit CPU & memory
 
+how to pass environment variables in docker file , as these values are required during application building . the env values should be fetched from AWS secret manager
+
+how to pass environment variables in ECS Task definition , as these values are required during application run time  . the env values should be fetched from AWS secret manager & should not be visible when i see the json format of task definition in ECS Console
+
 study 50 FAANG-level Docker Q&A
 
 
