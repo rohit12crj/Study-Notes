@@ -4,6 +4,8 @@ https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Gui
 
 https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
 
+https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
+
 
 1. what shell scripting u did in your project ?
 
