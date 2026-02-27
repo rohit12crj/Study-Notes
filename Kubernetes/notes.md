@@ -4,6 +4,8 @@ csi driver
 
 service account
 
+In my eks cluster my payment pod needs to store data to AWS ebs . How can it do that explain with reference to service account, iam roles , csi driver . also if my pod az changes & my ebs volume is in different az how will it work then ?
+
 daemonset vs deployments ? when to use which with examples 
 
 There is also a default namespace in k8s
