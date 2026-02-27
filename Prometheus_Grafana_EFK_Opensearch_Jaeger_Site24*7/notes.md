@@ -6,7 +6,7 @@ Difference between Observability and monitoring
 
 monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
 
-Distributed tracing through jaeger --> https://youtu.be/U9qInvWTe9w?si=nfmy-tpkuX2pszIk  --> jaeger also runs as daemon set
+Distributed tracing through jaeger --> https://youtu.be/U9qInvWTe9w?si=nfmy-tpkuX2pszIk  --> jaeger agent also runs as daemon set
 
 open telemetry concepts
 
