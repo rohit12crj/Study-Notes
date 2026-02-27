@@ -10,7 +10,9 @@ Distributed tracing through jaeger
 
 open telemetry concepts
 
-hybrid cloud monitoring using site 24*7
+hybrid cloud monitoring using site 24*7 --> https://youtu.be/jRc2vFmkILs?si=RAzcWPt7OJzxEJeC
+
+opensearch --> https://www.youtube.com/watch?v=OSShB_cXisE&list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb&index=9
 
 ebpf
 
