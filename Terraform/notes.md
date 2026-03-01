@@ -8,7 +8,7 @@
 
 how will u do terraform version upgrade withput downtime
 
-explain how terraform vault integrates with github action , jenkins internally 
+explain how terraform vault integrates with github action , jenkins internally & how does it works
 
 What is IaC ? Why Terraform ?
 
