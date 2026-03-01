@@ -1,1 +1,1 @@
-whay are you looking for job change
+why are you looking for job change
