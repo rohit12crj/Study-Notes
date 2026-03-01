@@ -58,8 +58,6 @@ provisioners and when to use them and when not to use them
 
 How does Terraform manage dependencies?
 
-What is terraform taint?
-
 What is terraform import?
 
 What is terraform refresh?
@@ -108,9 +106,7 @@ What are Terraform limitations?
 
 version pinning
 
-They may ask:
+Your Terraform deployment takes 40 minutes and often fails. How do you redesign it? --> Expected Answer: Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
 
-"Your Terraform deployment takes 40 minutes and often fails. How do you redesign it?"
-
-Expected Answer: Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
+why terraform should not be used to manage resources configuration unlike ansible ?
 
