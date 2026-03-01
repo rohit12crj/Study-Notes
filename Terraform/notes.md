@@ -6,6 +6,28 @@
 
 ✅ when will use terraform workspaces vs directories 
 
+What is IaC ? Why Terraform ?
+
+What are modules in Terraform?
+
+What is a state file in Terraform ?
+
+What are some of the most common Terraform CLI commands that you use every day ?
+
+What is Terraform backend ?
+
+What is Terraform Remote banckend ?
+
+How do you handle secrets in terraform ?
+
+What is Resource Graph in Terraform ?
+
+What is Terraform State Locking ?
+
+What is a Tainted Terraform resource ?
+
+What is Terraform State Rollback ?
+
 terraform plan shows correctly what resources will be created , however when terraform apply is used only half of the reources got created . what will u do now ? from next time how will u setup terraform rollback if even 1 resource fail to get created ?
 
 drift detection using pipeline and terraform cloud
