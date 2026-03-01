@@ -44,8 +44,6 @@ if someone deletes state file what will happen
 
 terraform multiple providers
 
-modules
-
 What makes Terraform declarative?
 
 Explain Terraform lifecycle commands.
