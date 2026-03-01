@@ -43,3 +43,5 @@ when will u use matrix
 codeql scanning
 
 in security tab , there are 3 things ( dependabots alerts --> get notified when your dependincies has a vulneribility , code scanning alerts --> automatically detect common vulnerabilities and coding errors , secret scanning alerts --> get notified when a secret is pushed to the repository )
+
+there are 2 developers . both are working on 2 different files so there is no conlict . developer 1 pushes code at 5pm & developer 2 pushes code ar 5:01 pm . there is no sense in running the pipeline 2 times as when developer 2 will push the code he needs to do a git pull first . how will u make sure only the pipeline runs for teh 2nd developer ?  --> I would enable branch-level concurrency control in CI/CD so that when a new commit is pushed, any currently running pipeline for that branch is automatically cancelled. This ensures only the latest commit triggers the pipeline, avoiding redundant executions and saving compute cost.
