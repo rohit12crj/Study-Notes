@@ -1,6 +1,8 @@
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf  --> Terraform ( Theory + Project Playlist ) ( Abhishek )
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf  --> Terraform ( Theory + Project Playlist ) ( Abhishek )
 
-https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
+✅ https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
+
+✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Interview Questions --> Part 2 ( Abhishek )
 
 ✅ when will use terraform workspaces vs directories 
 
