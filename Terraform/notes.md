@@ -6,6 +6,10 @@
 
 ✅ when will use terraform workspaces vs directories 
 
+how will u do terraform version upgrade withput downtime
+
+explain how terraform vault integrates with github action , jenkins internally 
+
 What is IaC ? Why Terraform ?
 
 What are modules in Terraform?
