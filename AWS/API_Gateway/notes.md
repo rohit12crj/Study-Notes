@@ -7,6 +7,7 @@ HTTP API – Lightweight, cheaper, lower latency.
 WebSocket API – For real-time communication (chat apps, live dashboards).
 
 3) What is the difference between REST API and HTTP API?
+   
 | Feature  | REST API                              | HTTP API              |
 | -------- | ------------------------------------- | --------------------- |
 | Cost     | Higher                                | Lower (~70% cheaper)  |
