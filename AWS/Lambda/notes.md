@@ -104,5 +104,6 @@ Notification sent via SNS/SES
 Use SQS if processing volume is high to avoid throttling
 
 
-![Uploading image.png…]()
+<img width="563" height="296" alt="image" src="https://github.com/user-attachments/assets/30e95b46-25eb-4f77-b8a9-35f206aacb3b" />
+
 
