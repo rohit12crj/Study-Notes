@@ -104,7 +104,5 @@ Notification sent via SNS/SES
 Use SQS if processing volume is high to avoid throttling
 
 
-💡 Quick Tips for Interviews
-TopicKey PointMax timeout15 minutesMax memory10 GBMax deployment size250 MB (unzipped)Concurrency default1000 per regionRetry behaviorAsync = 2 retries; Sync = caller handlesCold start fixProvisioned concurrencySecurityIAM roles, Secrets Manager, VPC
+![Uploading image.png…]()
 
-Want me to go deeper on any specific scenario, or cover topics like Lambda with Kafka, Step Functions, or cost optimization?
