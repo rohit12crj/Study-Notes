@@ -11,7 +11,7 @@ Your e-commerce site is getting flooded with HTTP requests from thousands of IPs
 
 
 
-✅ Scenario 2: SQL Injection Attack
+# ✅ Scenario 2: SQL Injection Attack
 
 Your RDS-backed application is being targeted with SQL injection attempts via form fields. How do you stop this with WAF?
 
