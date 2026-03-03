@@ -23,7 +23,7 @@ Your RDS-backed application is being targeted with SQL injection attempts via fo
 - Use WAF sampled requests to validate what's being caught before switching from Count → Block
 
 
-✅ Scenario 3: Geo-Blocking
+### ✅ Scenario 3: Geo-Blocking
 
 Your SaaS application is only licensed for use in the US and Canada. How do you restrict access geographically?
 
@@ -34,7 +34,7 @@ Your SaaS application is only licensed for use in the US and Canada. How do you 
 - For B2B clients with known IPs outside US/CA, add an IP Set allow rule with higher priority to override the geo-block
 
 
-✅ Scenario 4: Bot Management
+### ✅ Scenario 4: Bot Management
 
 You notice scrapers are harvesting product prices from your site, impacting performance. How do you handle this?
 
@@ -45,7 +45,7 @@ You notice scrapers are harvesting product prices from your site, impacting perf
 - For pricing pages specifically, scope the rule to URI path /products/* to minimize latency impact elsewhere
 
 
-✅ Scenario 5: Rule Priority Conflict
+### ✅ Scenario 5: Rule Priority Conflict
 
 You have an allow rule for your office IP and a block rule for a country that includes your office IP's country. Users in the office are getting blocked. What's wrong?
 
@@ -55,7 +55,7 @@ You have an allow rule for your office IP and a block rule for a country that in
 - Best practice: Always put explicit allow rules at the top, deny/block rules below
 
 
-✅ Scenario 6: False Positives
+### ✅ Scenario 6: False Positives
 
 After enabling AWS Managed Rules, some legitimate API requests from your mobile app are being blocked. How do you troubleshoot?
 
@@ -66,7 +66,7 @@ After enabling AWS Managed Rules, some legitimate API requests from your mobile 
 - Alternatively, create a scope-down statement so the rule only applies to web traffic, excluding your API path /api/v1/*
 
 
-✅ Scenario 7: Multi-Region Architecture
+### ✅ Scenario 7: Multi-Region Architecture
 
 Your app runs in us-east-1 and eu-west-1 behind separate ALBs. How do you manage WAF consistently across both?
 
@@ -78,7 +78,7 @@ Your app runs in us-east-1 and eu-west-1 behind separate ALBs. How do you manage
 - For global enforcement with a single ACL, migrate traffic to CloudFront (which uses a global WAF ACL)
 
 
-✅ Scenario 8: API Gateway Protection
+### ✅ Scenario 8: API Gateway Protection
 
 Your public REST API is being abused — attackers are fuzzing endpoints with malformed JSON payloads. How do you protect it?
 
@@ -89,7 +89,7 @@ Your public REST API is being abused — attackers are fuzzing endpoints with ma
 - Enable API Gateway throttling in addition to WAF for defense-in-depth
 
 
-✅ Scenario 9: Cost Optimization
+### ✅ Scenario 9: Cost Optimization
 
 Your WAF bill spiked due to high request volume. How do you optimize costs?
 
@@ -101,7 +101,7 @@ Your WAF bill spiked due to high request volume. How do you optimize costs?
 - Use WAF logging sampling instead of full logging to reduce Firehose/S3 costs
 
 
-✅ Scenario 10: Zero-Day Vulnerability
+### ✅ Scenario 10: Zero-Day Vulnerability
 
 A critical zero-day vulnerability is disclosed for a framework your app uses. You need a temporary fix before patching. What do you do?
 
