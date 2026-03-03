@@ -1,4 +1,4 @@
-Scenario 1: DDoS Protection
+✅ Scenario 1: DDoS Protection
 Q: Your e-commerce site is getting flooded with HTTP requests from thousands of IPs during a flash sale. How would you use AWS WAF to mitigate this?
 A:
 
@@ -9,7 +9,7 @@ Front the application with CloudFront + WAF so traffic is filtered at the edge b
 Enable WAF logging to Kinesis Firehose → S3 for post-incident analysis
 
 
-Scenario 2: SQL Injection Attack
+✅ Scenario 2: SQL Injection Attack
 Q: Your RDS-backed application is being targeted with SQL injection attempts via form fields. How do you stop this with WAF?
 A:
 
