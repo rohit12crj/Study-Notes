@@ -113,11 +113,11 @@ A critical zero-day vulnerability is disclosed for a framework your app uses. Yo
 - Once the actual patch is deployed and tested, remove the virtual patch rule to avoid rule bloat
 
 
-✅ Key concepts to always mention: Web ACL, Rule priority, Managed Rule Groups, Scope-down statements, Count vs Block mode, Firewall Manager for multi-account, and WAF logging for observability.
+### ✅ Key concepts to always mention: Web ACL, Rule priority, Managed Rule Groups, Scope-down statements, Count vs Block mode, Firewall Manager for multi-account, and WAF logging for observability.
 
-✅ in AWS WAF Default statement can be either block or allow
+### ✅ in AWS WAF Default statement can be either block or allow
 
-✅ what are Scope-down statements in aws waf
+### ✅ what are Scope-down statements in aws waf
 
 Instead of applying a rule to all incoming requests, you use a scope-down statement to apply the rule only to specific requests.
 
