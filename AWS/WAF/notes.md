@@ -3,9 +3,9 @@
 Your e-commerce site is getting flooded with HTTP requests from thousands of IPs during a flash sale. How would you use AWS WAF to mitigate this?
 
 
-•	Create a Rate-Based Rule in WAF to limit requests per IP (e.g., 2000 requests per 5 minutes)
+- Create a Rate-Based Rule in WAF to limit requests per IP (e.g., 2000 requests per 5 minutes)
 
-•	Combine WAF with AWS Shield Advanced for volumetric DDoS protection
+- Combine WAF with AWS Shield Advanced for volumetric DDoS protection
 
 •	Use IP reputation managed rule groups (AWS Managed Rules) to auto-block known bad actors
 
