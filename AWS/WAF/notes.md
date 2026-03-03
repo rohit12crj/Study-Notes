@@ -4,14 +4,10 @@ Your e-commerce site is getting flooded with HTTP requests from thousands of IPs
 
 
 - Create a Rate-Based Rule in WAF to limit requests per IP (e.g., 2000 requests per 5 minutes)
-
 - Combine WAF with AWS Shield Advanced for volumetric DDoS protection
-
-•	Use IP reputation managed rule groups (AWS Managed Rules) to auto-block known bad actors
-
-•	Front the application with CloudFront + WAF so traffic is filtered at the edge before hitting origin
-
-•	Enable WAF logging to Kinesis Firehose → S3 for post-incident analysis
+- Use IP reputation managed rule groups (AWS Managed Rules) to auto-block known bad actors
+- Front the application with CloudFront + WAF so traffic is filtered at the edge before hitting origin
+- Enable WAF logging to Kinesis Firehose → S3 for post-incident analysis
 
 
 
