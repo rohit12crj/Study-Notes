@@ -31,3 +31,17 @@ in my eks email pods within email namespace , it send out email , so it needs to
 
 when u should use daemon set vs sidecar container
 
+pod intent ?
+
+how will u do canary deployment in k8s ?
+
+how does rollback deploymnet work internally ?
+
+what is hpa & how does it scales pods ?
+
+diff between hpa , keda & carpenter ?
+
+why do we still need hpa if karpenter is used ?
+
+
+
