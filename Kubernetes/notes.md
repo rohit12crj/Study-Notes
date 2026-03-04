@@ -68,5 +68,24 @@ HPA is configured but pods are not scaling under load. What could be the issue?
 
 Persistent Volume is not mounting in a stateful application. How do you troubleshoot PVC/PV?
 
+What is the current version of K8s you are using in your project?
+
+What was the last production issue you faced and how did you resolve it?
+
+A pod is stuck in CrashLoopBackOff. Logs show failure during initialization - how do you troubleshoot?
+
+How do you enforce tenant isolation in a multi-tenant Kubernetes setup?
+
+During high traffic, your app shows intermittent 502 errors through Ingress how do you debug?
+
+How do you prevent bad configs from reaching production in a CI/CD pipeline?
+
+How would you ensure zero-downtime deployment during a critical update?
+
+Helm deployment fails due to insufficient cluster resources - what's your approach?
+
+How do you share Helm charts internally?
+
+What is Helm chart testing and how is it done?
 
 
