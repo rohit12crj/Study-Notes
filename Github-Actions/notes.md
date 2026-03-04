@@ -53,3 +53,13 @@ How do you handle secret management in pipelines?
 
 How do you implement least privilege access across environments?
 
+
+How do you reuse workflows across repositories?
+
+How to manage large workflow files efficiently?
+
+What's the difference between public and private workflow repositories?
+
+How to implement workflow concurrency?
+
+How do you handle failed workflows?
