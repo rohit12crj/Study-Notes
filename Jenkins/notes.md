@@ -761,5 +761,5 @@ Which tools have you used to build a complete CI/CD pipeline?
 
 If you encounter a secret-related error in your application or pipeline, how would you troubleshoot it?
 
-How would you design a CI/CD pipeline for 50+ microservices with zero downtime deployment?
+How would you design a CI/CD pipeline for 50+ microservices with zero downtime deployment? 
 
