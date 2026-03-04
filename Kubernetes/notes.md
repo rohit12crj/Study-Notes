@@ -43,5 +43,15 @@ diff between hpa , keda & carpenter ?
 
 why do we still need hpa if karpenter is used ?
 
+How does Service A communicate with Service B inside Kubernetes?
+
+How would you restrict pod-to-pod communication using Calico Network Policies?
+
+How does a pod securely connect to S3 without hardcoding credentials?
+
+How do you implement RBAC policies in Kubernetes?
+
+
+
 
 
