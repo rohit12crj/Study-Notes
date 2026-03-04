@@ -121,3 +121,12 @@ Your Terraform deployment takes 40 minutes and often fails. How do you redesign 
 
 why terraform should not be used to manage resources configuration unlike ansible ?
 
+How do you manage Terraform provider versioning?
+
+How would you provision infra across 10 AWS regions simultaneously?
+
+What to do when your Terraform state file becomes too large?
+
+Terraform plan shows destroy + recreate for a critical DB- how to prevent downtime?
+
+
