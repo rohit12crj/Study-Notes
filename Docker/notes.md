@@ -109,3 +109,12 @@ How do you monitor container performance in production?
 
 Wrote a multi-stage Dockerfile during screen sharing.
 
+How would you manage Docker workloads across multiple clouds?
+
+How do you handle image cleanup to prevent disk space issues?
+
+How do you manage multi-container dependencies using Docker Compose?
+
+How do you monitor container performance in production?
+
+Wrote a multi-stage Dockerfile during screen sharing.
