@@ -133,3 +133,4 @@ How do you manage Terraform provider versioning?
 
 How would you provision infra across 10 AWS regions
 
+Have you configured secrets or handled Terraform state files? Explain your experience.
