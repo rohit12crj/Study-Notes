@@ -129,4 +129,7 @@ What to do when your Terraform state file becomes too large?
 
 Terraform plan shows destroy + recreate for a critical DB- how to prevent downtime?
 
+How do you manage Terraform provider versioning?
+
+How would you provision infra across 10 AWS regions
 
