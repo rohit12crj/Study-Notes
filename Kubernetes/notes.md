@@ -1,3 +1,5 @@
+local k8s setup --> vind ( has gui )
+
 user management in k8s --> Border0
 
 csi driver 
