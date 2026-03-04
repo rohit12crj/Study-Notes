@@ -88,4 +88,64 @@ How do you share Helm charts internally?
 
 What is Helm chart testing and how is it done?
 
+If a node has 10 pods running, where 7 are healthy and 3 are failing, how would you troubleshoot and fix the issue?
+
+What is the difference between Kubernetes Ingress and Istio?
+
+What is the difference between Horizontal Scaling and Vertical Scaling?
+
+How does kube-proxy work?
+
+How does Kubernetes implement service load balancing?
+
+What is Cluster Autoscaler and how does it work?
+
+How do you secure Kubernetes clusters in production?
+
+How do RBAC and service accounts work?
+
+How do you manage secrets securely at scale?
+
+What is network policy and why is it important?
+
+How do you design Kubernetes for high availability?
+
+How do you troubleshoot performance issues in Kubernetes?
+
+Multi-cluster Kubernetes when and why?
+
+When should Kubernetes NOT be used?
+
+Explain Kubernetes control plane internals in detail
+
+How does etcd maintain consistency and high availability?
+
+What happens when the API server goes down?
+
+How does Kubernetes handle node failure?
+
+What is Pod Disruption Budget (PDB)?
+
+How does Kubernetes networking work internally (CNI)?
+
+Difference between Calico, Flannel, and Weave
+
+How does kube-proxy work?
+
+How does Kubernetes implement service load balancing?
+
+What is Cluster Autoscaler and how does it work?
+
+How do you secure Kubernetes clusters in production?
+
+How do RBAC and service accounts work?
+
+How do you manage secrets securely at scale?
+
+What is network policy and why is it important?
+
+How do you upgrade a Kubernetes cluster safely?
+
+How do you design Kubernetes for high availability?
+
 
