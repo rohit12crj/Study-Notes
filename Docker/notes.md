@@ -118,3 +118,37 @@ How do you manage multi-container dependencies using Docker Compose?
 How do you monitor container performance in production?
 
 Wrote a multi-stage Dockerfile during screen sharing.
+
+How do you handle multi-cloud Docker deployments with compliance restrictions?
+
+You need live-patching of Docker host kernel without downtime. How do you achieve it?
+
+How do you troubleshoot container DNS resolution failures?
+
+How do you enforce policy-as-code for Docker security?
+
+How would you manage Docker workloads across multiple clouds?
+
+How do you handle image cleanup to prevent disk space issues?
+
+How do you manage multi-container dependencies using Docker Compose?
+
+How do you monitor container performance in production?
+
+Wrote a multi-stage Dockerfile during screen sharing.
+
+How would you manage Docker workloads across multiple clouds?
+
+How do you handle image cleanup to prevent disk space issues?
+
+How do you manage multi-container dependencies using Docker Compose?
+
+How do you monitor container performance in production 
+
+How do you handle multi-cloud Docker deployments with compliance restrictions?
+
+You need live-patching of Docker host kernel without downtime. How do you achieve it? How do you troubleshoot container DNS resolution failures?
+
+How do you enforce policy-as-code for Docker security?
+
+
