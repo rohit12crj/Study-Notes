@@ -1,3 +1,5 @@
+difference between alb , nlb & glbp
+
 Q1. Your web application is getting too much traffic for a single EC2 instance. How do you scale it?
 Answer: Use an Application Load Balancer (ALB) + Auto Scaling Group:
 
