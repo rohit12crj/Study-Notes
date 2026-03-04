@@ -134,3 +134,26 @@ How do you manage Terraform provider versioning?
 How would you provision infra across 10 AWS regions
 
 Have you configured secrets or handled Terraform state files? Explain your experience.
+
+Terraform state got corrupted - what will you do?
+
+How do you manage Terraform provider versioning?
+
+How would you provision infra across 10 AWS regions
+
+simultaneously?
+
+What to do when your Terraform state file becomes too large?
+
+Terraform plan shows destroy + recreate for a critical DB- how to prevent downtime?
+
+Your Terraform apply succeeded, but some resources are not behaving as expected. How do you debug? Your Terraform state file is getting too large. How do you manage it?
+
+How do you run Terraform safely in CI/CD pipelines?
+
+A team needs to provision infra in 10 AWS regions simultaneously. How do you structure it?
+
+You want faster Terraform runs in large projects. What optimizations would you apply?
+
+A production deployment failed halfway, leaving some resources created and others not. How do you recover?
+
