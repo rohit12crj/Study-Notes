@@ -52,6 +52,21 @@ How does a pod securely connect to S3 without hardcoding credentials?
 How do you implement RBAC policies in Kubernetes?
 
 
+A production pod is in CrashLoopBackOff. How would you troubleshoot and identify the root cause?
+
+A node shows NotReady status during peak traffic. What steps would you take to diagnose and recover it?
+
+After a new deployment, users report errors. How do you perform a safe rollback with zero downtime?
+
+Application is not accessible via Service (LoadBalancer/NodePort). How do you debug networking issues?
+
+Pods are stuck in ImagePullBackOff from a private registry. What checks will you perform?
+
+ConfigMap is updated but changes are not reflected in running pods. Why and how to fix it?
+
+HPA is configured but pods are not scaling under load. What could be the issue?
+
+Persistent Volume is not mounting in a stateful application. How do you troubleshoot PVC/PV?
 
 
 
