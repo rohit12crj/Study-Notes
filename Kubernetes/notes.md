@@ -148,4 +148,567 @@ How do you upgrade a Kubernetes cluster safely?
 
 How do you design Kubernetes for high availability?
 
+Pod in CrashLoopBackOff - what's your debugging approach?
+
+Deployment failed after merge - how do you roll back?
+
+What is Helm chart testing and how is it done?
+
+What is the current version of K8s you are using in your project?
+
+What was the last production issue you faced and how did you resolve it?
+
+A pod is stuck in CrashLoopBackOff. Logs show failure during initialization - how do you troubleshoot?
+
+How do you enforce tenant isolation in a multi-tenant Kubernetes setup?
+
+During high traffic, your app shows intermittent 502 errors through Ingress- how do you debug?
+
+How do you prevent bad configs from reaching production in a CI/CD pipeline?
+
+How would you ensure zero-downtime deployment during a critical update?
+
+Helm deployment fails due to insufficient cluster resources - what's your approach?
+
+How do you share Helm charts internally?
+
+What is Helm chart testing and how is it done?
+
+Your Ingress controller crashes repeatedly under heavy load. How do you stabilize it?
+
+An entire Kubernetes region goes down. How do you failover workloads? All pods in one namespace suddenly fail readiness checks. What's your step to troubleshoot? Your cluster is hit by a massive traffic surge, and HPA cannot scale pods fast enough. How do you handle it? A node hosting critical workloads crashes permanently. How do you ensure workloads recover automatically?
+
+A Pod is stuck in ImagePullBackOff. How do you troubleshoot?
+
+Here are 5 real-world scenarios every on-call engineer should master:
+
+1 When kubectl freezes it's not just annoying, it could signal a failing control plane.
+
+2 A rollout gets stuck - can you safely undo and debug under pressure?
+
+3 Works in staging, fails in prod - how fast can you spot subtle config mismatches?
+
+4 Pod-to-pod latency - do you know the right tools to trace and fix it?
+
+5 Node turns NotReady with no clear kubelet logs can you think beyond the obvious?
+
+2 In Kubernetes, how do you debug a pod stuck in CrashLoopBackOff?
+
+3 Explain what happens internally when you run: docker run nginx
+
+4 How do you manage Terraform state across multiple environments safely?
+
+5 Design a highly available Kubernetes cluster across multiple AZs.
+
+6 Blue-Green vs Canary vs Rolling deployment when do you use each?
+
+7 How would you secure secrets in a CI/CD pipeline?
+
+8 What strategy would you use to reduce alert fatigue in monitoring systems?
+
+9 How do you implement GitOps in production?
+
+10 What happens when etcd fails in Kubernetes?
+
+11 How do you handle database schema changes in CI/CD?
+
+12 How would you migrate a monolithic app to microservices?
+
+13 How do namespaces and cgroups work inside Docker?
+
+14 How do you design disaster recovery with defined RTO & RPO?
+
+15 Production server CPU is 100% at 2 AM - what is your first action?
+
+
+1 
+
+
+Kubernetes (Production Troubleshooting)
+
+Pods are not starting how do you troubleshoot? Scenario: Deployment created, but pods stuck Pending or CrashLoopBackOff.
+
+Step-by-step approach:
+
+1. Check pod status
+
+kubectl get pods -n prod
+
+2. Describe pod (MOST IMPORTANT)
+
+kubectl describe pod pod-name-n prod
+
+Look for
+
+ImagePullBackOff
+
+Insufficient CPU/Memory
+
+PVC not bound
+
+Failed scheduling
+
+3. Check logs
+
+kubeett ings -pod-namen prod
+
+Real Production Issues I've Seen
+
+Wrong image tag
+
+Secret missing
+
+Liveness probe falling
+
+Node out of memory
+
+What are common real-time issues faced in Kubemeties?
+
+In production, most common issues
+
+COMKilled
+
+DNS resclution failure
+
+Pod-to-pod networking issue
+
+Node NotReady
+
+Storage mount faйилн
+
+Example Fod OGMKIBed
+
+Check
+
+kubectl describe pod pod name
+
+If you see Reason: OGMKilled
+
+Fix by increasing limits
+
+resources requests
+
+memory: "256Mi"
+
+memory: 512M
+
+Lesson: Always define resource requests & limits
+
+How do you achieve node-level and pod-level
+
+autoscaling?
+
+Two different scaling types
+
+Pod-Level Autoscaling (HPA)
+
+Scales pods based on CPU/memory
+
+kubectl autoscale deployment my-app apu-percent 70%
+
+min-21
+
+-max 10
+
+Check
+
+kubectl get hpa
+
+Node-Level Autoscaling (Cluster Autoscaler)
+
+When pods can't schedule due to lack of nodes.
+
+Cluster Autoscaler adds new nodes automatically.
+
+Used in managed services like
+
+Amazon EKS
+
+GKE
+
+AK
+
+Production insight.
+
+HPA scales pods
+
+Cluster Autoscaler scales nodes.
+
+
+1. Pod in Crash LoopBackOff
+
+What to check
+
+Problem: Pod keeps restarting.
+
+kubectl logs
+
+kubectl describe pod
+
+Check COMKilled
+
+Wrong em/config
+
+Image issues
+
+Correct config Redeploy Rollout restart
+
+2. Application Not Accessible via Service
+
+Probles Problem: Pods running but service not working.
+
+Check:
+
+Service type (ClusterP/NodePort/B)
+
+Endpoints
+
+Label selector mimatch
+
+TargetPort mismatch
+
+Most common issue: Label mismatch
+
+NetworkPolicy
+
+3. Node in NotReady State
+
+Check
+
+kubectl describe node
+
+Disk pressure
+
+Memory pressure
+
+Kubelet status Container runtime
+
+Often caused by full or kubelet crash
+
+4. Pods Getting DOMKRed
+
+Check
+
+Resource requests & limits
+
+kubectl top pods
+
+Fix
+
+Adjust memory limits
+
+Configure HPA
+
+Optimize application
+
+5. Falled Deployment-Need Rollback
+
+Solution: Check rollout history
+
+Rollback to previous version
+
+Best Practice
+
+Versioned image tags
+
+Rolling updates
+
+Bue/Green deployment
+
+6. Pod Stuck in Pending
+
+Reasons No resources
+
+Taints & tolerations
+
+PVC not bound
+
+Node selector mismatch
+
+7. ConfigMap Updated but App Not Heflecting
+
+Changes
+
+ConfigMaps don't auto-reload
+
+Restart pod
+
+Use checksum annotation
+
+Use reloader controller
+
+8 Cluster Performance issu
+
+Check
+
+Node CPU/Memory
+
+Podrestarts
+
+etcd health
+
+Network latency
+
+Storage performance
+
+9. Zero Downtime Deployment
+
+Use Roting update strategy
+
+Readiness probes
+
+Multiple replicas
+
+PodDisruptionlludget
+
+Database Pod Deleted
+
+If using
+
+StatefulSet PVC Data safe
+
+If using empty Dir Data lost
+
+
+
+CI/CD
+
+
+How do you design a production-grade pipeline? What happens internally when a pipeline fails?
+
+How do you implement rollback strategies?
+
+How do you standardize pipelines across multiple
+
+How do you manage artifact versioning?
+
+teams?
+
+Git & Branching Strategy
+
+Which branching strategy do you use and why?
+
+How do you prevent direct commits to the main
+
+How do you handle hotfix releases?
+
+branch?
+
+How do you resolve merge conflicts in critical deployments?
+
+How do you manage release tagging?
+
+Kubernetes (Very Important)
+
+What happens when a Pod goes into
+
+CrashLoopBackOff?
+
+Difference between Deployment and StatefulSet?
+
+How does HPA work internally?
+
+How do you debug networking issues inside a cluster?
+
+How do Services and Ingress differ?
+
+How do you manage Secrets securely? Cloud (Azure/AWS/GCP)
+
+How would you design a secure VPC/VNet architecture?
+
+How do you implement least-privilege IAM?
+
+How do you reduce cloud costs?
+
+How do you monitor infrastructure health?
+
+How do you design a highly available architecture?
+
+Terraform/Infrastructure as Code
+
+How does Terraform state work?
+
+What if the state file gets corrupted?
+
+How do you manage remote state securely?
+
+How do you structure Terraform for multiple
+
+How do you prevent configuration drift?
+
+environments?
+
+Where do you integrate security scanning in CI/CD?
+
+DevSecOps
+
+How do you manage secrets (Vault/Key Vault)?
+
+How do you scan container images?
+
+How do you ensure compliance in pipelines?
+
+What is SAST vs DAST?
+
+Monitoring & Reliability
+
+What is the difference between monitoring and
+
+observability? How do you define SLis, SLOs, and SLAs?
+
+How do you reduce MTTR?
+
+How do you handle alert fatigue?
+
+Production deployment failed what are your first 5
+
+Real-World Scenarios
+
+steps?
+
+How would you scale CI/CD from 5 to 50
+
+microservices?
+
+How would you migrate on-prem infrastructure to
+
+cloud?
+
+How do you design a disaster recovery strategy?
+
+For 3-5 years DevOps roles, companies are not hiring:
+
+Reality Check
+
+X Tool operators
+
+They are hiring:
+
+System thinkers
+
+Automation designers
+
+Reliability-focused engineers
+
+Cost-aware architects
+
+If you're preparing for DevOps interviews, focus on
+
+architecture thinking not just commands.
+
+What's the toughest DevOps interview question you've
+
+faced recently?
+
+
+AWS, Jenkins CICD, Docker & Kubernetes, Terraform
+
+Here are some questions they asked
+
+AWS
+
+What is Auto Scaling and how do you configure scaling policies?
+
+How to optimize cost for EC2, RDS and S3?
+
+What is VPC and difference between Public/Private subnet?
+
+How do you secure S3 buckets?
+
+How does Load Balancer work in multi AZ setup?
+
+Jenkins
+
+Explain pipeline as code?
+
+What stages you use in CI/CD?
+
+How do you trigger pipeline automatically?
+
+How do you store and use credentials in Jenkins?
+
+What is Blue-Green deployment?
+
+Docker & Kubernetes
+
+Difference between Docker image and container?
+
+What is multi-stage build in Docker?
+
+Explain pod, deployment, service?
+
+How to troubleshoot pod CrashLoopBackOff?
+
+What is Ingress and how it works?
+
+Terraform
+
+What is laC and why Terraform?
+
+Explain Terraform state file?
+
+How do you manage multiple environments (dev/qa/prod)?
+
+What is the use of variables and outputs?
+
+How to handle Terraform remote backend?
+
+
+container efficiency.
+
+2. What is Immutable Infrastructure?
+
+Why rebuilding infrastructure instead of modifying it improves consistency and reduces configuration drift.
+
+3. Explain CI vs CD clearly.
+
+Continuous Integration ensures code quality.
+
+Continuous Delivery/Deployment ensures faster, automated releases.
+
+4. What happens when a deployment fails? How do you handle it?
+
+Rollback strategy, logs analysis, root cause identification, pipeline validation.
+
+5. Git Merge vs Git Rebase - When do you use each?
+
+Maintaining clean commit history vs preserving context.
+
+6. What is Idempotency in Terraform?
+
+Running the same configuration multiple times should produce the same infrastructure state.
+
+7. How does Auto Scaling work in AWS?
+
+Metrics-based scaling policies, health checks, and high availability design.
+
+8. How do you troubleshoot a production issue?
+
+monitor metrics validate recent
+
+Check logs deployments RCA. isolate root cause fix document
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
