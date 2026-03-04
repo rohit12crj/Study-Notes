@@ -1,5 +1,9 @@
 rto & rpo & what were these values in your project & how did u achieve this ?
 
+explain HA for all aws services in your project ?
+
+Can you explain your day-to-day responsibilities in your current DevOps role?
+
 sla
 
 pagerduty --> used for end to end incident management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE --> no need to go through the video --> just for reference
