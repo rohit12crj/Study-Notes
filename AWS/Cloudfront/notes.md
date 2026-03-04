@@ -1,3 +1,5 @@
+Your page loads in 80 ms in Australia but 600 ms in India. Same backend. Same code. What would you use to fix this?
+
 Q1. Your static website hosted on S3 is slow for users in different countries. How do you fix it?
 Answer: Put Amazon CloudFront in front of S3:
 
