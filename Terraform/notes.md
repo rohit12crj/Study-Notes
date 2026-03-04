@@ -108,6 +108,13 @@ How to manage multiple regions?
 
 What are Terraform limitations?
 
+What are Terraform Workspaces and when should you use them?
+
+How does Terraform state management work internally?
+
+What is terraform import and in which real-world scenario is it used?
+
+
 version pinning
 
 Your Terraform deployment takes 40 minutes and often fails. How do you redesign it? --> Expected Answer: Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
