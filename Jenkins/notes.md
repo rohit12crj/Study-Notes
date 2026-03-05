@@ -4,7 +4,12 @@ https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
 
 https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
-✅ explain ci & cd with different pipelines
+✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
+
+- ci end goal is docker image creation , cd end goal is to create containers 
+- cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
+- ci workflow ( git push --> git repo checkout --> install dependencies --> dockerfile build --> )
+- cd worflow ( will run only when ci completes without fail & deploys to eks )
 
 how will do unit testing , sast, dca , dast , image vulnerability scans ? explain with respect to sonarqube also ?
 
