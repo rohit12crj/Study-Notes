@@ -1,7 +1,8 @@
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvJDIAQZtMjUUbiVUDfGaCIX
+https://www.youtube.com/playlist?list=PLdpzxOOAlwvJDIAQZtMjUUbiVUDfGaCIX  --> Abhishek Playlist
 
-https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8
-https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY
+https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
+
+https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines
 
