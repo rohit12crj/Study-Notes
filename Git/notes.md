@@ -49,11 +49,13 @@
 ✅ Explain Git workflow ? --> Working Directory → Staging Area → Local Repository → Remote Repository
 
 - Working Directory → Where you modify files --> Working directory contains below types of files
+
 | File State | Meaning                         |
 | ---------- | ------------------------------- |
 | Untracked  | Git doesn't know about the file |
 | Modified   | File changed but not staged     |
 | Deleted    | File removed                    |
+
 - Staging Area → Where you prepare files for commit --> The Staging Area is an intermediate area where you select which changes will go into the next commit --> git add app.py
 - Local Repository -→ Where commits are stored locally --> git commit -m "files added"
 - Remote Repository -→ Shared repo on platforms like GitHub --> git push
