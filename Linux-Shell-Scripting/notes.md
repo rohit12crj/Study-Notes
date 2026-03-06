@@ -1,8 +1,37 @@
 [Shell-Scripting/notes.md](https://www.youtube.com/playlist?list=PLdpzxOOAlwvIZ7u-gtpX_bozrspUbTQ1S --> Shell Scripting Playlist ( Abhishek )
 
+---
+
 https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide ( Abhishek )
 
+- getting-started
+- folder-structure
+- user-management
+- file-management
+- vi-shortcuts
+- file-permissions
+- process-management
+- monitoring
+- networking
+- disk-management
+
+---
+
 https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
+
+- IP Addressing & Subnetting
+- TCP/IP & OSI Model
+- DNS (Domain Name System)
+- HTTP/HTTPS & Web Protocols
+- Load Balancing
+- Firewalls & Security Groups
+- VPN & Tunneling
+- Proxies & Reverse Proxies
+- CDN (Content Delivery Network)
+- Docker Networking
+- Kubernetes Networking
+
+---
 
 https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
 
