@@ -72,6 +72,14 @@ Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenti
 
 ---
 
+✅ How do you integrate Git Vault with Jenkins?
+
+---
+
+✅ Your Jenkins Pipeline is slower . How will u make it faster ?
+
+---
+
 ✅ Jenkins Version ? 
 
 LTS (Long-Term Support)	2.541.1	Stable version recommended for production
@@ -85,6 +93,10 @@ LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 ✅ what different Jenkins Plugin were u using ? 
 
 - Sonarqube , Vault ,
+
+---
+
+✅ How will u tag your production releases & make sure manual approvals are required before production pipeline runs ? 
 
 ---
 
@@ -290,211 +302,70 @@ TTL policies
 
 Kubernetes garbage collection
 
-
-
-🔹 Jenkins + Kubernetes (FAANG Favorite)
-25. How does Jenkins Kubernetes plugin work?
-
-
-Controller requests pod
-
-
-Pod spins up as agent
-
-
-Executes job
-
-
-Pod destroyed
-
-
-
-26. Benefits of Jenkins on Kubernetes?
-
-
+Benefits of Jenkins on Kubernetes?
 Auto-scaling
-
-
 Ephemeral agents
-
-
 Cost efficiency
-
-
 Isolation
 
 
+*************
 
-27. How do you persist workspace in Kubernetes?
-
-
-PVC
-
-
-External artifact storage (S3)
-
-
-Avoid local storage
-
-
-
-28. What happens if Kubernetes pod dies?
-
-
-Build fails
-
-
-Restart requires rerun
-
-
-Use checkpoints carefully
-
-
-
-29. How do you limit resource usage per build?
-
-
-Pod resource limits
-
-
-Executor limits
-
-
-Namespace quotas
-
-
-
-🔹 Performance & Reliability
-30. Jenkins is slow—how do you debug?
-
-
+Jenkins is slow—how do you debug?
 Thread dumps
-
-
 JVM heap analysis
-
-
 Plugin audit
-
-
 Disk I/O check
 
-
-
-31. How do you tune Jenkins JVM?
-
-
+How do you tune Jenkins JVM?
 Increase heap
-
-
 GC tuning
-
-
 Disable unnecessary plugins
 
-
-
-32. Why are too many plugins dangerous?
-
-
+Why are too many plugins dangerous?
 Memory leaks
-
-
 Compatibility issues
-
-
 Security vulnerabilities
 
-
-
-33. How do you handle flaky tests?
-
-
+How do you handle flaky tests?
 Retry logic
-
-
 Quarantine tests
-
-
 Test categorization
 
-
-
-34. How do you implement build timeouts?
+How do you implement build timeouts?
 options { timeout(time: 30, unit: 'MINUTES') }
 
-
-🔹 Disaster Recovery & Maintenance
-35. What should be backed up in Jenkins?
-
-
+What should be backed up in Jenkins?
 $JENKINS_HOME
-
-
 Job configs
-
-
 Credentials
-
-
 Plugins list
 
-
-
-36. Jenkins HA—how do you design it?
-
-
+Jenkins HA—how do you design it?
 Stateless controller
-
-
 External DB/storage
-
-
 Backup + fast restore
-❗ Jenkins is not truly HA
 
-
-
-37. Safe Jenkins upgrade strategy?
-
-
+Safe Jenkins upgrade strategy?
 Backup first
-
-
 Upgrade plugins gradually
-
-
 Test in staging
-
-
 Use LTS
 
-
-
-38. Jenkins data corruption—what now?
-
-
+Jenkins data corruption—what now?
 Restore backup
-
-
 Verify filesystem
-
-
 Audit plugins
-
-
 
 How do you implement Blue-Green deployment?
 Two environments
 Switch traffic via LB
 Rollback by traffic flip
 
-
 Canary deployment using Jenkins?
 Gradual rollout
 Metrics monitoring
 Auto rollback
-
 
 How do you handle approvals in Jenkins?
 input step
