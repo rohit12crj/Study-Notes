@@ -154,6 +154,9 @@ How will u rollback a deployment ?
 
 ---
 
+Jenkins blue green deployment ? --> https://www.youtube.com/watch?v=tstBG7RC9as
+
+---
 What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
 Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
