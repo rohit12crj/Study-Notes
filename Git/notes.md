@@ -21,11 +21,30 @@
 
 ---
 
-git lfs
+✅ what is git lfs ?
+- Git LFS (Large File Storage) is an extension of Git that allows you to store large files (videos, binaries, datasets, models, etc.) efficiently.
+- Instead of storing large files directly in the Git repository, Git LFS stores them in a separate storage and keeps only a pointer file in the Git repo.
 
-git merging techniques & when to use which
+---
 
-is git dvcs ?
+✅ How will u implement Git Lfs?
+- Install Git LFS --> git lfs install
+- Track Large File Types --> git lfs track "*.zip" --> This creates a .gitattributes file.
+- Add and Commit Files 
+<img width="488" height="106" alt="image" src="https://github.com/user-attachments/assets/2312f4b4-ad30-4acd-b25c-45b1a511d14b" />
+- Push to Remote Repository --> git push origin main
+
+---
+
+✅ What problem happens if Git LFS is not used for large files?
+- Repository becomes extremely large
+- Slow cloning and pulling
+- Poor Git performance
+- 
+---
+
+✅ git merging techniques & when to use which ?
+
 
 Explain Git workflow ? --> Working Directory → Staging Area → Local Repository → Remote Repository
 
@@ -53,7 +72,7 @@ How do you recover deleted branch?
 
 What is git bisect?
 
-What are hooks in Git?
+What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
 Explain shallow clone.
 
