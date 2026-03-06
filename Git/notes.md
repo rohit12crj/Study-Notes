@@ -104,6 +104,18 @@ These are two ways Git manages storage efficiency and performance. Git periodica
 
 ---
 
+✅ git garbage collection ?
+
+---
+
+✅ Why doesn’t Git delete unreachable commits immediately?
+
+Because Git keeps them temporarily to allow recovery using git reflog, preventing accidental data loss.
+
+---
+
+rebase leftovers
+
 Difference between git pull and git fetch?
 
 suppose your git is 5 gb ? i want to only clone master branch for quick cloning ? how can i do it ?
@@ -152,7 +164,7 @@ What is sparse checkout?
 
 Explain submodules vs subtree.
 
-What is orphan branch?
+What is orphan branch & orphan commits ?
 
 How to sign commits?
 
