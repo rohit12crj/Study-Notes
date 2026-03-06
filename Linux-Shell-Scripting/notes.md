@@ -169,7 +169,7 @@ What are the three kube-proxy modes?
 ---
 
 explain Kubernetes networking from Pod → Service → kube-proxy → CNI → Node → Internet
--In Kubernetes networking, a Pod sends traffic to a Service which provides a stable virtual IP. kube-proxy creates iptables rules that perform DNAT to redirect traffic to backend Pods. The CNI plugin manages Pod networking and routing across nodes. When traffic leaves the cluster, the node performs SNAT so external systems can respond.
+- In Kubernetes networking, a Pod sends traffic to a Service which provides a stable virtual IP. kube-proxy creates iptables rules that perform DNAT to redirect traffic to backend Pods. The CNI plugin manages Pod networking and routing across nodes. When traffic leaves the cluster, the node performs SNAT so external systems can respond.
 
 <img width="398" height="211" alt="image" src="https://github.com/user-attachments/assets/cafa0316-19a4-4a04-b695-51c18b8faac5" />
 
