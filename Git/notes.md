@@ -80,7 +80,24 @@
 
 ---
 
-What is HEAD in Git? also explain detached head 
+What is HEAD in Git? explain detached HEAD ? When Detached HEAD is Useful ?
+
+What files exist inside .git & .gitignore directory ?
+
+explain ORIG_HEAD, FETCH_HEAD and MERGE_HEAD ?
+
+---
+
+✅ Explain Git internal architecture ?
+
+Git internally stores data as objects identified by SHA hashes. The main object types are:
+- Blob → stores file content
+- Tree → represents directory structure
+- Commit → snapshot of repository referencing tree objects
+- Tag → named reference pointing to a specific commit
+All objects are stored in the .git/objects database.
+
+---
 
 Difference between git pull and git fetch?
 
@@ -136,9 +153,9 @@ How to sign commits?
 
 What is rebase interactive?
 
-How do you prevent secret commits?
+How do you prevent secret commits? --> use checkov in pipeline
 
 What is git blame?
 
-How to enforce branch protection?
+How to enforce branch protection?  -> use codeowners file & take manual approvals
 
