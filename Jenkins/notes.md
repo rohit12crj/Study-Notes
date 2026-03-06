@@ -146,7 +146,7 @@ How do you share artifacts across pipelines?
 Artifact repository (Nexus, Artifactory, S3)
 Versioned artifacts
 
-What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline
+What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
 Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
 
