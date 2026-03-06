@@ -146,6 +146,8 @@ How do you share artifacts across pipelines?
 Artifact repository (Nexus, Artifactory, S3)
 Versioned artifacts
 
+How will u rollback a deployment ?
+
 What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
 Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
