@@ -38,7 +38,12 @@ The application is built first to produce the final runnable artifact (such as a
 
 - SAST --> Static Application Security Testing --> Scans Source Code ( SQL Injection , Hardcoded secrets , Code Smells , Code Coverage ) --> Sonarqube
 - SCA --> Software Composition Analysis --> Scans Dependencies / libraries ( Docker Images , OS packages , Node modules , Python libraries ) --> Trivy , Github Dependabot 
-- DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP
+- DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP , invicti
+
+- Someone pushed secrets to gihub code --> uses tools like trufflehog & Github Secret Scanning Alerts
+- need to scan docker image before pushing to AWS ECR --> Use Trivy
+- scan image already pushed to AWS ECR --> Use AWS ECR advanced image scanner
+- policy as a code in pipeline --> To stop pipleine if public s3 bucket is being cretaed using terraform --> Checkov
   
 ---
 
@@ -68,7 +73,8 @@ Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and 
 
 ✅ How do you integrate Terraform Vault with Jenkins?
 
-Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenticates to Vault using AppRole
+- Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenticates to Vault using AppRole
+- https://youtu.be/sIkRK33AY50?si=E_Q0ql3KqvUXIp2y --> Abhishek Video
 
 ---
 
