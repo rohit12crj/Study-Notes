@@ -6,7 +6,7 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 
-- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing ( Unit Testing means testing individual units of code like functions, methods, classes ) --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
+- ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> Unit Testing ( Unit Testing means testing individual units of code like functions, methods, classes ) --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
 
@@ -62,31 +62,45 @@ Code Coverage measures the percentage of application code executed by automated 
 
 ✅ How do you integrate SonarQube with Jenkins?
 
-Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault with Jenkins.
+Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault to store the secrets .
 
 ---
 
-share artifacts between different jobs and different stages in same job ?
+✅ How do you integrate Terraform Vault with Jenkins?
 
-What are Jenkins jobs?
+Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenticates to Vault using AppRole
 
-What is Jenkins Pipeline?
+---
 
-What is a Jenkinsfile?
+✅ Jenkins Version ? 
 
-Declarative vs Scripted Pipeline
+LTS (Long-Term Support)	2.541.1	Stable version recommended for production
+
+---
+
+✅ How will u upgrade Jenkins Controller to new version ? 
+
+---
+
+✅ what different Jenkins Plugin were u using ? 
+
+- Sonarqube , Vault ,
+
+---
+
+share artifacts between different jobs and different stages in same job in jenkins ?
+
+What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline
+
+Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
 
 What is an Agent in Jenkins?
 
 What is a Node?
 
-What are Jenkins plugins? along with which plugins were u using in your project ? & how did u setup those plugins ?
-
 How does Jenkins store credentials? 
 
 How do you secure Jenkins?
-
-What is Multibranch Pipeline?
 
 What is Jenkins Shared Library?
 
@@ -112,8 +126,6 @@ Jenkins Backup & Restore
 
 Job stuck in queue – reasons?
 
-How do you upgrade Jenkins safely?
-
 Jenkins push or pull? → Pull
 Jenkins config file? → config.xml
 Language used? → Java
@@ -121,160 +133,62 @@ Jenkins pipeline language? → Groovy
 Default port? → 8080
 
 Explain Jenkins architecture in production
-Controller–Agent architecture
-
-
 Controller: scheduling, UI, pipeline orchestration
-
-
 Agents: execute jobs
-
-
 Communication via JNLP / SSH
-
-
 Controller should be stateless as much as possible
 
-
-
-2. Why should Jenkins controller not run builds?
-
-
+Why should Jenkins controller not run builds?
 Single point of failure
-
-
 Resource contention
+Security risk --> Controller should only orchestrate
 
-
-Security risk
-👉 Controller should only orchestrate
-
-
-
-3. How does Jenkins scale horizontally?
-
-
+How does Jenkins scale horizontally?
 Multiple agents
-
-
 Dynamic agents (Docker / Kubernetes)
-
-
 Parallel stages
-
-
 Multibranch pipelines
 
 
-
-4. Difference between Node and Executor?
-
-
+Difference between Node and Executor?
 Node: machine running Jenkins agent
-
-
 Executor: parallel slot on a node
 
-
-
-5. What happens if an agent goes down mid-build?
-
-
+What happens if an agent goes down mid-build?
 Build fails
-
-
 Workspace lost (unless externalized)
-
-
 Jenkins retries only if pipeline supports it
 
-
-
-🔹 Pipelines & Groovy
-6. Declarative vs Scripted pipeline—when to use scripted?
+Declarative vs Scripted pipeline—when to use scripted?
 Use Scripted when:
-
-
 Complex logic
-
-
 Dynamic stages
-
-
 Advanced Groovy control
 
-
-
-7. How do you pass data between stages?
-
-
+How do you pass data between stages?
 Environment variables
-
-
 Files in workspace
-
-
 stash / unstash
 
-
-
-8. How does stash/unstash work internally?
-
-
+How does stash/unstash work internally?
 Compresses files
-
-
 Stores on controller
+Restores on agent --> Not for large artifacts
 
-
-Restores on agent
-⚠ Not for large artifacts
-
-
-
-9. How do you make pipelines reusable?
-
-
+How do you make pipelines reusable?
 Shared Libraries
-
-
 Parameterized pipelines
-
-
 Template Jenkinsfiles
 
-
-
-10. How do you version Jenkins pipelines?
-
-
+How do you version Jenkins pipelines?
 Jenkinsfile in Git
-
-
 Tagged releases
-
-
 Shared library versioning
 
-
-
-🔹 Security (VERY IMPORTANT)
 11. How does Jenkins store secrets?
-
-
-Encrypted on disk (credentials.xml)
-
-
-Master key + secret key
-
-
 Can integrate with Vault
 
-
-
-12. Why is Jenkins Script Console dangerous?
-
-
+Why is Jenkins Script Console dangerous?
 Executes arbitrary Groovy on controller
 
 
@@ -299,28 +213,12 @@ Rotate leaked secrets immediately
 
 
 
-14. How do you integrate Jenkins with Vault?
-
-
-Vault plugin
-
-
-Dynamic secret injection
-
-
-No secrets stored in Jenkins
 
 
 
-15. How do you implement RBAC in Jenkins?
-
-
+How do you implement RBAC in Jenkins?
 Role Strategy Plugin
-
-
 Folder-based permissions
-
-
 LDAP / SSO integration
 
 
@@ -338,14 +236,9 @@ Webhooks
 SCM polling (not recommended)
 
 
-
-17. Jenkins pull or push model?
+Jenkins pull or push model?
 Pull-based
-
-
 Jenkins pulls code
-
-
 Triggered by webhook events
 
 
