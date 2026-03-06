@@ -90,6 +90,10 @@ LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 
 share artifacts between different jobs and different stages in same job in jenkins ?
 
+How do you share artifacts across pipelines?
+Artifact repository (Nexus, Artifactory, S3)
+Versioned artifacts
+
 What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline
 
 Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
@@ -191,48 +195,20 @@ Can integrate with Vault
 Why is Jenkins Script Console dangerous?
 Executes arbitrary Groovy on controller
 
-
-Full system access
-👉 Restrict to admins only
-
-
-
-13. How do you prevent secret leakage in logs?
-
-
+How do you prevent secret leakage in logs?
 Mask passwords
-
-
 Use credentials binding
-
-
 Disable set -x
-
-
 Rotate leaked secrets immediately
-
-
-
-
-
 
 How do you implement RBAC in Jenkins?
 Role Strategy Plugin
 Folder-based permissions
 LDAP / SSO integration
 
-
-
-🔹 Jenkins + Git
-16. How does Multibranch Pipeline detect changes?
-
-
+How does Multibranch Pipeline detect changes?
 Periodic indexing
-
-
 Webhooks
-
-
 SCM polling (not recommended)
 
 
@@ -241,48 +217,22 @@ Pull-based
 Jenkins pulls code
 Triggered by webhook events
 
-
-
-18. How do you secure Jenkins webhooks?
-
-
+How do you secure Jenkins webhooks?
 GitHub secret token
-
-
 IP whitelisting
-
-
 HTTPS only
 
-
-
-19. How do you handle mono-repo builds?
-
-
+How do you handle mono-repo builds?
 Path-based conditions
-
-
 Selective pipelines
-
-
 Parallel builds per service
 
-
-
-20. How do you avoid rebuilding unchanged code?
-
-
+How do you avoid rebuilding unchanged code?
 ChangeSet detection
-
-
 Conditional stages
-
-
 Cache dependencies
 
 
-
-🔹 Jenkins + Docker
 21. Jenkins inside Docker—good or bad?
 ✅ Good for:
 
@@ -534,184 +484,76 @@ Audit plugins
 
 
 
-🔹 Advanced Pipelines & Deployment
-39. How do you implement Blue-Green deployment?
-
-
+How do you implement Blue-Green deployment?
 Two environments
-
-
 Switch traffic via LB
-
-
 Rollback by traffic flip
 
 
-
-40. Canary deployment using Jenkins?
-
-
+Canary deployment using Jenkins?
 Gradual rollout
-
-
 Metrics monitoring
-
-
 Auto rollback
 
 
-
-41. How do you handle approvals in Jenkins?
-
-
+How do you handle approvals in Jenkins?
 input step
-
-
 RBAC
-
-
 Timeout on approvals
 
-
-
-42. How do you trigger downstream pipelines?
-
-
+How do you trigger downstream pipelines?
 build step
-
-
 Events
-
-
 Artifacts as input
 
-
-
-43. How do you share artifacts across pipelines?
-
-
-Artifact repository (Nexus, Artifactory, S3)
-
-
-Versioned artifacts
-
-
-
-🔹 Observability & Monitoring
-44. How do you monitor Jenkins?
-
-
+How do you monitor Jenkins?
 Prometheus metrics
-
-
 JVM metrics
-
-
 Disk usage
-
-
 Build queue length
 
-
-
-45. Key Jenkins metrics to watch?
-
-
+Key Jenkins metrics to watch?
 Queue size
-
-
 Build duration
-
-
 Agent utilization
-
-
 Failure rate
 
-
-
-46. Jenkins logging best practices?
-
-
+Jenkins logging best practices?
 Centralized logs
-
-
 Log rotation
-
-
 Avoid sensitive data
 
-
-
-🔹 Real FAANG Scenarios
-47. Pipeline stuck in queue—why?
-
+Pipeline stuck in queue—why?
 
 No matching agents
-
-
 Label mismatch
-
-
 Resource exhaustion
 
-
-
-48. Production secret leaked via Jenkins—actions?
-
-
+Production secret leaked via Jenkins—actions?
 Rotate secret immediately
-
-
 Audit logs
-
-
 Restrict permissions
 
-
-Post-mortem
-
+✅ when jenkins & when github ?
 
 
-49. Jenkins vs GitHub Actions—when Jenkins?
+✅ If you had to redesign Jenkins today?
 
+Stateless controller --> HA Architectecture --> Configure Jenkins Backup --> RBAC Jenkins Controller Security --> agents running in k8s or in ECS --> Terraform Vault Integration 
 
-Complex workflows
+---
 
+✅ If the Cl stage succeeds but the CD stage fails in Jenkins, how would you debug and resolve it? --> check pipeline logs 
 
-Self-hosted infra
+---
 
+✅ Which tools have you used to build a complete CI/CD pipeline? already answeres in ci & cd workflow
 
-Custom agents
+---
 
+✅ If you encounter a secret-related error in your application or pipeline, how would you troubleshoot it? --> check pipeline logs
 
-Enterprise control
+---
 
-
-
-50. If you had to redesign Jenkins today?
-
-
-Stateless controller
-
-
-Event-driven pipelines
-
-
-Native secrets
-
-
-Immutable infrastructure
-
-
-Cloud-native by default
-
-
-If the Cl stage succeeds but the CD stage fails in Jenkins, how would you debug and resolve it?
-
-Which tools have you used to build a complete CI/CD pipeline?
-
-If you encounter a secret-related error in your application or pipeline, how would you troubleshoot it?
-
-How would you design a CI/CD pipeline for 50+ microservices with zero downtime deployment? 
+✅ How would you design a CI/CD pipeline for 50+ microservices with zero downtime deployment? 
 
