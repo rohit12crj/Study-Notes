@@ -116,3 +116,22 @@ What is the difference between netstat and ss?
 - netstat is older and deprecated
 
 ---
+
+explain the full Linux packet flow (PREROUTING → INPUT → FORWARD → OUTPUT → POSTROUTING) in Netfilter framework ?
+
+---
+
+when does NAT happens in Linux
+
+<img width="491" height="107" alt="image" src="https://github.com/user-attachments/assets/b1665bdc-1f98-4b47-9c6c-101b4ef4d4e5" />
+
+---
+
+Why does Docker need MASQUERADE?
+- Containers have private IP addresses, so MASQUERADE performs SNAT to replace container IP with host IP for outgoing traffic.
+
+---
+
+Explain Docker networking packet flow using iptables
+- Docker networking uses the Linux bridge (docker0) and iptables NAT rules to route traffic between the host and containers. When a port is mapped (e.g., -p 8080:80), Docker creates a DNAT rule in the PREROUTING chain to redirect traffic to the container IP, and a MASQUERADE rule in POSTROUTING to allow container responses to reach external clients.
+
