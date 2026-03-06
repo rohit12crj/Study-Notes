@@ -16,40 +16,55 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 The application is built first to produce the final runnable artifact (such as a JAR, binary, or compiled bundle). The Docker image then packages this artifact along with the runtime environment. This keeps Docker images smaller, speeds up builds, enables security scans earlier, and separates application build from container packaging. Docker images should package artifacts, not compile source code
 
+---
+
 ✅ Tool used for building applications
 
 - Java - Maven
 - Python - pip
 - Node - npm
 
+---
+
 ✅ Tool used for Unit Testing
 
 - Java - Junit
 - Python - PyTest
 - Node - Jest / Mocha
-- 
+
+---
+
 ✅ Tool used for security testing
 
 - SAST --> Static Application Security Testing --> Scans Source Code ( SQL Injection , Hardcoded secrets , Code Smells , Code Coverage ) --> Sonarqube
 - SCA --> Software Composition Analysis --> Scans Dependencies / libraries ( Docker Images , OS packages , Node modules , Python libraries ) --> Trivy , Github Dependabot 
 - DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP
-
+  
+---
 
 ✅ What are SonarQube Quality Gates?
 
 Quality Gates are a set of conditions defined in SonarQube that determine whether the code passes or fails quality checks based on metrics like bugs, vulnerabilities, code coverage, and duplication.
 
+---
+
 ✅ What are Code Smells?
 
 Code Smells are indicators of poor coding practices such as duplicated code, long methods, or complex logic that make the code difficult to maintain.
+
+---
 
 ✅ What is Code Coverage?
 
 Code Coverage measures the percentage of application code executed by automated tests. in our project we used min 80% needs to pass
 
+---
+
 ✅ How do you integrate SonarQube with Jenkins?
 
 Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault with Jenkins.
+
+---
 
 share artifacts between different jobs and different stages in same job ?
 
