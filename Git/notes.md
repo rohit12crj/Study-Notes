@@ -32,6 +32,7 @@
 - Track Large File Types --> git lfs track "*.zip" --> This creates a .gitattributes file.
 - Add and Commit Files 
 <img width="488" height="106" alt="image" src="https://github.com/user-attachments/assets/2312f4b4-ad30-4acd-b25c-45b1a511d14b" />
+
 - Push to Remote Repository --> git push origin main
 
 ---
@@ -40,7 +41,7 @@
 - Repository becomes extremely large
 - Slow cloning and pulling
 - Poor Git performance
-- 
+
 ---
 
 ✅ git merging techniques & when to use which ?
