@@ -6,10 +6,31 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 
-- ci end goal is docker image creation , cd end goal is to create containers 
+- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing --> SAST Scan --> SCA Scan --> Docker Image Creation --> Image Vulnerability Scanning --> Push Docker Image to ECR Repo
+- cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
-- ci workflow ( git push --> git repo checkout --> install dependencies --> dockerfile build --> )
-- cd worflow ( will run only when ci completes without fail & deploys to eks )
+
+✅ Why build application before creating Docker image?
+
+The application is built first to produce the final runnable artifact (such as a JAR, binary, or compiled bundle). The Docker image then packages this artifact along with the runtime environment. This keeps Docker images smaller, speeds up builds, enables security scans earlier, and separates application build from container packaging. Docker images should package artifacts, not compile source code
+
+✅ Tool used for building applications
+
+- Java - Maven
+- Python - pip
+- Node - npm
+
+✅ Tool used for Unit Testing
+
+- Java - Junit
+- Python - PyTest
+- Node - Jest / Mocha
+- 
+✅ Tool used for security testing
+
+- SAST - Sonarqube
+- SCA - Trivy
+- DAST - OWASP ZAP
 
 how will do unit testing , sast, dca , dast , image vulnerability scans ? explain with respect to sonarqube also ?
 
