@@ -72,7 +72,7 @@ Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenti
 
 ---
 
-✅ How do you integrate Git Vault with Jenkins?
+✅ How do you integrate Git with Jenkins?
 
 ---
 
@@ -97,6 +97,10 @@ LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 ---
 
 ✅ How will u tag your production releases & make sure manual approvals are required before production pipeline runs ? 
+
+---
+
+✅ How will u do RBAC in Jenkins . Which plugin will u be using ? 
 
 ---
 
@@ -165,7 +169,6 @@ Dynamic agents (Docker / Kubernetes)
 Parallel stages
 Multibranch pipelines
 
-
 Difference between Node and Executor?
 Node: machine running Jenkins agent
 Executor: parallel slot on a node
@@ -200,9 +203,6 @@ How do you version Jenkins pipelines?
 Jenkinsfile in Git
 Tagged releases
 Shared library versioning
-
-11. How does Jenkins store secrets?
-Can integrate with Vault
 
 Why is Jenkins Script Console dangerous?
 Executes arbitrary Groovy on controller
@@ -244,72 +244,19 @@ ChangeSet detection
 Conditional stages
 Cache dependencies
 
-
-21. Jenkins inside Docker—good or bad?
+Jenkins inside Docker --> good or bad?
 ✅ Good for:
-
-
 Easy setup
-
-
 Reproducibility
-
-
 ❌ Bad for:
-
-
 Persistent storage
-
-
 Docker-in-Docker complexity
-
-
-
-22. Docker-in-Docker vs Docker socket mount?
-
-
-DinD: isolated, slower
-
-
-Socket mount: faster, security risk
-
-
-
-23. How do you build Docker images securely?
-
-
-Non-root user
-
-
-Multi-stage builds
-
-
-Scan images
-
-
-Minimal base images
-
-
-
-24. How do you clean up Docker resources?
-
-
-Post-build cleanup
-
-
-TTL policies
-
-
-Kubernetes garbage collection
 
 Benefits of Jenkins on Kubernetes?
 Auto-scaling
 Ephemeral agents
 Cost efficiency
 Isolation
-
-
-*************
 
 Jenkins is slow—how do you debug?
 Thread dumps
