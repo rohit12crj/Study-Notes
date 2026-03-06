@@ -151,4 +151,20 @@ You need live-patching of Docker host kernel without downtime. How do you achiev
 
 How do you enforce policy-as-code for Docker security?
 
+Docker-in-Docker vs Docker socket mount?
+DinD: isolated, slower
+Socket mount: faster, security risk
+
+How do you build Docker images securely?
+Non-root user
+Multi-stage builds
+Scan images
+Minimal base images
+
+How do you clean up Docker resources?
+Post-build cleanup
+TTL policies
+Kubernetes garbage collection
+
+
 
