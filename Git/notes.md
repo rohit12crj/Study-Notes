@@ -90,12 +90,17 @@ explain ORIG_HEAD, FETCH_HEAD and MERGE_HEAD ?
 
 ✅ Explain Git internal architecture ?
 
-Git internally stores data as objects identified by SHA hashes. The main object types are:
+Git internally stores data as objects identified by SHA hashes. All objects are stored in the .git/objects database. The main object types are:
 - Blob → stores file content
 - Tree → represents directory structure
 - Commit → snapshot of repository referencing tree objects
 - Tag → named reference pointing to a specific commit
-All objects are stored in the .git/objects database.
+
+In Git, all repository data is stored in the .git/objects directory. Git stores this data in two formats:
+- Loose objects are individual Git objects stored separately in the .git/objects directory when they are first created.
+- Packfiles are compressed collections of many Git objects stored together to optimize storage and improve performance.
+
+These are two ways Git manages storage efficiency and performance. Git periodically converts loose objects into packfiles using garbage collection (git gc).
 
 ---
 
