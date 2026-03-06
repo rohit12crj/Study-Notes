@@ -1,9 +1,23 @@
-Git ( Study Only Day 9 to 11 )
-=================================
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvIc1TjTwopNSjRJkzES2ZXk
-https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvIc1TjTwopNSjRJkzES2ZXk --> Study Only Day 9 to 11 --> Abhishek
 
-git vs github
+✅ https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions --> Abhishek
+
+✅ git vs github --> Git is Distributed Version Control System & GIthub is Cloud Hosting Platform for Git repo
+
+---
+
+✅ Distributed Version Control System ( DVCS ) vs Centralised Version Control System ( CVCS )
+
+| Feature              | **DVCS**                                              | **CVCS**                                         |
+| -------------------- | ----------------------------------------------------- | ------------------------------------------------ |
+| Repository           | Every developer has a **full copy of the repository** | Only **one central repository**                  |
+| Internet Requirement | Can work **offline**                                  | Mostly requires **connection to central server** |
+| Speed                | Faster (local operations)                             | Slower (needs server communication)              |
+| Backup               | Multiple backups (each developer copy)                | Single point of failure                          |
+| Collaboration        | Developers push/pull changes                          | Developers commit directly to central repo       |
+| Example Tools        | Git, Mercurial                                        | Apache Subversion, CVS                           |
+
+---
 
 git lfs
 
