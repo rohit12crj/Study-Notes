@@ -691,6 +691,23 @@ monitor metrics validate recent
 Check logs deployments RCA. isolate root cause fix document
 
 
+How do you persist workspace in Kubernetes?
+PVC
+External artifact storage (S3)
+Avoid local storage
+
+What happens if Kubernetes pod dies?
+Build fails
+Restart requires rerun
+Use checkpoints carefully
+
+How do you limit resource usage per build?
+Pod resource limits
+Executor limits
+Namespace quotas
+
+
+
 
 
 
