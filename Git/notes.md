@@ -62,7 +62,13 @@
 
 ---
 
+✅ if 2 developers are working on 2 different files there won't be any git conflict . if dev 1 pushes code , & after that dev 2 pushes code , dev 2 would need to do git pull to incorporate changes of dev 1 . Git conflict happens only if there are editing the same part of a file . Git conflicts occur only when two developers modify the same lines of a file. If they modify different sections of the file, Git can automatically merge the changes without conflict.
+
+---
+
 ✅ git merging techniques & when to use which ?
+
+---
 
 What is HEAD in Git? also explain detached head 
 
