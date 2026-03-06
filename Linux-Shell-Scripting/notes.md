@@ -174,3 +174,5 @@ explain Kubernetes networking from Pod → Service → kube-proxy → CNI → No
 <img width="398" height="211" alt="image" src="https://github.com/user-attachments/assets/cafa0316-19a4-4a04-b695-51c18b8faac5" />
 
 ---
+
+4 types of Kubernetes Services (ClusterIP, NodePort, LoadBalancer, Headless)
