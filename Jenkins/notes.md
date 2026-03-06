@@ -59,6 +59,18 @@ Code Smells are indicators of poor coding practices such as duplicated code, lon
 
 ---
 
+✅ What is jenkins shared library ?
+
+https://youtu.be/BLQ0PDjgN8w?si=acykbfsz8xnSRmIB --> Abhishek
+
+---
+
+✅ How will u take jenkins backup ?
+
+https://youtu.be/5Tb-AOUFuKQ?si=cyR2-GLsYSS30g-J
+
+---
+
 ✅ What is Code Coverage?
 
 Code Coverage measures the percentage of application code executed by automated tests. in our project we used min 80% needs to pass
