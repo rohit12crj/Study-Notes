@@ -108,6 +108,9 @@ LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 
 ✅ How will u do RBAC in Jenkins . Which plugin will u be using ? 
 
+- Use the Role-Based Authorization Strategy plugin.
+- Define roles like Admin, Developer, and Viewer, and assign permissions for jobs, folders, and builds accordingly.
+
 ---
 
 share artifacts between different jobs and different stages in same job in jenkins ?
