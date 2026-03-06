@@ -6,7 +6,7 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 
-- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing --> SAST Scan --> SCA Scan --> Docker Image Creation --> Image Vulnerability Scanning --> Push Docker Image to ECR Repo
+- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
 
@@ -28,11 +28,26 @@ The application is built first to produce the final runnable artifact (such as a
 - 
 ✅ Tool used for security testing
 
-- SAST - Sonarqube
-- SCA - Trivy
-- DAST - OWASP ZAP
+- SAST --> Static Application Security Testing --> Scans Source Code ( SQL Injection , Hardcoded secrets , Code Smells , Code Coverage ) --> Sonarqube
+- SCA --> Software Composition Analysis --> Scans Dependencies / libraries ( Docker Images , OS packages , Node modules , Python libraries ) --> Trivy , Github Dependabot 
+- DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP
 
-how will do unit testing , sast, dca , dast , image vulnerability scans ? explain with respect to sonarqube also ?
+
+✅ What are SonarQube Quality Gates?
+
+Quality Gates are a set of conditions defined in SonarQube that determine whether the code passes or fails quality checks based on metrics like bugs, vulnerabilities, code coverage, and duplication.
+
+✅ What are Code Smells?
+
+Code Smells are indicators of poor coding practices such as duplicated code, long methods, or complex logic that make the code difficult to maintain.
+
+✅ What is Code Coverage?
+
+Code Coverage measures the percentage of application code executed by automated tests. in our project we used min 80% needs to pass
+
+✅ How do you integrate SonarQube with Jenkins?
+
+Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault with Jenkins.
 
 share artifacts between different jobs and different stages in same job ?
 
