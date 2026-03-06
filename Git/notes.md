@@ -24,6 +24,8 @@
 ✅ what is git lfs ?
 - Git LFS (Large File Storage) is an extension of Git that allows you to store large files (videos, binaries, datasets, models, etc.) efficiently.
 - Instead of storing large files directly in the Git repository, Git LFS stores them in a separate storage and keeps only a pointer file in the Git repo.
+- Git LFS stores large files in a separate LFS storage server managed by the Git hosting platform. Platforms like GitHub or GitLab usually store the actual objects in backend object storage such as Amazon S3.
+- If someone clones a repo without Git LFS installed they will only download the pointer files instead of the actual large files, and Git will show an error suggesting installing Git LFS.
 
 ---
 
@@ -44,10 +46,21 @@
 
 ---
 
+✅ Explain Git workflow ? --> Working Directory → Staging Area → Local Repository → Remote Repository
+
+- Working Directory → Where you modify files --> Working directory contains below types of files
+| File State | Meaning                         |
+| ---------- | ------------------------------- |
+| Untracked  | Git doesn't know about the file |
+| Modified   | File changed but not staged     |
+| Deleted    | File removed                    |
+- Staging Area → Where you prepare files for commit --> The Staging Area is an intermediate area where you select which changes will go into the next commit --> git add app.py
+- Local Repository -→ Where commits are stored locally --> git commit -m "files added"
+- Remote Repository -→ Shared repo on platforms like GitHub --> git push
+
+---
+
 ✅ git merging techniques & when to use which ?
-
-
-Explain Git workflow ? --> Working Directory → Staging Area → Local Repository → Remote Repository
 
 What is HEAD in Git? also explain detached head 
 
