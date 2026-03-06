@@ -22,6 +22,7 @@
 
 ✅ How do you implement approval before production deployment? explain with respect to environments , required approvers and wait timers 
 
+how will u do blue green deployment using terraform in github action pipeline ? --> use terraform + codedeploy
 Secrets leaked in logs. What will you do?
 
 How do you pass data between jobs? explain artifacts and outputs
