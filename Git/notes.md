@@ -62,11 +62,21 @@
 
 ---
 
-✅ if 2 developers are working on 2 different files there won't be any git conflict . if dev 1 pushes code , & after that dev 2 pushes code , dev 2 would need to do git pull to incorporate changes of dev 1 . Git conflict happens only if there are editing the same part of a file . Git conflicts occur only when two developers modify the same lines of a file. If they modify different sections of the file, Git can automatically merge the changes without conflict.
+✅ if 2 developers are working on 2 different files there won't be any git conflict . if dev 1 pushes code , & after that dev 2 pushes code , dev 2 would need to do git pull to incorporate changes of dev 1 . Git conflicts occur only when two developers modify the same lines of a file. If they modify different sections of the file, Git can automatically merge the changes without conflict.
 
 ---
 
 ✅ git merging techniques & when to use which ?
+
+- Fast-Forward Merge
+
+<img width="513" height="414" alt="image" src="https://github.com/user-attachments/assets/2068c668-2636-4de3-9538-e2ab58c537e7" />
+
+<img width="346" height="237" alt="image" src="https://github.com/user-attachments/assets/54e97a68-3e08-44b4-8e64-7afa05065788" />
+
+- 3-Way Merge
+- Squash Merge
+- Rebase
 
 ---
 
@@ -84,7 +94,7 @@ What is git stash?
 
 How do you undo the last commit?  --> soft & hard reset
 
-git branching startegy 
+Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
 
 What is git reflog?
 
