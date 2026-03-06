@@ -97,4 +97,22 @@ write a script to print only errors from a remote log file --> curl pipe & grep
 
 when should u use python scripting vs linux scripting ? ---> Shell scripting is best for quick OS automation, while Python is preferred for complex, scalable, and maintainable automation involving APIs, data, or cloud services
 
-iptables
+---
+
+iptables vs nftables ?
+
+| Feature         | iptables                   | nftables            |
+| --------------- | -------------------------- | ------------------- |
+| Year Introduced | 1998 ( Legacy )            | 2014 ( Modern       |
+| IPv4 / IPv6     | Separate tools             | Unified             |
+| Performance     | Slower for large rule sets | Faster              |
+| Syntax          | Complex                    | Simpler             |
+| Data structures | Basic lists                | Efficient sets/maps |
+
+---
+
+What is the difference between netstat and ss?
+- ss is faster and modern
+- netstat is older and deprecated
+
+---
