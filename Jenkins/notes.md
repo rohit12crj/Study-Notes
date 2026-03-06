@@ -92,6 +92,18 @@ LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 
 ---
 
+✅ are docker & k8s plugin necessary with jenkins ? 
+
+no , u can just install docker inside jenkins agent and run the docker build commands . for eks , u can ekscli to connect with k8s cluster
+
+---
+
+✅ were u using iam keys or roles to connect with aws  ? 
+
+IAM roles are preferred because they provide temporary, automatically rotated credentials without hardcoding secrets, improving security and manageability. but first we need to configure oidc provider in iam , & add the github repo url in trust relationships of the iam role , so that only the github repo urls can invoke the pipeline
+
+---
+
 ✅ How will u upgrade Jenkins Controller to new version ? 
 
 ---
