@@ -83,7 +83,10 @@ Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and 
 ---
 
 ✅ Your Jenkins Pipeline is slower . How will u make it faster ?
-
+- Use parallel stages to execute independent tasks simultaneously.
+- Example: Parallelize static code analysis, unit tests, and integration tests.
+- Use build caching mechanisms like Docker layer caching or dependency caching.
+- 
 ---
 
 ✅ Jenkins Version ? 
