@@ -1,3 +1,5 @@
+Below questions are taken form jenkins_question.pdf file . many are repeatable questions . filter list
+
 1. How would you design a Jenkins setup for a large-scale enterprise application with multiple teams?
  Design a master-agent architecture where the master handles scheduling and orchestrating jobs, and agents execute jobs.
  Use distributed builds by configuring Jenkins agents on different machines or containers.
