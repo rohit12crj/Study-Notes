@@ -6,9 +6,11 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 
-- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
+- ci pipeline worflow --> git repo checkout --> install dependencies --> build the application --> Unit Testing ( Unit Testing means testing individual units of code like functions, methods, classes ) --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
+
+---
 
 ✅ Why build application before creating Docker image?
 
