@@ -146,7 +146,13 @@ How do you share artifacts across pipelines?
 Artifact repository (Nexus, Artifactory, S3)
 Versioned artifacts
 
+---
+
 How will u rollback a deployment ?
+- If your GitHub Actions pipeline deploys the service, rollback usually means redeploying a previous commit or image tag.
+<img width="278" height="122" alt="image" src="https://github.com/user-attachments/assets/0b1924c1-1bb5-4c47-b332-1057147e31a4" />
+
+---
 
 What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
