@@ -12,3 +12,5 @@
 - Day 11 --> Jenkins
 - Day 12 --> Prometheus_Grafana_EFK_Opensearch_Jaeger_Site24*7
 - Day 13 + Day 14  --> k8s
+
+Note - Ansible , HR & System Design are not included
