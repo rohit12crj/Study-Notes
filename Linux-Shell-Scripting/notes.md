@@ -135,3 +135,15 @@ Why does Docker need MASQUERADE?
 Explain Docker networking packet flow using iptables
 - Docker networking uses the Linux bridge (docker0) and iptables NAT rules to route traffic between the host and containers. When a port is mapped (e.g., -p 8080:80), Docker creates a DNAT rule in the PREROUTING chain to redirect traffic to the container IP, and a MASQUERADE rule in POSTROUTING to allow container responses to reach external clients.
 
+---
+
+What is MASQUERADE?
+- MASQUERADE is a special type of SNAT used when the public IP is dynamic, commonly used in Docker and home routers.
+
+---
+
+SNAT VS DNAT
+
+<img width="463" height="400" alt="image" src="https://github.com/user-attachments/assets/fcb55407-1d32-42d5-aaac-973c3fe89067" />
+
+
