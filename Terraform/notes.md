@@ -27,11 +27,11 @@
 
 ---
 
-how will u do terraform version upgrade withput downtime
+✅ how will u do terraform version upgrade withput downtime
 
-explain how terraform vault integrates with github action , jenkins internally & how does it works
+---
 
-What is IaC ? Why Terraform ?
+✅ What is IaC ? Why Terraform ?
 
 ---
 
@@ -41,59 +41,63 @@ What is IaC ? Why Terraform ?
 
 ---
 
-What is a state file in Terraform ?
+✅ What is a state file in Terraform ?
 
-What are some of the most common Terraform CLI commands that you use every day ?
+✅ What are some of the most common Terraform CLI commands that you use every day ?
 
-What is Terraform backend ?
+✅ What is Terraform backend ?
 
-What is Terraform Remote banckend ?
+✅ What is Terraform Remote banckend ?
 
-How do you handle secrets in terraform ?
+✅ How do you handle secrets in terraform ?
 
-What is Resource Graph in Terraform ?
+✅ What is Resource Graph in Terraform ?
 
-What is Terraform State Locking ?
+✅ What is Terraform State Locking ?
 
-What is a Tainted Terraform resource ?
+✅ What is a Tainted Terraform resource ?
 
-What is Terraform State Rollback ?
+✅ What is Terraform State Rollback ?
 
-terraform plan shows correctly what resources will be created , however when terraform apply is used only half of the reources got created . what will u do now ? from next time how will u setup terraform rollback if even 1 resource fail to get created ?
+✅ terraform plan shows correctly what resources will be created , however when terraform apply is used only half of the reources got created . what will u do now ? from next time how will u setup terraform rollback if even 1 resource fail to get created ?
 
-drift detection using pipeline and terraform cloud
+✅ drift detection using pipeline and terraform cloud
 
-how terraform vault works and how will u integrate with pipelines
+✅ how terraform vault works and how will u integrate with pipelines
 
-give terraform folder structure
+---
 
-which terraform version were u using 
+✅ which terraform version were u using ?
 
-terraform state file lock in s3 ? if 2 developers are trying to modify same resource what will happen 
+---
 
-if someone deletes state file what will happen
+✅ terraform state file lock in s3 ? if 2 developers are trying to modify same resource what will happen 
 
-terraform multiple providers
+---
 
-What makes Terraform declarative?
+✅ if someone deletes state file what will happen
 
-Explain Terraform lifecycle commands.
+✅ terraform multiple providers ? use alias
 
-how will u import already created resources into terraform 
+✅ What makes Terraform declarative?
 
-What are data sources?
+✅ Explain Terraform lifecycle commands.
 
-Difference between count and for_each?
+✅ how will u import already created resources into terraform 
 
-provisioners and when to use them and when not to use them 
+✅ What are data sources?
 
-How does Terraform manage dependencies?
+✅ Difference between count and for_each?
 
-What is terraform import?
+✅ provisioners and when to use them and when not to use them 
 
-What is terraform refresh?
+✅ How does Terraform manage dependencies?
 
-What is lifecycle block?
+✅ What is terraform import?
+
+✅ What is terraform refresh?
+
+✅ What is lifecycle block?
 
 What is parallelism in Terraform?
 
@@ -166,9 +170,7 @@ Terraform state got corrupted - what will you do?
 
 How do you manage Terraform provider versioning?
 
-How would you provision infra across 10 AWS regions
-
-simultaneously?
+How would you provision infra across 10 AWS regions simultaneously?
 
 What to do when your Terraform state file becomes too large?
 
