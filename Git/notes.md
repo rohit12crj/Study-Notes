@@ -74,11 +74,6 @@
 
 <img width="346" height="237" alt="image" src="https://github.com/user-attachments/assets/54e97a68-3e08-44b4-8e64-7afa05065788" />
 
-- 3-Way Merge ( Recursive ) --> default
-- Squash & Merge
-- Rebase & Merge
-
-
 <img width="493" height="57" alt="image" src="https://github.com/user-attachments/assets/d60c1ac1-3988-4091-8abf-6199daf3733a" />
 
 <img width="506" height="464" alt="image" src="https://github.com/user-attachments/assets/2c57185c-c557-4135-9c23-6998404f1f95" />
