@@ -80,15 +80,22 @@
 
 <img width="493" height="57" alt="image" src="https://github.com/user-attachments/assets/d60c1ac1-3988-4091-8abf-6199daf3733a" />
 
+---
 
+✅ What is HEAD in Git? explain detached HEAD ? When Detached HEAD is Useful ?
 
-
+- HEAD is a pointer that refers to the current commit or the latest commit on the current branch.
+- Detached HEAD occurs when HEAD points directly to a commit instead of a branch.
+- Detached HEAD useful --> Inspect old commits --> Test previous versions
 
 ---
 
-What is HEAD in Git? explain detached HEAD ? When Detached HEAD is Useful ?
+✅ What files exist inside .git & .gitignore directory ?
+- The .git directory is the internal database of Git.It stores all version history, commits, branches, configuration, and metadata of your repository.
+<img width="287" height="182" alt="image" src="https://github.com/user-attachments/assets/2fa15b1d-cf7b-4e2c-a1c2-a178b3908021" />
+- .gitignore is a file used to specify which files or directories Git should ignore and not track in the repository.
 
-What files exist inside .git & .gitignore directory ?
+---
 
 explain ORIG_HEAD, FETCH_HEAD and MERGE_HEAD ?
 
@@ -111,6 +118,7 @@ These are two ways Git manages storage efficiency and performance. Git periodica
 ---
 
 ✅ git garbage collection ?
+- Git Garbage Collection (git gc) is a process that cleans unnecessary objects in the repository, compresses loose objects into pack files, removes unreachable commits, and optimizes repository performance.
 
 ---
 
@@ -120,45 +128,55 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 
 ---
 
-rebase leftovers
+✅ what are rebase leftovers ?
+- Rebase leftovers are temporary files or directories that remain when a Git rebase operation is interrupted or not completed.
+- Rebase leftovers often cause CI/CD failures when pipelines run git pull --rebase and the previous rebase was not completed properly.
 
-Difference between git pull and git fetch?
+---
 
-suppose your git is 5 gb ? i want to only clone master branch for quick cloning ? how can i do it ?
+✅ Difference between git pull and git fetch?
+- git fetch downloads the latest changes from the remote repository but does not merge them into the local branch.
+- git pull downloads the changes and automatically merges them into the current branch.
 
-cherry picking
+---
 
-What is the difference between merge and rebase?
+✅ suppose your git is 5 gb ? i want to only clone master branch for quick cloning ? how can i do it ?
 
-What is git stash?
+✅ cherry picking
 
-How do you undo the last commit?  --> soft & hard reset
+✅ What is git stash?
 
-Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
+✅ How do you undo the last commit?  --> soft & hard reset
 
-What is git reflog?
+✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
 
-Difference between git reset and git revert?
+✅ What is git reflog?
 
-How do you recover deleted branch?
+✅ Difference between git reset and git revert?
 
-What is git bisect?
+✅ How do you recover deleted branch?
 
-What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
+✅ What is git bisect?
 
-Explain shallow clone.
+✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
-Someone force-pushed and broke production. What do you do?
+✅ Explain shallow clone.
 
-Repo size is 5GB. Clone takes 15 minutes. Fix?
+✅ Someone force-pushed and broke production. What do you do?
 
-How does Git ensure data integrity?
+✅ Repo size is 5GB. Clone takes 15 minutes. Fix?
 
-How does Git handle concurrency?
+✅ How does Git ensure data integrity?
 
-Explain fast-forward merge.
+✅ How does Git handle concurrency?
 
-What happens if two developers push same branch simultaneously?
+---
+
+✅ Two developers push at the same time — how does Git prevent pipeline duplication and merge conflicts ?
+
+<img width="512" height="268" alt="image" src="https://github.com/user-attachments/assets/1728bb93-5044-431c-844e-2cd1ca1c90d7" />
+
+---
 
 Explain object packing in Git.
 
