@@ -41,6 +41,12 @@
 
 ---
 
+✅ Terraform Vault
+- https://youtu.be/7xl4hY-W6Ts?si=lFPcBacoJWgNcr6G --> Abhishek
+- https://youtu.be/sIkRK33AY50?si=jgoAaf3ZRPvrQAxV --> Abhishek
+
+---
+
 ✅ What is a state file in Terraform ?
 
 ✅ What are some of the most common Terraform CLI commands that you use every day ?
