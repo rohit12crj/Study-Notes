@@ -140,11 +140,38 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 
 ---
 
-✅ suppose your git is 5 gb ? i want to only clone master branch for quick cloning ? how can i do it ?
+✅ suppose your git is 5 gb ? i want to only clone master branch for quick cloning ? how can i do it ? 
+- This performs a shallow clone, downloading only the latest commit of the master branch, which significantly reduces clone time and repository size.
+- 
+<img width="501" height="188" alt="image" src="https://github.com/user-attachments/assets/2043b401-f548-4d01-b455-dab42b876c3d" />
 
-✅ cherry picking
+---
+
+✅ Repo size is 5GB. Clone takes 15 minutes. Fix?
+
+<img width="509" height="95" alt="image" src="https://github.com/user-attachments/assets/6e1a3089-2923-4b4b-bac6-eb40983e0e30" />
+
+---
+
+✅ What is the difference between shallow clone (--depth) and partial clone (--filter=blob:none) ?
+
+<img width="590" height="385" alt="image" src="https://github.com/user-attachments/assets/b8cca9f9-aa07-4487-9199-8fd06de3b118" />
+
+---
+
+✅ What is the difference between pull_request and pull_request_target events?
+- pull_request runs workflows using PR branch code with restricted permissions, mainly used for testing and validation.
+- pull_request_target runs workflows using target branch code with full permissions, mainly used for PR management tasks like labeling or commenting.
+
+---
+
+✅ what is cherry picking ?
+
+---
 
 ✅ What is git stash?
+
+---
 
 ✅ How do you undo the last commit?  --> soft & hard reset
 
@@ -160,11 +187,9 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 
 ✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
-✅ Explain shallow clone.
-
 ✅ Someone force-pushed and broke production. What do you do?
 
-✅ Repo size is 5GB. Clone takes 15 minutes. Fix?
+
 
 ✅ How does Git ensure data integrity?
 
