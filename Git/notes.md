@@ -222,13 +222,13 @@ Undoing the last commit in Git can mean different things depending on what you w
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
 Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
 - GitFlow → structured, many long live branches
-| Branch            | Purpose            |
-| ----------------- | ------------------ |
-| `main` / `master` | production code    |
-| `develop`         | integration branch |
-| `feature/*`       | new features --> Work on feature → merge back to develop.     |
-| `release/*`       | prepare release    |
-| `hotfix/*`        | production fixes --> Fix → merge to both develop & main |
+| Branch            | Purpose                                                      |
+| ----------------- | ------------------------------------------------------------ |
+| `main` / `master` | production code                                              |
+| `develop`         | integration branch                                           |
+| `feature/*`       | new features --> Work on feature → merge back to develop.    |
+| `release/*`       | prepare release                                              |
+| `hotfix/*`        | production fixes --> Fix → merge to both develop & main      |
 
 - Trunk-Based Development (TBD) → minimal branches, continuous integration , Trunk-Based Development uses one main branch (trunk) where developers integrate frequently.Short-lived feature branches may exist but are very short-lived.
 
@@ -261,8 +261,15 @@ Companies usually follow two main Git branching strategies depending on team siz
 ---
 
 ✅ How do you recover deleted branch?
+- If a branch is deleted accidentally, the commits are usually still in Git’s database for some time.
+- You can recover the branch using git reflog, which records where HEAD and branch references previously pointed.
+
+---
 
 ✅ What is git bisect?
+- Git bisect uses a binary search algorithm to efficiently locate the commit that introduced a bug.
+
+---
 
 ✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
