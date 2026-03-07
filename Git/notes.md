@@ -222,6 +222,7 @@ Undoing the last commit in Git can mean different things depending on what you w
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
 Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
 - GitFlow → structured, many long live branches
+
 | Branch            | Purpose                                                      |
 | ----------------- | ------------------------------------------------------------ |
 | `main` / `master` | production code                                              |
@@ -273,11 +274,21 @@ Companies usually follow two main Git branching strategies depending on team siz
 
 ✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
+<img width="563" height="393" alt="image" src="https://github.com/user-attachments/assets/5be03484-9eb5-449c-b759-4e163d59c899" />
+
+---
+
 ✅ Someone force-pushed and broke production. What do you do?
+
+---
 
 ✅ How does Git ensure data integrity?
 
+---
+
 ✅ How does Git handle concurrency?
+- Git handles concurrency using optimistic concurrency control, where developers work independently on local copies and conflicts are detected during merges or pushes.
+- If multiple developers push changes simultaneously, Git prevents overwriting changes by rejecting non-fast-forward pushes, requiring developers to pull and integrate changes first.
 
 ---
 
@@ -287,25 +298,51 @@ Companies usually follow two main Git branching strategies depending on team siz
 
 ---
 
-Explain object packing in Git.
+✅ Explain object packing in Git.
 
-Difference between index and working tree?
+---
 
-How to squash commits?
+✅ Difference between index and working tree?
 
-What is sparse checkout?
+---
 
-Explain submodules vs subtree.
+✅ How to squash commits?
 
-What is orphan branch & orphan commits ?
+---
 
-How to sign commits?
+✅ What is sparse checkout?
 
-What is rebase interactive?
+---
 
-How do you prevent secret commits? --> use checkov in pipeline
+✅ Explain submodules vs subtree.
 
-What is git blame?
+---
 
-How to enforce branch protection?  -> use codeowners file & take manual approvals
+✅ What is orphan branch & orphan commits ?
+
+---
+
+✅ How to sign commits?
+
+---
+
+✅ What is rebase interactive?
+
+--
+
+✅ How do you prevent secret commits? --> use checkov in pipeline
+
+--
+
+✅ What is git blame?
+
+--
+
+✅ How to enforce branch protection?  -> use codeowners file & take manual approvals
+
+--
+
+✅ Why does Git sometimes show ‘detached HEAD’ during git bisect?
+
+---
 
