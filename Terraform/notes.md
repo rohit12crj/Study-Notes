@@ -37,8 +37,7 @@ What is IaC ? Why Terraform ?
 
 ✅ What are modules in Terraform?
 - We create reusable infrastructure components like VPC, ECS, and RDS inside a modules directory. Each environment such as dev or stage contains a main.tf that calls these modules using a relative path like ../../modules/vpc. Environment-specific values are passed through terraform.tfvars, while the module itself contains the actual resource definitions.
-
-<img width="1920" height="8281" alt="image" src="https://github.com/user-attachments/assets/adb6f680-4c8c-4f15-8820-f81faea8ba4c" />
+- Check Terraform_Module_Flow.pdf also
 
 ---
 
