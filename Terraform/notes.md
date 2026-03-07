@@ -6,13 +6,66 @@
 
 ✅ when will use terraform workspaces vs directories 
 
+---
+
+✅ Terraform directory structure
+
+terraform-infra/
+│
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf --> Declare variable schema
+│   │   └── outputs.tf
+│   │
+│   ├── ecs/
+│
+├── environments/
+│   ├── dev/
+│   │   ├── main.tf
+│   │   ├── backend.tf --> s3 backend
+│   │   ├── terraform.tfvars --> Assign value to variable
+│   ├   ├── providers.tf --> aws provider
+│   │
+│   ├── stage/
+
+---
+
+✅ Variables precedence order 
+
+variables.tf default values
+      ↓
+environment variables
+      ↓
+terraform.tfvars
+      ↓
+*.auto.tfvars
+      ↓
+-var
+      ↓
+-var-file
+
+---
+
+✅ Is DynamoDB still required for Terraform state locking?
+- Earlier Terraform required a DynamoDB table for state locking when using an S3 backend. However, newer Terraform versions (1.10+) support native S3 state locking using a lock file (use_lockfile = true). Because of this, DynamoDB-based locking is now deprecated and will eventually be removed. Many legacy infrastructures still use DynamoDB, but new setups typically rely on S3 native locking
+
+<img width="555" height="335" alt="image" src="https://github.com/user-attachments/assets/7cbedf82-70a7-471d-8f70-beab8ba5040f" />
+
+---
+
 how will u do terraform version upgrade withput downtime
 
 explain how terraform vault integrates with github action , jenkins internally & how does it works
 
 What is IaC ? Why Terraform ?
 
-What are modules in Terraform?
+---
+
+✅ What are modules in Terraform?
+- We create reusable infrastructure components like VPC, ECS, and RDS inside a modules directory. Each environment such as dev or stage contains a main.tf that calls these modules using a relative path like ../../modules/vpc. Environment-specific values are passed through terraform.tfvars, while the module itself contains the actual resource definitions.
+
+---
 
 What is a state file in Terraform ?
 
