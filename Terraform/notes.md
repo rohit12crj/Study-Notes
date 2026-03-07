@@ -10,24 +10,7 @@
 
 ✅ Terraform directory structure
 
-terraform-infra/
-│
-├── modules/
-│   ├── vpc/
-│   │   ├── main.tf
-│   │   ├── variables.tf --> Declare variable schema
-│   │   └── outputs.tf
-│   │
-│   ├── ecs/
-│
-├── environments/
-│   ├── dev/
-│   │   ├── main.tf
-│   │   ├── backend.tf --> s3 backend
-│   │   ├── terraform.tfvars --> Assign value to variable
-│   ├   ├── providers.tf --> aws provider
-│   │
-│   ├── stage/
+<img width="380" height="284" alt="image" src="https://github.com/user-attachments/assets/423d9dc0-bb31-4c81-b4f3-fb65c7f5d307" />
 
 ---
 
