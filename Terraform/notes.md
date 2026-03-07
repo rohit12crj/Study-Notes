@@ -145,16 +145,11 @@ How does Terraform state management work internally?
 
 What is terraform import and in which real-world scenario is it used?
 
-
 version pinning
 
 Your Terraform deployment takes 40 minutes and often fails. How do you redesign it? --> Expected Answer: Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
 
 why terraform should not be used to manage resources configuration unlike ansible ?
-
-How do you manage Terraform provider versioning?
-
-How would you provision infra across 10 AWS regions simultaneously?
 
 What to do when your Terraform state file becomes too large?
 
@@ -168,19 +163,11 @@ Have you configured secrets or handled Terraform state files? Explain your exper
 
 Terraform state got corrupted - what will you do?
 
-How do you manage Terraform provider versioning?
-
-How would you provision infra across 10 AWS regions simultaneously?
-
-What to do when your Terraform state file becomes too large?
-
 Terraform plan shows destroy + recreate for a critical DB- how to prevent downtime?
 
 Your Terraform apply succeeded, but some resources are not behaving as expected. How do you debug? Your Terraform state file is getting too large. How do you manage it?
 
 How do you run Terraform safely in CI/CD pipelines?
-
-A team needs to provision infra in 10 AWS regions simultaneously. How do you structure it?
 
 You want faster Terraform runs in large projects. What optimizations would you apply?
 
