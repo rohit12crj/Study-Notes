@@ -187,7 +187,7 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 
 ---
 
-✅ How do you undo the last commit?
+✅ How do you undo the last commit? Soft vs Hard reset ?
 
 Undoing the last commit in Git can mean different things depending on what you want to keep:
 - keep the changes but remove the commit
@@ -204,24 +204,59 @@ Undoing the last commit in Git can mean different things depending on what you w
 
 ---
 
-✅  the difference between git revert vs git reset with real production scenarios
+✅ How do you revert a merge commit?
+- Reverting a merge commit is different from reverting a normal commit because a merge has two parent commits. Git needs to know which parent branch should be considered the mainline.
+
+<img width="520" height="188" alt="image" src="https://github.com/user-attachments/assets/30d947e4-6263-4af5-9927-a68c46bfeb59" />
 
 ---
 
-✅ soft , hard & mixed reset ?
+✅ How do you revert a revert commit?
+
+---
+
+✅ What happens if you revert a merge commit and then try to merge the same branch again?
 
 ---
 
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
+Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
+- GitFlow → structured, many long live branches
+| Branch            | Purpose            |
+| ----------------- | ------------------ |
+| `main` / `master` | production code    |
+| `develop`         | integration branch |
+| `feature/*`       | new features --> Work on feature → merge back to develop.     |
+| `release/*`       | prepare release    |
+| `hotfix/*`        | production fixes --> Fix → merge to both develop & main |
+
+- Trunk-Based Development (TBD) → minimal branches, continuous integration , Trunk-Based Development uses one main branch (trunk) where developers integrate frequently.Short-lived feature branches may exist but are very short-lived.
+
+| Feature              | GitFlow     | Trunk-Based Development |
+| -------------------- | ----------- | ----------------------- |
+| Branch complexity    | High        | Low                     |
+| Release cycle        | Scheduled   | Continuous              |
+| CI/CD compatibility  | Moderate    | Excellent               |
+| Merge conflicts      | More likely | Less                    |
+| Deployment frequency | Low         | High                    |
 
 ---
 
 ✅ What is git reflog?
+- Git reflog is extremely useful for recovering lost commits after operations like reset, rebase, or branch deletion.
+
+| Feature               | git log | git reflog  |
+| --------------------- | ------- | ----------- |
+| Shows commit history  | Yes     | Yes         |
+| Shows deleted commits | No      | Yes         |
+| Shows HEAD movements  | No      | Yes         |
+| Used for recovery     | Limited | Very useful |
 
 ---
 
 ✅ Difference between git reset and git revert?
-- git reset rewrites history, while git revert preserves history by creating a reverse commit.
+- git reset moves the branch pointer to a previous commit and rewrites history, so it should only be used for local commits that have not been pushed.
+- git revert creates a new commit that reverses a previous commit, preserving history, so it is safe for shared branches and production environments.
 
 ---
 
@@ -232,8 +267,6 @@ Undoing the last commit in Git can mean different things depending on what you w
 ✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
 
 ✅ Someone force-pushed and broke production. What do you do?
-
-
 
 ✅ How does Git ensure data integrity?
 
