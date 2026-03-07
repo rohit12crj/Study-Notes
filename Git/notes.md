@@ -78,7 +78,9 @@
 - Squash & Merge
 - Rebase & Merge
 
+
 <img width="493" height="57" alt="image" src="https://github.com/user-attachments/assets/d60c1ac1-3988-4091-8abf-6199daf3733a" />
+
 <img width="506" height="464" alt="image" src="https://github.com/user-attachments/assets/2c57185c-c557-4135-9c23-6998404f1f95" />
 
 
