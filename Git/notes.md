@@ -166,20 +166,64 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 ---
 
 ✅ what is cherry picking ?
-
+- Cherry-picking is a Git operation that allows you to apply a specific commit from one branch to another branch without merging the entire branch.
+- It is commonly used for hotfixes, backporting changes, or selectively applying commits.
+- Cherry-picking is useful when you want to apply a specific commit like a bug fix from one branch to another without merging the entire branch history.
+  
 ---
 
 ✅ What is git stash?
+- Git stash stores changes in a temporary stack and allows developers to clean their working directory without committing unfinished work.
+- git stash apply restores the stashed changes without removing them from the stash list.
+-  git stash pop restores the changes and removes the stash entry.
+-  Many developers prefer git stash apply first because it is safer. If the changes apply successfully, they manually remove the stash.
+  
+---
+
+✅ Why does Git sometimes say ‘Your local changes would be overwritten by checkout’ and how do you fix it?”
+- This error occurs when you try to switch branches while having uncommitted changes that conflict with files in the target branch.
+- Git blocks the checkout because switching branches would overwrite your current modifications, causing data loss.
+- The issue can be resolved by: committing the changes , stashing the changes or discarding the changes if not needed.
 
 ---
 
-✅ How do you undo the last commit?  --> soft & hard reset
+✅ How do you undo the last commit?
+
+Undoing the last commit in Git can mean different things depending on what you want to keep:
+- keep the changes but remove the commit
+- remove both commit and changes
+- undo a commit that was already pushed
+
+| Goal                              | Command                   |
+| --------------------------------- | ------------------------- |
+| Undo commit keep staged changes   | `git reset --soft HEAD~1` |
+| Undo commit keep changes unstaged | `git reset HEAD~1`        |
+| Undo commit and delete changes    | `git reset --hard HEAD~1` |
+| Undo pushed commit safely         | `git revert HEAD`         |
+| Edit last commit                  | `git commit --amend`      |
+
+---
+
+✅  the difference between git revert vs git reset with real production scenarios
+
+---
+
+✅ soft , hard & mixed reset ?
+
+---
 
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
 
+---
+
 ✅ What is git reflog?
 
+---
+
 ✅ Difference between git reset and git revert?
+- git reset rewrites history, while git revert preserves history by creating a reverse commit.
+
+---
 
 ✅ How do you recover deleted branch?
 
