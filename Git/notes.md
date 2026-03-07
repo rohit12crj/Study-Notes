@@ -328,19 +328,19 @@ Companies usually follow two main Git branching strategies depending on team siz
 
 ✅ What is rebase interactive?
 
---
+---
 
 ✅ How do you prevent secret commits? --> use checkov in pipeline
 
---
+---
 
 ✅ What is git blame?
 
---
+---
 
 ✅ How to enforce branch protection?  -> use codeowners file & take manual approvals
 
---
+---
 
 ✅ Why does Git sometimes show ‘detached HEAD’ during git bisect?
 
