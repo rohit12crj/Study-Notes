@@ -94,6 +94,7 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 ✅ How do you integrate SonarQube with Jenkins?
 - Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault to store the secrets .
 - In Jenkins pipelines we enforce SonarQube quality gates using the waitForQualityGate step provided by the SonarQube Jenkins plugin. After running the SonarQube analysis, Jenkins waits for the quality gate result from SonarQube, and if the gate fails the pipeline is automatically aborted using abortPipeline: true. This ensures only code that meets quality standards can proceed to deployment.
+- If SonarQube is slow or the webhook fails, Jenkins could keep waiting for the quality gate result indefinitely. To prevent this, we wrap the waitForQualityGate step inside a timeout block so that if the result is not received within a defined time, the pipeline fails automatically. In production setups we also configure a SonarQube webhook so Jenkins receives the quality gate status immediately
 
 <img width="474" height="235" alt="image" src="https://github.com/user-attachments/assets/c7c714f3-b2d9-4161-97d4-fea04cb21012" />
 
