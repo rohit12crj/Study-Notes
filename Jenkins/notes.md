@@ -127,8 +127,7 @@ no , u can just install docker inside jenkins agent and run the docker build com
 ---
 
 ✅ were u using iam keys or roles to connect with aws  ? 
-
-IAM roles are preferred because they provide temporary, automatically rotated credentials without hardcoding secrets, improving security and manageability. but first we need to configure oidc provider in iam , & add the github repo url in trust relationships of the iam role , so that only the github repo urls can invoke the pipeline
+- IAM roles are preferred because they provide temporary, automatically rotated credentials without hardcoding secrets, improving security and manageability. but first we need to configure oidc provider in iam , & add the github repo url in trust relationships of the iam role , so that only the github repo urls can invoke the pipeline
 
 ---
 
@@ -142,10 +141,6 @@ IAM roles are preferred because they provide temporary, automatically rotated cr
 
 ---
 
-✅ How will u tag your production releases & make sure manual approvals are required before production pipeline runs ? 
-
----
-
 ✅ How will u do RBAC in Jenkins . Which plugin will u be using ? 
 
 - Use the Role-Based Authorization Strategy plugin.
@@ -155,7 +150,8 @@ IAM roles are preferred because they provide temporary, automatically rotated cr
 ---
 
 ✅ share artifacts between different stages in same job in jenkins ?
-
+- n Jenkins pipelines, artifacts between stages in the same job can be shared because stages usually use the same workspace. However, for more reliable handling, especially when different agents are involved, we use stash and unstash to temporarily store and retrieve artifacts between stages. If we want to persist artifacts after the build, we use archiveArtifacts
+  
 ---
 
 ✅ How do you share artifacts across pipelines/jobs?
