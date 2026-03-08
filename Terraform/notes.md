@@ -2,8 +2,6 @@
 
 ✅ https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
 
-✅ https://www.youtube.com/watch?v=-4IMy5ihiiU&list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf&index=8 --> Interview Questions --> Part 2 ( Abhishek )
-
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ✅ when will use terraform workspaces vs directories 
@@ -121,12 +119,18 @@
 ---
 
 ✅ how will u import already created resources into terraform ?   
-- terraform import
+- https://www.youtube.com/watch?v=-4IMy5ihiiU&list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf&index=8 ( Abhishek )
+- use terraform import block
+
+<img width="725" height="265" alt="image" src="https://github.com/user-attachments/assets/41ef7f1d-228d-4953-8536-5cdedd035463" />
+
+<img width="704" height="313" alt="image" src="https://github.com/user-attachments/assets/50361989-02d4-414b-b450-a3e9ab576d45" />
+
 
 ---
 
 ✅  data sources in terraform 
-
+- In Terraform, data sources are used to fetch information about existing infrastructure that is not managed by Terraform. They allow Terraform configurations to reference existing resources like VPCs, AMIs, or subnets without creating them.
 ---
 
 ✅ Difference between count and for_each?
@@ -134,9 +138,19 @@
 ✅ provisioners and when to use them and when not to use them 
 
 ✅ How does Terraform manage dependencies?
+- Terraform manages dependencies using a dependency graph (DAG). It automatically detects dependencies when resources reference attributes of other resources, known as implicit dependencies. If Terraform cannot detect the dependency automatically, we can define explicit dependencies using the depends_on argument to control the execution order
+  
+---
 
 ✅ What is terraform refresh?
+- terraform refresh updates the Terraform state file by querying the actual infrastructure and synchronizing the state with real resources. It does not modify infrastructure; it only updates the state file.
 
+---
+
+✅ What happens if someone manually deletes a resource that Terraform created? 
+- again run terraform apply
+
+---
 ✅ What is lifecycle block?
 
 What is parallelism in Terraform?
