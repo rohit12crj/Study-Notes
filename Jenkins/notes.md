@@ -254,11 +254,6 @@ Complex logic
 Dynamic stages
 Advanced Groovy control
 
-How do you pass data between stages?
-Environment variables
-Files in workspace
-stash / unstash
-
 How does stash/unstash work internally?
 Compresses files
 Stores on controller
@@ -283,16 +278,10 @@ Use credentials binding
 Disable set -x
 Rotate leaked secrets immediately
 
-How do you implement RBAC in Jenkins?
-Role Strategy Plugin
-Folder-based permissions
-LDAP / SSO integration
-
 How does Multibranch Pipeline detect changes?
 Periodic indexing
 Webhooks
 SCM polling (not recommended)
-
 
 Jenkins pull or push model?
 Pull-based
@@ -349,15 +338,6 @@ Retry logic
 Quarantine tests
 Test categorization
 
-How do you implement build timeouts?
-options { timeout(time: 30, unit: 'MINUTES') }
-
-What should be backed up in Jenkins?
-$JENKINS_HOME
-Job configs
-Credentials
-Plugins list
-
 Jenkins HA—how do you design it?
 Stateless controller
 External DB/storage
@@ -374,15 +354,7 @@ Restore backup
 Verify filesystem
 Audit plugins
 
-How do you implement Blue-Green deployment?
-Two environments
-Switch traffic via LB
-Rollback by traffic flip
-
-Canary deployment using Jenkins?
-Gradual rollout
-Metrics monitoring
-Auto rollback
+---
 
 How do you handle approvals in Jenkins?
 input step
