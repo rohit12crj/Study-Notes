@@ -176,6 +176,13 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 
 ✅ Jenkins blue green deployment ? --> 
 - https://www.youtube.com/watch?v=tstBG7RC9as
+- in terrafom initailly both blue & green services should be present 
+- For Blue-Green deployments in ECS without CodeDeploy, we maintain two ECS services — blue and green — behind an ALB. Jenkins builds the Docker image, pushes it to ECR, and deploys it to the inactive service (green). After validation, Jenkins can switch the ALB listener to route traffic to the green target group. Infrastructure such as the green ECS service and target groups are typically provisioned using Terraform
+- in jenkins build with paramter option is used
+
+<img width="437" height="325" alt="image" src="https://github.com/user-attachments/assets/086a4b65-0d37-42cb-a12c-8c64b34327e4" />
+
+<img width="416" height="176" alt="image" src="https://github.com/user-attachments/assets/b5ca1adb-1cd0-4d35-8f24-b841c03e67ed" />
 
 ---
 
