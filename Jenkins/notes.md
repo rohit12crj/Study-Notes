@@ -48,6 +48,13 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 
 ---
 
+✅ how will u use secrets from terraform vault inside jenkinsfile
+- In our pipelines we store sensitive credentials in HashiCorp Vault and integrate Jenkins with Vault using the HashiCorp Vault plugin. Jenkins authenticates to Vault using AppRole or a token and retrieves secrets during pipeline execution. Using the withVault block, the secrets are injected as environment variables and used securely in the Jenkinsfile without exposing them in the code
+
+<img width="539" height="185" alt="image" src="https://github.com/user-attachments/assets/26a4ee28-7e11-4dae-82be-eb60c60e0e61" />
+
+---
+
 ✅ What are Code Smells?
 - Code Smells are indicators of poor coding practices such as duplicated code, long methods, or complex logic that make the code difficult to maintain.
 
@@ -86,13 +93,20 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 
 ✅ How do you integrate SonarQube with Jenkins?
 - Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault to store the secrets .
+- In Jenkins pipelines we enforce SonarQube quality gates using the waitForQualityGate step provided by the SonarQube Jenkins plugin. After running the SonarQube analysis, Jenkins waits for the quality gate result from SonarQube, and if the gate fails the pipeline is automatically aborted using abortPipeline: true. This ensures only code that meets quality standards can proceed to deployment.
+
+<img width="474" height="235" alt="image" src="https://github.com/user-attachments/assets/c7c714f3-b2d9-4161-97d4-fea04cb21012" />
+
+<img width="371" height="230" alt="image" src="https://github.com/user-attachments/assets/f250b14e-2ecf-48f6-bc9d-d031d725a2ea" />
+
+<img width="563" height="226" alt="image" src="https://github.com/user-attachments/assets/b8f7d046-15e9-43b3-b276-49ce39d49d94" />
 
 ---
 
 ✅ How do you integrate Terraform Vault with Jenkins?
 - Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenticates to Vault using AppRole
 - https://youtu.be/sIkRK33AY50?si=E_Q0ql3KqvUXIp2y --> Abhishek Video
-
+- i want to do checkout from git repo inside jenkinsfile , i dont want to use credentials plugin . i want to use the github PAT stored in terraform vault . same techniquie can be used here also 
 ---
 
 ✅ Your Jenkins Pipeline is slower . How will u make it faster ?
