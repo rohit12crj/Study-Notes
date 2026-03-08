@@ -179,6 +179,9 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 - in terrafom initailly both blue & green services should be present 
 - For Blue-Green deployments in ECS without CodeDeploy, we maintain two ECS services — blue and green — behind an ALB. Jenkins builds the Docker image, pushes it to ECR, and deploys it to the inactive service (green). After validation, Jenkins can switch the ALB listener to route traffic to the green target group. Infrastructure such as the green ECS service and target groups are typically provisioned using Terraform
 - in jenkins build with paramter option is used
+- If the Jenkins pipeline modifies the ALB listener to switch traffic between blue and green target groups, Terraform will detect drift during the next plan because the listener configuration differs from the Terraform state. To avoid this, we typically use a lifecycle rule like ignore_changes for the listener default action so Terraform does not attempt to revert the traffic switch
+
+<img width="415" height="263" alt="image" src="https://github.com/user-attachments/assets/691c2759-8971-4431-919e-b2c5683a3d87" />
 
 <img width="437" height="325" alt="image" src="https://github.com/user-attachments/assets/086a4b65-0d37-42cb-a12c-8c64b34327e4" />
 
