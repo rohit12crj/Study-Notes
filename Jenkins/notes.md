@@ -159,6 +159,13 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 
 ---
 
+✅ dev 1 --> repo 1 , dev 2 --> repo 2 , how will u give separate access to Jenkins job ?
+- To give separate access to Jenkins jobs, we implement role-based access control using the Role-Based Authorization Strategy plugin. We create item roles mapped to specific job patterns and assign users or groups to those roles. This ensures that each developer can only view or trigger the Jenkins jobs related to their repository
+
+<img width="392" height="242" alt="image" src="https://github.com/user-attachments/assets/44d72336-feb7-464c-9e89-5c0ff2752e94" />
+
+---
+
 ✅ How will u rollback a deployment ?
 - If your GitHub Actions pipeline deploys the service, rollback usually means redeploying a previous commit or image tag.
 <img width="278" height="122" alt="image" src="https://github.com/user-attachments/assets/0b1924c1-1bb5-4c47-b332-1057147e31a4" />
