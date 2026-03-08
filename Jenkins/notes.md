@@ -65,7 +65,7 @@ https://youtu.be/BLQ0PDjgN8w?si=acykbfsz8xnSRmIB --> Abhishek
 
 ---
 
-✅ How will u take jenkins backup ?
+✅ How will u take jenkins backup & how will u restore a job which was deleted ?
 
 https://youtu.be/5Tb-AOUFuKQ?si=cyR2-GLsYSS30g-J
 
