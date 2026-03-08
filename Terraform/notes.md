@@ -2,7 +2,9 @@
 
 ✅ https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
 
-✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Interview Questions --> Part 2 ( Abhishek )
+✅ https://www.youtube.com/watch?v=-4IMy5ihiiU&list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf&index=8 --> Interview Questions --> Part 2 ( Abhishek )
+
+✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ✅ when will use terraform workspaces vs directories 
 
@@ -116,17 +118,22 @@
 
 ✅ Explain Terraform lifecycle commands.
 
-✅ how will u import already created resources into terraform 
+---
 
-✅ What are data sources?
+✅ how will u import already created resources into terraform ?   
+- terraform import
+
+---
+
+✅  data sources in terraform 
+
+---
 
 ✅ Difference between count and for_each?
 
 ✅ provisioners and when to use them and when not to use them 
 
 ✅ How does Terraform manage dependencies?
-
-✅ What is terraform import?
 
 ✅ What is terraform refresh?
 
@@ -162,13 +169,23 @@ How to migrate local state to remote?
 
 What is state file corruption recovery?
 
-Explain blue-green deployment in Terraform.
+---
 
-What is terraform plan exit code?
+✅ Explain blue-green deployment in Terraform.
 
-What are Terraform limitations?
+---
 
-What are Terraform Workspaces and when should you use them?
+✅ What is terraform plan exit code? --> check drift section
+
+---
+
+What are Terraform limitations?  --> not good with provisioners 
+
+---
+
+✅ What are Terraform Workspaces and when should you use them?  --> use them for local but not good for prod
+
+---
 
 How does Terraform state management work internally?
 
@@ -176,7 +193,12 @@ What is terraform import and in which real-world scenario is it used?
 
 version pinning
 
-Your Terraform deployment takes 40 minutes and often fails. How do you redesign it? --> Expected Answer: Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
+---
+
+✅ Your Terraform deployment takes 40 minutes and often fails. How do you redesign it? 
+- Split state files  , Modularize ,Introduce CI gating ,Increase parallelism carefully ,Use multi-account isolation ,Reduce monolithic design
+
+---
 
 why terraform should not be used to manage resources configuration unlike ansible ?
 
