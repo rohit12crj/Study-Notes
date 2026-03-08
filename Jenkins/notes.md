@@ -54,7 +54,9 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 ---
 
 ✅ Explain GitHub webhooks & jenkins integration ?
-- it helps for automated pipeline runs when someone commits a code in github repo 
+- it helps for automated pipeline runs when someone commits a code in github repo
+- webhooks needs to be created in github & in pipeline also u need to do configuration
+- https://www.youtube.com/watch?v=Uu8_cb0WRAw
 
 ---
 
