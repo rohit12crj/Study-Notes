@@ -72,26 +72,45 @@
 
 ✅ What is a Tainted Terraform resource ?
 - A tainted resource in Terraform is a resource marked for recreation. Terraform will destroy and recreate the resource during the next terraform apply. This usually happens when a resource creation fails or when the user manually taints it.
-- terraform apply -replace forces Terraform to destroy and recreate a specific resource in a single step
+- terraform apply -replace --> forces Terraform to destroy and recreate a specific resource in a single step
 - terraform destroy deletes all infrastructure managed by the Terraform configuration.
 
 ---
 
 ✅ What is Terraform State Rollback ?
+- Terraform State Rollback is the process of restoring a previous version of the Terraform state file when the current state becomes inconsistent or corrupted. It is commonly done using state file backups or versioning in remote backends like S3.
+
+---
 
 ✅ terraform plan shows correctly what resources will be created , however when terraform apply is used only half of the reources got created . what will u do now ? from next time how will u setup terraform rollback if even 1 resource fail to get created ?
+- If terraform apply partially creates resources, I would first check the Terraform state using **terraform state list** and verify the actual infrastructure. Then I would run terraform plan again to see what resources are missing and run terraform apply to complete the deployment since Terraform is idempotent.
+- For future prevention, I would use remote state with S3 versioning, DynamoDB state locking, CI/CD approval stages, and infrastructure modularization to ensure safe deployments and allow state rollback if needed.
 
-✅ drift detection using pipeline and terraform cloud
+---
+
+✅ drift detection ?
+- using pipeline --> In CI/CD pipelines, it is usually implemented by running terraform plan -detailed-exitcode on a schedule and triggering alerts when changes are detected
+
+<img width="662" height="431" alt="image" src="https://github.com/user-attachments/assets/ec33cc91-3453-4615-8342-7065ead3447a" />
+
+<img width="660" height="163" alt="image" src="https://github.com/user-attachments/assets/ba3e6d16-2d9c-4a5a-9e80-f53e38b263ec" />
+
+- using terraform cloud --> Terraform Cloud provides built-in drift detection through health checks that periodically compare the Terraform state with actual infrastructure.
 
 ---
 
 ✅ which terraform version were u using ?
+- v1.14
+  
+---
+
+✅ if someone deletes state file what will happen ? check for s3 versioning 
 
 ---
 
-✅ if someone deletes state file what will happen
-
 ✅ How to handle multi-account AWS setup? use alias
+
+---
 
 ✅ What makes Terraform declarative?
 
