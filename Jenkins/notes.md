@@ -59,15 +59,28 @@ Code Smells are indicators of poor coding practices such as duplicated code, lon
 
 ---
 
-✅ What is jenkins shared library ?
+✅ Explain GitHub webhooks & jenkins integration ?
+- it helps for automated pipeline runs when someone commits a code in github repo 
 
-https://youtu.be/BLQ0PDjgN8w?si=acykbfsz8xnSRmIB --> Abhishek
+---
+
+✅ What is jenkins shared library ?
+- https://youtu.be/BLQ0PDjgN8w?si=acykbfsz8xnSRmIB --> Abhishek
 
 ---
 
 ✅ How will u take jenkins backup & how will u restore a job which was deleted ?
+- In Jenkins the most important directory to backup is JENKINS_HOME, which by default is located at /var/lib/jenkins in Linux systems. This directory contains all job configurations, plugins, credentials, build history, and system settings. By backing up this folder we can fully restore the Jenkins server if needed
+- https://youtu.be/5Tb-AOUFuKQ?si=cyR2-GLsYSS30g-J
 
-https://youtu.be/5Tb-AOUFuKQ?si=cyR2-GLsYSS30g-J
+---
+
+✅ how to add manual approval stage in Jenkins for production
+- https://www.youtube.com/watch?v=yMK-l1t4KqQ
+- In Jenkins we add a manual approval stage using the input step in the pipeline. The pipeline pauses and waits for a user to approve before proceeding to production deployment. We usually restrict approval to specific users like DevOps_leads ( user group should be created with this name ) using the submitter option and sometimes add a timeout to avoid pipelines waiting indefinitely.
+
+<img width="500" height="107" alt="image" src="https://github.com/user-attachments/assets/7b02af78-c190-4dd3-8319-93b1e6e265ea" />
+
 
 ---
 
@@ -141,31 +154,41 @@ IAM roles are preferred because they provide temporary, automatically rotated cr
 
 ---
 
-share artifacts between different jobs and different stages in same job in jenkins ?
-
-How do you share artifacts across pipelines?
-Artifact repository (Nexus, Artifactory, S3)
-Versioned artifacts
+✅ share artifacts between different stages in same job in jenkins ?
 
 ---
 
-How will u rollback a deployment ?
+✅ How do you share artifacts across pipelines/jobs?
+- Artifact repository (Nexus, Artifactory, S3)
+- Versioned artifacts
+
+---
+
+✅ How will u rollback a deployment ?
 - If your GitHub Actions pipeline deploys the service, rollback usually means redeploying a previous commit or image tag.
 <img width="278" height="122" alt="image" src="https://github.com/user-attachments/assets/0b1924c1-1bb5-4c47-b332-1057147e31a4" />
 
 ---
 
-Jenkins blue green deployment ? --> https://www.youtube.com/watch?v=tstBG7RC9as
+✅ Jenkins blue green deployment ? --> 
+- https://www.youtube.com/watch?v=tstBG7RC9as
 
 ---
 
-build with parameters in jenkins
+✅ build with parameters in jenkins ?
+- used in blue green depoyment & for switching traffic from blue to green
 
 ---
 
-What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
+✅ What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
-Declarative vs Scripted Pipeline , multibranch pipeline , multi stage pipelines
+Different types of pipelines in jenkins ?
+- Declarative Pipeline 
+- Scripted Pipeline
+- multibranch pipeline
+- multi stage pipelines
+
+---
 
 What is an Agent in Jenkins?
 
@@ -173,9 +196,7 @@ What is a Node?
 
 How does Jenkins store credentials? 
 
-How do you secure Jenkins?
-
-What is Jenkins Shared Library?
+How do you secure Jenkins? --> RBAC
 
 What is Blue Ocean?
 
