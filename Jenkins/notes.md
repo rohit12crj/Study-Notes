@@ -137,6 +137,7 @@ IAM roles are preferred because they provide temporary, automatically rotated cr
 
 - Use the Role-Based Authorization Strategy plugin.
 - Define roles like Admin, Developer, and Viewer, and assign permissions for jobs, folders, and builds accordingly.
+- https://www.youtube.com/watch?v=dWIfBoHOCDI
 
 ---
 
