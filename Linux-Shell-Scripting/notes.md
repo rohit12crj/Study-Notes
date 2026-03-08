@@ -181,7 +181,7 @@ explain Kubernetes networking from Pod → Service → kube-proxy → CNI → No
 
 ✅ Difference between export & set ?
 - The export command in Linux is used to set environment variables and make them available to child processes started from the current shell.
-- 
+
 <img width="630" height="431" alt="image" src="https://github.com/user-attachments/assets/19e8ee3c-bdec-4582-948c-d979d7c12350" />
 
 <img width="620" height="242" alt="image" src="https://github.com/user-attachments/assets/9961aeca-1a65-4d45-9ce9-3106557559c6" />
