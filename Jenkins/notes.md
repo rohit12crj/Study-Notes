@@ -2,6 +2,8 @@ https://www.youtube.com/playlist?list=PLdpzxOOAlwvJDIAQZtMjUUbiVUDfGaCIX  --> Ab
 
 https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
 
+https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/Interview_Questions.md  -> interview question Repo ( Abhishek )
+
 https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
