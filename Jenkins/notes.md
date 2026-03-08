@@ -5,21 +5,18 @@ https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
 https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
-
-- ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> Unit Testing ( Unit Testing means testing individual units of code like functions, methods, classes ) --> SAST Scan --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
+- ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> SAST Scan Unit --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
 
 ---
 
 ✅ Why build application before creating Docker image?
-
-The application is built first to produce the final runnable artifact (such as a JAR, binary, or compiled bundle). The Docker image then packages this artifact along with the runtime environment. This keeps Docker images smaller, speeds up builds, enables security scans earlier, and separates application build from container packaging. Docker images should package artifacts, not compile source code
+- The application is built first to produce the final runnable artifact (such as a JAR, binary, or compiled bundle). The Docker image then packages this artifact along with the runtime environment. This keeps Docker images smaller, speeds up builds, enables security scans earlier, and separates application build from container packaging. Docker images should package artifacts, not compile source code
 
 ---
 
 ✅ Tool used for building applications
-
 - Java - Maven
 - Python - pip
 - Node - npm
@@ -27,7 +24,6 @@ The application is built first to produce the final runnable artifact (such as a
 ---
 
 ✅ Tool used for Unit Testing
-
 - Java - Junit
 - Python - PyTest
 - Node - Jest / Mocha
@@ -35,8 +31,7 @@ The application is built first to produce the final runnable artifact (such as a
 ---
 
 ✅ Tool used for security testing
-
-- SAST --> Static Application Security Testing --> Scans Source Code ( SQL Injection , Hardcoded secrets , Code Smells , Code Coverage ) --> Sonarqube
+- SAST --> Static Application Security Testing --> Unit Testing ( Unit Testing means testing individual units of code like functions, methods, classes ) also done in this --> Scans Source Code ( SQL Injection , Hardcoded secrets , Code Smells , Code Coverage ) --> Sonarqube
 - SCA --> Software Composition Analysis --> Scans Dependencies / libraries ( Docker Images , OS packages , Node modules , Python libraries ) --> Trivy , Github Dependabot 
 - DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP , invicti
 
@@ -54,8 +49,7 @@ Quality Gates are a set of conditions defined in SonarQube that determine whethe
 ---
 
 ✅ What are Code Smells?
-
-Code Smells are indicators of poor coding practices such as duplicated code, long methods, or complex logic that make the code difficult to maintain.
+- Code Smells are indicators of poor coding practices such as duplicated code, long methods, or complex logic that make the code difficult to maintain.
 
 ---
 
@@ -81,29 +75,21 @@ Code Smells are indicators of poor coding practices such as duplicated code, lon
 
 <img width="500" height="107" alt="image" src="https://github.com/user-attachments/assets/7b02af78-c190-4dd3-8319-93b1e6e265ea" />
 
-
 ---
 
 ✅ What is Code Coverage?
-
-Code Coverage measures the percentage of application code executed by automated tests. in our project we used min 80% needs to pass
+- Code Coverage measures the percentage of application code executed by automated tests. in our project we used min 80% needs to pass
 
 ---
 
 ✅ How do you integrate SonarQube with Jenkins?
-
-Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault to store the secrets .
+- Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and authentication token .Use Terraform Vault to store the secrets .
 
 ---
 
 ✅ How do you integrate Terraform Vault with Jenkins?
-
 - Jenkins integrates with HashiCorp Vault using the Vault plugin. Jenkins authenticates to Vault using AppRole
 - https://youtu.be/sIkRK33AY50?si=E_Q0ql3KqvUXIp2y --> Abhishek Video
-
----
-
-✅ How do you integrate Git with Jenkins?
 
 ---
 
@@ -115,14 +101,12 @@ Install the SonarQube plugin in Jenkins, configure the SonarQube server URL and 
 ---
 
 ✅ Jenkins Version ? 
-
-LTS (Long-Term Support)	2.541.1	Stable version recommended for production
+- LTS (Long-Term Support)	2.541.1	Stable version recommended for production
 
 ---
 
-✅ are docker & k8s plugin necessary with jenkins ? 
-
-no , u can just install docker inside jenkins agent and run the docker build commands . for eks , u can ekscli to connect with k8s cluster
+✅ Nre docker & k8s plugin necessary with jenkins ? 
+- no , u can just install docker inside jenkins agent and run the docker build commands . for eks , u can ekscli to connect with k8s cluster
 
 ---
 
@@ -136,13 +120,11 @@ no , u can just install docker inside jenkins agent and run the docker build com
 ---
 
 ✅ what different Jenkins Plugin were u using ? 
-
 - Sonarqube , Vault ,
 
 ---
 
 ✅ How will u do RBAC in Jenkins . Which plugin will u be using ? 
-
 - Use the Role-Based Authorization Strategy plugin.
 - Define roles like Admin, Developer, and Viewer, and assign permissions for jobs, folders, and builds accordingly.
 - https://www.youtube.com/watch?v=dWIfBoHOCDI
@@ -178,7 +160,9 @@ no , u can just install docker inside jenkins agent and run the docker build com
 
 ✅ What are Jenkins jobs , Jenkinsfile , Jenkins Pipeline ( Groovy Language )
 
-Different types of pipelines in jenkins ?
+---
+
+✅ Different types of pipelines in jenkins ?
 - Declarative Pipeline 
 - Scripted Pipeline
 - multibranch pipeline
