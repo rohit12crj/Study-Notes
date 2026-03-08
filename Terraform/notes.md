@@ -43,7 +43,12 @@
 
 ✅ Terraform Vault
 - https://youtu.be/7xl4hY-W6Ts?si=lFPcBacoJWgNcr6G --> Abhishek
-- https://youtu.be/sIkRK33AY50?si=jgoAaf3ZRPvrQAxV --> Abhishek
+- integrate Terraform vault with terraform tf files & access secret stored in vault in pass it to ec2 as tag -->  https://youtu.be/sIkRK33AY50?si=jgoAaf3ZRPvrQAxV --> Abhishek  --> needs vault provider & approle / azure ad authentication type
+- integrate Terraform vault with jenkins
+- integrate Terraform vault with github actions
+- steps on how to setup vault --> https://github.com/iam-veeramalla/terraform-zero-to-hero/blob/main/Day-7/02-vault-integration.md
+- vault comes in dev & prod mode
+- vault port no --> 8200 TCP
 
 ---
 
@@ -55,13 +60,22 @@
 
 ✅ What is Terraform Remote banckend ?
 
-✅ How do you handle secrets in terraform ?
-
 ✅ What is Resource Graph in Terraform ?
+
+---
 
 ✅ What is Terraform State Locking ?
 
+<img width="620" height="379" alt="image" src="https://github.com/user-attachments/assets/0383b732-59a2-47e8-b14e-481fcdefc29d" />
+
+---
+
 ✅ What is a Tainted Terraform resource ?
+- A tainted resource in Terraform is a resource marked for recreation. Terraform will destroy and recreate the resource during the next terraform apply. This usually happens when a resource creation fails or when the user manually taints it.
+- terraform apply -replace forces Terraform to destroy and recreate a specific resource in a single step
+- terraform destroy deletes all infrastructure managed by the Terraform configuration.
+
+---
 
 ✅ What is Terraform State Rollback ?
 
@@ -69,21 +83,15 @@
 
 ✅ drift detection using pipeline and terraform cloud
 
-✅ how terraform vault works and how will u integrate with pipelines
-
 ---
 
 ✅ which terraform version were u using ?
 
 ---
 
-✅ terraform state file lock in s3 ? if 2 developers are trying to modify same resource what will happen 
-
----
-
 ✅ if someone deletes state file what will happen
 
-✅ terraform multiple providers ? use alias
+✅ How to handle multi-account AWS setup? use alias
 
 ✅ What makes Terraform declarative?
 
@@ -119,8 +127,6 @@ Explain terraform validate vs fmt.
 
 What is terraform console?
 
-Explain variable precedence.
-
 What is sensitive variable?
 
 How to detect cyclic dependency?
@@ -133,15 +139,13 @@ How to prevent accidental production deletion?
 
 How to migrate local state to remote?
 
-How to handle multi-account AWS setup? use alias
+---
 
 What is state file corruption recovery?
 
 Explain blue-green deployment in Terraform.
 
 What is terraform plan exit code?
-
-How to manage multiple regions?
 
 What are Terraform limitations?
 
@@ -165,11 +169,7 @@ How do you manage Terraform provider versioning?
 
 How would you provision infra across 10 AWS regions
 
-Have you configured secrets or handled Terraform state files? Explain your experience.
-
 Terraform state got corrupted - what will you do?
-
-Terraform plan shows destroy + recreate for a critical DB- how to prevent downtime?
 
 Your Terraform apply succeeded, but some resources are not behaving as expected. How do you debug? Your Terraform state file is getting too large. How do you manage it?
 
