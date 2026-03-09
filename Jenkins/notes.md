@@ -37,7 +37,7 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 - SCA --> Software Composition Analysis --> Scans Dependencies / libraries ( Docker Images , OS packages , Node modules , Python libraries ) --> Trivy , Github Dependabot 
 - DAST - Dynamic Application Security Testing --> Scans Running Applications -->  OWASP ZAP , invicti
 
-- Someone pushed secrets to gihub code --> uses tools like trufflehog & Github Secret Scanning Alerts
+- Someone pushed secrets to gihub code --> uses tools like trufflehog , Gitleaks or Github Secret Scanning Alerts in pipeline
 - need to scan docker image before pushing to AWS ECR --> Use Trivy
 - scan image already pushed to AWS ECR --> Use AWS ECR advanced image scanner
 - policy as a code in pipeline --> To stop pipleine if public s3 bucket is being cretaed using terraform --> Checkov
