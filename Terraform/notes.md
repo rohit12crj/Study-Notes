@@ -313,5 +313,5 @@ How do you run Terraform safely in CI/CD pipelines?
 
 You want faster Terraform runs in large projects. What optimizations would you apply?
 
-A production deployment failed halfway, leaving some resources created and others not. How do you recover?
+terraform local
 
