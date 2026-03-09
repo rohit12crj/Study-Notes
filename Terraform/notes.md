@@ -5,6 +5,19 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ✅ when will use terraform workspaces vs directories 
+- Terraform workspaces allow you to use the same Terraform code but maintain separate state files.
+- not recommended for prod
+
+| Feature          | Workspaces                   | Directories                   |
+| ---------------- | ---------------------------- | ----------------------------- |
+| Code separation  | Same code                    | Different environment configs |
+| State            | Separate state per workspace | Separate backend/state        |
+| Complexity       | Simple                       | More scalable                 |
+| Enterprise usage | Rare                         | Very common                   |
+| CI/CD pipelines  | Harder                       | Easier                        |
+
+
+<img width="536" height="389" alt="image" src="https://github.com/user-attachments/assets/ff95bab3-fbb1-4f20-9de2-e39716f1df0c" />
 
 ---
 
@@ -114,7 +127,27 @@
 
 ✅ What makes Terraform declarative?
 
+---
+
 ✅ Explain Terraform lifecycle commands.
+- Terraform lifecycle rules control how resources behave during updates.
+
+Main lifecycle arguments:
+- create_before_destroy – Creates new resource before deleting old one to avoid downtime.
+
+<img width="493" height="400" alt="image" src="https://github.com/user-attachments/assets/f57d2ab4-5768-4ac6-84fe-7608a57bb7c1" />
+
+- prevent_destroy – Protects critical resources from accidental deletion.
+
+<img width="455" height="393" alt="image" src="https://github.com/user-attachments/assets/bdca5804-2300-4df3-bcf7-d0690f1204a9" />
+
+- ignore_changes – Ignores external modifications to specific attributes.
+
+<img width="503" height="449" alt="image" src="https://github.com/user-attachments/assets/c9e3043c-56fa-4b80-94c2-1bbf17c9f0f1" />
+
+- replace_triggered_by – Forces resource replacement when dependent resources change.
+
+<img width="511" height="366" alt="image" src="https://github.com/user-attachments/assets/a2c31546-992f-4851-a81b-96096720e0fb" />
 
 ---
 
@@ -134,6 +167,21 @@
 ---
 
 ✅ Difference between count and for_each?
+- count creates multiple resources using numeric indexes, while for_each creates resources using keys from a map or set.
+- count is suitable for identical resources, whereas for_each is better when resources have unique identifiers and we want stable resource tracking.
+
+| Feature            | `count`             | `for_each`         |
+| ------------------ | ------------------- | ------------------ |
+| Input type         | Number              | Map / Set          |
+| Resource reference | Index `[0]`         | Key `["dev"]`      |
+| Stability          | Index can change    | Keys remain stable |
+| Use case           | Identical resources | Unique resources   |
+
+<img width="365" height="413" alt="image" src="https://github.com/user-attachments/assets/dde761d5-559e-4b61-966b-c3f41469815f" />
+
+<img width="416" height="426" alt="image" src="https://github.com/user-attachments/assets/d5214192-aa4d-4041-ac86-78aa6b3a758d" />
+
+---
 
 ✅ provisioners and when to use them and when not to use them 
 
@@ -151,6 +199,7 @@
 - again run terraform apply
 
 ---
+
 ✅ What is lifecycle block?
 
 What is parallelism in Terraform?
@@ -159,11 +208,43 @@ What is terraform graph?
 
 How to avoid downtime during updates? create_before_destroy , Blue-Green deployment ,Separate modules
 
-What is dynamic block?
+---
 
-What is null_resource?
+✅ What is dynamic block?
+- A dynamic block in Terraform is used to dynamically generate repeated nested configuration blocks inside a resource using loops like for_each. It helps reduce repetitive code and makes configurations more flexible, for example when creating multiple security group ingress rules.
+
+<img width="539" height="344" alt="image" src="https://github.com/user-attachments/assets/007b6610-89a0-446f-bffd-eb20580d35a3" />
+
+<img width="301" height="259" alt="image" src="https://github.com/user-attachments/assets/7327a7e4-b83a-4628-b5d6-ee2d34b9309d" />
+
+<img width="487" height="383" alt="image" src="https://github.com/user-attachments/assets/4a5e438f-1d7b-4007-917b-a207795afcd5" />
+
+---
+
+✅  What is null_resource?
+
+<img width="620" height="289" alt="image" src="https://github.com/user-attachments/assets/92c6740f-9ff7-4725-be4b-40b1ed3a57d8" />
+
+<img width="439" height="310" alt="image" src="https://github.com/user-attachments/assets/ecd4db95-abd1-4bbd-af70-3820841cd846" />
+
+<img width="416" height="181" alt="image" src="https://github.com/user-attachments/assets/248c761f-cfb5-416e-a8d7-df2bcbcb6971" />
+
+---
+
+✅  what are terraform triggers ?
+- In Terraform, triggers are used inside a null_resource to force the resource to re-run when specific values change.
+- Normally Terraform only recreates a resource when its configuration changes.
+- But since null_resource doesn’t manage real infrastructure, Terraform needs a way to know when to run it again . That’s where triggers come in.
+- Terraform triggers are used inside a null_resource to force Terraform to recreate the resource when specific values change.
+- When a trigger value changes, Terraform destroys and recreates the resource, causing provisioners like local-exec to run again. They are commonly used for deployment automation or script execution.
+
+<img width="455" height="265" alt="image" src="https://github.com/user-attachments/assets/83543138-9005-4f7e-8d28-b6345d9759e6" />
+
+---
 
 Explain terraform validate vs fmt.
+
+---
 
 What is terraform console?
 
