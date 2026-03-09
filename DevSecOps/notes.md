@@ -1,5 +1,5 @@
 
-https://www.youtube.com/watch?v=d0J8muCCXwQ\&list=WL\&index=1
+https://www.youtube.com/playlist?list=PLdpzxOOAlwvLRR_KPxSKCJMf2qDNKrGd-  --> DevSecOps Playlist ( Abhishek )
 
 https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhishek )
 
