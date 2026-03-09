@@ -27,7 +27,22 @@ https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhi
 ✅ OWASP ZAP
 - Tool used in DAST
 - https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm --> DevOps Shack
-- https://youtu.be/cLOXIodlw74?si=7dWVwbcxbw-0dYmM --> Top 10 security issues--> DevOps Shack
+
+---
+
+✅ OWASP Top 10 security issues
+- https://youtu.be/cLOXIodlw74?si=7dWVwbcxbw-0dYmM --> DevOps Shack
+
+OWASP Top 10 security issues
+- Broken Access Control
+- Cryptographic Failure
+- Injection
+- Insecure Design
+- Security Misconfiguration
+- Vulnerable and Outdated Components
+- Identification & Authentication Failures
+- Security Logging and monitoring failures
+- Server Side Request Forgery (SSRF)
 
 ---
 
