@@ -16,7 +16,7 @@ https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhi
 
 ---
 
-✅ OWASP ZAP --> https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu  ( DevOps Shack )
+✅ OWASP ZAP --> https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm  ( DevOps Shack )
 
 ---
 
