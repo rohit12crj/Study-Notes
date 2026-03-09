@@ -1,10 +1,21 @@
+
 https://www.youtube.com/watch?v=d0J8muCCXwQ\&list=WL\&index=1
 
 https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhishek )
 
 ---
 
-What is “Shift Left Security”?
+✅ What is “Shift Left Security”?
+
+---
+
+✅ Trivy --> https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu  ( DevOps Shack )
+
+---
+
+✅ OWASP --> https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu  ( DevOps Shack )
+
+---
 
 What are SAST, DAST, and SCA?
 🔹 SAST (Static Application Security Testing)
