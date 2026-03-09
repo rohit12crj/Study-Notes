@@ -19,6 +19,6 @@
 - CloudWatch Log Retention – Set log retention period to avoid long-term storage costs.
 - Use AWS Budgets & Cost Explorer – Monitor and alert on unexpected spending.
 - Use Compute Spot in ECS/EKS – Run container workloads on cheaper spot capacity.
-
-Use Data Transfer Optimization – Keep services in the same AZ/VPC to reduce data transfer charges
-How will u send out mail to different AWS Account Owners about cost optimization rules within the AWS Services they are using ?
+- Use Data Transfer Optimization – Keep services in the same AZ/VPC to reduce data transfer charges
+- Use valkey cache instead of redis cache
+  
