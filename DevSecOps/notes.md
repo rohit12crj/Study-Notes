@@ -12,11 +12,22 @@ https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhi
 
 ---
 
-✅ Trivy --> https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu  ( DevOps Shack )
+✅ Sonarqube
+- Tool used in SAST
+- https://youtu.be/r2UVTDpIUj8?si=-_itvd9yclLW1s4j --> DevOps Shack
 
 ---
 
-✅ OWASP ZAP --> https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm  ( DevOps Shack )
+✅ Trivy
+- Tool used in SCA
+- https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu --> DevOps Shack
+
+---
+
+✅ OWASP ZAP
+- Tool used in DAST
+- https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm --> DevOps Shack
+- https://youtu.be/cLOXIodlw74?si=7dWVwbcxbw-0dYmM --> Top 10 security issues--> DevOps Shack
 
 ---
 
@@ -59,22 +70,4 @@ Examples:
 <img width="365" height="191" alt="image" src="https://github.com/user-attachments/assets/a495c126-adcb-4c0f-b472-b173e4ab2a4d" />
 
 ---
-
-Scans third-party libraries
-
-Finds vulnerable dependencies
-
-What is Infrastructure as Code (IaC) Security?  Checkov
-
-What is Policy as Code?
-
-Difference between DevOps and DevSecOps?
-
-Developer pushes vulnerable library. What do you do?
-
-container security
-
-k8 security
-
-Example: Snyk, Dependabot
 
