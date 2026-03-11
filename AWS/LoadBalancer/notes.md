@@ -28,6 +28,7 @@ Target Types
 - Lambda functions
 - Private IP addresses
 
+ALB - Good to know
 - ALB has a fixed DNS name (no static IP) — use NLB if you need static IP
 - X-Forwarded-For header — contains client's real IP (since ALB terminates connection)
 - X-Forwarded-Port, X-Forwarded-Proto also added
