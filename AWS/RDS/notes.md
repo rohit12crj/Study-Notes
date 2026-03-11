@@ -423,3 +423,9 @@ Example:
 <img width="631" height="167" alt="image" src="https://github.com/user-attachments/assets/bb858566-b59a-434d-886d-e811f1ac5fc1" />
 
 
+<img width="581" height="57" alt="image" src="https://github.com/user-attachments/assets/19f2d2d2-0d87-450d-82cc-b464d227d2c0" />
+
+What is the difference between Snapshot Restore and Point-in-Time Recovery in RDS
+- Snapshot Restore restores a database from a specific snapshot backup, while Point-in-Time Recovery restores the database to any exact timestamp using automated backups and transaction logs.
+- For PITR to work automated snapshots are mandatory
+- PITR never overwrites the existing DB. It creates a new database instance. 
