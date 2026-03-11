@@ -413,3 +413,13 @@ Example:
 - No. RDS only scales up, not down.
 
 <img width="577" height="302" alt="image" src="https://github.com/user-attachments/assets/5e0976d5-c529-4e9d-839d-1b91e6f0086b" />
+
+<img width="665" height="196" alt="image" src="https://github.com/user-attachments/assets/a99868f6-1c53-4f83-bff3-d5b7b3ba57b1" />
+
+
+<img width="674" height="373" alt="image" src="https://github.com/user-attachments/assets/a1da0cbe-be9b-4a58-b46f-21ed8899729f" />
+
+
+<img width="631" height="167" alt="image" src="https://github.com/user-attachments/assets/bb858566-b59a-434d-886d-e811f1ac5fc1" />
+
+
