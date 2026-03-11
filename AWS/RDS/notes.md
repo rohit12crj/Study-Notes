@@ -160,139 +160,55 @@ SNS notifications for DB events (failover, backup, parameter change)
 
 ---
 
-1. Database is slow during peak hours. What will you check?
+✅ Database is slow during peak hours. What will you check?
+- Check CloudWatch metrics (CPUUtilization, ReadIOPS, WriteIOPS, DBConnections).
+- Enable Performance Insights to identify slow queries.
+- Check slow query logs.
+- Increase instance class or storage IOPS if needed.
+- Add read replicas to offload read traffic.
 
-Answer:
-
-Check CloudWatch metrics (CPUUtilization, ReadIOPS, WriteIOPS, DBConnections).
-
-Enable Performance Insights to identify slow queries.
-
-Check slow query logs.
-
-Increase instance class or storage IOPS if needed.
-
-Add read replicas to offload read traffic.
-
-2. Application requires high availability for database. What architecture will you use?
-
-Answer:
-Use RDS Multi-AZ deployment.
+✅ Application requires high availability for database. What architecture will you use?
+- Use RDS Multi-AZ deployment.
 
 How it works:
+- Primary DB in AZ-1
+- Standby DB in AZ-2
+- Synchronous replication
+- Automatic failover
+- If primary fails → standby becomes primary automatically.
+- Good for HA but not read scaling.
 
-Primary DB in AZ-1
+✅ Your application has heavy read traffic. How will you scale the database?
+- Use Read Replicas.
+- Writes still go to primary DB.
+- asynchronous replication
 
-Standby DB in AZ-2
 
-Synchronous replication
+✅ Database storage is almost full in production. What will you do?
+- Modify RDS instance. --> Increase allocated storage.
+- Enable Storage Autoscaling.
+- RDS supports online storage scaling, so downtime is minimal.
 
-Automatic failover
+✅ Your RDS database is accidentally deleted. How will you recover it?
+- Restore from:
+- Automated backups
+- Manual snapshots
+- Point-in-time recovery (PITR)
 
-If primary fails → standby becomes primary automatically.
+✅ Developer accidentally ran DELETE query without WHERE clause. How will you recover data?
+- Use Point-in-Time Recovery.
+- Restore DB to timestamp before query execution
+- Extract required data
+- Insert back into production DB.
 
-Good for HA but not read scaling.
+✅ Your RDS instance suddenly shows high CPU utilization. What will you investigate?
+- Check Performance Insights
+- Identify long-running queries
+- Check DB connections spike
+- Review recent deployments
+- Tune queries or add indexes.
 
-3. Your application has heavy read traffic. How will you scale the database?
-
-Answer:
-Use Read Replicas.
-
-Steps:
-
-Create read replicas of primary DB.
-
-Application routes read queries to replicas.
-
-Writes still go to primary DB.
-
-Benefits:
-
-Improves read performance
-
-Reduces load on primary DB.
-
-4. Database storage is almost full in production. What will you do?
-
-Answer:
-
-Modify RDS instance.
-
-Increase allocated storage.
-
-Enable Storage Autoscaling.
-
-RDS supports online storage scaling, so downtime is minimal.
-
-5. Your RDS database is accidentally deleted. How will you recover it?
-
-Answer:
-Restore from:
-
-Automated backups
-
-Manual snapshots
-
-Point-in-time recovery (PITR)
-
-Example:
-Restore database to 5 minutes before deletion.
-
-6. Developer accidentally ran DELETE query without WHERE clause. How will you recover data?
-
-Answer:
-Use Point-in-Time Recovery.
-
-Steps:
-
-Restore DB to timestamp before query execution
-
-Extract required data
-
-Insert back into production DB.
-
-7. Database credentials should not be stored in application code. What will you do?
-
-Answer:
-Use AWS Secrets Manager or SSM Parameter Store.
-
-Benefits:
-
-Secure credential storage
-
-Automatic password rotation
-
-Application retrieves secrets securely.
-
-8. Your RDS instance suddenly shows high CPU utilization. What will you investigate?
-
-Answer:
-
-Check Performance Insights
-
-Identify long-running queries
-
-Check DB connections spike
-
-Review recent deployments
-
-Tune queries or add indexes.
-
-9. Company wants encryption for database. How will you implement it?
-
-Answer:
-Enable RDS Encryption using AWS KMS.
-
-Two types:
-
-Encryption at rest → KMS
-
-Encryption in transit → SSL/TLS
-
-Note:
-Encryption must be enabled during DB creation.
-
-10. Application servers cannot connect to RDS. What will you check?
+✅ Application servers cannot connect to RDS. What will you check?
 
 Answer:
 
@@ -312,171 +228,37 @@ Public/Private access
 
 Network ACL
 
-11. How will you migrate an on-premise database to AWS RDS with minimal downtime?
+✅ How will you migrate an on-premise database to AWS RDS with minimal downtime?
+- Use AWS Database Migration Service (DMS).
 
-Answer:
+✅ Your RDS instance is running out of connections. What will you do?
+- Enable RDS Proxy
+- Increase max_connections
 
-Use AWS Database Migration Service (DMS).
-
-Steps:
-
-Full data load
-
-Enable CDC (Change Data Capture)
-
-Replicate changes
-
-Cutover with minimal downtime.
-
-12. Your RDS instance is running out of connections. What will you do?
-
-Answer:
-
-Possible solutions:
-
-Enable RDS Proxy
-
-Increase max_connections
-
-Use connection pooling
-
-Fix application connection leaks.
-
-13. How will you monitor RDS performance?
-
-Answer:
-
-Use:
-
-CloudWatch Metrics
-
-Enhanced Monitoring
-
-Performance Insights
-
-Slow Query Logs
-
-14. Your database requires disaster recovery across regions. What will you implement?
-
-Answer:
-
-Use Cross-Region Read Replicas.
+✅ Developers want a copy of production DB for testing. What will you do?
+- Create a DB Snapshot and restore it to a new RDS instance.
 
 Benefits:
+- Safe copy of production
+- No impact to production DB.
 
-Disaster recovery
+<img width="612" height="267" alt="image" src="https://github.com/user-attachments/assets/cd2271ac-1eab-4529-b013-34a95ac6944e" />
 
-Low RPO
-
-Manual promotion if region fails.
-
-15. Developers want a copy of production DB for testing. What will you do?
-
-Answer:
-
-Create a DB Snapshot and restore it to a new RDS instance.
-
-Benefits:
-
-Safe copy of production
-
-No impact to production DB.
-
-16. How will you automate backups in RDS?
-
-Answer:
-
-Enable Automated Backups.
-
-Features:
-
-Retention period 1–35 days
-
-Daily snapshot
-
-Transaction log backups.
-
-Supports Point-in-Time Recovery.
-
-17. Company wants serverless database. What option in RDS?
-
-Answer:
-
-Use Aurora Serverless.
-
-Benefits:
-
-Auto scaling
-
-Pay per usage
-
-No instance management.
-
-18. Terraform accidentally destroyed an RDS instance. How do you prevent this?
-
-Answer:
-
-Use:
-
-lifecycle {
-  prevent_destroy = true
-}
-
-Also enable:
-
-Deletion protection
-
-Automated backups
-
-19. RDS is not enough for extremely high traffic system. What will you suggest?
-
-Answer:
-
-Use Amazon Aurora.
-
-Advantages:
-
-5x faster than MySQL
-
-15 read replicas
-
-Auto scaling storage
-
-Better failover.
-
-20. Production DB should not be publicly accessible. How will you secure it?
-
-Answer:
-
-Best practices:
-
-Deploy RDS in private subnet
-
-Disable Public Access
-
-Use Security Groups
-
-Connect via application servers / bastion host
-
-Quick 1-Line Interview Cheat Sheet
-Scenario	Solution
-High availability	Multi-AZ
-Read scaling	Read replicas
-Disaster recovery	Cross-region replica
-Restore deleted data	Point-in-time recovery
-Secure credentials	Secrets Manager
-Too many DB connections	RDS Proxy
-Encryption	KMS
-Migration	AWS DMS
-
+✅ Production DB should not be publicly accessible. How will you secure it?
+- Deploy RDS in private subnet
+- Disable Public Access
+- Use Security Groups
+- Connect via application servers / bastion host
 
 
 ✅ What is the difference between Multi-AZ and Read Replica?
-Feature	Multi-AZ	Read Replica
-Purpose	High Availability	Read Scaling
-Replication	Synchronous	Asynchronous
-Failover	Automatic	Manual
-Read traffic	No	Yes
+| Feature      | Multi-AZ          | Read Replica |
+| ------------ | ----------------- | ------------ |
+| Purpose      | High Availability | Read Scaling |
+| Replication  | Synchronous       | Asynchronous |
+| Failover     | Automatic         | Manual       |
+| Read traffic | No                | Yes          |
+
 
 ✅ Your RDS instance suddenly fails. How does failover work in Multi-AZ?
 - RDS promotes the standby instance automatically.
@@ -490,96 +272,57 @@ Read traffic	No	Yes
 - Within maximum storage limit
 - Prevents database outages due to disk full.
 
-4. What is RDS Proxy and when would you use it?
-
-Answer:
-
-RDS Proxy manages database connections.
+✅ What is RDS Proxy and when would you use it?
+- RDS Proxy manages database connections.
 
 Benefits:
+- Connection pooling
+- Improves scalability
+- Handles connection storms
+- Faster failover
+- Used in serverless architectures like Lambda.
 
-Connection pooling
+✅ What is the difference between automated backups and snapshots?
+| Feature                | Automated Backup | Snapshot  |
+| ---------------------- | ---------------- | --------- |
+| Created automatically  | Yes              | No        |
+| Retention              | 1-35 days        | Unlimited |
+| Point-in-time recovery | Yes              | No        |
+| Storage cost           | Included         | Charged   |
 
-Improves scalability
 
-Handles connection storms
-
-Faster failover
-
-Used in serverless architectures like Lambda.
-
-5. What is the difference between automated backups and snapshots?
-Feature	Automated Backup	Snapshot
-Created automatically	Yes	No
-Retention	1-35 days	Unlimited
-Point-in-time recovery	Yes	No
-Storage cost	Included	Charged
-6. How does RDS encryption work?
-
-Answer:
-
-Encryption uses AWS KMS.
+✅ How does RDS encryption work?
+- Encryption uses AWS KMS.
 
 Two types:
+- Encryption at rest
+- Encryption in transit (SSL/TLS)
+- Once enabled → cannot disable encryption.
+- Encryption must be enabled during DB creation.
 
-Encryption at rest
-
-Encryption in transit (SSL/TLS)
-
-Once enabled → cannot disable encryption.
-
-7. Can you enable encryption on an existing RDS instance?
-
-Answer:
-
-No directly.
+✅ Can you enable encryption on an existing RDS instance?
+- No directly.
 
 Steps:
+- Take snapshot
+- Copy snapshot with encryption
+- Restore encrypted DB.
 
-Take snapshot
+✅ How does RDS handle patching and maintenance?
+- RDS performs maintenance during maintenance window:
 
-Copy snapshot with encryption
+✅ What is Performance Insights?
+- A monitoring tool that helps:
+- Identify slow queries
+- Detect database bottlenecks
+- View top SQL queries
+- Analyze CPU usage by query.
 
-Restore encrypted DB.
-
-8. How does RDS handle patching and maintenance?
-
-Answer:
-
-RDS performs maintenance during maintenance window:
-
-OS patching
-
-Minor version upgrades
-
-Security patches
-
-Multi-AZ reduces downtime during patching.
-
-9. What is Performance Insights?
-
-Answer:
-
-A monitoring tool that helps:
-
-Identify slow queries
-
-Detect database bottlenecks
-
-View top SQL queries
-
-Analyze CPU usage by query.
-
-10. How can you reduce failover time in RDS?
-Best practices:
-
-Use Aurora instead of standard RDS
-
-Reduce long-running transactions
-
-Use RDS Proxy
-
-Optimize DNS caching
+✅ How can you reduce failover time in RDS?
+- Use Aurora instead of standard RDS
+- Reduce long-running transactions
+- Use RDS Proxy
+- Optimize DNS caching
 
 ✅ What is the maximum number of read replicas supported?
 - Depends on engine:
@@ -614,6 +357,7 @@ Optimize DNS caching
 - Cross-region read replicas
 - Snapshot copy to another region
 - Use Aurora Global Database
+- For dynamo Db use Global Tables
 
 ✅ What is Aurora Global Database?
 - global database architecture that allows:
@@ -667,3 +411,5 @@ Example:
 
 ✅ Does RDS automatically shrink storage when usage drops?
 - No. RDS only scales up, not down.
+
+<img width="577" height="302" alt="image" src="https://github.com/user-attachments/assets/5e0976d5-c529-4e9d-839d-1b91e6f0086b" />
