@@ -1,259 +1,110 @@
-What is AWS SSM (Systems Manager) ?
+✅ What is AWS SSM (Systems Manager) ?
 - Centralized management service for EC2, on-prem servers, and VMs
 - Helps with patching, automation, configuration, and remote command execution
 - Works via SSM Agent
 
 ---
 
-Core Components
-1. SSM Agent
+✅ SSM Agent
+- Installed on instances
 
-Installed on instances
+<img width="621" height="154" alt="image" src="https://github.com/user-attachments/assets/7c48cd7a-139d-4fdd-a0a2-a232bdc656d1" />
 
-Communicates with SSM service
+<img width="530" height="248" alt="image" src="https://github.com/user-attachments/assets/5a54a55a-de1e-4c7b-9b52-f324f4765300" />
 
-Runs commands, automation, patching
+<img width="646" height="263" alt="image" src="https://github.com/user-attachments/assets/31fd923d-f5c8-468d-8341-bad5fb2eaeb4" />
 
-2. Managed Instance
+<img width="622" height="178" alt="image" src="https://github.com/user-attachments/assets/8af402cf-a321-4136-8499-feafc59cb352" />
 
-Servers managed by SSM:
+<img width="596" height="284" alt="image" src="https://github.com/user-attachments/assets/12487f2b-11e0-4406-a4d0-e2b2097fe960" />
 
-EC2 instances
+<img width="590" height="113" alt="image" src="https://github.com/user-attachments/assets/8e6e7a0c-ee48-4fae-80c3-e08da662f3c7" />
 
-On-prem servers
+---
 
-Other cloud VMs
-
-Requirements:
-
-SSM agent
-
-IAM role
-
-Network access to SSM endpoints
-
-Important SSM Features
-3. Run Command
-
-Execute commands on instances without SSH.
+✅ SSM Run Command
+- Execute commands on instances without SSH.
 
 Example use cases:
+- restart services
+- install packages
+- run scripts
 
-restart services
-
-install packages
-
-run scripts
-
-Example command:
-
-sudo yum update
-4. Session Manager
-
-Secure shell access without SSH or bastion host.
+✅ SSM Session Manager
+- Secure shell access without SSH or bastion host.
 
 Benefits:
+- No port 22 required
+- No SSH keys
+- All sessions logged
 
-No port 22 required
+---
 
-No SSH keys
-
-All sessions logged
-
-Architecture
-
-User → AWS Console → SSM → EC2 instance
-5. Patch Manager
-
-Automates OS patching.
-
-Supports:
-
-Linux
-
-Windows
+✅ SSM Patch Manager
+- Automates OS patching.
+- Supports --> Linux , Windows
 
 Capabilities:
+- scan patches
+- install patches
+- schedule patching
 
-scan patches
+---
 
-install patches
-
-schedule patching
-
-6. Automation
-
-Run automated workflows.
+✅ SSM Automation
+- Run automated workflows.
 
 Example tasks:
+- create AMI
+- restart instance
+- attach EBS volume
+- security remediation
+- Automation uses SSM documents.
 
-create AMI
+✅ SSM Parameter Store
+- Secure storage for configuration values 
 
-restart instance
+✅ State Manager
+- Maintains desired configuration state.
 
-attach EBS volume
+<img width="304" height="119" alt="image" src="https://github.com/user-attachments/assets/38218144-99f4-41c2-bc6b-d767924e297b" />
 
-security remediation
-
-Automation uses SSM documents.
-
-7. Parameter Store
-
-Secure storage for:
-
-configuration values
-
-secrets
-
-API keys
-
-Example:
-
-/prod/db/password
-
-Types:
-
-Standard
-
-Advanced
-
-SecureString (encrypted)
-
-Uses AWS Key Management Service
-
-8. State Manager
-
-Maintains desired configuration state.
-
-Example:
-
-Ensure nginx always installed.
-
-Install nginx
-Keep service running
-9. Inventory
-
-Collect metadata from instances.
+✅ Inventory
+- Collect metadata from instances.
 
 Example data:
+- OS version
+- installed packages
+- applications
+- network configuration
 
-OS version
-
-installed packages
-
-applications
-
-network configuration
-
-10. Distributor
-
-Install software packages across instances.
+✅ Distributor
+- Install software packages across instances.
 
 Example:
+- CloudWatch agent
+- security tools
+- custom applications
 
-CloudWatch agent
+<img width="409" height="445" alt="image" src="https://github.com/user-attachments/assets/26c3a33f-f134-445c-9e53-3824799d1f4f" />
 
-security tools
+<img width="262" height="312" alt="image" src="https://github.com/user-attachments/assets/508c2f0e-d5f9-46b9-9bf2-05e82d0fda3d" />
 
-custom applications
+<img width="578" height="200" alt="image" src="https://github.com/user-attachments/assets/3dfe577f-d3bb-4455-99d7-77335ac4c679" />
 
-Networking Requirements
+---
 
-Instances must reach:
+- You want to access EC2 in private subnet without SSH --> Use Session Manager.
+- Need to run commands on 500 servers. --> Use Run Command.
+- Ensure servers are patched monthly --> Use Patch Manager + maintenance window.
+- Store database passwords securely --> Use AWS Secrets manager instead of SSM Paramter Store
 
-ssm.amazonaws.com
-ec2messages.amazonaws.com
-ssmmessages.amazonaws.com
+---
 
-If private subnet:
+<img width="478" height="295" alt="image" src="https://github.com/user-attachments/assets/6ab62fce-2380-4278-a103-28d5b0f30f01" />
 
-Use SSM VPC endpoints.
+---
 
-Required IAM Role
+<img width="563" height="167" alt="image" src="https://github.com/user-attachments/assets/76f432bc-d323-4e41-b88f-cc57342c2080" />
 
-Typical role:
-
-AmazonSSMManagedInstanceCore
-
-This allows:
-
-Run commands
-
-Session manager
-
-patching
-
-automation
-
-SSM vs SSH
-Feature	SSH	SSM
-Port needed	22	none
-Key management	required	not required
-Audit logging	limited	CloudTrail logs
-Bastion host	required	not required
-Common Interview Scenarios
-Scenario 1
-
-You want to access EC2 in private subnet without SSH.
-
-Solution:
-
-Use Session Manager.
-
-Scenario 2
-
-Need to run commands on 500 servers.
-
-Solution:
-
-Use Run Command.
-
-Scenario 3
-
-Ensure servers are patched monthly.
-
-Solution:
-
-Use Patch Manager + maintenance window.
-
-Scenario 4
-
-Store database passwords securely.
-
-Solution:
-
-Use Parameter Store SecureString.
-
-Important Interview Tip
-
-SSM helps achieve zero SSH architecture.
-
-Architecture:
-
-User
-  ↓
-SSM Session Manager
-  ↓
-EC2 private subnet
-
-No bastion host required.
-
-One-Line Memory Trick
-Feature	Purpose
-Run Command	execute commands remotely
-Session Manager	SSH without SSH
-Patch Manager	automate patching
-Parameter Store	store configs & secrets
-Automation	run workflows
-State Manager	enforce configuration
-Inventory	collect instance data
-
-If you want, I can also give 15 advanced SSM interview questions (very commonly asked in DevOps interviews) like:
-
-SSM vs Secrets Manager
-
-SSM vs SSH bastion
-
-How Session Manager works internally
-
-How SSM works in private VPC without internet.
+<img width="515" height="418" alt="image" src="https://github.com/user-attachments/assets/30f36028-bb1d-49ac-b65a-247d72e998c2" />
