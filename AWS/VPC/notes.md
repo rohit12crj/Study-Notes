@@ -39,7 +39,7 @@
 
 ---
 
-- Default VPC: Created automatically in each region. CIDR: 172.31.0.0/16. Has a default subnet in each AZ, internet gateway attached, and default route table.
+- Default VPC: Created automatically in each region. Has a default subnet in each AZ, internet gateway attached, and default route table.
 - Custom VPC: You define everything from scratch.
 - AWS reserves 5 IPs per subnet: network address, VPC router, DNS, future use, broadcast.
 - Public Subnet	Has route to Internet Gateway; instances can get public IPs
@@ -51,129 +51,131 @@
 
 ---
 
-5. Internet Gateway (IGW)
-Allows communication between VPC and the internet.
-Horizontally scaled, redundant, highly available — no bandwidth bottleneck.
-Only one IGW per VPC.
-Must add a route in the route table: 0.0.0.0/0 → IGW.
-Performs NAT for instances with public IPs.
-6. Route Tables
-Every subnet must be associated with a route table.
-Main route table: Default for all subnets not explicitly associated.
-Custom route tables: For more granular routing.
-Local route (10.0.0.0/16 → local) is always present and cannot be deleted.
-Longest prefix match determines routing priority.
-7. NAT Gateway vs NAT Instance
-Feature	NAT Gateway	NAT Instance
-Managed by	AWS	You
-Availability	Highly available within AZ	Single EC2 instance
-Bandwidth	Up to 100 Gbps	Instance-type dependent
-Security Groups	Not supported	Supported
-Cost	Higher	Lower
-Failover	Deploy in multiple AZs	Manual setup needed
-NAT sits in a public subnet; private subnet routes 0.0.0.0/0 → NAT.
-NAT is not needed for IPv6 — use Egress-Only IGW instead.
-8. Egress-Only Internet Gateway
-IPv6 equivalent of NAT Gateway.
-Allows outbound IPv6 traffic but blocks inbound.
-Used for private subnets with IPv6.
-9. Security Groups (SGs)
-Stateful firewall — return traffic is automatically allowed.
-Operates at the instance/ENI level.
-Only allow rules (no explicit deny).
-Default SG: allows all outbound, blocks all inbound (except from same SG).
-SGs can reference other SGs (e.g., allow traffic from another SG).
-Up to 5 SGs per ENI.
-10. Network ACLs (NACLs)
-Stateless firewall — return traffic must be explicitly allowed.
-Operates at the subnet level.
-Supports both allow and deny rules.
-Rules evaluated in ascending order (lowest number first); first match wins.
-Default NACL: allows all inbound and outbound traffic.
-Custom NACL: denies all by default.
-Ephemeral ports (1024–65535) must be allowed for return traffic.
-SG vs NACL Quick Comparison:
+✅ Internet Gateway (IGW)
+- Allows communication between VPC and the internet.
+- Horizontally scaled, redundant, highly available — no bandwidth bottleneck.
+- Only one IGW per VPC.
+- Must add a route in the route table: 0.0.0.0/0 → IGW.
+- Performs NAT for instances with public IPs.
 
-Security Group	NACL
-Level	Instance	Subnet
-Stateful	Yes	No
-Deny rules	No	Yes
-Evaluation	All rules	In order
-10. VPC Peering
-Connect two VPCs privately (same or different accounts/regions).
-Traffic uses AWS backbone, not internet.
-No transitive peering — A↔B, B↔C does not mean A↔C.
-CIDR blocks must not overlap.
-Route tables must be updated in both VPCs.
-Supports inter-region VPC peering.
-11. VPC Endpoints
-Allow private connectivity to AWS services without internet, NAT, or VPN.
+---
 
-Interface Endpoint (AWS PrivateLink)
-Creates an ENI with a private IP in your subnet.
-Supports most AWS services (S3, DynamoDB, etc.) and third-party services.
-DNS resolution directs traffic to the ENI.
-Costs money (per hour + per GB).
-Secured with Security Groups.
-Gateway Endpoint
-Only for S3 and DynamoDB.
-Adds a route to the route table.
-Free.
-Does not use DNS — uses route table entries.
-12. AWS Transit Gateway (TGW)
-Central hub to connect multiple VPCs, VPNs, and Direct Connect.
-Solves the n² peering problem — no need for full mesh.
-Supports transitive routing.
-Route tables per TGW control which attachments can communicate.
-Supports multicast.
-Cross-region peering available.
-Charged per attachment and per GB.
-13. VPN Connections
+✅ Route Tables
+- Every subnet must be associated with a route table.
+- Main route table: Default for all subnets not explicitly associated.
+- Custom route tables: For more granular routing.
+- Local route (10.0.0.0/16 → local) is always present and cannot be deleted.
+- Longest prefix match determines routing priority.
+
+---
+
+✅ Security Groups (SGs)
+- Stateful firewall — return traffic is automatically allowed.
+- Operates at the instance/ENI level.
+- Only allow rules (no explicit deny).
+- Default SG: allows all outbound, blocks all inbound (except from same SG).
+- SGs can reference other SGs (e.g., allow traffic from another SG).
+- Up to 5 SGs per ENI.
+
+---
+
+✅ Network ACLs (NACLs)
+- Stateless firewall — return traffic must be explicitly allowed.
+- Operates at the subnet level.
+- Supports both allow and deny rules.
+- Rules evaluated in ascending order (lowest number first); first match wins.
+- Default NACL: allows all inbound and outbound traffic.
+- Custom NACL: denies all by default.
+- Ephemeral ports (1024–65535) must be allowed for return traffic.
+
+<img width="540" height="167" alt="image" src="https://github.com/user-attachments/assets/89e0100a-49d7-4a35-a4e3-e4e58bfc8b25" />
+
+---
+
+✅ VPC Peering
+- Connect two VPCs privately (same or different accounts/regions).
+- Traffic uses AWS backbone, not internet.
+- No transitive peering — A↔B, B↔C does not mean A↔C.
+- CIDR blocks must not overlap.
+- Route tables must be updated in both VPCs.
+- Supports inter-region VPC peering.
+
+✅ VPC Endpoints
+- Allow private connectivity to AWS services without internet, NAT, or VPN.
+
+---
+
+✅ Interface Endpoint (AWS PrivateLink)
+- Creates an ENI with a private IP in your subnet.
+- Supports most AWS services (S3, DynamoDB, etc.) and third-party services.
+- DNS resolution directs traffic to the ENI.
+- Costs money (per hour + per GB).
+- Secured with Security Groups.
+  
+---
+
+✅ Gateway Endpoint
+- Only for S3 and DynamoDB.
+- Adds a route to the route table.
+- Free.
+- Does not use DNS — uses route table entries.
+
+---
+
+✅ AWS Transit Gateway (TGW)
+- Central hub to connect multiple VPCs, VPNs, and Direct Connect.
+- Solves the n² peering problem — no need for full mesh.
+- Supports transitive routing.
+- Route tables per TGW control which attachments can communicate.
+- Supports multicast.
+- Cross-region peering available.
+- Charged per attachment and per GB.
+
+---
+
+✅ VPN Connections
+
 Site-to-Site VPN
-Connects on-premises network to VPC over the internet (encrypted with IPsec).
-Requires a Virtual Private Gateway (VGW) on AWS side and a Customer Gateway (CGW) on-prem.
-Two tunnels per VPN for redundancy.
-Bandwidth: up to 1.25 Gbps per tunnel.
-Supports static or BGP dynamic routing.
-Client VPN
-Managed OpenVPN solution for remote users.
-Users connect via VPN client software.
-Authenticates via AD, SAML, or certificates.
-14. AWS Direct Connect (DX)
-Dedicated private network connection from on-premises to AWS.
-Not encrypted by default — use IPsec over DX for encryption.
-Speeds: 1 Gbps, 10 Gbps, 100 Gbps (hosted: 50 Mbps–10 Gbps).
-Lower latency, consistent throughput vs VPN.
+- Connects on-premises network to VPC over the internet (encrypted with IPsec).
+- Requires a Virtual Private Gateway (VGW) on AWS side and a Customer Gateway (CGW) on-prem.
+- Two tunnels per VPN for redundancy.
+- Bandwidth: up to 1.25 Gbps per tunnel.
+- Supports static or BGP dynamic routing.
+  
+
+✅ AWS Direct Connect (DX)
+- Dedicated private network connection from on-premises to AWS.
+- Not encrypted by default — use IPsec over DX for encryption.
+- Speeds: 1 Gbps, 10 Gbps, 100 Gbps (hosted: 50 Mbps–10 Gbps).
+- Lower latency, consistent throughput vs VPN.
+- Failover: combine DX (primary) + Site-to-Site VPN (backup).
+  
 Direct Connect Gateway: connect one DX to multiple VPCs in different regions.
-Failover: combine DX (primary) + Site-to-Site VPN (backup).
-15. Elastic Network Interface (ENI)
-Virtual network card attached to EC2 instances.
-Has primary private IP, one or more secondary private IPs, public IP, EIP, MAC address, and SGs.
-ENIs can be moved between instances in the same AZ (useful for failover).
-eth0 = primary ENI; additional ENIs = eth1, eth2, etc.
-16. Elastic IP (EIP)
-Static public IPv4 address allocated to your account.
-Can be associated with an instance or ENI.
-Charged when not associated with a running instance.
-Used for predictable IPs (e.g., whitelisting).
-17. VPC Flow Logs
-Capture IP traffic information for VPCs, subnets, or ENIs.
-Stored in CloudWatch Logs or S3.
-Does not capture: DNS traffic, instance metadata, DHCP, Windows license activation.
-Log format includes: version, account-id, interface-id, src/dst IP, src/dst port, protocol, packets, bytes, action (ACCEPT/REJECT).
-Used for security analysis, troubleshooting, and compliance.
-18. DNS in VPC
-VPC DNS server (Route 53 Resolver) at base CIDR + 2 (e.g., 10.0.0.2).
-Two key VPC settings:
-enableDnsSupport — enables DNS resolution (default: true).
-enableDnsHostnames — assigns public DNS hostnames to instances with public IPs (default: false for custom VPCs).
-Route 53 Resolver Endpoints:
-Inbound: On-prem resolves AWS hostnames.
-Outbound: AWS resolves on-prem hostnames (with forwarding rules).
-19. DHCP Option Sets
-Configure DNS servers, domain names, NTP servers, NetBIOS settings for instances in the VPC.
-Only one DHCP option set per VPC at a time.
-Can create custom option sets and associate them.
+
+---
+
+✅ Elastic Network Interface (ENI)
+- Virtual network card attached to EC2 instances.
+- Has primary private IP, one or more secondary private IPs, public IP, EIP, MAC address, and SGs.
+- ENIs can be moved between instances in the same AZ (useful for failover).
+- eth0 = primary ENI; additional ENIs = eth1, eth2, etc.
+
+---
+
+✅ Elastic IP (EIP)
+- Static public IPv4 address allocated to your account.
+- Can be associated with an instance or ENI.
+- Charged when not associated with a running instance.
+- Used for predictable IPs (e.g., whitelisting).
+
+---
+
+✅ VPC Flow Logs
+- Capture IP traffic information for VPCs, subnets, or ENIs.
+- Stored in CloudWatch Logs or S3.
+- Does not capture: DNS traffic, instance metadata, DHCP, Windows license activation.
+- Log format includes: version, account-id, interface-id, src/dst IP, src/dst port, protocol, packets, bytes, action (ACCEPT/REJECT).
+- Used for security analysis, troubleshooting, and compliance.
 
 ---
 
@@ -181,6 +183,12 @@ Can create custom option sets and associate them.
 - Share subnets with other AWS accounts within the same AWS Organization using AWS Resource Access Manager (RAM).
 - Owner VPC account manages the VPC; participant accounts deploy resources into shared subnets.
 - Reduces number of VPCs needed; centralized networking.
+- Transit Gtaway can also be shared
+  
+---
+
+✅ DHCP Option Set
+- used to give out IPs from ip pool
 
 ---
 
@@ -193,14 +201,14 @@ Can create custom option sets and associate them.
 
 ---
 
-🔴 NACLs are stateless — always open ephemeral ports (1024–65535).
-🔴 No transitive peering — use TGW for hub-and-spoke.
-🔴 Gateway Endpoint is free; Interface Endpoint costs money.
-🔴 NAT Gateway is AZ-specific — deploy one per AZ for HA.
-🔴 Default VPC has IGW; custom VPC does not.
-🔴 Direct Connect is not encrypted by default.
-🔴 EIP is charged when unattached to a running instance.
-🔴 SGs are stateful — no need to open return traffic.
-🔴 VPC Peering requires non-overlapping CIDRs.
-🔴 Flow Logs don't capture DNS queries within the VPC.
+- NACLs are stateless — always open ephemeral ports (1024–65535).
+- No transitive peering — use TGW for hub-and-spoke.
+- Gateway Endpoint is free; Interface Endpoint costs money.
+- NAT Gateway is AZ-specific — deploy one per AZ for HA.
+- Default VPC has IGW; custom VPC does not.
+- Direct Connect is not encrypted by default.
+- EIP is charged when unattached to a running instance.
+- SGs are stateful — no need to open return traffic.
+- VPC Peering requires non-overlapping CIDRs.
+- Flow Logs don't capture DNS queries within the VPC.
 
