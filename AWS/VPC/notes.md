@@ -12,14 +12,14 @@
 ---
 
 ✅ Connect on-premise data center to AWS VPC
---> Site-to-Site VPN --> Customer Gateway ( CGW ) --> Virtual Private Gateway ( VGW )
---> Direct Connection 
+- Site-to-Site VPN --> Customer Gateway ( CGW ) --> Virtual Private Gateway ( VGW )
+- Direct Connection 
 
 ---
 
 ✅ VPCs in two regions need to communicate
---> VPC peering --> Transitive peering doesn't works i.e if a --> B & b --> c doesn't means a --> c
---> Transit Gateway --> Hub & Spoke model
+- VPC peering --> Transitive peering doesn't works i.e if a --> B & b --> c doesn't means a --> c
+- Transit Gateway --> Hub & Spoke model
 
 ---
 
