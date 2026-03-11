@@ -1,4 +1,42 @@
-### ✅ Scenario 1: DDoS Protection
+✅  AWS Shield is a managed DDoS (Distributed Denial of Service) protection service that safeguards applications running on AWS. It provides always-on detection and automatic inline mitigations to minimize application downtime and latency.
+
+- Two tiers: Shield Standard ( Free ) and Shield Advanced
+- Protects against network/transport layer (L3/L4) and application layer (L7) attacks
+- Integrated with CloudFront, Route 53, ELB, EC2, Global Accelerator
+
+---
+
+✅  Types of DDoS Attacks AWS Shield Protects Against
+
+Volumetric Attacks (L3)
+- Flood the network with massive traffic volume
+- Examples: UDP floods, ICMP floods, reflection attacks (DNS, NTP amplification)
+
+Protocol Attacks (L4)
+- Exploit weaknesses in layer 3/4 protocols
+- Examples: SYN floods, Ping of Death, fragmented packet attacks
+
+Application Layer Attacks (L7)
+- Target the application itself with seemingly legitimate requests
+- Examples: HTTP floods, Slowloris, DNS query floods
+- Harder to detect — requires deep packet inspection
+
+---
+
+
+
+---
+---
+---
+
+✅ Common WAF Rules Used:
+
+- Rate-based rules (limit requests per IP)
+- IP set rules (block known malicious IPs)
+- Geo-match rules (block traffic from specific countries)
+- Managed rule groups (AWS Managed Rules)
+
+✅ Scenario 1: DDoS Protection
 
 Your e-commerce site is getting flooded with HTTP requests from thousands of IPs during a flash sale. How would you use AWS WAF to mitigate this?
 
