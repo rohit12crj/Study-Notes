@@ -193,3 +193,9 @@ Integrates with:
 - Cross-zone LB is always on for ALB (free), off by default for NLB (costs extra)
 - Health checks at target group level, not listener level
 - Deregistration delay = connection draining for in-flight requests
+
+---
+
+explain grace period
+
+health check path can be applied only to ALB , in NLB there is no option to assign health check path
