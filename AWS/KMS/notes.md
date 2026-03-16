@@ -81,4 +81,35 @@
 
 ---
 
+You want to move encrypted data from one CMK to another (e.g., old key is being deprecated). How do you do it without exposing the plaintext?
 
+---
+
+✅ Your AWS bill shows very high KMS costs. The application heavily uses S3 with SSE-KMS. How do you reduce costs?
+
+<img width="593" height="296" alt="image" src="https://github.com/user-attachments/assets/30fbcd32-44dd-4ae5-a15d-e987808f9945" />
+
+---
+
+✅ A developer accidentally scheduled a CMK for deletion. Production data is encrypted with it. What do you do?
+
+<img width="590" height="310" alt="image" src="https://github.com/user-attachments/assets/49b856b3-d3d8-4ef3-9dc7-9eeb78d9cf30" />
+
+---
+
+✅ Your financial application has a compliance requirement that cryptographic keys must never leave a dedicated HSM that you control. Can you still use KMS?
+- Yes — use KMS Custom Key Store backed by CloudHSM:
+
+---
+
+✅ Team A owns a CMK in Account A. Team B in Account B needs to use that CMK to encrypt/decrypt data. What needs to be configured?
+
+<img width="573" height="390" alt="image" src="https://github.com/user-attachments/assets/0637ab64-9d87-474d-b002-eed99893ffdc" />
+
+---
+
+✅ You're building an active-active application running in us-east-1 and eu-west-1. Data encrypted in us-east-1 needs to be decrypted in eu-west-1. How do you handle this with KMS?
+
+<img width="535" height="281" alt="image" src="https://github.com/user-attachments/assets/d229b36c-5ce9-467e-8796-02e3cf5c0d30" />
+
+---
