@@ -58,9 +58,15 @@ Policies
 
 <img width="548" height="105" alt="image" src="https://github.com/user-attachments/assets/0c1dc59e-1bf6-4ce8-aa03-62db9075f3de" />
 
-Approach 1 — Role Assumption
+#### Approach 1 — Role Assumption
 
-Approach 1 — Bucket Policy
+<img width="532" height="202" alt="image" src="https://github.com/user-attachments/assets/79133799-1e1e-46f3-98e2-5fa73aa5e8f6" />
+
+#### Approach 2 — Bucket Policy
+
+<img width="561" height="128" alt="image" src="https://github.com/user-attachments/assets/16d84330-faec-49bc-8a34-c91717754a48" />
+
+---
 
 <img width="633" height="377" alt="image" src="https://github.com/user-attachments/assets/aaa288cb-e34b-402f-9f52-e8ee5ce8d51f" />
 
