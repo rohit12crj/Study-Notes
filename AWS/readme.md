@@ -5,7 +5,7 @@ Other Notable AWS Services
 - Athena
 - Quicksight
 - Redshift
-- Glue
+- Glue , crawler
 - Codepipeline
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
