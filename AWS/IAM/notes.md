@@ -20,6 +20,8 @@ Roles
 - Identity with permissions, assumed temporarily by trusted entities
 - No long-term credentials — generates temporary security credentials (STS)
 
+<img width="614" height="135" alt="image" src="https://github.com/user-attachments/assets/fb02913e-9ecc-4df6-93ce-bd1aba7e6b6a" />
+
 Policies
 - JSON document defining permissions
 - Attached to users, groups, or roles
