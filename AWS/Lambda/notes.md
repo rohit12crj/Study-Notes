@@ -25,3 +25,55 @@
 ✅ Triggers
 
 <img width="457" height="269" alt="image" src="https://github.com/user-attachments/assets/fc74ec91-66f9-4823-8bd8-e23b088d1f57" />
+
+---
+
+✅ Lambda Roles
+
+<img width="437" height="187" alt="image" src="https://github.com/user-attachments/assets/6e22601f-3c04-48b4-acd7-f8d9c70c9d1f" />
+
+---
+
+✅ Lambda VPC Access
+
+<img width="537" height="260" alt="image" src="https://github.com/user-attachments/assets/28c96bbe-4824-4b7a-8629-4d2e84a06d03" />
+
+---
+
+✅ Integration with AWS Services
+
+<img width="524" height="341" alt="image" src="https://github.com/user-attachments/assets/f95c4c12-115e-4723-bf97-d1d50769b521" />
+
+---
+
+✅ Lambda@Edge & CloudFront Functions
+
+<img width="521" height="238" alt="image" src="https://github.com/user-attachments/assets/e4ef84b2-0e84-4220-9648-72251608a5a0" />
+
+<img width="626" height="233" alt="image" src="https://github.com/user-attachments/assets/6b4d1c34-7870-4b3f-9c11-2b42372a2963" />
+
+---
+
+✅ Concurrency
+
+---
+
+✅ Scaling
+
+---
+
+✅ Lambda Layers 
+
+<img width="416" height="113" alt="image" src="https://github.com/user-attachments/assets/56b4a88e-74b5-4546-9efd-1a6027595c06" />
+
+---
+
+✅ Key Exam Traps
+
+<img width="576" height="299" alt="image" src="https://github.com/user-attachments/assets/a29a51f2-8c17-435d-bb77-a9479406a29f" />
+
+---
+
+✅ Lambda Limits
+
+<img width="461" height="347" alt="image" src="https://github.com/user-attachments/assets/832342e7-4cdd-447f-9b73-210ea55620d4" />
