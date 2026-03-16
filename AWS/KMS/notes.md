@@ -44,6 +44,12 @@
 
 ---
 
+✅ CMK ( Customer Managed Key )
+
+<img width="560" height="164" alt="image" src="https://github.com/user-attachments/assets/03d6f8e7-53af-4a73-8940-c1952c8ffeeb" />
+
+---
+
 ✅ KMS Key States
 
 <img width="561" height="248" alt="image" src="https://github.com/user-attachments/assets/17dc25dd-f639-4bfc-8b4d-83624f0335f7" />
