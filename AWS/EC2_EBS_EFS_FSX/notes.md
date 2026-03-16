@@ -24,10 +24,26 @@ How would you deploy Lambda functions across multiple environments securely?
 ---
 ---
 
+#### EBS
+
+---
+---
+---
+
 #### EFS
 
+- used for shared files storage
+- Give 5 use cases where EFS can be used
+- Explain how will u create mount points and attach to 2 different ec2 in 2 different regions 
+
+
 ---
 ---
 ---
 
-#### EBS
+
+
+#### FSX
+
+- used for windows
+- same concept as of EFS
