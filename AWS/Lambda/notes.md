@@ -66,9 +66,13 @@ Lambda retries 2 times automatically if it fails for async
 
 ✅ Concurrency
 
+reserved concurrency vs provisioned concurrency 
+
 ---
 
 ✅ Scaling
+
+explain lambda scaling with SQS
 
 ---
 
@@ -91,3 +95,13 @@ Lambda retries 2 times automatically if it fails for async
 ✅ Lambda Limits
 
 <img width="461" height="347" alt="image" src="https://github.com/user-attachments/assets/832342e7-4cdd-447f-9b73-210ea55620d4" />
+
+---
+
+✅ Lambda Flows
+
+- Sync = API Gateway --> Lmabda --> get results [ no wait , no retries ]
+- Async = S3 --> Lambda [ wait , 2 retries , if failed move to DLQ , SQS FIFO ]
+- Poll
+  
+---
