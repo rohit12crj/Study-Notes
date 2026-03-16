@@ -105,3 +105,5 @@ explain lambda scaling with SQS
 - Poll
   
 ---
+
+write retry logic for failed lambda invocations
