@@ -26,6 +26,16 @@
 
 <img width="457" height="269" alt="image" src="https://github.com/user-attachments/assets/fc74ec91-66f9-4823-8bd8-e23b088d1f57" />
 
+Lambda retries 2 times automatically if it fails for async
+
+<img width="620" height="151" alt="image" src="https://github.com/user-attachments/assets/0263207f-205f-442f-ac96-85a9f9c4e888" />
+
+---
+
+✅ Lambda Destinations vs DLQ
+
+<img width="557" height="195" alt="image" src="https://github.com/user-attachments/assets/42772a00-e1b0-48e0-a2f7-d34d5174f627" />
+
 ---
 
 ✅ Lambda Roles
