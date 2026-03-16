@@ -1,1 +1,0 @@
-AWS Control Tower is a service that automates the setup and governance of a secure multi-account AWS environment using a landing zone, guardrails, and automated account provisioning integrated with AWS Organizations.
