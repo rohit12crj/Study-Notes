@@ -8,3 +8,4 @@ Other Notable AWS Services
 - Glue
 - Codepipeline
 - Codedeploy
+- Cognito ( User Pool , Identity Pool )
