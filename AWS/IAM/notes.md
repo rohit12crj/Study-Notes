@@ -59,3 +59,22 @@ Policies
 <img width="548" height="105" alt="image" src="https://github.com/user-attachments/assets/0c1dc59e-1bf6-4ce8-aa03-62db9075f3de" />
 
 Approach 1 — Role Assumption
+
+Approach 1 — Bucket Policy
+
+<img width="633" height="377" alt="image" src="https://github.com/user-attachments/assets/aaa288cb-e34b-402f-9f52-e8ee5ce8d51f" />
+
+#### Which Approach to Use When?
+
+Use Role Assumption when --> 
+- EC2 needs access to multiple resources across Account B (S3 + DynamoDB + SQS)
+- You want a clean identity separation — Account B sees its own role, not Account A's identity
+- The service doesn't support resource-based policies
+
+Use Bucket Policy when --> 
+- Access is limited to one specific S3 bucket
+- You want a simpler setup with fewer steps
+- You want Account B's CloudTrail to show exactly which principal from Account A accessed the bucket
+- You don't want the application code to handle role assumption
+
+<img width="556" height="169" alt="image" src="https://github.com/user-attachments/assets/1ab99fc6-abda-4323-8760-5b34e91af3ab" />
