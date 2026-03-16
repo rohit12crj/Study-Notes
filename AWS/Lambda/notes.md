@@ -68,6 +68,10 @@
 
 ---
 
+✅ Lambda Extensions
+
+---
+
 ✅ Key Exam Traps
 
 <img width="576" height="299" alt="image" src="https://github.com/user-attachments/assets/a29a51f2-8c17-435d-bb77-a9479406a29f" />
