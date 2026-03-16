@@ -87,7 +87,39 @@
 
 ---
 
-You want to move encrypted data from one CMK to another (e.g., old key is being deprecated). How do you do it without exposing the plaintext?
+✅ Your application needs to encrypt a 1GB file using AWS KMS. How would you do it?
+
+<img width="565" height="243" alt="image" src="https://github.com/user-attachments/assets/2d866b31-9721-406e-97d6-c929d505be11" />
+
+---
+
+✅ You have an encrypted EBS snapshot using the default AWS managed key. You need to share it with another AWS account. How do you do it?
+
+<img width="516" height="190" alt="image" src="https://github.com/user-attachments/assets/77e8801e-c463-4942-9587-bdca692c55af" />
+
+---
+
+✅ Your application is suddenly throwing ThrottlingException from KMS. It's an S3-heavy app using SSE-KMS. How do you resolve it?
+
+<img width="541" height="193" alt="image" src="https://github.com/user-attachments/assets/e3fa521a-0c0a-4f43-811a-c36489723192" />
+
+---
+
+✅ You have a production RDS database that was created without encryption. Your security team now mandates encryption. How do you enable it?
+
+<img width="538" height="205" alt="image" src="https://github.com/user-attachments/assets/6f6083f3-9487-4f3a-99b8-a250f4255658" />
+
+---
+
+✅ Your security policy requires rotating CMKs every year. You're worried that rotating the key will break your application. What happens when you enable key rotation?
+
+<img width="560" height="256" alt="image" src="https://github.com/user-attachments/assets/541a74ac-7b78-4113-80ed-9e17beb038c4" />
+
+---
+
+✅ You want to move encrypted data from one CMK to another (e.g., old key is being deprecated). How do you do it without exposing the plaintext?
+
+<img width="540" height="278" alt="image" src="https://github.com/user-attachments/assets/a691f7b7-12ac-4fa7-bd96-66c9ee0534f8" />
 
 ---
 
@@ -119,3 +151,7 @@ You want to move encrypted data from one CMK to another (e.g., old key is being 
 <img width="535" height="281" alt="image" src="https://github.com/user-attachments/assets/d229b36c-5ce9-467e-8796-02e3cf5c0d30" />
 
 ---
+
+✅ Cheat Sheet
+
+<img width="522" height="392" alt="image" src="https://github.com/user-attachments/assets/4fca35c7-da46-4164-9b8e-00aef33da6af" />
