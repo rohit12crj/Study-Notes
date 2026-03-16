@@ -62,6 +62,8 @@ Policies
 
 <img width="532" height="202" alt="image" src="https://github.com/user-attachments/assets/79133799-1e1e-46f3-98e2-5fa73aa5e8f6" />
 
+Trust Policy and Trust Relationship are the same thing
+
 #### Approach 2 — Bucket Policy
 
 <img width="561" height="128" alt="image" src="https://github.com/user-attachments/assets/16d84330-faec-49bc-8a34-c91717754a48" />
