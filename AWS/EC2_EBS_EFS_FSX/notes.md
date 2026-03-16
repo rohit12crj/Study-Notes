@@ -6,6 +6,10 @@ How would you migrate a running EC2 instance to another region with minimal down
 
 If your EC2 instance is not reachable via SSH, what troubleshooting steps would you perform?
 
+---
+---
+---
+
 Your web application experiences unpredictable traffic spikes. How would you configure auto scaling policies to handle this while optimizing costs?
 
 Explain a scenario where scheduled scaling is more appropriate than dynamic scaling.
