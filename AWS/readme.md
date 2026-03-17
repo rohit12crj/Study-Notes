@@ -51,6 +51,12 @@ Other Notable AWS Services
 
 <img width="402" height="192" alt="image" src="https://github.com/user-attachments/assets/69838d46-ecfa-4596-9b69-822d6f015e21" />
 
+### Demo
+
+<img width="418" height="295" alt="image" src="https://github.com/user-attachments/assets/c2910c84-99e5-4b07-aca6-d125fb6e1a66" />
+
+#### secret manager vs parameter store 
+
 ---
 
-secret manager vs parameter store 
+
