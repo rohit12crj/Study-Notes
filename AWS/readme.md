@@ -15,16 +15,28 @@ Other Notable AWS Services
 
 ---
 
-✅ Secret Manager
+✅ Secret Manager --> Automatic Secret Rotation Process
 
 <img width="353" height="90" alt="image" src="https://github.com/user-attachments/assets/0a16d6e0-f6ed-4e01-b3f0-068d7140cd92" />
 
-<img width="347" height="155" alt="image" src="https://github.com/user-attachments/assets/4598a46a-b370-44f4-81d2-7ddd5e03f481" />
+#### Initial State (Before Rotation)
 
-<img width="495" height="128" alt="image" src="https://github.com/user-attachments/assets/942b32ea-caef-48bf-a91f-a15eb8ea1512" />
+<img width="259" height="91" alt="image" src="https://github.com/user-attachments/assets/f9491ecb-e399-424e-8e20-3a0f4a8d3de6" />
 
-<img width="329" height="198" alt="image" src="https://github.com/user-attachments/assets/a856b8db-0850-4c50-9f4b-af765231eb59" />
+#### Step 1: createSecret
 
-<img width="569" height="273" alt="image" src="https://github.com/user-attachments/assets/08376d87-46a7-4d73-a348-8ea7a232fc74" />
+<img width="269" height="136" alt="image" src="https://github.com/user-attachments/assets/6f528fad-b79d-4918-bb36-10419e2d5c09" />
+
+#### Step 2: setSecret
+
+<img width="338" height="170" alt="image" src="https://github.com/user-attachments/assets/01c46724-8701-4e86-b5c3-1949c0f51d07" />
+
+#### Step 3: testSecret
+
+<img width="263" height="85" alt="image" src="https://github.com/user-attachments/assets/ba16c105-d1d3-4b74-bd6d-d83a7a86202c" />
+
+#### Step 4: finishSecret
+
+<img width="221" height="115" alt="image" src="https://github.com/user-attachments/assets/3899113a-9959-466d-8e70-ed3354e89d7c" />
 
 ---
