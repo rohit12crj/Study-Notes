@@ -1,4 +1,4 @@
-Implement caddy
+Implement caddy for URL redirection & reverse proxy 
 
 Gitlab to Github Action Migration
 
