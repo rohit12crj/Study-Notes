@@ -17,5 +17,4 @@
 ---
 
 ✅ On prem VM to AWS Cloud Migration
-- https://www.youtube.com/watch?v=qYfkvmues9g&t=221s
-- https://www.youtube.com/watch?v=luE4RKFBB70&t=492s
+- Check migration folder inside AWS
