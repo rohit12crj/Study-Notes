@@ -62,3 +62,5 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
 
 ---
+
+✅ How does webhooks works actually & why should we use them ?
