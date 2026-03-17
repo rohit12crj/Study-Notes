@@ -55,7 +55,13 @@ Other Notable AWS Services
 
 <img width="418" height="295" alt="image" src="https://github.com/user-attachments/assets/c2910c84-99e5-4b07-aca6-d125fb6e1a66" />
 
+### Secret Replication
+
+### Rotation Strategy 
+
 #### secret manager vs parameter store 
+
+
 
 ---
 
