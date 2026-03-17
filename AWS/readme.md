@@ -40,6 +40,8 @@ Other Notable AWS Services
 
 <img width="286" height="189" alt="image" src="https://github.com/user-attachments/assets/450d295b-e169-46e4-adca-fcd10ab05250" />
 
+- If rotation fails before finishSecret, but DB password is already changed → App still reads AWSCURRENT (old password) → connection failure .
+- to prevent this use 2 admin user rotation strategy
 
 #### Step 4: finishSecret
 
@@ -53,7 +55,7 @@ Other Notable AWS Services
 
 <img width="416" height="40" alt="image" src="https://github.com/user-attachments/assets/8b264bb2-4386-4ba9-9741-b3ba80a3ef1a" />
 
-### Demo
+### Demo using Key Versions
 
 <img width="418" height="295" alt="image" src="https://github.com/user-attachments/assets/c2910c84-99e5-4b07-aca6-d125fb6e1a66" />
 
@@ -61,7 +63,20 @@ Other Notable AWS Services
 
 ### Rotation Strategy 
 
+<img width="386" height="351" alt="image" src="https://github.com/user-attachments/assets/f80f776c-fbe7-4595-910d-eac9461681c1" />
+
 #### secret manager vs parameter store 
+
+| Feature                 | Secrets Manager               | Parameter Store           |
+| ----------------------- | ----------------------------- | ------------------------- |
+| Purpose                 | Secrets (passwords, API keys) | Config + secrets          |
+| Auto Rotation           | ✅ Yes                         | ❌ No                      |
+| Built-in DB integration | ✅ Yes (RDS, etc.)             | ❌ No                      |
+| Encryption              | ✅ Always (KMS)                | ✅ Optional (SecureString) |
+| Versioning              | ✅ Yes                         | ✅ Yes                     |
+| Cost                    | 💲 Paid                       | 🆓 Free (standard tier)   |
+| Lambda integration      | ✅ Native rotation             | ❌ Manual                  |
+| Cross-account access    | ✅ Yes                         | ✅ Yes                     |
 
 
 
