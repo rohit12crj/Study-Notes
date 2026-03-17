@@ -40,6 +40,12 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ---
 
 ✅ Why ALB & reverse Proxy are both used 
+- ALB can handle basic application-level routing like path and host-based rules, but it lacks advanced capabilities such as URL rewriting, caching, custom authentication logic, and internal container routing.
+- That’s why a reverse proxy like Nginx is often used alongside ALB to handle fine-grained application-level control.
+
+<img width="247" height="215" alt="image" src="https://github.com/user-attachments/assets/8d2fb7d8-0058-478b-ada2-2d0822b2a593" />
+
+<img width="290" height="113" alt="image" src="https://github.com/user-attachments/assets/76a8e2b4-0394-46e0-946d-d64f7346c506" />
 
 ---
 
