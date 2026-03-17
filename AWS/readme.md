@@ -37,3 +37,6 @@
 
 ✅ Why ALB & reverse Proxy are both used 
 
+---
+
+✅ Different authentication techniques & when to use which with examples ?
