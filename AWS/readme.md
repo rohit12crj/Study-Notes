@@ -17,6 +17,8 @@
 
 #### Common Architecture Questions
 
+---
+
 ✅ Difference between Forward Proxy & reverse proxy with examples 
 
 ---
