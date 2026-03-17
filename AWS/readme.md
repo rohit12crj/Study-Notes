@@ -21,6 +21,8 @@
 
 ✅ Difference between Forward Proxy & reverse proxy with examples 
 
+https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
+
 ---
 
 ✅ What are the common Reverse proxy used ? 
@@ -32,6 +34,8 @@
 
 ✅ Explain Architecture flow
 - Internet -> ALB -> Reverse Proxy -> ECS Tasks
+
+<img width="912" height="336" alt="image" src="https://github.com/user-attachments/assets/daeea042-3628-42d1-9dfa-d623c6b1c2ad" />
 
 ---
 
