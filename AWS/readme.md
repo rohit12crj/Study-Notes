@@ -50,3 +50,7 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ---
 
 ✅ Different authentication techniques & when to use which with examples ?
+
+---
+
+✅ On prem to AWS Migration startegies 
