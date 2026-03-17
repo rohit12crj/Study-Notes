@@ -33,3 +33,15 @@
 
 
 <img width="566" height="340" alt="image" src="https://github.com/user-attachments/assets/e85f27d7-693b-47f7-9ff3-39a8046dabbb" />
+
+---
+
+✅ in your project what caching technique were u using for redis 
+- in caddy we used lazy loading & we went for eventual consistency as url redirects might not be required for everyone at same time . strong consistency is generally used for ticket booking applications
+
+---
+
+✅ Multi Region
+- Amazon ElastiCache for Redis is a regional service and does not natively support multi-region deployments. However, AWS provides Global Datastore for Redis, which enables cross-region replication with a primary region and read-only secondary regions for disaster recovery and low-latency reads.
+
+<img width="497" height="35" alt="image" src="https://github.com/user-attachments/assets/ea770859-938b-4e42-b298-7e101ffd8c4f" />
