@@ -1,6 +1,6 @@
 ✅ Other Notable AWS Services
 
-- Opensearch , Opensearch Pipelines , Index Lifecycle Policy
+- Opensearch , Opensearch Pipelines ( With Grok Parameter ) , Index Lifecycle Policy
 - Dynamo Db , DynamoDb Streams , DAX 
 - Athena
 - Quicksight
