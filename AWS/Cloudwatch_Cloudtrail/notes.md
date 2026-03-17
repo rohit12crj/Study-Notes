@@ -1,11 +1,17 @@
 #### Cloudwatch
 
 ✅ How will u send custom cloudwatch logs from EC2 ?
-- To send custom logs from EC2 to CloudWatch, I would install the CloudWatch Agent, configure it with the log file paths and log group details, attach an IAM role with necessary permissions, and start the agent so it continuously streams logs to CloudWatch.
+- To send custom logs from EC2 to CloudWatch, I would install the CloudWatch Agent, configure it with the log file paths and log group name , attach an IAM role with necessary permissions, and start the agent so it continuously streams logs to CloudWatch.
 
 ---
 
 ✅ How will u send custom cloudwatch logs from on prem VM ?
+- setup DX or VPN from on prem to AWS Cloud
+- Since its On prem VPN , use STS Assume role . no need to use keys & secrets
+- in IAM use least privelege 
+- Install cloudwatch agent
+- configure clouwatch agent with file path & log group name
+- start agent 
 
 
 ---
