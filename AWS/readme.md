@@ -59,11 +59,6 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 
 ---
 
-✅ On prem VM to AWS Cloud Migration startegies 
-- https://youtu.be/cAXPA5lqkV4?si=_AyNeTk1aXoGiQM1 --> Abhsihek
-
----
-
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
 
 ---
