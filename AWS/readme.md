@@ -35,8 +35,14 @@ Other Notable AWS Services
 
 <img width="263" height="85" alt="image" src="https://github.com/user-attachments/assets/ba16c105-d1d3-4b74-bd6d-d83a7a86202c" />
 
+<img width="286" height="189" alt="image" src="https://github.com/user-attachments/assets/450d295b-e169-46e4-adca-fcd10ab05250" />
+
+
 #### Step 4: finishSecret
 
 <img width="221" height="115" alt="image" src="https://github.com/user-attachments/assets/3899113a-9959-466d-8e70-ed3354e89d7c" />
+
+<img width="206" height="72" alt="image" src="https://github.com/user-attachments/assets/5b422640-f91c-49aa-9a97-88201395201d" />
+
 
 ---
