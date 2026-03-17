@@ -43,6 +43,9 @@
 <img width="418" height="295" alt="image" src="https://github.com/user-attachments/assets/c2910c84-99e5-4b07-aca6-d125fb6e1a66" />
 
 ### Secret Replication
+- “AWS Secrets Manager replication is used in RDS multi-region architectures to keep database credentials consistent across regions. For example, if an RDS database is running in a primary region like ap-south-1 and has a cross-region read replica or DR setup in us-east-1, the database credentials stored in Secrets Manager can be replicated to the secondary region.
+- During password rotation, the secret is updated in the primary region and automatically synchronized to the replica region. This ensures that applications in both regions can securely access the database using the same credentials without manual updates, enabling low-latency access and seamless disaster recovery.”
+- “Each replicated secret is encrypted with a region-specific KMS key, while the secret value remains consistent across regions.”
 
 ### Rotation Strategy 
 
@@ -60,7 +63,5 @@
 | Cost                    | 💲 Paid                       | 🆓 Free (standard tier)   |
 | Lambda integration      | ✅ Native rotation             | ❌ Manual                  |
 | Cross-account access    | ✅ Yes                         | ✅ Yes                     |
-
-
 
 ---
