@@ -47,5 +47,10 @@ Other Notable AWS Services
 
 <img width="206" height="72" alt="image" src="https://github.com/user-attachments/assets/5b422640-f91c-49aa-9a97-88201395201d" />
 
+#### What Happens to Your Application?
+
+<img width="402" height="192" alt="image" src="https://github.com/user-attachments/assets/69838d46-ecfa-4596-9b69-822d6f015e21" />
 
 ---
+
+secret manager vs parameter store 
