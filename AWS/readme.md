@@ -27,6 +27,9 @@ Other Notable AWS Services
 
 <img width="269" height="136" alt="image" src="https://github.com/user-attachments/assets/6f528fad-b79d-4918-bb36-10419e2d5c09" />
 
+<img width="491" height="149" alt="image" src="https://github.com/user-attachments/assets/0667119e-e23d-4e28-9e63-63f00a4f8bfc" />
+
+
 #### Step 2: setSecret
 
 <img width="338" height="170" alt="image" src="https://github.com/user-attachments/assets/01c46724-8701-4e86-b5c3-1949c0f51d07" />
