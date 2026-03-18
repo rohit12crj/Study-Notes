@@ -6,6 +6,7 @@
 - Quicksight
 - Redshift
 - Glue , crawler
+- MSK ( Managed Streaming for Kafka )
 - Codepipeline
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
