@@ -5,8 +5,8 @@
 - Athena
 - Quicksight
 - Redshift
-- Glue ( ETL Pipelines ) , crawler --> check Data Engineering Folder 
-- MSK ( Managed Streaming for Kafka )
+- Glue --> check Data Engineering Folder 
+- MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder 
 - Codepipeline
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
