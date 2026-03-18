@@ -38,7 +38,8 @@ How would you deploy Lambda functions across multiple environments securely?
 
 - used for shared files storage
 - Give 5 use cases where EFS can be used
-- Explain how will u create mount points and attach to 2 different ec2 in 2 different regions 
+- Explain how will u create mount points and attach to 2 different ec2 in 2 different regions
+- If u have 2 ecs tasks in 2 different regions & they share an efs drive . explain how mount points are created & attached dynamically . Also explain EFS encryption in-transit & in-rest
 
 
 ---
