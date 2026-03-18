@@ -3,6 +3,11 @@
 ---
 
 ✅ AWS Glue Masterclass -->  https://youtu.be/Pigx0gReuT4?si=c2iE1NoXv747wb1M
+- Give me real world examples where & how will u use AWS Glue 
+
+---
+
+✅ Apache Kafka 
 
 ---
 
