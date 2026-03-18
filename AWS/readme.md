@@ -5,14 +5,7 @@
 - Athena
 - Quicksight
 - Redshift
-
----
-  
-#### Glue ( ETL Pipelines ) , crawler
-- give me real world examples where & how will u use AWS Glue 
-
----
-
+- Glue ( ETL Pipelines ) , crawler --> check Data Engineering Folder 
 - MSK ( Managed Streaming for Kafka )
 - Codepipeline
 - Codedeploy
