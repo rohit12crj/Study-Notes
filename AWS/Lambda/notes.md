@@ -58,6 +58,7 @@ Lambda retries 2 times automatically if it fails for async
 ---
 
 ✅ Lambda@Edge & CloudFront Functions
+- explain with example where will u use Lambda@Edge & CloudFront Functions
 
 <img width="521" height="238" alt="image" src="https://github.com/user-attachments/assets/e4ef84b2-0e84-4220-9648-72251608a5a0" />
 
