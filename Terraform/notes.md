@@ -7,6 +7,7 @@
 ✅ when will use terraform workspaces vs directories 
 - Terraform workspaces allow you to use the same Terraform code but maintain separate state files.
 - not recommended for prod
+- explain with example how ill u reference the values when using terraform workspaces 
 
 | Feature          | Workspaces                   | Directories                   |
 | ---------------- | ---------------------------- | ----------------------------- |
