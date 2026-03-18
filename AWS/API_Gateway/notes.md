@@ -1,4 +1,4 @@
-✅ How ill u secure API Gateway ?
+✅ How will u secure API Gateway ?
 
 ---
 
