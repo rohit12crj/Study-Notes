@@ -72,13 +72,18 @@ reserved concurrency vs provisioned concurrency
 
 ✅ Scaling
 
-explain lambda scaling with SQS
+explain lambda scaling with SQS i.e FAN out pattern . explain with real world scenerio where will u use it ?
 
 ---
 
 ✅ Lambda Layers 
-
+- Explain how will u reference the libraries in 2 different function ?
+  
 <img width="416" height="113" alt="image" src="https://github.com/user-attachments/assets/56b4a88e-74b5-4546-9efd-1a6027595c06" />
+
+---
+
+✅ Lambda Version --> explain with example 
 
 ---
 
@@ -87,6 +92,7 @@ explain lambda scaling with SQS
 ---
 
 ✅ Key Exam Traps
+- By default Lambda needs access to write to cloudwatch logs
 
 <img width="576" height="299" alt="image" src="https://github.com/user-attachments/assets/a29a51f2-8c17-435d-bb77-a9479406a29f" />
 
