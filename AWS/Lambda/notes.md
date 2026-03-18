@@ -11,6 +11,7 @@
 ---
 
 ✅ Cold Start vs Warm Start
+- explain in code how will u configure the cold start section ?
 
 <img width="578" height="73" alt="image" src="https://github.com/user-attachments/assets/00b3a7d8-b920-4e9e-ae51-e486414a8251" />
 
@@ -77,7 +78,7 @@ explain lambda scaling with SQS i.e FAN out pattern . explain with real world sc
 ---
 
 ✅ Lambda Layers 
-- Explain how will u reference the libraries in 2 different function ?
+- Explain how will u reference the same libraries in 2 different function ?
   
 <img width="416" height="113" alt="image" src="https://github.com/user-attachments/assets/56b4a88e-74b5-4546-9efd-1a6027595c06" />
 
