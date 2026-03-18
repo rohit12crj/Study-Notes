@@ -1,3 +1,7 @@
+✅ How ill u secure API Gateway ?
+
+---
+
 2) What are the types of APIs in API Gateway?
 
 REST API – Full-featured, supports advanced features.
