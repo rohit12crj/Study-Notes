@@ -93,9 +93,26 @@
 
 ✅ Give me real world expample when you will use signed cookies vs signed urls 
 
+https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
+
+| Feature      | Signed URL        | Signed Cookies   |
+| ------------ | ----------------- | ---------------- |
+| Access scope | Single file       | Multiple files   |
+| Use case     | One-time download | Streaming / apps |
+| Complexity   | Simple            | Slightly complex |
+| Example      | Paid PDF          | OTT platform     |
+
 ---
 
-✅ Give me real world expample when u will use comoression
+✅ difference between cloudfront signed url vs s3 signed url
+
+<img width="395" height="127" alt="image" src="https://github.com/user-attachments/assets/2558a3a0-4877-4b93-83a8-61a7d76f9fc9" />
+
+---
+
+✅ Give me real world expample when u will use compression
+
+<img width="427" height="455" alt="image" src="https://github.com/user-attachments/assets/56304b87-87d4-421f-82aa-971bade47570" />
 
 ---
 
