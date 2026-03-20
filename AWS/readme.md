@@ -11,6 +11,7 @@
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
 - SES ( Simple Email Service )
+- Global Accelerator
 - Budget & Cost Explorer
 - Backup --> centrally manage & automate backup across various AWS services --> https://www.youtube.com/watch?v=6fvGbywTjsU&t=671s
 - Organization
