@@ -117,3 +117,9 @@ https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
 ---
 
 ✅ Give me real world expample where u will use cloudfornt Function vs Lambda@edge functions
+
+
+---
+
+✅ Can cloudfront be used for dynamic content
+
