@@ -28,6 +28,9 @@
 #### Common Architecture Questions
 
 ---
+✅ Difference between headers , querry string , cookies
+
+---
 
 ✅ Difference between Forward Proxy & reverse proxy with examples 
 
