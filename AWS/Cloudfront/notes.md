@@ -123,3 +123,9 @@ https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
 
 ✅ Can cloudfront be used for dynamic content
 
+
+---
+
+✅ Security
+- Integrate with WAF
+
