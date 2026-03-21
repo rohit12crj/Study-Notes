@@ -4,6 +4,10 @@
 
 ---
 
+✅ Difference between PR manual review & codeowners file  
+
+---
+
 ✅ git vs github --> Git is Distributed Version Control System & GIthub is Cloud Hosting Platform for Git repo
 
 ---
