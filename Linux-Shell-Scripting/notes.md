@@ -1,8 +1,20 @@
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvIZ7u-gtpX_bozrspUbTQ1S --> Shell Scripting Playlist ( Abhishek )
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvIZ7u-gtpX_bozrspUbTQ1S --> Shell Scripting Playlist ( Abhishek )
 
 ---
 
-https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide ( Abhishek )
+✅ which command can i use to check if caddy is running inside ecs task or not ?
+- ps aux | grep caddy
+
+---
+
+✅ which command can i use to check on which ports caddy is listening ?
+- Ports should be exposed in Dockerfile using expose command
+- ports exposed in dockerfile should be the same ports on which ALB listeners should listen
+- netstat -tulpn | grep caddy OR ss -tulpn | grep caddy
+
+---
+
+✅ https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide ( Abhishek )
 
 - getting-started
 - folder-structure
@@ -17,7 +29,7 @@ https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Gui
 
 ---
 
-https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
+✅ https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
 
 - IP Addressing & Subnetting
 - TCP/IP & OSI Model
@@ -33,9 +45,9 @@ https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking 
 
 ---
 
-https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
+✅ https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
 
-https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
+✅ https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
 
 
 1. what shell scripting u did in your project ?
