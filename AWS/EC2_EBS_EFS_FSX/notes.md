@@ -1,10 +1,22 @@
 #### EC2
 
-Explain how you would design a highly available EC2 architecture across multiple AZs for a web application.
+✅ Explain how you would design a highly available EC2 architecture across multiple AZs for a web application.
 
-How would you migrate a running EC2 instance to another region with minimal downtime?
+---
 
-If your EC2 instance is not reachable via SSH, what troubleshooting steps would you perform?
+✅ How would you migrate a running EC2 instance to another region with minimal downtime?
+
+---
+
+✅ If your EC2 instance is not reachable via SSH, what troubleshooting steps would you perform?
+
+---
+
+✅  What is the use of AMI 
+
+---
+
+✅  AWS Backup vs snapshots
 
 ---
 ---
