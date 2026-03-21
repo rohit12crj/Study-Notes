@@ -29,6 +29,10 @@
 #### Common Architecture Questions
 
 ---
+✅ Explain security hub & security lake with respect to AWS 
+
+---
+
 ✅ Difference between headers , querry string , cookies
 
 ---
