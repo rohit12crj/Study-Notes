@@ -5,6 +5,18 @@ https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhi
 
 ---
 
+✅  Maven build cycle process
+
+---
+
+✅ Artifactory Concepts --> repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
+
+---
+
+✅ EXplain nexus artifactory & jFrog artifactory
+
+---
+
 ✅ Sonarqube concepts --> quality gates , quality profiles , project onboarding , branch/PR analysis 
 
 ---
