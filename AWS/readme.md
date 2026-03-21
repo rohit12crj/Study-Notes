@@ -80,3 +80,7 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ---
 
 ✅ Difference between SSL , TLS & mTLS
+
+---
+
+✅ Difference between Rest API , HTTP API & GraphQL API
