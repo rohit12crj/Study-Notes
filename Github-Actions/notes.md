@@ -1,3 +1,17 @@
+<img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
+
+---
+
+✅ Dependency graph in github
+
+---
+
+✅ explain where  u will use matrix strategies  , composite actions , action versioning & publishing , signed actions / pinning , github packages 
+
+---
+
+✅ Dependabot config across ecosystems , scheduling , grouping , ignore policies , security update handling
+
 ✅ how will u pass artifacts between different jobs and different pipelines
 
 ✅  how will u make pipeline faster ? explain with respect to github cache 
