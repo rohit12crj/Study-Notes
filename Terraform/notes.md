@@ -4,10 +4,28 @@
 
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
+---
+
+✅ Explain how will you generate multiple security group ingress rules ? Also how will u allow all ports in sg ingress rules . use ( -1 )
+
+---
+✅ Explain how will you create an iam policy which must allow resource id of RDS created initially
+
+---
+✅ Terraform template files & why will u use them ?
+
+---
+✅ write code for referencing variables from local , tfvars & variablles.tf files in main.tf file
+
+---
+✅ explain where will use use map data types while creating AWS resource.
+
+---
+
 ✅ when will use terraform workspaces vs directories 
 - Terraform workspaces allow you to use the same Terraform code but maintain separate state files.
 - not recommended for prod
-- explain with example how ill u reference the values when using terraform workspaces 
+- explain with example how ill u reference the variables when using terraform workspaces for dev & prod
 
 | Feature          | Workspaces                   | Directories                   |
 | ---------------- | ---------------------------- | ----------------------------- |
