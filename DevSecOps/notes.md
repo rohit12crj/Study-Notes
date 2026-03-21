@@ -5,6 +5,10 @@ https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhi
 
 ---
 
+✅ Sonarqube concepts --> quality gates , quality profiles , project onboarding , branch/PR analysis 
+
+---
+
 ✅ What is “Shift Left Security”?
 - Shift Left Security means integrating security earlier in the SDLC instead of testing security only at the final stage.
 - In our CI/CD pipeline, we implemented shift-left by integrating SonarQube for SAST, TruffleHog for secret detection, Trivy for container scanning, and Checkov for Terraform IaC scanning.
