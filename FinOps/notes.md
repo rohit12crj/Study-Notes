@@ -22,3 +22,5 @@
 - Use Data Transfer Optimization – Keep services in the same AZ/VPC to reduce data transfer charges
 - Use valkey cache instead of redis cache
   
+---
+✅ How will u create Finops Rules & alert all aws account holder in your AWS org
