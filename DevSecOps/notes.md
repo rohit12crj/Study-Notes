@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLRR_KPxSKCJMf2qDNKrGd-  --> De
 https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhishek )
 
 ---
+✅  End to End DevSecOps Pipeline --> Abhishek --> https://youtu.be/fuiTqI3noTo?si=MwOG_V99DaNgx8IF
+
+---
 
 ✅  Maven build cycle process
 
