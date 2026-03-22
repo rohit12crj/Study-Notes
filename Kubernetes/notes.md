@@ -1,3 +1,7 @@
+✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
+
+---
+
 local k8s setup --> vind ( has gui )
 
 user management in k8s --> Border0
