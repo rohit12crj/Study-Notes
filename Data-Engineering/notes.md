@@ -8,6 +8,7 @@
 ---
 
 ✅ Apache Kafka 
+- https://youtu.be/uRnUEe4Byf8?si=yqSEm_t8ZffVZFh6 --> DevOps Shack
 
 ---
 
