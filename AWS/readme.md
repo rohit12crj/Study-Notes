@@ -5,6 +5,7 @@
 - Athena
 - Quicksight
 - Redshift
+- ACM
 - Glue --> check Data Engineering Folder 
 - MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder 
 - Codepipeline
