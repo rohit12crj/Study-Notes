@@ -26,7 +26,7 @@
 ✅ explain depends_on vs implicit dependency & when does terraform gets it wrong
 
 ---
-✅ what are partail apply & how do u recover safely form a failed apply ?
+✅ what are partial apply & how do u recover safely form a failed apply ?
 
 ---
 
