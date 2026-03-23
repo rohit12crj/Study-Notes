@@ -5,6 +5,30 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ what happens if terraform lock is lost midway ?
+
+---
+✅ explain a scenerio where terraform plan shows no changes , but apply still modifies resources 
+
+---
+✅ what problems arise when multiple modules reference tge same resource & how do u design around it 
+
+---
+✅ why switching between count & for_each can destroy resources ?
+
+---
+✅ how does provider version mismatch causes issues & how do u prevent it
+
+---
+✅ how do u refactor a terraform codebase without destroying production database 
+
+---
+✅ explain depends_on vs implicit dependency & when does terraform gets it wrong
+
+---
+✅ what are partail apply & how do u recover safely form a failed apply ?
+
+---
 
 ✅ Explain how will you generate multiple security group ingress rules ? Also how will u allow all ports in sg ingress rules . use ( -1 )
 
