@@ -42,6 +42,9 @@ Flow = Frontend --> Backend --> DB
 ✅ csi driver & EBS CSI Driver
 
 ---
+✅ explain network policies & admission controllers & how will u secure backend pods to eb accessible only from frontend pods ?
+
+---
 service account
 
 In my eks cluster my payment pod needs to store data to AWS ebs . How can it do that explain with reference to service account, iam roles , csi driver . also if my pod az changes & my ebs volume is in different az how will it work then ?
