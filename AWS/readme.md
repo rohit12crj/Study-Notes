@@ -7,7 +7,8 @@
 - Redshift
 - ACM
 - Glue --> check Data Engineering Folder 
-- MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder 
+- MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder
+- EKS --> Check Kubernetes Folder
 - Codepipeline
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
