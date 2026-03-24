@@ -1,4 +1,6 @@
-✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
+✅ https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS --> Real Time Scenario Based Kubernetes Implementations --> DevOps Shack
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc  --> k8s Playlist --> Abhishek
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
 ✅  what are the different components of k8s?
