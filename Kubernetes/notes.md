@@ -2,12 +2,17 @@
 
 ---
 ✅ For your EKS project explain what all manifest u created 
-- namespace 
+- namespace --> where u  using single namespace or 3 different namespace ?
 - Db --> statefulset + SVC + PVC ( persistent volume claim --> defines size of storage ) + SC ( storage class --> defines whetehr u want to use ebs , efs or fsx ) + NP
-- Backend --> Deployment + SVC ( Service ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets ( For storing Db username & password )
+- Backend --> Deployment + SVC ( Service --> clusterip ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets ( For storing Db username & password )
 - Frontend --> --> Deployment + SVC
 
 Flow = Frontend --> Backend --> DB
+
+---
+✅ Through terraform i created an eks cluster . however while writing k8s manifest file i created svc & sc of ebs type. shouldn't this ebs also be done through terraform ?
+
+<img width="560" height="277" alt="image" src="https://github.com/user-attachments/assets/592b5492-564d-4d73-a700-3ec7fa5cc12b" />
 
 ---
 ✅ to create rds within eks what all u need to create /
@@ -31,8 +36,10 @@ Flow = Frontend --> Backend --> DB
 ---
 ✅ user management in k8s --> Border0
 
-csi driver 
+---
+✅ csi driver & EBS CSI Driver
 
+---
 service account
 
 In my eks cluster my payment pod needs to store data to AWS ebs . How can it do that explain with reference to service account, iam roles , csi driver . also if my pod az changes & my ebs volume is in different az how will it work then ?
