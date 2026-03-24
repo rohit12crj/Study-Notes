@@ -1,11 +1,12 @@
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvJDIAQZtMjUUbiVUDfGaCIX  --> Abhishek Playlist
-
-https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
-
-https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/Interview_Questions.md  -> interview question Repo ( Abhishek )
-
-https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
-
+✅ Videos
+- https://www.youtube.com/playlist?list=PLdpzxOOAlwvJDIAQZtMjUUbiVUDfGaCIX  --> Abhishek Playlist
+- https://youtu.be/SsN0ILXq5Lw?si=5VwjcdU0NiYQRpS8  --> interview questions
+- https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/blob/main/Interview_Questions.md  -> interview question Repo ( Abhishek )
+- https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
+- https://www.youtube.com/watch?v=NnkUGzaqqOc&t=18s --> DevSecOps Pipeline --> DevOps Shack
+- https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
+  
+---
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 - ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> SAST Scan Unit --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> updates Task definition ( if any ) --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
