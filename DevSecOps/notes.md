@@ -5,7 +5,9 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ why should i use nexus repository along with aws ecr ?
 
+---
 ✅  Maven build cycle process
 
 ---
