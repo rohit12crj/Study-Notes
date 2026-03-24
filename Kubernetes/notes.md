@@ -1,6 +1,9 @@
 ✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
 
 ---
+✅ explain service & it types ? explain labels & selectors ?
+
+---
 ✅ For your EKS project explain what all manifest u created 
 - namespace --> where u  using single namespace or 3 different namespace ?
 - Db --> statefulset + SVC + PVC ( persistent volume claim --> defines size of storage ) + SC ( storage class --> defines whetehr u want to use ebs , efs or fsx ) + NP
