@@ -4,6 +4,9 @@
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
+✅ Difference between package.json & package-lock.json
+
+---
 ✅ How can u remove Docker Caching if it is causing errors ?
 
 ---
