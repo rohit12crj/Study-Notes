@@ -8,6 +8,7 @@
 - Frontend --> Deployment + SVC
 
 Note -->  Ingress should ideally be used in place  of SVC ( service ) . if service is used , u need to do port forward also 
+
 Flow = Frontend --> Backend --> DB
 
 ---
