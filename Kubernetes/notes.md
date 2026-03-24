@@ -7,6 +7,8 @@
 - Backend --> Deployment + SVC ( Service ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets ( For storing Db username & password )
 - Frontend --> --> Deployment + SVC
 
+Flow = Frontend --> Backend --> DB
+
 ---
 ✅ to create rds within eks what all u need to create /
 - statefulset
