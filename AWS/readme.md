@@ -94,3 +94,6 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 
 <img width="410" height="265" alt="image" src="https://github.com/user-attachments/assets/9ce85682-e0f6-4861-b7b3-cfcb8a65d4d4" />
 
+---
+✅ Nginx Full Course of 1 hr 
+- https://youtu.be/9jZEfW8h5fQ?si=yt6wvKd30Btxn44d --> Abhishek
