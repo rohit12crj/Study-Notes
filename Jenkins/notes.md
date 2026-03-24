@@ -10,6 +10,8 @@ https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 - ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> SAST Scan Unit --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part , no need to build the images .
+- cd pipleine should only run when ci is completed successfully without errors
+- check for recursive loop & how to prevent it
 
 ---
 
