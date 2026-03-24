@@ -4,6 +4,12 @@
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
+✅ Does Dockerfile has any extension ?
+
+---
+✅  AS keyword used for in Dockerfile
+
+---
 ✅ Give Dockerfile example 
 
 <img width="445" height="391" alt="image" src="https://github.com/user-attachments/assets/62d51ee2-1c0f-4164-986a-6e6619fa0447" />
