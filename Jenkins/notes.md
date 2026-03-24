@@ -7,6 +7,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅  How ill u monitor jenkins itself ?
+- watch this video . its explained here .https://www.youtube.com/watch?v=NnkUGzaqqOc&t=18s --> DevSecOps Pipeline --> DevOps Shack
+
+---
 ✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
 - ci pipeline worflow --> git repo checkout --> install dependencies ( packagelock.json file ) --> build the application --> SAST Scan Unit --> Docker Image Creation --> SCA Scan --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> updates Task definition ( if any ) --> deploy Image to ECS Services ( Update Task definition if necessary ) --> DAST Scan
