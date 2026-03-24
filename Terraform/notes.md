@@ -5,6 +5,12 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ why variable type of any is used ?
+
+---
+✅ Dynamic block
+
+---
 ✅ what happens if terraform lock is lost midway ?
 
 ---
