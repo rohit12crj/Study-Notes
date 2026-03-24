@@ -55,7 +55,9 @@
 - in 2nd stage run as non root user
 - use dockerignore file
 - use caching effectively
-- use distorless images 
+- use distorless images
+- always use base images with a particular version to avoid auto upgrade when new images are added to dockerhub
+  
 ---
 What is the difference between VM and Docker?
 
