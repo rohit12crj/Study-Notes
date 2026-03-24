@@ -4,6 +4,18 @@
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
+✅ Why docker-compose.yml file is used ?
+- A docker-compose.yml file is used to define, manage, and run multiple containers together as a single application.
+- it can also be used to define networking , volumes
+- docker-compose.yml schema = services + networking + storage + configuration in a structured YAML format.
+
+<img width="350" height="160" alt="image" src="https://github.com/user-attachments/assets/7a419138-1354-4951-87ef-60b020e790d2" />
+
+---
+✅ docker-compose.yml schema 
+
+
+---
 ✅ what does docker daemon off does in Dockerfile
 
 ---
