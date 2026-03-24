@@ -1,6 +1,18 @@
 ✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
 
 ---
+✅ For your EKS project explain what all manifest u created 
+- Db --> statefulset + SVC + PVC ( persistent volume claim --> defines size of storage ) + SC ( storage class --> defines whetehr u want to use ebs , efs or fsx ) + NP
+- Backend --> Deployment + SVC ( Service ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets 
+- Frontend --> --> Deployment + SVC
+
+---
+✅ to create rds within eks what all u need to create /
+- statefulset
+- pvc ( persistent volume claim ) --> defines size of storage
+- sc ( storage class )  --> defines whetehr u want to use ebs , efs or fsx
+
+---
 ✅ what is EKS auto mode ?
 - Karpenter is used internally by AWS
 - Both Control plane & Data plane managed by AWS
