@@ -6,7 +6,7 @@
 
 ---
 
-✅ Devsecops Pipeline
+✅ EKS Project + Devsecops Pipeline
 - https://youtu.be/fuiTqI3noTo?si=BCNP34883wALOj4f --> Abhishek --> used terraform + EKS + Prometheus + Grafana
 
 ---
