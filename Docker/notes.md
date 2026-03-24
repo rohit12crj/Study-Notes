@@ -1,12 +1,21 @@
-Docker (Playlist )
-==================================================
-https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek 
 
 ---
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
+✅ Give Dockerfile example 
 
+<img width="445" height="391" alt="image" src="https://github.com/user-attachments/assets/62d51ee2-1c0f-4164-986a-6e6619fa0447" />
+
+<img width="395" height="170" alt="image" src="https://github.com/user-attachments/assets/25bfbc77-05ba-434a-8ca9-2433abbd5c7d" />
+
+---
+✅ Give Dockerfile multistage build example  
+
+<img width="416" height="273" alt="image" src="https://github.com/user-attachments/assets/6c9311ed-31e0-43a8-b25b-42c0dacdca05" />
+
+---
 https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 What is the difference between VM and Docker?
