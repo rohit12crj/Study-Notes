@@ -8,9 +8,6 @@
 ✅ why variable type of any is used ?
 
 ---
-✅ Dynamic block
-
----
 ✅ what happens if terraform lock is lost midway ?
 
 ---
