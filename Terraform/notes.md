@@ -5,7 +5,10 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
-✅  terraform state list command does ?
+✅ difference between terraform.tfvars & variables.tf 
+
+---
+✅ terraform state list command does ?
 
 ---
 ✅ what actually happens during terraform init internally ? 
