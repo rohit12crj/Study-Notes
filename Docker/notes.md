@@ -19,7 +19,7 @@
 ---
 ✅ Give Dockerfile multistage build example  
 
-<img width="416" height="273" alt="image" src="https://github.com/user-attachments/assets/6c9311ed-31e0-43a8-b25b-42c0dacdca05" />
+<img width="422" height="431" alt="image" src="https://github.com/user-attachments/assets/2788b3fe-66ee-49ef-9cb4-d2a95448c2ff" />
 
 ---
 ✅ Best Practices 
