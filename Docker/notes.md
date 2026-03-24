@@ -7,7 +7,7 @@
 ✅ what does docker daemon off does in Dockerfile
 
 ---
-✅ give me an exmaple where u will use both entrpoint & CMD 
+✅ give me an exmaple where u will use both entrypoint & CMD 
 
 ---
 ✅ Difference between package.json & package-lock.json
