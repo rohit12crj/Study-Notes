@@ -1,6 +1,9 @@
 ✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
 
 ---
+✅ what is EKS auto mode ?
+
+---
 ✅ how will u connect ur local machine aws cli to use a specific EKS cluster 
 <img width="450" height="40" alt="image" src="https://github.com/user-attachments/assets/d940ee09-65b3-408f-b472-c11aa79d4c73" />
 
