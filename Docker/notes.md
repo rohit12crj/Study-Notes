@@ -1,4 +1,4 @@
-✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek 
+<img width="416" height="273" alt="image" src="https://github.com/user-attachments/assets/04eb71ad-d312-434d-8f6e-7cbaada688c7" />✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek 
 
 ---
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
@@ -15,6 +15,13 @@
 
 <img width="416" height="273" alt="image" src="https://github.com/user-attachments/assets/6c9311ed-31e0-43a8-b25b-42c0dacdca05" />
 
+---
+✅ Best Practices 
+- Multi stage build
+- in 2nd stage run as non root user
+- use dockerignore file
+- use caching effectively
+- use distorless images 
 ---
 https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
