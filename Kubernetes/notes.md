@@ -1,7 +1,10 @@
 ✅ Real Time Scenario Based Kubernetes Implementations --> DevOps Shack --> https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS
 
 ---
-✅ explain service & it types ? explain labels & selectors ?
+✅  what are the different components of k8s?
+
+---
+✅ explain service & it's types ? explain labels & selectors ?
 
 ---
 ✅ For your EKS project explain what all manifest u created 
