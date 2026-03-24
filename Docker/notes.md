@@ -23,8 +23,6 @@
 - use caching effectively
 - use distorless images 
 ---
-https://www.youtube.com/watch?v=9hOSkx9jWPQ
-
 What is the difference between VM and Docker?
 
 how will u pass env variables when app is building like in a docker 
