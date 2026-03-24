@@ -4,6 +4,12 @@
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
+✅ what does docker daemon off does in Dockerfile
+
+---
+✅ give me an exmaple where u will use both entrpoint & CMD 
+
+---
 ✅ Difference between package.json & package-lock.json
 
 ---
