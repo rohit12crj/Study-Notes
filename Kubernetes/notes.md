@@ -42,7 +42,7 @@ Flow = Frontend --> Backend --> DB
 ✅ csi driver & EBS CSI Driver
 
 ---
-✅ explain network policies & admission controllers & how will u secure backend pods to eb accessible only from frontend pods ?
+✅ explain network policies & admission controllers & how will u secure backend pods are accessible only from frontend pods ?
 
 ---
 service account
