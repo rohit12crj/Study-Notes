@@ -109,7 +109,7 @@
 
 ✅ What are modules in Terraform?
 - We create reusable infrastructure components like VPC, ECS, and RDS inside a modules directory. Each environment such as dev or stage contains a main.tf that calls these modules using a relative path like ../../modules/vpc. Environment-specific values are passed through terraform.tfvars, while the module itself contains the actual resource definitions.
-- Check Terraform_Module_Flow.pdf also
+- Check Using_VPC_Module_in_Dev.pdf also
 
 ---
 
