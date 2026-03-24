@@ -5,12 +5,13 @@
 - namespace --> where u  using single namespace or 3 different namespace ?
 - Db --> statefulset + SVC + PVC ( persistent volume claim --> defines size of storage ) + SC ( storage class --> defines whetehr u want to use ebs , efs or fsx ) + NP
 - Backend --> Deployment + SVC ( Service --> clusterip ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets ( For storing Db username & password )
-- Frontend --> --> Deployment + SVC
+- Frontend --> Deployment + SVC
 
+Note -->  Ingress should ideally be used in place  of SVC ( service ) . if service is used , u need to do port forward also 
 Flow = Frontend --> Backend --> DB
 
 ---
-✅ Through terraform i created an eks cluster . however while writing k8s manifest file i created svc & sc of ebs type. shouldn't this ebs also be done through terraform ?
+✅ Through terraform i created an eks cluster . however while writing k8s manifest file i created pvc & sc of ebs type for db stateful set . shouldn't this ebs also be done through terraform ?
 
 <img width="560" height="277" alt="image" src="https://github.com/user-attachments/assets/592b5492-564d-4d73-a700-3ec7fa5cc12b" />
 
