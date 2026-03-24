@@ -5,6 +5,15 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ what actually happens during terraform init internally ?
+
+---
+✅ what does  .terraform  folder contains ?
+
+---
+✅ what does terraform.lock.hcl contains ?
+
+---
 ✅ why variable type of any is used ?
 
 ---
