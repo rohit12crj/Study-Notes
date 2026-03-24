@@ -1,3 +1,4 @@
+✅ 
 
 | Service             | One Line                                      |
 | ------------------- | --------------------------------------------- |
@@ -6,6 +7,7 @@
 | SCP                 | Restricts maximum permissions across accounts |
 
 ---
+✅ 
 
 | Feature  | IAM Policy        | SCP                  |
 | -------- | ----------------- | -------------------- |
@@ -28,6 +30,12 @@
 - Security team wants to ensure CloudTrail cannot be disabled --> Use SCP
 - Developers launch expensive EC2 instances causing cost issues. --> Use SCP restricting instance types.
 - Production resources must never be deleted accidentally --> Use SCP
+  
+---
+✅  what SCP policies were u using
+- no public s3 bucket
+- no 0.0.0.0/0 allowed in sg ingress rule 
+
 
 
 
