@@ -5,6 +5,9 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ Give common terraform workspace commands ?
+
+---
 ✅ difference between terraform.tfvars & variables.tf 
 
 ---
