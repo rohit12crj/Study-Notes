@@ -2,8 +2,9 @@
 
 ---
 ✅ For your EKS project explain what all manifest u created 
+- namespace 
 - Db --> statefulset + SVC + PVC ( persistent volume claim --> defines size of storage ) + SC ( storage class --> defines whetehr u want to use ebs , efs or fsx ) + NP
-- Backend --> Deployment + SVC ( Service ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets 
+- Backend --> Deployment + SVC ( Service ) + NP ( Network Policy --> used for restricting backend pods only to be accessible from Frontend pods ) , Secrets ( For storing Db username & password )
 - Frontend --> --> Deployment + SVC
 
 ---
