@@ -1,4 +1,4 @@
-<img width="416" height="273" alt="image" src="https://github.com/user-attachments/assets/04eb71ad-d312-434d-8f6e-7cbaada688c7" />✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek 
+✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek 
 
 ---
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
