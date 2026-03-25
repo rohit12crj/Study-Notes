@@ -58,6 +58,21 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 <img width="912" height="336" alt="image" src="https://github.com/user-attachments/assets/daeea042-3628-42d1-9dfa-d623c6b1c2ad" />
 
 ---
+| Feature           | Nginx                         | API Gateway                   | Load Balancer                   |
+| ----------------- | ----------------------------- | ----------------------------- | ------------------------------- |
+| Primary Role      | Reverse proxy + web server    | API management layer          | Traffic distribution            |
+| Layer             | L7 (Application)              | L7 (Application)              | L4 (TCP) / L7                   |
+| Routing           | Path-based, host-based        | Advanced API routing          | Basic (IP/port or simple rules) |
+| Load Balancing    | ✅ Yes                         | ✅ Yes                         | ✅ Core function                 |
+| Authentication    | ❌ Basic (manual config)       | ✅ Built-in (JWT, OAuth, etc.) | ❌ No                            |
+| Rate Limiting     | ⚠️ Basic                      | ✅ Advanced                    | ❌ No                            |
+| Caching           | ✅ Yes                         | ✅ Yes                         | ❌ No                            |
+| SSL Termination   | ✅ Yes                         | ✅ Yes                         | ✅ Yes                           |
+| Service Discovery | ❌ Limited                     | ✅ Yes                         | ❌ No                            |
+| Observability     | ⚠️ Limited                    | ✅ Rich (metrics, tracing)     | ⚠️ Basic                        |
+| Use Case          | Reverse proxy, static serving | Microservices API control     | Distribute traffic              |
+
+---
 
 ✅ Why ALB & reverse Proxy are both used 
 - ALB can handle basic application-level routing like path and host-based rules, but it lacks advanced capabilities such as URL rewriting, caching, custom authentication logic, and internal container routing.
