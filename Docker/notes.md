@@ -50,6 +50,19 @@
 - <img width="330" height="83" alt="image" src="https://github.com/user-attachments/assets/6789b46c-45bf-490d-bee5-152d519dae00" />
 
 ---
+✅ what advantage do i get of using nginx between frontend & backend ?
+- Hides backend (improves security, no direct access)
+- Acts as a single entry point for all traffic
+- Enables load balancing across backend instances
+- Supports path-based routing (e.g., /api → backend)
+- Handles SSL termination (HTTPS offloading)
+- Provides rate limiting and basic DDoS protection
+- Enables response caching for better performance
+- Allows header manipulation (auth, client IP, etc.)
+- Decouples frontend from backend (loose coupling)
+- Supports zero-downtime deployments (blue-green / rolling)
+
+---
 ✅ what does docker daemon off does in Dockerfile
 
 ---
