@@ -41,13 +41,6 @@
 | **MTTD** | Mean Time To Detect           | Average time taken to **detect an issue after it occurs**            | How fast issues are **detected**      |
 
 ---
-
-✅ explain HA for all aws services in your project ?
-
-Can you explain your day-to-day responsibilities in your current DevOps role?
-
----
-
 ✅ What is an Error Budget, SLA , SLO , SLI
 - An Error Budget is the maximum amount of failure or downtime that a system is allowed while still meeting its reliability target (SLO).
 - It is mainly used in Site Reliability Engineering (SRE) to balance system reliability vs development speed.
@@ -68,7 +61,7 @@ Can you explain your day-to-day responsibilities in your current DevOps role?
 <img width="469" height="281" alt="image" src="https://github.com/user-attachments/assets/6d3e6c52-682e-470b-9ff2-3d0d20608906" />
 
 ---
-✅ What is the default Prometheus port number?
+✅ Can you explain your day-to-day responsibilities in your current DevOps role?
 
 ---
 ✅ What is toil, and how do you reduce it in DevOps/SRE teams?
