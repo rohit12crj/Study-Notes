@@ -29,6 +29,14 @@
 <img width="527" height="347" alt="image" src="https://github.com/user-attachments/assets/555a9eca-a5ab-4ede-afd7-947968eee440" />
 
 ---
+✅ In the docker compose file how can i make sure the backend container should only be accessible from frontend , & db container from backend . let's assume frontend is running on port 8080 , backend on port 3000 , & db on port 5432
+- You enforce this using network isolation + no port exposure
+- Frontend and backend share one network, backend and DB share another, and since frontend is not part of the DB network, it cannot access the database directly
+- <img width="480" height="398" alt="image" src="https://github.com/user-attachments/assets/c1661f74-01de-48cd-a97f-10291741f10b" />
+- <img width="378" height="364" alt="image" src="https://github.com/user-attachments/assets/6ed5f4da-e322-4e2c-b3b9-6cd73122e4f9" />
+
+
+----
 ✅ what does docker daemon off does in Dockerfile
 
 ---
