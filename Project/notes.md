@@ -1,5 +1,18 @@
 ✅ Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party --> Used Terraform + ECS
 
+i have an ecs cluster with 3 tasks , 
+caddy frontend --> which is a dashboard for editing caddy redirect rules , configuring proxy , viewing ssl certs
+caddy core --> which is the actual caddy image from dockerhub
+caddy backend --> backend logic
+
+& also aws rds postgre sql along with efs ( to store ssl certs , caddyfile config )
+
+my caddy core ECS Task is exposed via nlb , to redirect domain x.com to y.com i need to update cname of x.com to caddy core NLB DNS name
+
+caddy frontend & backend tasks are exposed via alb , with 2 separate target group , based on 2 separate listeners 
+
+ can u explain why this setup is used 
+
 ---
 
 ✅ Gitlab to Github Action Migration
