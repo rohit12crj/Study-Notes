@@ -17,133 +17,15 @@
 ---
 ✅ docker-compose.yml schema 
 
-version: "3.9"  # Use latest stable compose spec
+<img width="518" height="407" alt="image" src="https://github.com/user-attachments/assets/87123d3b-9881-4a26-b591-7a92635fde09" />
+<img width="503" height="394" alt="image" src="https://github.com/user-attachments/assets/e5386246-947f-4130-93d5-128f0656c503" />
+<img width="503" height="243" alt="image" src="https://github.com/user-attachments/assets/691fe715-aa2e-4589-990b-8ed58e847021" />
+<img width="510" height="391" alt="image" src="https://github.com/user-attachments/assets/0acf490f-d205-49cc-8dd6-23a48d056d9f" />
+<img width="310" height="135" alt="image" src="https://github.com/user-attachments/assets/52b60be0-4879-4752-b31c-8d53fb2a60fc" />
+<img width="506" height="224" alt="image" src="https://github.com/user-attachments/assets/b6e1140d-83fa-411c-abca-5e9cf0a65011" />
 
-name: my-app    # Logical project name
 
-services:
-  app:
-    container_name: app
 
-    image: my-app:v1.2.3   # Avoid 'latest' in production → use fixed version
-    # build:               # Use build only for local/dev
-    #   context: .
-    #   dockerfile: Dockerfile
-
-    restart: unless-stopped   # Auto-restart unless manually stopped
-
-    ports:
-      - "8080:8080"           # host:container mapping
-
-    environment:
-      ENV: production         # Runtime environment
-      LOG_LEVEL: info
-
-    env_file:
-      - .env                  # Externalize configs/secrets (best practice)
-
-    secrets:
-      - db_password           # Inject sensitive data securely
-
-    depends_on:
-      db:
-        condition: service_healthy   # Wait for DB health (not just startup)
-
-    networks:
-      - app-network           # Use custom network (isolation)
-
-    volumes:
-      - app-data:/var/lib/app # Named volume → persistent + portable
-
-    read_only: true           # Prevent container FS modification (security)
-
-    user: "1000:1000"         # Run as non-root user (security best practice)
-
-    deploy:                   # Mainly for Swarm, still useful for reference
-      resources:
-        limits:
-          cpus: "0.50"        # Max CPU usage
-          memory: 512M        # Max memory
-        reservations:
-          cpus: "0.25"        # Guaranteed CPU
-          memory: 256M        # Guaranteed memory
-
-    healthcheck:              # Ensures container is actually ready
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
-
-    logging:                  # Prevent disk overflow
-      driver: "json-file"
-      options:
-        max-size: "10m"       # Rotate logs after 10MB
-        max-file: "3"         # Keep only 3 log files
-
-    profiles:
-      - prod                  # Run only in specific profile (prod/dev split)
-
-  db:
-    container_name: db
-
-    image: postgres:15        # Use specific version (not latest)
-
-    restart: unless-stopped
-
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_DB: mydb
-      POSTGRES_PASSWORD_FILE: /run/secrets/db_password  # Use secrets file
-
-    secrets:
-      - db_password
-
-    volumes:
-      - db-data:/var/lib/postgresql/data  # Persistent DB storage
-
-    networks:
-      - app-network
-
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U user"]
-      interval: 30s
-      timeout: 5s
-      retries: 5
-
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
-
-    profiles:
-      - prod
-
-  # Example optional service (for dev/debug)
-  adminer:
-    image: adminer            # DB UI tool (optional)
-    restart: unless-stopped
-    ports:
-      - "8081:8080"
-    networks:
-      - app-network
-    profiles:
-      - dev                   # Only runs in dev profile
-
-networks:
-  app-network:
-    driver: bridge            # Default network driver
-
-volumes:
-  app-data:
-    driver: local             # Local persistent storage
-  db-data:
-    driver: local
-
-secrets:
-  db_password:
-    file: ./secrets/db_password.txt   # Store secrets outside compose file
 
 
 ---
