@@ -41,9 +41,9 @@ Prometheus → Alertmanager → PagerDuty → Auto-create incident
 
 | Term                              | Meaning                        |
 | --------------------------------- | ------------------------------ |
-| **SLA (Service Level Agreement)** | Contract with customers        |
-| **SLO (Service Level Objective)** | Target reliability goal        |
-| **SLI (Service Level Indicator)** | Actual measured metric         |
+| **SLA (Service Level Agreement)** | what we promise externally     |
+| **SLO (Service Level Objective)** | what do we want to achieve     |
+| **SLI (Service Level Indicator)** | what is actually hapenning     |
 | **Error Budget**                  | Allowed failure within the SLO |
 
 <img width="469" height="281" alt="image" src="https://github.com/user-attachments/assets/6d3e6c52-682e-470b-9ff2-3d0d20608906" />
