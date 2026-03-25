@@ -5,6 +5,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+
+<img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
+
+---
 ✅ why should i use nexus repository along with aws ecr ?
 
 ---
