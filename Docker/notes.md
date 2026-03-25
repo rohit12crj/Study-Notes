@@ -63,6 +63,22 @@
 - Supports zero-downtime deployments (blue-green / rolling)
 
 ---
+| Feature           | Nginx                         | API Gateway                   | Load Balancer                   |
+| ----------------- | ----------------------------- | ----------------------------- | ------------------------------- |
+| Primary Role      | Reverse proxy + web server    | API management layer          | Traffic distribution            |
+| Layer             | L7 (Application)              | L7 (Application)              | L4 (TCP) / L7                   |
+| Routing           | Path-based, host-based        | Advanced API routing          | Basic (IP/port or simple rules) |
+| Load Balancing    | ✅ Yes                         | ✅ Yes                         | ✅ Core function                 |
+| Authentication    | ❌ Basic (manual config)       | ✅ Built-in (JWT, OAuth, etc.) | ❌ No                            |
+| Rate Limiting     | ⚠️ Basic                      | ✅ Advanced                    | ❌ No                            |
+| Caching           | ✅ Yes                         | ✅ Yes                         | ❌ No                            |
+| SSL Termination   | ✅ Yes                         | ✅ Yes                         | ✅ Yes                           |
+| Service Discovery | ❌ Limited                     | ✅ Yes                         | ❌ No                            |
+| Observability     | ⚠️ Limited                    | ✅ Rich (metrics, tracing)     | ⚠️ Basic                        |
+| Use Case          | Reverse proxy, static serving | Microservices API control     | Distribute traffic              |
+
+
+---
 ✅ what does docker daemon off does in Dockerfile
 
 ---
