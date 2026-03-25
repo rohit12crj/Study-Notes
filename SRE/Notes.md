@@ -1,5 +1,6 @@
 ✅ Videos
 - https://youtu.be/nHlL_v4wCrM?si=O10oQHPijmDT5qJp  --> SRE Questions
+- pagerduty --> used for end to end incident management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE --> no need to go through the video --> just for reference
 
 ---
 ✅ RTO & RPO & what were these values in your project & how did u achieve this ?
@@ -20,15 +21,18 @@
 ---
 ✅ What is blameless postmortem
 
+---
 ✅ Your SLO is consitently violated. What do you do
 
+---
 ✅ Explain the incident response lifecycle
+- Prometheus → Alertmanager → PagerDuty → Auto-create incident
+
+---
 
 ✅ What is chaos engineering
 
 ---
-✅ 
-
 | Metric   | Full Form                     | Definition                                                           | What it tells                         |
 | -------- | ----------------------------- | -------------------------------------------------------------------- | ------------------------------------- |
 | **MTTR** | Mean Time To Repair (Recover) | Average time taken to **restore a system after a failure**           | How fast you **recover**              |
@@ -41,10 +45,6 @@
 ✅ explain HA for all aws services in your project ?
 
 Can you explain your day-to-day responsibilities in your current DevOps role?
-
-pagerduty --> used for end to end incident management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE --> no need to go through the video --> just for reference
-
-Prometheus → Alertmanager → PagerDuty → Auto-create incident
 
 ---
 
