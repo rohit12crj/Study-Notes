@@ -36,6 +36,9 @@ Prometheus → Alertmanager → PagerDuty → Auto-create incident
 - We monitored SLIs such as API success rate and latency using Prometheus and Grafana.
 - If the error budget was consumed too quickly, we would freeze new deployments and focus on reliability improvements like fixing bugs, improving monitoring, or scaling infrastructure.
 
+<img width="589" height="341" alt="image" src="https://github.com/user-attachments/assets/04dbf2c5-f080-4a86-80ee-18f712eb45a9" />
+
+
 | Term                              | Meaning                        |
 | --------------------------------- | ------------------------------ |
 | **SLA (Service Level Agreement)** | Contract with customers        |
