@@ -23,9 +23,9 @@
 - <img width="310" height="135" alt="image" src="https://github.com/user-attachments/assets/52b60be0-4879-4752-b31c-8d53fb2a60fc" />
 - <img width="506" height="224" alt="image" src="https://github.com/user-attachments/assets/b6e1140d-83fa-411c-abca-5e9cf0a65011" />
 
-
-
-
+---
+✅ Best Pracrtices for writing docker-compose.yml file 
+<img width="527" height="347" alt="image" src="https://github.com/user-attachments/assets/555a9eca-a5ab-4ede-afd7-947968eee440" />
 
 ---
 ✅ what does docker daemon off does in Dockerfile
