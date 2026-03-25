@@ -1,4 +1,4 @@
-rto & rpo & what were these values in your project & how did u achieve this ?
+✅ rto & rpo & what were these values in your project & how did u achieve this ?
 - RTO --> The maximum acceptable time to restore a system after a failure. If RTO = 30 minutes, the system must be restored within 30 minutes after an outage.
 - RPO --> The maximum acceptable amount of data loss measured in time. If RPO = 5 minutes, the system can only lose 5 minutes of data.
 - In our project the RTO was around 10–15 minutes and RPO was less than 5 minutes.
@@ -8,8 +8,11 @@ rto & rpo & what were these values in your project & how did u achieve this ?
 - Infrastructure was managed using Terraform, so in case of a disaster we could recreate the infrastructure quickly through our CI/CD pipelines.
 
 ---
+✅ 
 
-explain HA for all aws services in your project ?
+---
+
+✅ explain HA for all aws services in your project ?
 
 Can you explain your day-to-day responsibilities in your current DevOps role?
 
@@ -19,7 +22,7 @@ Prometheus → Alertmanager → PagerDuty → Auto-create incident
 
 ---
 
-What is an Error Budget, SLA , SLO , SLI
+✅ What is an Error Budget, SLA , SLO , SLI
 - An Error Budget is the maximum amount of failure or downtime that a system is allowed while still meeting its reliability target (SLO).
 - It is mainly used in Site Reliability Engineering (SRE) to balance system reliability vs development speed.
 - In our project we had an SLO of 99.9% availability, which gave us an error budget of roughly 43 minutes per month.
@@ -41,7 +44,7 @@ What is the default Prometheus port number?
 
 ---
 
-What is toil, and how do you reduce it in DevOps/SRE teams?
+✅ What is toil, and how do you reduce it in DevOps/SRE teams?
 - Toil is repetitive manual operational work that does not add long-term value and can be automated. Examples include manual deployments, restarting services, or provisioning infrastructure.
 - In DevOps/SRE teams we reduce toil by implementing automation, CI/CD pipelines, Infrastructure as Code using Terraform, self-healing systems like Kubernetes, and proper monitoring and alerting.
 - This allows engineers to focus more on system reliability and improvements instead of repetitive operational tasks.
