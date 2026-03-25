@@ -10,6 +10,13 @@
 ---
 ✅ 
 
+| Metric   | Full Form                     | Definition                                                           | What it tells                         |
+| -------- | ----------------------------- | -------------------------------------------------------------------- | ------------------------------------- |
+| **MTTR** | Mean Time To Repair (Recover) | Average time taken to **restore a system after a failure**           | How fast you **recover**              |
+| **MTBF** | Mean Time Between Failures    | Average time a system operates **without failing**                   | How **reliable/stable** the system is |
+| **MTTA** | Mean Time To Acknowledge      | Average time taken to **acknowledge an alert after it is triggered** | How fast the team **responds**        |
+| **MTTD** | Mean Time To Detect           | Average time taken to **detect an issue after it occurs**            | How fast issues are **detected**      |
+
 ---
 
 ✅ explain HA for all aws services in your project ?
