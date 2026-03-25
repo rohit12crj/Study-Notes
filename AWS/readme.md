@@ -112,3 +112,6 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 - We also configured automated backups, snapshots, and S3 cross-region replication for disaster recovery.
 - Infrastructure was managed using Terraform, so in case of a disaster we could recreate the infrastructure quickly through our CI/CD pipelines.
 
+---
+✅ explain the various DR ( Disaster Recovery techniques ) & which one u used ?
+
