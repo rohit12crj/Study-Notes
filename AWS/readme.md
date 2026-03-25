@@ -130,3 +130,4 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ---
 ✅ explain the various DR ( Disaster Recovery techniques ) & which one u used ?
 
+---
