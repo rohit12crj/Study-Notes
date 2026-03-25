@@ -1,6 +1,6 @@
 ✅ Videos
 - https://youtu.be/nHlL_v4wCrM?si=O10oQHPijmDT5qJp  --> SRE Questions
-- pagerduty --> used for end to end incident management --> https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj  --> important for SRE --> no need to go through the video --> just for reference
+- https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj --> pagerduty --> used for end to end incident management , important for SRE , no need to go through the video ,just for reference
 
 ---
 ✅ RTO & RPO & what were these values in your project & how did u achieve this ?
