@@ -37,6 +37,19 @@
 
 
 ----
+✅ Docker Compose with Nginx Reverse Proxy
+- <img width="519" height="105" alt="image" src="https://github.com/user-attachments/assets/b7bc5ae3-e5a7-4e9e-8c1d-1d35aa8cf0bd" />
+- <img width="523" height="414" alt="image" src="https://github.com/user-attachments/assets/61372dce-b788-4bc0-ac41-24af37200acf" />
+- <img width="535" height="170" alt="image" src="https://github.com/user-attachments/assets/4c94cd75-63e0-44b4-bba0-2767b68b111d" />
+- <img width="520" height="320" alt="image" src="https://github.com/user-attachments/assets/e5f69c76-6cb8-4653-a602-e4cee30a6e90" />
+- <img width="483" height="397" alt="image" src="https://github.com/user-attachments/assets/5f04120b-921f-411a-975e-cd35f0a2d16e" />
+- <img width="510" height="375" alt="image" src="https://github.com/user-attachments/assets/9e8b2f07-5d8a-42e4-96e9-39eb6a405887" />
+- <img width="418" height="434" alt="image" src="https://github.com/user-attachments/assets/7c187d94-99d7-43a6-ab73-8b3624aa51b2" />
+- <img width="569" height="344" alt="image" src="https://github.com/user-attachments/assets/ed8d3291-e70a-495b-a375-8400b33a90c9" />
+- <img width="589" height="383" alt="image" src="https://github.com/user-attachments/assets/ae522009-8550-4f9f-9294-904549a2a0d6" />
+- <img width="330" height="83" alt="image" src="https://github.com/user-attachments/assets/6789b46c-45bf-490d-bee5-152d519dae00" />
+
+---
 ✅ what does docker daemon off does in Dockerfile
 
 ---
