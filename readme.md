@@ -13,4 +13,4 @@
 - Day 12 --> Prometheus_Grafana_EFK_Opensearch_Jaeger_Site24*7
 - Day 13 + Day 14  --> k8s
 
-##### Note - Ansible , HR , MlOps , Project , Data Engineering , System Design & Cyber-Security are not included
+##### Note - Ansible , HR , MlOps , Project , Data Engineering , System Design & Cyber-Security folders are not included
