@@ -4,7 +4,12 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
-✅  what are the different components of k8s?
+✅ what are the different components of k8s?
+-  
+
+
+---
+✅ difference between container-d & docker 
 
 ---
 ✅ explain service & it's types ? explain labels & selectors ?
