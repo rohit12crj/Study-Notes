@@ -3,7 +3,7 @@
 - https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
 - https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
 - https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide Repo ( Abhishek )
-- https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
+- https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
 
 ---
 ✅  scp ( Secure Copy Protocol ) used for 
