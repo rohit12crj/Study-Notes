@@ -5,6 +5,18 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ Pipeline Steps ( Java Based Application )
+- compile --> to find out syntax based errors
+- unit testing --> to check functionality of code --> sonarqube
+- code quality check --> sonarqube --> 
+- vulnerability Scan --> trivy -->
+- Build application --> Generates Artifact --> Maven
+- Push artifact to Repository --> Used for Artifact Versioning --> Nexus
+- Build & Tag Docker image
+- Docker image vulnerability Scan --> Trivy
+- Push Docker image to AWS ECR Repository
+- Deploy Image to ECS Service
+- DAST Scan
 
 <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
 
