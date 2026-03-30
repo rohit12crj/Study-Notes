@@ -17,7 +17,7 @@
 - Push Docker image to AWS ECR Repository
 - Deploy Image to ECS Service
 - DAST --> OWASP ZAP
-- Checkov IaC security scanning (Terraform + K8s manifests)
+- Checkov --> (Terraform + K8s manifests) scanning
 
 <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
 
@@ -174,12 +174,27 @@ Examples:
 ---
 ---
 ---
-                            #### Github Actions ####
+                                                      #### Github Actions 
 ---
 ---
 ---
 
-✅ Dependabot vs CodeQL
+✅ How will u secure Github Runners ?
+
+---
+✅ How will u configure EKS Github runners ?
+
+---
+✅ Github Action Template ?
+
+---
+✅ Dynamic Github Action Pipeline ? Master child Pipeline
+
+---
+✅ Pipeline Tag strategy , artifacts caching strategy , Cache invalidation strategy , testing strategy
+
+---
+✅ Dependabot vs CodeQL . Use of Dependabot.yml file 
 - <img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
 - <img width="559" height="433" alt="image" src="https://github.com/user-attachments/assets/9ba58705-33f9-414e-8cd8-781b54d9fef6" />
 
@@ -203,7 +218,7 @@ Examples:
 - Image digest is a SHA256 hash that uniquely and immutably identifies a Docker image
 
 ---
-✅ Dependency graph in github
+✅ Dependency graph in github ? DAG ?
 
 ---
 ✅ connect sonarqube with github action 
