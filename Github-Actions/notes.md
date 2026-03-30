@@ -1,4 +1,17 @@
-<img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
+✅ Dependabot vs CodeQL
+- <img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
+- <img width="559" height="433" alt="image" src="https://github.com/user-attachments/assets/9ba58705-33f9-414e-8cd8-781b54d9fef6" />
+
+
+| Feature       | **Dependabot**                      | **CodeQL**                                 |
+| ------------- | ----------------------------------- | ------------------------------------------ |
+| Type          | SCA (Software Composition Analysis) | SAST (Static Application Security Testing) |
+| Focus         | Vulnerable dependencies             | Vulnerabilities in your code               |
+| What it scans | `package.json`, `pom.xml`, etc.     | Source code (Java, JS, Python, etc.)       |
+| Output        | PRs to update dependencies          | Security alerts & reports                  |
+| Fix method    | Auto PRs                            | Manual code fix                            |
+| Trigger       | Scheduled / on push                 | On push / PR / scheduled                   |
+| Example issue | Log4j vulnerability                 | SQL Injection                              |
 
 ---
 ✅ suppose i have deployed ecs task definition of frontend service through terraform & in it the container image should reference the image in ecr frontend repo with specific hash of lastest docker image build commit . how can i do it through pipeline
