@@ -1,4 +1,4 @@
-<img width="1299" height="668" alt="image" src="https://github.com/user-attachments/assets/18f82907-76fe-43e6-9abe-7531ff49f074" />### Study Plan
+### Study Plan
 
 - Day 1 --> Git
 - Day 2 --> Python
@@ -18,7 +18,8 @@
 ✅ Common Services & DevOps Tools Ports
 - <img width="478" height="422" alt="image" src="https://github.com/user-attachments/assets/caf40d31-f2a9-4469-954b-6519069b1fec" />
 - <img width="326" height="217" alt="image" src="https://github.com/user-attachments/assets/9661e45e-ab69-46be-bc71-ab8601b3e5af" />
-- <img width="647" height="335" alt="image" src="https://github.com/user-attachments/assets/0a1e5a0f-aa1c-4e18-ab81-4327b5329bb8" />
+
+<img width="647" height="335" alt="image" src="https://github.com/user-attachments/assets/0a1e5a0f-aa1c-4e18-ab81-4327b5329bb8" />
 
 
 
