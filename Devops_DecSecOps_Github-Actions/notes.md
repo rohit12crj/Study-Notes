@@ -211,7 +211,7 @@ Examples:
 
 ---
 ✅ suppose i have deployed ecs task definition of frontend service through terraform & in it the container image should reference the image in ecr frontend repo with specific hash of lastest docker image build commit . how can i do it through pipeline
-- In the pipeline, I build and push the Docker image to ECR using the commit SHA as the tag. Then I pass this tag as a variable to Terraform, which updates the ECS task definition with the new image version, triggering a deployment
+- In the pipeline, I build and push the Docker image to ECR using the commit SHA as the tag. Then I pass this tag as a variable to Terraform through env variables in github action pipeline file , which updates the ECS task definition with the new image version, triggering a deployment
 
 ---
 ✅ what is image digest ?
