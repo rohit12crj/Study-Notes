@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kubernetes EKS Revision Sheet</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f8f7f2;
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #5f5e5a;
+    --color-text-tertiary: #888780;
+    --color-border-secondary: rgba(0,0,0,0.18);
+    --color-border-tertiary: rgba(0,0,0,0.1);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1a1a18;
+      --color-background-secondary: #222220;
+      --color-text-primary: #e8e6dc;
+      --color-text-secondary: #9c9a92;
+      --color-text-tertiary: #6b6a64;
+      --color-border-secondary: rgba(255,255,255,0.18);
+      --color-border-tertiary: rgba(255,255,255,0.1);
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    padding: 2rem 1rem;
+    min-height: 100vh;
+  }
+
+  .page-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--color-text-primary);
+  }
+  .page-sub {
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+    margin-bottom: 24px;
+  }
+
+  .rs { max-width: 1100px; margin: 0 auto; }
+
+  .section {
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    margin-bottom: 14px;
+    background: var(--color-background-primary);
+  }
+
+  .section-head {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .hlabel { font-size: 13px; font-weight: 500; }
+  .sub { font-size: 11px; margin-left: auto; padding: 2px 9px; border-radius: 20px; white-space: nowrap; }
+
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  td {
+    font-size: 12px;
+    padding: 7px 14px;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    vertical-align: top;
+    line-height: 1.55;
+    word-break: break-word;
+  }
+  td:first-child { font-weight: 500; width: 18%; }
+  td:nth-child(2) { width: 24%; color: var(--color-text-secondary); }
+  td:nth-child(3) { width: 30%; color: var(--color-text-secondary); }
+  td:nth-child(4) { width: 28%; }
+
+  .th-row td {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-top: none;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+
+  .eks-col { color: #C45E00 !important; }
+  .eks-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #FEF3C7;
+    color: #92400E;
+    margin-bottom: 3px;
+  }
+
+  .flow-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 14px;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    flex-wrap: wrap;
+  }
+  .fp { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+  .fa { font-size: 12px; color: var(--color-text-tertiary); }
+
+  /* Section colors */
+  .cp .section-head { background: #EEF2FF; }
+  .cp .dot { background: #6366F1; }
+  .cp .hlabel, .cp td:first-child { color: #3730A3; }
+  .cp .sub { background: #E0E7FF; color: #3730A3; }
+  .cp .th-row td:last-child { color: #C45E00; }
+
+  .wn .section-head { background: #F0FDF9; }
+  .wn .dot { background: #10B981; }
+  .wn .hlabel, .wn td:first-child { color: #065F46; }
+  .wn .sub { background: #D1FAE5; color: #065F46; }
+  .wn .th-row td:last-child { color: #C45E00; }
+
+  .net .section-head { background: #EFF6FF; }
+  .net .dot { background: #3B82F6; }
+  .net .hlabel, .net td:first-child { color: #1E40AF; }
+  .net .fp { background: #DBEAFE; color: #1E40AF; }
+  .net .th-row td:last-child { color: #C45E00; }
+
+  .wl .section-head { background: #FDF4FF; }
+  .wl .dot { background: #A855F7; }
+  .wl .hlabel, .wl td:first-child { color: #6B21A8; }
+  .wl .th-row td:last-child { color: #C45E00; }
+
+  .cfg .section-head { background: #FFF7ED; }
+  .cfg .dot { background: #F97316; }
+  .cfg .hlabel, .cfg td:first-child { color: #7C2D12; }
+  .cfg .th-row td:last-child { color: #C45E00; }
+
+  .st .section-head { background: #FFFBEB; }
+  .st .dot { background: #F59E0B; }
+  .st .hlabel, .st td:first-child { color: #92400E; }
+  .st .th-row td:last-child { color: #C45E00; }
+
+  .sec .section-head { background: #FFF1F2; }
+  .sec .dot { background: #F43F5E; }
+  .sec .hlabel, .sec td:first-child { color: #9F1239; }
+  .sec .th-row td:last-child { color: #C45E00; }
+
+  .sc .section-head { background: #F0FDF4; }
+  .sc .dot { background: #22C55E; }
+  .sc .hlabel, .sc td:first-child { color: #14532D; }
+  .sc .th-row td:last-child { color: #C45E00; }
+
+  .ao .section-head { background: #F7FEE7; }
+  .ao .dot { background: #84CC16; }
+  .ao .hlabel, .ao td:first-child { color: #3F6212; }
+  .ao .th-row td:last-child { color: #C45E00; }
+
+  @media (prefers-color-scheme: dark) {
+    .eks-badge { background: #451a03; color: #fdba74; }
+    .eks-col { color: #fdba74 !important; }
+    .cp .section-head { background: #1e1d3a; } .cp .hlabel, .cp td:first-child { color: #a5b4fc; } .cp .sub { background: #312e81; color: #c7d2fe; } .cp .th-row td:last-child { color: #fdba74; }
+    .wn .section-head { background: #0d2b22; } .wn .hlabel, .wn td:first-child { color: #6ee7b7; } .wn .sub { background: #064e3b; color: #a7f3d0; } .wn .th-row td:last-child { color: #fdba74; }
+    .net .section-head { background: #1e3a5f; } .net .hlabel, .net td:first-child { color: #93c5fd; } .net .fp { background: #1e3a8a; color: #bfdbfe; } .net .th-row td:last-child { color: #fdba74; }
+    .wl .section-head { background: #2e1065; } .wl .hlabel, .wl td:first-child { color: #d8b4fe; } .wl .th-row td:last-child { color: #fdba74; }
+    .cfg .section-head { background: #2c1400; } .cfg .hlabel, .cfg td:first-child { color: #fdba74; } .cfg .th-row td:last-child { color: #fdba74; }
+    .st .section-head { background: #2a1d00; } .st .hlabel, .st td:first-child { color: #fcd34d; } .st .th-row td:last-child { color: #fdba74; }
+    .sec .section-head { background: #2d0a14; } .sec .hlabel, .sec td:first-child { color: #fda4af; } .sec .th-row td:last-child { color: #fdba74; }
+    .sc .section-head { background: #052e16; } .sc .hlabel, .sc td:first-child { color: #86efac; } .sc .th-row td:last-child { color: #fdba74; }
+    .ao .section-head { background: #1a1f00; } .ao .hlabel, .ao td:first-child { color: #bef264; } .ao .th-row td:last-child { color: #fdba74; }
+  }
+</style>
+</head>
+<body>
+<div class="rs">
+  <p class="page-title">Kubernetes + AWS EKS — Revision Sheet</p>
+  <p class="page-sub">All components, key details, and how each maps to AWS EKS</p>
+
+  <!-- CONTROL PLANE -->
+  <div class="section cp">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Control plane — the brain</span><span class="sub">Runs on master node</span></div>
+    <table>
+      <tr class="th-row"><td>Component</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>kube-apiserver</td><td>The Gatekeeper — single REST entry point</td><td>Authenticates, authorizes &amp; validates every request. Horizontally scalable. All components talk only through here.</td><td class="eks-col"><span class="eks-badge">Managed</span> AWS runs &amp; manages it. Exposed as private/public endpoint. Access via aws eks update-kubeconfig. IAM authenticates via aws-auth ConfigMap.</td></tr>
+      <tr><td>etcd</td><td>The Memory — distributed KV store</td><td>Only apiserver reads/writes it. Uses Raft consensus. Must be backed up. Single source of truth.</td><td class="eks-col"><span class="eks-badge">Fully managed</span> AWS manages etcd — encrypted at rest with AWS KMS. No direct access. AWS handles backups, HA, and replication.</td></tr>
+      <tr><td>kube-scheduler</td><td>The Placement Engine — assigns Pods</td><td>Filters by resource requests, affinity, taints/tolerations. Scores nodes and picks the best fit.</td><td class="eks-col"><span class="eks-badge">Managed</span> Runs in AWS-managed control plane. Karpenter enhances scheduling by provisioning right-sized nodes just-in-time.</td></tr>
+      <tr><td>kube-controller-manager</td><td>The Reconciler — runs core control loops</td><td>Node, ReplicaSet, Endpoints, SA controllers. Each loop: observe → compare → act.</td><td class="eks-col"><span class="eks-badge">Managed</span> Fully managed by AWS. AWS CCM handles AWS-specific controllers (node lifecycle tied to EC2 instances).</td></tr>
+      <tr><td>cloud-controller-manager</td><td>Cloud Bridge — links k8s to cloud APIs</td><td>Manages cloud LBs, node lifecycle, routes. Absent in on-prem clusters.</td><td class="eks-col"><span class="eks-badge">Managed</span> AWS CCM built-in. Integrates with ELB for Services, EC2 for node registration, VPC for routes.</td></tr>
+    </table>
+  </div>
+
+  <!-- DATA PLANE -->
+  <div class="section wn">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Data plane — worker nodes</span><span class="sub">Runs on every node</span></div>
+    <table>
+      <tr class="th-row"><td>Component</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>kubelet</td><td>The Executor — primary node agent</td><td>Reads PodSpecs from apiserver. Starts containers via CRI. Does liveness/readiness probes. Reports status.</td><td class="eks-col"><span class="eks-badge">Self-managed</span> Runs on EC2 worker nodes. Pre-installed in EKS-optimized AMIs (Amazon Linux 2, Bottlerocket).</td></tr>
+      <tr><td>kube-proxy</td><td>The Networker — maintains Service routing</td><td>Uses iptables/IPVS for ClusterIP → Pod IP translation. Deployed as a DaemonSet.</td><td class="eks-col"><span class="eks-badge">Managed add-on</span> Deployed via EKS managed add-on. AWS VPC CNI can replace some duties with native VPC routing.</td></tr>
+      <tr><td>Container runtime</td><td>The Engine — runs actual containers</td><td>Implements CRI interface. containerd is default since k8s 1.24. Manages image pull and container lifecycle.</td><td class="eks-col"><span class="eks-badge">Included in AMI</span> containerd is default in EKS-optimized AMIs. Bottlerocket is AWS's purpose-built container OS.</td></tr>
+      <tr><td>Pod</td><td>Atomic Unit — smallest deployable entity</td><td>Shares network namespace (same IP). Init containers run before main. Ephemeral — replaced not restarted.</td><td class="eks-col"><span class="eks-badge">EC2 or Fargate</span> On EC2: Pods share the node. On Fargate: each Pod gets an isolated micro-VM billed per vCPU/memory.</td></tr>
+      <tr><td>Node types</td><td>Worker machine options</td><td>Conditions: Ready, MemoryPressure, DiskPressure. Physical or VM with CPU/RAM capacity.</td><td class="eks-col"><span class="eks-badge">3 options</span> Managed Node Groups, Self-managed nodes, or AWS Fargate (serverless — no EC2 to manage).</td></tr>
+    </table>
+  </div>
+
+  <!-- NETWORKING -->
+  <div class="section net">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Networking</span></div>
+    <table>
+      <tr class="th-row"><td>Component</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>Service — ClusterIP</td><td>Internal virtual IP for Pods</td><td>Default type. Stable IP inside cluster only. Backed by kube-proxy iptables rules.</td><td class="eks-col"><span class="eks-badge">Standard</span> EKS assigns IPs from VPC CIDR via AWS VPC CNI — Pods get real VPC IPs, not overlays.</td></tr>
+      <tr><td>Service — NodePort</td><td>External access via node port</td><td>Opens port 30000–32767 on every node. Traffic: NodeIP:Port → Service → Pod.</td><td class="eks-col"><span class="eks-badge">Avoid in prod</span> Works but rarely used. Security groups must open NodePort range. Use LoadBalancer or Ingress instead.</td></tr>
+      <tr><td>Service — LoadBalancer</td><td>Cloud load balancer per service</td><td>Provisions a cloud LB per Service. Best for production external exposure.</td><td class="eks-col"><span class="eks-badge">AWS LB Controller</span> Creates ALB (L7) or NLB (L4). Annotate with service.beta.kubernetes.io/aws-load-balancer-type.</td></tr>
+      <tr><td>Ingress</td><td>L7 HTTP/HTTPS routing</td><td>Routes by hostname &amp; path. TLS termination. Needs a controller. One LB for many services.</td><td class="eks-col"><span class="eks-badge">AWS ALB</span> AWS LB Controller maps Ingress → ALB. Supports WAF, ACM certificates, target group binding.</td></tr>
+      <tr><td>Ingress controller</td><td>Implements Ingress rules</td><td>NGINX, Traefik, HAProxy. Runs as a Pod. Watches Ingress objects and programs itself.</td><td class="eks-col"><span class="eks-badge">AWS LB Controller</span> Installed via Helm. Uses IRSA for creating/managing ALB/NLB. Recommended over NGINX on EKS.</td></tr>
+      <tr><td>CNI plugin</td><td>Pod networking layer</td><td>Assigns Pod IPs, enables cross-node communication. Calico adds NetworkPolicy. Cilium uses eBPF.</td><td class="eks-col"><span class="eks-badge">AWS VPC CNI</span> Default CNI in EKS. Assigns real VPC IPs to Pods. Enable ENABLE_PREFIX_DELEGATION for more IPs per node.</td></tr>
+      <tr><td>CoreDNS</td><td>Internal cluster DNS</td><td>Resolves svc.namespace.svc.cluster.local → ClusterIP. Runs as Deployment.</td><td class="eks-col"><span class="eks-badge">Managed add-on</span> EKS installs &amp; manages CoreDNS. Version managed separately. Scale replicas for high DNS load.</td></tr>
+      <tr><td>NetworkPolicy</td><td>Pod-level firewall rules</td><td>Ingress/egress rules by label. Default: allow all. Deny-all + explicit allow is best practice.</td><td class="eks-col"><span class="eks-badge">VPC CNI / Calico</span> EKS 1.25+ supports NetworkPolicy via VPC CNI network policy controller. Calico/Cilium for richer policies.</td></tr>
+    </table>
+    <div class="flow-bar">
+      <span class="fp">Client</span><span class="fa">→</span>
+      <span class="fp">Route 53</span><span class="fa">→</span>
+      <span class="fp">ALB (Ingress)</span><span class="fa">→</span>
+      <span class="fp">Service</span><span class="fa">→</span>
+      <span class="fp">Pod (VPC IP)</span>
+    </div>
+  </div>
+
+  <!-- WORKLOADS -->
+  <div class="section wl">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Workloads</span></div>
+    <table>
+      <tr class="th-row"><td>Kind</td><td>Use case</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>Deployment</td><td>Stateless apps + rolling updates</td><td>Manages ReplicaSets. RollingUpdate &amp; Recreate strategies. Easy rollback via revision history.</td><td class="eks-col"><span class="eks-badge">Standard</span> Use with HPA + Karpenter for auto-scaling. ECR for images. CodePipeline/ArgoCD for CI/CD.</td></tr>
+      <tr><td>ReplicaSet</td><td>Maintains exact Pod count</td><td>Selector-based Pod ownership. Usually managed by Deployment — rarely created directly.</td><td class="eks-col"><span class="eks-badge">Standard</span> Managed by Deployment. Use topologySpreadConstraints to spread replicas across AZs.</td></tr>
+      <tr><td>StatefulSet</td><td>Stateful apps — DBs, queues</td><td>Stable Pod names (pod-0, pod-1), stable network IDs, ordered scale. Each Pod gets its own PVC.</td><td class="eks-col"><span class="eks-badge">EBS / EFS</span> Use EBS (gp3) for RWO. Use EFS (aws-efs-csi-driver) for RWX. EBS is AZ-bound — plan carefully.</td></tr>
+      <tr><td>DaemonSet</td><td>One Pod per node</td><td>Auto-adds Pod on new nodes. Used for log collectors, Prometheus node-exporter, CNI plugins.</td><td class="eks-col"><span class="eks-badge">Standard</span> AWS VPC CNI, kube-proxy, CloudWatch agent run as DaemonSets. Fluent Bit ships logs to CloudWatch.</td></tr>
+      <tr><td>Job / CronJob</td><td>Batch &amp; scheduled tasks</td><td>Job: runs to completion, retries on failure. CronJob: cron-scheduled. TTL for cleanup.</td><td class="eks-col"><span class="eks-badge">Fargate-friendly</span> CronJobs work well on Fargate (no idle node cost). AWS Batch for heavy batch workloads.</td></tr>
+      <tr><td>HPA</td><td>Horizontal Pod autoscaling</td><td>Scales replicas on CPU/memory/custom metrics. Min/max bounds. Cooldown prevents thrashing.</td><td class="eks-col"><span class="eks-badge">KEDA / CW Metrics</span> Use KEDA with SQS queue depth, Kinesis lag, or CloudWatch metrics. Metrics Server required for CPU/mem.</td></tr>
+    </table>
+  </div>
+
+  <!-- CONFIG & SECRETS -->
+  <div class="section cfg">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Configuration &amp; secrets</span></div>
+    <table>
+      <tr class="th-row"><td>Resource</td><td>Purpose</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>ConfigMap</td><td>Non-sensitive configuration</td><td>Key-value pairs or files. Injected as env vars or volume mounts. Volume-mounted changes reflect without Pod restart.</td><td class="eks-col"><span class="eks-badge">Standard</span> Works natively. For dynamic config, use AWS AppConfig synced via the AppConfig agent sidecar.</td></tr>
+      <tr><td>Secret</td><td>Sensitive data storage</td><td>Base64-encoded in etcd (not encrypted by default). Types: Opaque, TLS, dockerconfigjson.</td><td class="eks-col"><span class="eks-badge">AWS Secrets Manager</span> External Secrets Operator or Secrets Store CSI Driver syncs from Secrets Manager / SSM. etcd encrypted via KMS.</td></tr>
+      <tr><td>Resource requests &amp; limits</td><td>CPU/memory bounds per container</td><td>Requests = scheduling guarantee. Limits = hard ceiling. CPU throttled, memory limit = OOMKilled.</td><td class="eks-col"><span class="eks-badge">Critical for cost</span> Right-sizing affects EC2/Fargate cost. Use VPA or Goldilocks for recommendations. Fargate charges per requested vCPU/mem.</td></tr>
+      <tr><td>Probes</td><td>Container health checks</td><td>Liveness: restart if failing. Readiness: remove from Service. Startup: grace for slow starts. HTTP/TCP/exec types.</td><td class="eks-col"><span class="eks-badge">Standard</span> ALB target group health checks complement readiness probes. Container Insights surfaces probe failure counts.</td></tr>
+      <tr><td>Namespaces</td><td>Logical cluster isolation</td><td>Scope for RBAC, quotas, NetworkPolicies. Default: default, kube-system, kube-public.</td><td class="eks-col"><span class="eks-badge">Multi-tenant pattern</span> One namespace per team/env. IRSA scoped per namespace. ResourceQuota prevents noisy-neighbor on shared clusters.</td></tr>
+      <tr><td>IRSA</td><td>IAM Roles for Service Accounts</td><td>Links k8s ServiceAccount to AWS IAM role via OIDC. Pods get scoped AWS credentials — no long-lived keys.</td><td class="eks-col"><span class="eks-badge">EKS-native</span> EKS OIDC provider + annotate SA with eks.amazonaws.com/role-arn. Best practice for any Pod needing AWS API access.</td></tr>
+    </table>
+  </div>
+
+  <!-- STORAGE -->
+  <div class="section st">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Storage</span></div>
+    <table>
+      <tr class="th-row"><td>Resource</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>PersistentVolume (PV)</td><td>Actual provisioned storage</td><td>Cluster-wide resource. Has capacity, accessMode, reclaimPolicy (Retain/Delete/Recycle).</td><td class="eks-col"><span class="eks-badge">EBS / EFS / FSx</span> Dynamically provisioned via CSI drivers. EBS PVs are AZ-locked — StatefulSet Pods must stay in same AZ.</td></tr>
+      <tr><td>PVC</td><td>Pod's request for storage</td><td>Bound to a matching PV. Lifecycle independent of Pod. Deleted separately unless reclaimPolicy=Delete.</td><td class="eks-col"><span class="eks-badge">Standard</span> Use volumeClaimTemplates in StatefulSet for per-Pod PVCs backed by EBS gp3.</td></tr>
+      <tr><td>StorageClass</td><td>Dynamic provisioning template</td><td>Defines provisioner, parameters (IOPS, type), reclaimPolicy. PVC references it to auto-create PV.</td><td class="eks-col"><span class="eks-badge">EBS gp3 default</span> EKS ships with gp2 default. Best practice: create gp3 StorageClass (cheaper, better IOPS). io2 for databases.</td></tr>
+      <tr><td>CSI drivers</td><td>Storage plugin interface</td><td>Vendor-neutral standard. Decouples storage plugins from k8s core. Installed separately.</td><td class="eks-col"><span class="eks-badge">AWS CSI drivers</span> aws-ebs-csi-driver (RWO), aws-efs-csi-driver (RWX), aws-fsx-csi-driver (Lustre). Install as EKS managed add-ons.</td></tr>
+      <tr><td>Access modes</td><td>RWO / ROX / RWX</td><td>ReadWriteOnce (1 node), ReadOnlyMany, ReadWriteMany. Block storage (EBS) is RWO only.</td><td class="eks-col"><span class="eks-badge">EFS for RWX</span> EBS = RWO only. EFS = RWX — multiple Pods across nodes can mount same filesystem.</td></tr>
+    </table>
+  </div>
+
+  <!-- SECURITY -->
+  <div class="section sec">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Security</span></div>
+    <table>
+      <tr class="th-row"><td>Resource</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>RBAC</td><td>Who can do what in k8s</td><td>Role + RoleBinding (namespace). ClusterRole + ClusterRoleBinding (cluster-wide). Least-privilege principle.</td><td class="eks-col"><span class="eks-badge">aws-auth ConfigMap</span> Maps IAM users/roles → k8s RBAC groups. EKS access entries (new API) replace aws-auth. IAM = authn, RBAC = authz.</td></tr>
+      <tr><td>ServiceAccount + IRSA</td><td>Pod AWS identity</td><td>Every Pod runs as a SA. Default SA has minimal permissions. Annotate SA to assume IAM role via OIDC.</td><td class="eks-col"><span class="eks-badge">EKS OIDC</span> Enable OIDC provider on EKS cluster. Annotate SA with IAM role ARN. No long-lived credentials in Pods.</td></tr>
+      <tr><td>Secrets encryption</td><td>Protect sensitive data at rest</td><td>Base64 in etcd by default — not secure. Enable EncryptionConfiguration. Use external secrets manager in prod.</td><td class="eks-col"><span class="eks-badge">AWS KMS</span> Enable EKS envelope encryption with CMK. Secrets Store CSI Driver or External Secrets Operator pulls from Secrets Manager / SSM.</td></tr>
+      <tr><td>NetworkPolicy</td><td>Pod traffic firewall</td><td>Ingress/egress rules by label. Default: allow all. Apply deny-all + explicit allow per microservice.</td><td class="eks-col"><span class="eks-badge">VPC CNI / Calico</span> EKS 1.25+ supports NetworkPolicy via VPC CNI network policy controller. Security Groups for Pods adds ENI-level SG rules.</td></tr>
+      <tr><td>Pod security</td><td>Container security profiles</td><td>PodSecurity admission (v1.25+): Privileged / Baseline / Restricted. Label namespace to enforce profile.</td><td class="eks-col"><span class="eks-badge">OPA / Kyverno</span> Use Kyverno or OPA Gatekeeper for fine-grained policies. GuardDuty EKS Protection detects runtime threats.</td></tr>
+      <tr><td>Image security</td><td>Trusted container images only</td><td>Only pull from trusted registries. Scan for CVEs. Enforce via admission controller.</td><td class="eks-col"><span class="eks-badge">Amazon ECR</span> ECR as private registry — integrated IAM auth. ECR image scanning (Inspector) on push. No credentials in Pods.</td></tr>
+    </table>
+  </div>
+
+  <!-- SCALING & OBSERVABILITY -->
+  <div class="section sc">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Scaling &amp; observability</span></div>
+    <table>
+      <tr class="th-row"><td>Tool</td><td>Role</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>HPA</td><td>Scale Pod replicas automatically</td><td>Scales on CPU/memory/custom metrics. Min/max bounds. Cooldown prevents thrashing.</td><td class="eks-col"><span class="eks-badge">Metrics Server</span> Install Metrics Server as EKS add-on. Use KEDA for SQS/Kinesis/CloudWatch-based scaling.</td></tr>
+      <tr><td>VPA</td><td>Right-size Pod resources</td><td>Adjusts requests/limits. Off/Auto/Initial modes. Restarts Pods to apply changes.</td><td class="eks-col"><span class="eks-badge">Goldilocks</span> Install VPA + Goldilocks dashboard to visualize right-sizing recommendations without auto-applying.</td></tr>
+      <tr><td>Cluster autoscaler</td><td>Scale EC2 nodes up/down</td><td>Adds nodes when Pods are Pending. Removes under-utilized nodes. Works with ASGs.</td><td class="eks-col"><span class="eks-badge">Karpenter preferred</span> Karpenter is faster, picks optimal EC2 types, supports Spot, and consolidates nodes. Preferred for EKS.</td></tr>
+      <tr><td>KEDA</td><td>Event-driven Pod scaling</td><td>Scales on queue depth, Kafka lag, cron, HTTP. Can scale to zero. Works alongside HPA.</td><td class="eks-col"><span class="eks-badge">SQS / Kinesis</span> KEDA SQS scaler scales consumers based on queue depth. Uses IRSA for AWS API access. Install via Helm.</td></tr>
+      <tr><td>Metrics server</td><td>Core metrics pipeline</td><td>CPU/mem from kubelets. Feeds HPA &amp; kubectl top. Not for long-term storage.</td><td class="eks-col"><span class="eks-badge">EKS add-on</span> Available as EKS managed add-on. Use Amazon Managed Prometheus (AMP) + Grafana (AMG) for full observability.</td></tr>
+      <tr><td>Logging</td><td>Container &amp; control plane logs</td><td>App logs to stdout/stderr. Ship to central store. Control plane logs separate from node logs.</td><td class="eks-col"><span class="eks-badge">CloudWatch / S3</span> Enable EKS control plane logging to CloudWatch. Fluent Bit DaemonSet ships logs to CloudWatch Logs or OpenSearch.</td></tr>
+      <tr><td>Tracing</td><td>Distributed request tracing</td><td>Track requests across microservices. Identify latency bottlenecks. Requires instrumentation.</td><td class="eks-col"><span class="eks-badge">AWS X-Ray</span> ADOT (AWS Distro for OpenTelemetry) collector as sidecar/DaemonSet. Preferred approach over X-Ray SDK directly.</td></tr>
+    </table>
+  </div>
+
+  <!-- ADD-ONS -->
+  <div class="section ao">
+    <div class="section-head"><span class="dot"></span><span class="hlabel">Add-ons &amp; ecosystem</span></div>
+    <table>
+      <tr class="th-row"><td>Tool</td><td>Category</td><td>Key details</td><td class="eks-col">AWS EKS implementation</td></tr>
+      <tr><td>Helm</td><td>Package manager</td><td>Charts = templated k8s manifests. values.yaml overrides. helm upgrade --atomic for safe rollouts.</td><td class="eks-col"><span class="eks-badge">Standard</span> Used to install EKS add-ons (AWS LB Controller, Karpenter, KEDA). Charts stored in ECR OCI repos.</td></tr>
+      <tr><td>Service mesh</td><td>Inter-service traffic layer</td><td>Sidecar proxies (Envoy). mTLS, traffic splitting, canary, retries, circuit breaking, distributed tracing.</td><td class="eks-col"><span class="eks-badge">App Mesh / Istio</span> AWS App Mesh is the native option (Envoy-based). Integrates with X-Ray for tracing and ACM for mTLS certs.</td></tr>
+      <tr><td>ExternalDNS</td><td>Auto DNS management</td><td>Watches Services &amp; Ingress. Creates DNS records automatically. Keeps DNS in sync with cluster state.</td><td class="eks-col"><span class="eks-badge">Route 53</span> ExternalDNS with Route 53 provider. Uses IRSA for route53:ChangeResourceRecordSets permission.</td></tr>
+      <tr><td>Cert Manager</td><td>TLS certificate automation</td><td>Issues certs from Let's Encrypt, Vault. Auto-renews before expiry. Stores as k8s Secrets.</td><td class="eks-col"><span class="eks-badge">ACM preferred</span> ACM is preferred for edge TLS on EKS — free, auto-renews, integrates with ALB. Use cert-manager for workload mTLS.</td></tr>
+      <tr><td>ArgoCD / Flux</td><td>GitOps continuous delivery</td><td>Syncs cluster state from Git. Detects drift, auto-corrects. ArgoCD has UI; Flux is CLI-first.</td><td class="eks-col"><span class="eks-badge">CodePipeline / ArgoCD</span> ArgoCD popular on EKS. AWS CodePipeline + CodeBuild for CI, ArgoCD for CD. EKS Blueprints includes ArgoCD.</td></tr>
+      <tr><td>Velero</td><td>Backup &amp; disaster recovery</td><td>Backs up cluster resources + PV snapshots. Essential for DR. Restore to same or different cluster.</td><td class="eks-col"><span class="eks-badge">S3 + EBS snapshots</span> Velero stores manifests in S3, PV snapshots via EBS snapshot API. Uses IRSA. Schedule daily backups.</td></tr>
+      <tr><td>Karpenter</td><td>AWS-native node autoscaler</td><td>Provisions right-sized EC2 nodes just-in-time. Supports Spot + On-Demand mix. Consolidates underused nodes.</td><td class="eks-col"><span class="eks-badge">EKS-native</span> Purpose-built for EKS. Replaces Cluster Autoscaler. NodePool + EC2NodeClass CRDs define provisioning rules. Spot interruption handling built-in.</td></tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
