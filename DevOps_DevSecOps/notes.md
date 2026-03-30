@@ -50,6 +50,8 @@
 - <img width="473" height="303" alt="image" src="https://github.com/user-attachments/assets/0236a96b-b829-4efb-ab01-708319e38efb" />
 - <img width="534" height="340" alt="image" src="https://github.com/user-attachments/assets/49976270-f45d-4b5c-81df-2bdcab1ed9c3" />
 - <img width="442" height="445" alt="image" src="https://github.com/user-attachments/assets/d8c8df8f-f158-4b16-be79-9ff243c71e25" />
+- <img width="448" height="398" alt="image" src="https://github.com/user-attachments/assets/178d6425-7703-49e1-b488-ef9cdcc96a14" />
+
 
 
 | Feature                   | `package.json`               | `package-lock.json`             |
@@ -79,26 +81,23 @@
 ✅ Sonarqube concepts --> quality gates , quality profiles , project onboarding , branch/PR analysis 
 
 ---
-
 ✅ What is “Shift Left Security”?
 - Shift Left Security means integrating security earlier in the SDLC instead of testing security only at the final stage.
 - In our CI/CD pipeline, we implemented shift-left by integrating SonarQube for SAST, TruffleHog for secret detection, Trivy for container scanning, and Checkov for Terraform IaC scanning.
 - This allowed us to catch vulnerabilities during the pull request stage itself, preventing insecure code or misconfigured infrastructure from reaching production.
 
 ---
-
 ✅ Sonarqube
 - Tool used in SAST
 - https://youtu.be/r2UVTDpIUj8?si=-_itvd9yclLW1s4j --> DevOps Shack
 
 ---
-
 ✅ Trivy
 - Tool used in SCA
+- Trivy command used --> trivy fs --format table -o trivy-fs-report.html
 - https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu --> DevOps Shack
 
 ---
-
 ✅ OWASP ZAP
 - Tool used in DAST
 - https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm --> DevOps Shack
