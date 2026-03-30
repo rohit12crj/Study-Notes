@@ -17,6 +17,7 @@
 - Push Docker image to AWS ECR Repository
 - Deploy Image to ECS Service
 - DAST --> OWASP ZAP
+- Checkov IaC security scanning (Terraform + K8s manifests)
 
 <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
 
