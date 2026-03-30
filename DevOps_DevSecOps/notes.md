@@ -11,7 +11,7 @@
 - SAST --> code quality check --> sonarqube --> use quality gates . fail pipeline if quality gates requirement not satisfied 
 - SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy --> Generated report & saves it as an artifact
 - Build application --> Generates Artifact ( jar / war )--> Maven  --> mvm package 
-- Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry )
+- Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry , check ai for commands )
 - Build & Tag Docker image
 - Docker image vulnerability Scan --> Trivy
 - Push Docker image to AWS ECR Repository
