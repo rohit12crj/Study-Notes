@@ -5,11 +5,11 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
-✅ Pipeline Steps ( Java Based Application )
+✅ Pipeline Steps ( Java OR Node Based Application  )
 - compile --> to find out syntax based errors --> mvm compile ( u can do mvm install in github action , before doing compile )
 - unit testing --> to check functionality of code --> sonarqube
 - SAST --> code quality check --> sonarqube --> 
-- SCA --> vulnerability Scan --> trivy -->
+- SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy -->
 - Build application --> Generates Artifact --> Maven
 - Push artifact to Repository --> Used for Artifact Versioning --> Nexus
 - Build & Tag Docker image
@@ -19,6 +19,27 @@
 - DAST --> OWASP ZAP
 
 <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
+
+---
+✅ How are code dependencies ensured?
+- java --> pom.xml
+- node --> package.json
+
+---
+✅  Difference between npm install vs npm ci
+
+| Feature                            | `npm install`                   | `npm ci`                    |
+| ---------------------------------- | ------------------------------- | --------------------------- |
+| Purpose                            | General install (dev + updates) | Clean, reproducible install |
+| Uses `package-lock.json` strictly? | ❌ No (can update it)            | ✅ Yes (must match exactly)  |
+| Deletes `node_modules` first?      | ❌ No                            | ✅ Yes                       |
+| Speed                              | Slower                          | Faster                      |
+| Deterministic builds               | ❌ Not guaranteed                | ✅ Guaranteed                |
+| Use case                           | Local development               | CI/CD pipelines             |
+
+<img width="520" height="434" alt="image" src="https://github.com/user-attachments/assets/ced0414a-8cd6-453d-9642-7e96b1d5c739" />
+
+<img width="485" height="417" alt="image" src="https://github.com/user-attachments/assets/f44f5272-ab42-429b-99f3-0b920a3545a0" />
 
 ---
 ✅ why should i use nexus repository along with aws ecr ?
