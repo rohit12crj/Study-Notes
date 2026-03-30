@@ -10,7 +10,7 @@
 - unit testing --> to check functionality of code --> Maven --> mvm test
 - SAST --> code quality check --> sonarqube --> use quality gates . fail pipeline if quality gates requirement not satisfied 
 - SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy --> Generated report & saves it as an artifact
-- Build application --> Generates Artifact --> Maven  --> mvm package 
+- Build application --> Generates Artifact ( jar / war )--> Maven  --> mvm package 
 - Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry )
 - Build & Tag Docker image
 - Docker image vulnerability Scan --> Trivy
@@ -70,8 +70,8 @@
 
 ---
 ✅  Maven build cycle process
-- <img width="551" height="178" alt="image" src="https://github.com/user-attachments/assets/31cecb56-d4dd-4f05-9c7d-54a2d7a22ddc" />
-- <img width="392" height="159" alt="image" src="https://github.com/user-attachments/assets/6fbd85e0-e616-4673-a715-ab342d395463" />
+- Maven has three lifecycles --> Clean (for removing old builds) --> Default (for building and deploying the application) -->  Site (for generating documentation). The Default lifecycle is the most important as it handles the complete build process.
+- <img width="564" height="470" alt="image" src="https://github.com/user-attachments/assets/4eaddac2-1193-421e-b8fb-c7d0ab019ea9" />
 
 
 
