@@ -9,6 +9,11 @@
 -  download the html file & then view
 
 ---
+✅ explain network flow of all different componenst of k8s?
+-  check k8s_network_flow.html file
+-  download the html file & then view
+  
+---
 ✅ difference between container-d & docker 
 
 ---
