@@ -172,3 +172,135 @@ Examples:
 <img width="365" height="191" alt="image" src="https://github.com/user-attachments/assets/a495c126-adcb-4c0f-b472-b173e4ab2a4d" />
 
 ---
+---
+---
+                            #### Github Actions ####
+---
+---
+---
+
+✅ Dependabot vs CodeQL
+- <img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
+- <img width="559" height="433" alt="image" src="https://github.com/user-attachments/assets/9ba58705-33f9-414e-8cd8-781b54d9fef6" />
+
+
+| Feature       | **Dependabot**                      | **CodeQL**                                 |
+| ------------- | ----------------------------------- | ------------------------------------------ |
+| Type          | SCA (Software Composition Analysis) | SAST (Static Application Security Testing) |
+| Focus         | Vulnerable dependencies             | Vulnerabilities in your code               |
+| What it scans | `package.json`, `pom.xml`, etc.     | Source code (Java, JS, Python, etc.)       |
+| Output        | PRs to update dependencies          | Security alerts & reports                  |
+| Fix method    | Auto PRs                            | Manual code fix                            |
+| Trigger       | Scheduled / on push                 | On push / PR / scheduled                   |
+| Example issue | Log4j vulnerability                 | SQL Injection                              |
+
+---
+✅ suppose i have deployed ecs task definition of frontend service through terraform & in it the container image should reference the image in ecr frontend repo with specific hash of lastest docker image build commit . how can i do it through pipeline
+- In the pipeline, I build and push the Docker image to ECR using the commit SHA as the tag. Then I pass this tag as a variable to Terraform, which updates the ECS task definition with the new image version, triggering a deployment
+
+---
+✅ what is image digest ?
+- Image digest is a SHA256 hash that uniquely and immutably identifies a Docker image
+
+---
+✅ Dependency graph in github
+
+---
+✅ connect sonarqube with github action 
+- use sonaeqube URL , generate token from sonarqube dashboard & pass it through github action pipeline
+- For quality gates , you need to generate webhook URL from sonarqube dashboard . it is used in github actions if we need to fail piplines if gates requirements not satisfied
+
+---
+✅ connect Trivy with github action 
+- use sonaeqube URL , generate token from sonarqube dashboard & pass it through github action pipeline
+
+---
+✅ Connect nexus registry with github action 
+- <img width="670" height="398" alt="image" src="https://github.com/user-attachments/assets/439344a2-5cc5-4a13-8bc5-d914ce5b52fb" />
+
+
+---
+✅ explain where  u will use matrix strategies  , composite actions , action versioning & publishing , signed actions / pinning , github packages 
+
+---
+
+✅ Dependabot config across ecosystems , scheduling , grouping , ignore policies , security update handling
+
+✅ how will u pass artifacts between different jobs and different pipelines
+
+✅  how will u make pipeline faster ? explain with respect to github cache 
+
+✅ how will u invoke manual , push , pull , reusable workflow , cron workflow
+
+✅ explain ci & cd with different pipelines
+
+✅ explain different plugins which u were using and explain how was it connected with github actions
+
+✅ explain sast , dca , dast , unit testing and image vulnerabilty scans with sonarqube
+
+✅ explain dependabots , branch protection rules , codeowner file 
+
+✅ Workflows --> Events --> Jobs --> Steps --> Runners
+
+✅ if one job depends on another how will u do it 
+
+✅ when will use github hosted runner vs self hosted runner
+
+✅ using roles to connect to aws
+
+✅ How do you implement approval before production deployment? explain with respect to environments , required approvers and wait timers 
+
+how will u do blue green deployment using terraform in github action pipeline ? --> use terraform + codedeploy
+Secrets leaked in logs. What will you do?
+
+How do you pass data between jobs? explain artifacts and outputs
+
+Do jobs share filesystem?
+
+How do you rollback a failed deployment?
+
+What happens if a step fails? --> By default → job fails --> Can override with continue-on-error: true
+
+Concurrency control
+
+Artifact vs Cache
+
+Workflow optimization
+
+when will u use matrix 
+
+codeql scanning
+
+in security tab , there are 3 things ( dependabots alerts --> get notified when your dependincies has a vulneribility , code scanning alerts --> automatically detect common vulnerabilities and coding errors , secret scanning alerts --> get notified when a secret is pushed to the repository )
+
+there are 2 developers . both are working on 2 different files so there is no conlict . developer 1 pushes code at 5pm & developer 2 pushes code ar 5:01 pm . there is no sense in running the pipeline 2 times as when developer 2 will push the code he needs to do a git pull first . how will u make sure only the pipeline runs for teh 2nd developer ?  --> I would enable branch-level concurrency control in CI/CD so that when a new commit is pushed, any currently running pipeline for that branch is automatically cancelled. This ensures only the latest commit triggers the pipeline, avoiding redundant executions and saving compute cost.
+
+
+How would you design a secure CI/CD pipeline for production?
+
+How do you handle secret management in pipelines?
+
+How do you implement least privilege access across environments?
+
+
+How do you reuse workflows across repositories?
+
+How to manage large workflow files efficiently?
+
+What's the difference between public and private workflow repositories?
+
+How to implement workflow concurrency?
+
+How do you handle failed workflows?
+
+How do you reuse workflows across repositories?
+
+How to manage large workflow files efficiently?
+
+What's the difference between public and private workflow repositories?
+
+How to implement workflow concurrency?
+
+How do you handle failed workflows?
+
+
