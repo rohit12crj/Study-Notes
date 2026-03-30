@@ -6,7 +6,7 @@
   
 ---
 ✅ Pipeline Steps ( Java Based Application )
-- compile --> to find out syntax based errors
+- compile --> to find out syntax based errors --> mvm compile ( u can do mvm install in github action , before doing compile )
 - unit testing --> to check functionality of code --> sonarqube
 - SAST --> code quality check --> sonarqube --> 
 - SCA --> vulnerability Scan --> trivy -->
