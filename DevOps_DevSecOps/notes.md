@@ -70,6 +70,10 @@
 
 ---
 ✅  Maven build cycle process
+- <img width="551" height="178" alt="image" src="https://github.com/user-attachments/assets/31cecb56-d4dd-4f05-9c7d-54a2d7a22ddc" />
+- <img width="392" height="159" alt="image" src="https://github.com/user-attachments/assets/6fbd85e0-e616-4673-a715-ab342d395463" />
+
+
 
 ---
 
