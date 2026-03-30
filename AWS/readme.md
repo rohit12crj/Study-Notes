@@ -31,6 +31,9 @@
 #### Common Architecture Questions
 
 ---
+✅ Explain Network Layers with diagram
+
+---
 ✅ Explain security hub & security lake with respect to AWS 
 
 ---
