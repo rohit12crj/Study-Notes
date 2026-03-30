@@ -23,10 +23,14 @@
 ---
 ✅ How are code dependencies ensured?
 - java --> pom.xml
-- node --> package.json
+- node --> package-lock.json
 
 ---
 ✅  Difference between npm install vs npm ci
+- <img width="520" height="434" alt="image" src="https://github.com/user-attachments/assets/ced0414a-8cd6-453d-9642-7e96b1d5c739" />
+- <img width="485" height="417" alt="image" src="https://github.com/user-attachments/assets/f44f5272-ab42-429b-99f3-0b920a3545a0" />
+- <img width="421" height="155" alt="image" src="https://github.com/user-attachments/assets/4210ef7e-50d8-4459-92de-c4727683547f" />
+
 
 | Feature                            | `npm install`                   | `npm ci`                    |
 | ---------------------------------- | ------------------------------- | --------------------------- |
@@ -37,12 +41,27 @@
 | Deterministic builds               | ❌ Not guaranteed                | ✅ Guaranteed                |
 | Use case                           | Local development               | CI/CD pipelines             |
 
-<img width="520" height="434" alt="image" src="https://github.com/user-attachments/assets/ced0414a-8cd6-453d-9642-7e96b1d5c739" />
-
-<img width="485" height="417" alt="image" src="https://github.com/user-attachments/assets/f44f5272-ab42-429b-99f3-0b920a3545a0" />
-
 ---
 ✅ why should i use nexus repository along with aws ecr ?
+- For artifacts versioning & Lifecycle
+
+---
+✅ Difference between package.json & package.lock.json
+- <img width="473" height="303" alt="image" src="https://github.com/user-attachments/assets/0236a96b-b829-4efb-ab01-708319e38efb" />
+- <img width="534" height="340" alt="image" src="https://github.com/user-attachments/assets/49976270-f45d-4b5c-81df-2bdcab1ed9c3" />
+- <img width="442" height="445" alt="image" src="https://github.com/user-attachments/assets/d8c8df8f-f158-4b16-be79-9ff243c71e25" />
+
+
+| Feature                   | `package.json`               | `package-lock.json`             |
+| ------------------------- | ---------------------------- | ------------------------------- |
+| Purpose                   | Defines project dependencies | Locks exact dependency versions |
+| Created by                | Developer (manual/edit)      | Automatically by npm            |
+| Version flexibility       | Uses ranges (`^`, `~`)       | Exact versions (no ranges)      |
+| Includes sub-dependencies | ❌ No                         | ✅ Yes (full dependency tree)    |
+| Used for install          | ✅ Yes                        | ✅ Yes (priority in npm)         |
+| Editable                  | ✅ Yes                        | ❌ No (should not edit manually) |
+| Deterministic builds      | ❌ No                         | ✅ Yes                           |
+
 
 ---
 ✅  Maven build cycle process
