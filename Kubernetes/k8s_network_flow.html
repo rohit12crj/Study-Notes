@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kubernetes FAANG Interview Flows</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f8f7f2;
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #5f5e5a;
+    --color-text-tertiary: #888780;
+    --color-border-secondary: rgba(0,0,0,0.18);
+    --color-border-tertiary: rgba(0,0,0,0.1);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1a1a18;
+      --color-background-secondary: #222220;
+      --color-text-primary: #e8e6dc;
+      --color-text-secondary: #9c9a92;
+      --color-text-tertiary: #6b6a64;
+      --color-border-secondary: rgba(255,255,255,0.18);
+      --color-border-tertiary: rgba(255,255,255,0.1);
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    padding: 2rem 1rem;
+    min-height: 100vh;
+  }
+
+  .page-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--color-text-primary);
+  }
+  .page-sub {
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+    margin-bottom: 24px;
+  }
+
+  .wrap { max-width: 900px; margin: 0 auto; }
+
+  .flow-block {
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    background: var(--color-background-primary);
+  }
+
+  .flow-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+    letter-spacing: .03em;
+  }
+
+  .chain {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .pill {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 13px;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: default;
+    transition: opacity .15s;
+    text-decoration: none;
+  }
+  .pill:hover { opacity: .75; }
+
+  .arr {
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .note {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    margin-top: 8px;
+    line-height: 1.6;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    padding-top: 7px;
+  }
+
+  /* Pill colors — light mode */
+  .p-blue   { background: #E6F1FB; color: #0C447C; }
+  .p-purple { background: #EEEDFE; color: #3C3489; }
+  .p-teal   { background: #E1F5EE; color: #085041; }
+  .p-amber  { background: #FAEEDA; color: #633806; }
+  .p-coral  { background: #FAECE7; color: #712B13; }
+  .p-green  { background: #EAF3DE; color: #27500A; }
+  .p-pink   { background: #FBEAF0; color: #72243E; }
+  .p-gray   { background: #F1EFE8; color: #444441; }
+  .p-red    { background: #FCEBEB; color: #791F1F; }
+
+  /* Pill colors — dark mode */
+  @media (prefers-color-scheme: dark) {
+    .p-blue   { background: #0c2d4a; color: #93c5fd; }
+    .p-purple { background: #1e1d3a; color: #c4b5fd; }
+    .p-teal   { background: #0d2b22; color: #6ee7b7; }
+    .p-amber  { background: #2a1d00; color: #fcd34d; }
+    .p-coral  { background: #2d1206; color: #fca78a; }
+    .p-green  { background: #052e16; color: #86efac; }
+    .p-pink   { background: #2d0a18; color: #f9a8d4; }
+    .p-gray   { background: #222220; color: #d3d1c7; }
+    .p-red    { background: #2d0a0a; color: #fca5a5; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="page-title">Kubernetes — FAANG interview flows</p>
+  <p class="page-sub">The 10 most common K8s flow questions asked at Google, Meta, Amazon, Apple, Netflix &amp; Microsoft</p>
+
+  <!-- Flow 1 -->
+  <div class="flow-block">
+    <div class="flow-title">1. What happens when you run kubectl apply?</div>
+    <div class="chain">
+      <span class="pill p-gray">kubectl</span><span class="arr">→</span>
+      <span class="pill p-blue">API server</span><span class="arr">→</span>
+      <span class="pill p-blue">AuthN + AuthZ</span><span class="arr">→</span>
+      <span class="pill p-blue">Admission controllers</span><span class="arr">→</span>
+      <span class="pill p-purple">etcd (persisted)</span><span class="arr">→</span>
+      <span class="pill p-teal">Controller manager</span><span class="arr">→</span>
+      <span class="pill p-teal">Scheduler</span><span class="arr">→</span>
+      <span class="pill p-green">kubelet</span><span class="arr">→</span>
+      <span class="pill p-green">Container runtime</span><span class="arr">→</span>
+      <span class="pill p-amber">Pod Running</span>
+    </div>
+    <div class="note">Key insight: apiserver is the only writer to etcd. Scheduler only assigns a node — kubelet actually starts the container.</div>
+  </div>
+
+  <!-- Flow 2 -->
+  <div class="flow-block">
+    <div class="flow-title">2. How does an external HTTP request reach a Pod? (EKS)</div>
+    <div class="chain">
+      <span class="pill p-gray">Client</span><span class="arr">→</span>
+      <span class="pill p-blue">Route 53</span><span class="arr">→</span>
+      <span class="pill p-blue">ALB</span><span class="arr">→</span>
+      <span class="pill p-purple">Ingress controller</span><span class="arr">→</span>
+      <span class="pill p-teal">Service (ClusterIP)</span><span class="arr">→</span>
+      <span class="pill p-teal">kube-proxy (iptables)</span><span class="arr">→</span>
+      <span class="pill p-green">Pod (VPC IP)</span>
+    </div>
+    <div class="note">EKS uses AWS VPC CNI — Pods get real VPC IPs. ALB is provisioned by the AWS Load Balancer Controller via IRSA.</div>
+  </div>
+
+  <!-- Flow 3 -->
+  <div class="flow-block">
+    <div class="flow-title">3. How does a Pod get scheduled onto a node?</div>
+    <div class="chain">
+      <span class="pill p-purple">Pod created (Pending)</span><span class="arr">→</span>
+      <span class="pill p-blue">Scheduler: Filter</span><span class="arr">→</span>
+      <span class="pill p-blue">Scheduler: Score</span><span class="arr">→</span>
+      <span class="pill p-blue">Bind to node</span><span class="arr">→</span>
+      <span class="pill p-green">kubelet pulls spec</span><span class="arr">→</span>
+      <span class="pill p-green">Pull image</span><span class="arr">→</span>
+      <span class="pill p-amber">Pod Running</span>
+    </div>
+    <div class="note">Filter removes ineligible nodes (taints, resources, affinity). Score ranks remaining. On EKS, Karpenter provisions a new node if none fit.</div>
+  </div>
+
+  <!-- Flow 4 -->
+  <div class="flow-block">
+    <div class="flow-title">4. How does a Pod autoscale? (HPA flow)</div>
+    <div class="chain">
+      <span class="pill p-green">kubelet</span><span class="arr">→</span>
+      <span class="pill p-blue">Metrics server</span><span class="arr">→</span>
+      <span class="pill p-blue">HPA controller</span><span class="arr">→</span>
+      <span class="pill p-purple">CPU &gt; threshold</span><span class="arr">→</span>
+      <span class="pill p-teal">Scale Deployment</span><span class="arr">→</span>
+      <span class="pill p-teal">ReplicaSet creates Pods</span><span class="arr">→</span>
+      <span class="pill p-amber">Karpenter adds node</span>
+    </div>
+    <div class="note">HPA polls Metrics Server every 15s. On EKS, if new Pods are Pending due to no capacity, Karpenter provisions the right EC2 instance type automatically.</div>
+  </div>
+
+  <!-- Flow 5 -->
+  <div class="flow-block">
+    <div class="flow-title">5. What happens when a Pod crashes / fails liveness probe?</div>
+    <div class="chain">
+      <span class="pill p-red">Liveness probe fails</span><span class="arr">→</span>
+      <span class="pill p-green">kubelet detects</span><span class="arr">→</span>
+      <span class="pill p-red">Container killed</span><span class="arr">→</span>
+      <span class="pill p-amber">RestartPolicy (Always)</span><span class="arr">→</span>
+      <span class="pill p-green">Restart w/ backoff</span><span class="arr">→</span>
+      <span class="pill p-red">CrashLoopBackOff</span>
+    </div>
+    <div class="note">Readiness probe failure removes Pod from Service endpoints (no traffic) but does NOT restart it. Liveness failure restarts. Startup probe gives slow apps grace time.</div>
+  </div>
+
+  <!-- Flow 6 -->
+  <div class="flow-block">
+    <div class="flow-title">6. How does a Pod access AWS services securely? (IRSA flow)</div>
+    <div class="chain">
+      <span class="pill p-green">Pod (ServiceAccount)</span><span class="arr">→</span>
+      <span class="pill p-blue">OIDC token mounted</span><span class="arr">→</span>
+      <span class="pill p-purple">AWS STS</span><span class="arr">→</span>
+      <span class="pill p-amber">IAM role assumed</span><span class="arr">→</span>
+      <span class="pill p-amber">Temp credentials</span><span class="arr">→</span>
+      <span class="pill p-teal">S3 / DynamoDB / etc.</span>
+    </div>
+    <div class="note">No long-lived access keys ever stored in Pods. IRSA uses EKS OIDC provider + IAM trust policy. Each ServiceAccount maps to one IAM role — scoped per namespace.</div>
+  </div>
+
+  <!-- Flow 7 -->
+  <div class="flow-block">
+    <div class="flow-title">7. How does a rolling deployment happen with zero downtime?</div>
+    <div class="chain">
+      <span class="pill p-gray">kubectl apply</span><span class="arr">→</span>
+      <span class="pill p-blue">New ReplicaSet created</span><span class="arr">→</span>
+      <span class="pill p-teal">New Pods start (maxSurge)</span><span class="arr">→</span>
+      <span class="pill p-teal">Readiness probe passes</span><span class="arr">→</span>
+      <span class="pill p-purple">Old Pods terminated (maxUnavailable)</span><span class="arr">→</span>
+      <span class="pill p-amber">Rollout complete</span>
+    </div>
+    <div class="note">maxSurge=1 means 1 extra Pod spun up. maxUnavailable=0 means no Pods removed until new one is Ready. PreStop hook + terminationGracePeriod drain in-flight requests.</div>
+  </div>
+
+  <!-- Flow 8 -->
+  <div class="flow-block">
+    <div class="flow-title">8. How does a Secret get into a Pod securely? (EKS)</div>
+    <div class="chain">
+      <span class="pill p-amber">AWS Secrets Manager</span><span class="arr">→</span>
+      <span class="pill p-purple">External Secrets Operator</span><span class="arr">→</span>
+      <span class="pill p-purple">k8s Secret (etcd)</span><span class="arr">→</span>
+      <span class="pill p-blue">KMS encrypted at rest</span><span class="arr">→</span>
+      <span class="pill p-green">Mounted as volume / env var</span><span class="arr">→</span>
+      <span class="pill p-teal">Pod reads secret</span>
+    </div>
+    <div class="note">Never hardcode secrets. Enable EKS envelope encryption with KMS. External Secrets Operator syncs from Secrets Manager using IRSA — no static credentials needed.</div>
+  </div>
+
+  <!-- Flow 9 -->
+  <div class="flow-block">
+    <div class="flow-title">9. How does service-to-service communication work inside the cluster?</div>
+    <div class="chain">
+      <span class="pill p-green">Pod A</span><span class="arr">→</span>
+      <span class="pill p-blue">CoreDNS lookup</span><span class="arr">→</span>
+      <span class="pill p-blue">ClusterIP resolved</span><span class="arr">→</span>
+      <span class="pill p-teal">kube-proxy (NAT rule)</span><span class="arr">→</span>
+      <span class="pill p-teal">Random endpoint selected</span><span class="arr">→</span>
+      <span class="pill p-green">Pod B</span>
+    </div>
+    <div class="note">DNS format: my-svc.my-namespace.svc.cluster.local. kube-proxy translates ClusterIP → Pod IP via iptables DNAT. With a service mesh (Istio), the sidecar intercepts and adds mTLS.</div>
+  </div>
+
+  <!-- Flow 10 -->
+  <div class="flow-block">
+    <div class="flow-title">10. What happens when a node goes down?</div>
+    <div class="chain">
+      <span class="pill p-red">Node unreachable</span><span class="arr">→</span>
+      <span class="pill p-blue">Node controller detects</span><span class="arr">→</span>
+      <span class="pill p-amber">Node: NotReady (40s)</span><span class="arr">→</span>
+      <span class="pill p-red">Pods evicted (5min)</span><span class="arr">→</span>
+      <span class="pill p-blue">Scheduler reschedules</span><span class="arr">→</span>
+      <span class="pill p-amber">Karpenter replaces node</span><span class="arr">→</span>
+      <span class="pill p-green">Pods restored</span>
+    </div>
+    <div class="note">Default eviction timeout is 5 minutes. PodDisruptionBudget ensures minimum replicas stay up during voluntary disruptions. On EKS, Karpenter detects EC2 termination and provisions a replacement.</div>
+  </div>
+
+</div>
+</body>
+</html>
