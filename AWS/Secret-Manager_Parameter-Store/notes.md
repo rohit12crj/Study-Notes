@@ -1,4 +1,4 @@
-✅ Secret manager is a global service . hence ecs tasks which are private needs to be associated with Secret manager VPC endpoint to access the stored secrets 
+✅ AWS Secrets Manager is a regional service (not global), and ECS tasks in private subnets need a way to reach it — either via VPC endpoint OR NAT Gateway.
 
 ---
 ✅ Secret Manager --> Automatic Secret Rotation Process
