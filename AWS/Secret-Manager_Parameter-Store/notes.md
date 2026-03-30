@@ -1,4 +1,4 @@
-✅ Secret amnager is a global service . hence ecs tasks which are private needs to be associated with Secret manager VPC endpoint to access the stored secrets 
+✅ Secret manager is a global service . hence ecs tasks which are private needs to be associated with Secret manager VPC endpoint to access the stored secrets 
 
 ---
 ✅ Secret Manager --> Automatic Secret Rotation Process
