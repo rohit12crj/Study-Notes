@@ -1,11 +1,23 @@
 <img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
 
 ---
-
 ✅ Dependency graph in github
 
 ---
+✅ connect sonarqube with github action 
+- use sonaeqube URL , generate token from sonarqube dashboard & pass it through github action pipeline
+- For quality gates , you need to generate webhook URL from sonarqube dashboard . it is used in github actions if we need to fail piplines if gates requirements not satisfied
 
+---
+✅ connect Trivy with github action 
+- use sonaeqube URL , generate token from sonarqube dashboard & pass it through github action pipeline
+
+---
+✅ Connect nexus registry with github action 
+- <img width="670" height="398" alt="image" src="https://github.com/user-attachments/assets/439344a2-5cc5-4a13-8bc5-d914ce5b52fb" />
+
+
+---
 ✅ explain where  u will use matrix strategies  , composite actions , action versioning & publishing , signed actions / pinning , github packages 
 
 ---
