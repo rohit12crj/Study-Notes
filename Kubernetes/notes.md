@@ -5,8 +5,7 @@
 
 ---
 ✅ what are the different components of k8s?
--  
-
+-  check k8s_components.html file
 
 ---
 ✅ difference between container-d & docker 
