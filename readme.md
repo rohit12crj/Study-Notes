@@ -17,6 +17,10 @@
 
 ---
 ✅ Common Services & DevOps Tools Ports
+- <img width="478" height="422" alt="image" src="https://github.com/user-attachments/assets/caf40d31-f2a9-4469-954b-6519069b1fec" />
+- <img width="326" height="217" alt="image" src="https://github.com/user-attachments/assets/9661e45e-ab69-46be-bc71-ab8601b3e5af" />
+
+
 
 | #  | Service / Tool        | Default Port               |
 | -- | --------------------- | -------------------------- |
@@ -42,4 +46,6 @@
 | 20 | **Nexus Repository**  | **8081**                   |
 | 21 | **Trivy**             | ❌ No fixed port (CLI tool) |
 | 22 | **Checkov**           | ❌ No fixed port (CLI tool) |
+
+
 
