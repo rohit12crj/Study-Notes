@@ -31,7 +31,19 @@
 #### Common Architecture Questions
 
 ---
-✅ Explain Network Layers with diagram
+✅ Explain Network Layers with diagram ( Top to Bottom )
+- <img width="281" height="202" alt="image" src="https://github.com/user-attachments/assets/59c4053a-5ddf-43b9-896e-a2ba06683850" />
+
+| Layer | Name             | What it does           | Example Tech  | Gmail Login Example                 |
+| ----- | ---------------- | ---------------------- | ------------- | ----------------------------------- |
+| 7     | **Application**  | User interaction       | HTTP, DNS     | You type `www.gmail.com` in browser |
+| 6     | **Presentation** | Encryption, formatting | SSL/TLS       | Data is encrypted using HTTPS       |
+| 5     | **Session**      | Session management     | Session IDs   | Maintains login session with Gmail  |
+| 4     | **Transport**    | End-to-end delivery    | TCP/UDP       | TCP handshake (SYN, SYN-ACK, ACK)   |
+| 3     | **Network**      | Routing via IP         | IP protocol   | Request routed to Google server IP  |
+| 2     | **Data Link**    | Local delivery         | MAC, Ethernet | Frame sent via router using MAC     |
+| 1     | **Physical**     | Transmission medium    | WiFi, Fiber   | Bits travel over WiFi/fiber         |
+
 
 ---
 ✅ Explain security hub & security lake with respect to AWS 
