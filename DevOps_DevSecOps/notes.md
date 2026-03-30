@@ -6,12 +6,12 @@
   
 ---
 ✅ Pipeline Steps ( Java OR Node Based Application  )
-- compile --> to find out syntax based errors --> mvm compile ( u can do mvm install in github action , before doing compile )
-- unit testing --> to check functionality of code --> sonarqube
-- SAST --> code quality check --> sonarqube --> 
-- SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy -->
-- Build application --> Generates Artifact --> Maven
-- Push artifact to Repository --> Used for Artifact Versioning --> Nexus
+- compile --> to find out syntax based errors --> Maven --> mvm compile ( u need install maven in github action runner first)
+- unit testing --> to check functionality of code --> Maven --> mvm test
+- SAST --> code quality check --> sonarqube --> use quality gates . fail pipeline if quality gates requirement not satisfied 
+- SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy --> Generated report & saves it as an artifact
+- Build application --> Generates Artifact --> Maven  --> mvm package 
+- Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry )
 - Build & Tag Docker image
 - Docker image vulnerability Scan --> Trivy
 - Push Docker image to AWS ECR Repository
@@ -19,6 +19,9 @@
 - DAST --> OWASP ZAP
 
 <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
+
+---
+✅  Among the above stages which all stages can go in parallel 
 
 ---
 ✅ How are code dependencies ensured?
