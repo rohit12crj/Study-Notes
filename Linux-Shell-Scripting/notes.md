@@ -17,6 +17,7 @@
 - Ports should be exposed in Dockerfile using expose command
 - ports exposed in dockerfile should be the same ports on which ALB listeners should listen
 - netstat -tulpn | grep caddy OR ss -tulpn | grep caddy
+- if still u r not able to find out on which port caddy is listening . exec into the ECS Task & do curl -v http://private_ip_of_ecs_task:80  --> u shoukd get 200 ok . if not 80 try with other common ports which u think it might be listening on
 
 ---
 ✅ https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide ( Abhishek )
