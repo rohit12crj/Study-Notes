@@ -4,6 +4,9 @@
 ✅ Give common docker compose commands ?
 
 ---
+✅ How will u secure docker daemon ?
+
+---
 ✅ Real Time Scenario Based Docker Implementations --> DevOps Shack --> https://www.youtube.com/watch?v=9hOSkx9jWPQ
 
 ---
