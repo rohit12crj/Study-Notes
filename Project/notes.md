@@ -16,7 +16,13 @@ caddy frontend & backend tasks are exposed via alb , with 2 separate target grou
 
 ---
 
-✅ Gitlab to Github Action Migration
+✅ Gitlab to Github Action Migration . explain below points
+-  git repo migration from Gitlab to Github
+-  Pipeline conversion
+-  Repo secrets & varibales migration
+-  Git history migration
+-  Git LFS migration
+-  Gitlab Users to Azure AD Migration in association with Github Teams 
 
 ---
 
