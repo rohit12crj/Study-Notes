@@ -179,6 +179,9 @@ Examples:
 ---
 ---
 
+✅ I want to use azure AD users to have access to github repos . how can i set it up ?
+
+---
 ✅ How will u secure Github Runners ?
 
 ---
