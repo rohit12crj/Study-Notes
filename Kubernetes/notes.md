@@ -4,6 +4,9 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
+✅ k8s Cluster Upgrade
+- https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
+---
 ✅ what are the different components of k8s?
 -  check k8s_components.html file
 -  download the html file & then view
