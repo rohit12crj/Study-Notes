@@ -1,7 +1,7 @@
 ✅ Difference betwwen alb health check in target group vs halth check in ecs task definition ? what options presnet in health check
 
 ---
-✅ Explain dockerfile expose option for ports --> mapped to ecs task definition container to host mapping --> mapped to ALB listener port & tagret grp port . ALB listener & taget group ports acn be different . there is a port override option also.
+✅ Explain dockerfile expose option for ports --> mapped to ecs task definition container to host mapping --> mapped to ALB listener port & tagret grp port . ALB listener & taget group ports can be different . there is a port override option also.
 
 ---
 ✅ task role vs task exection role in ECS
