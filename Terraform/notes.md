@@ -5,6 +5,12 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ In AWS sg group one rule added manually but trying to apply same rule through Terraform. What would it show
+
+---
+✅ Situation where terraform Plan ok but apply gives error
+
+---
 ✅ Give common terraform workspace commands ?
 
 ---
