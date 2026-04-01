@@ -1,8 +1,8 @@
 ✅ if someone has done wrongful deployment in ECS . how will u rollback it
 - seperate procedure for rolling deployment & blue green deploymnet
 - for rolling deploymnet , re-deploy the last stable version of your task definition
-- for blue green deploymnet , just make traffic percnt to 100% to blue target group
-- for alb , blue green deploymnet , only 1 listener should be present which should redirect traffic to 2 taget groups ( blue & green depending on percent ). check image below
+- for blue green deploymnet , just make traffic weight percent to 100% to blue target group
+- for alb , blue green deploymnet , only 1 listener should be present which should redirect traffic to 2 taget groups ( blue & green depending on weight percent ). check image below
 - <img width="806" height="335" alt="image" src="https://github.com/user-attachments/assets/cfdb92e4-00b2-41a3-bbb3-73dc282a17df" />
 
 
