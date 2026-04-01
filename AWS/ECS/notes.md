@@ -1,3 +1,7 @@
+✅ if someone has done wrongful deploymnet in ECS . how will u rollback it
+- seperate procedure for rolling deployment & blue green deploymnet
+
+---
 ✅ Difference betwwen alb health check in target group vs halth check in ecs task definition ? what options presnet in health check
 
 ---
