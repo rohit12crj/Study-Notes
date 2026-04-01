@@ -198,6 +198,7 @@ Examples:
 
 ---
 ✅ Dependabot vs CodeQL . Use of Dependabot.yml file 
+- <img width="216" height="274" alt="image" src="https://github.com/user-attachments/assets/9a9b7099-af37-4022-9a77-88da086a3deb" />
 - <img width="935" height="278" alt="image" src="https://github.com/user-attachments/assets/158bb5f0-b316-45ef-91a2-14bb6326f95f" />
 - <img width="559" height="433" alt="image" src="https://github.com/user-attachments/assets/9ba58705-33f9-414e-8cd8-781b54d9fef6" />
 
