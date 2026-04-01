@@ -12,7 +12,7 @@
 - Day 11 --> Prometheus_Grafana_EFK_Opensearch_Jaeger_Site24*7
 - Day 12 + Day 13  --> k8s
 
-##### Note - Ansible , HR , MlOps , Project , Data Engineering , System Design & Cyber-Security folders are not included
+##### Note - Ansible , HR , AiOps_MLOps , Project , Data Engineering , System Design & Cyber-Security folders are not included
 
 ---
 ✅ Common Services & DevOps Tools Ports
