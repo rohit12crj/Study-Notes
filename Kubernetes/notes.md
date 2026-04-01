@@ -4,8 +4,13 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
+✅ if someone has done wrongful deploymnet in eks . how will u rollback it
+- seperate procedure for rolling deployment & blue green deploymnet
+
+---
 ✅ Gateway API 
 - https://www.youtube.com/watch?v=h-AabKgZw1s  --> Devops Shack  --> k8s Componenet not present in k8s_components.html
+- limitation of service & limitation of service
 
 ---
 ✅ k8s Cluster Upgrade
