@@ -4,6 +4,10 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
+✅ Gateway API 
+- https://www.youtube.com/watch?v=h-AabKgZw1s  --> Devops Shack  --> k8s Componenet not present in k8s_components.html
+
+---
 ✅ k8s Cluster Upgrade
 - https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
 - version upgrade is not reversible
