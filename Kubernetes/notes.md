@@ -6,6 +6,12 @@
 ---
 ✅ k8s Cluster Upgrade
 - https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
+
+---
+✅ eks nodegroup 
+- <img width="740" height="65" alt="image" src="https://github.com/user-attachments/assets/30e3e30f-9d73-413e-8782-6a74128dc35c" />
+
+
 ---
 ✅ what are the different components of k8s?
 -  check k8s_components.html file
