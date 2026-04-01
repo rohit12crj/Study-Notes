@@ -5,6 +5,12 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ backend.tf file ?
+- it stores location of remote state
+- s3 bucket name  --> name of bucket where all state files of dev & prod will be stored 
+- s3 key --> actual name of state file which terraform will assign . terraform creates different folder based on dev & prod if using workspaces . if using directory based approach , we can have altogether different backend.tf files which will have different s3 buckets
+
+---
 ✅ In AWS sg group one rule added manually but trying to apply same rule through Terraform. What would it show
 
 ---
