@@ -6,11 +6,16 @@
 - https://www.youtube.com/watch?v=TeD8jDem2gs&t=835s  --> DevOps Shack
 
 ---
+✅ Observability Project
+
+
+---
 ✅ ECS Project + Devsecops Pipeline 
 
 #### Tech Stack ####
 - Terraform
 - ECS
+- Use AWS Native Observability Tools
 
 #### Project Overview 
 - Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party 
@@ -89,15 +94,17 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - https://www.udemy.com/course/ultimate-devops-project-with-resume-preparation/  --> Abhishek --> Tech Stack --> Terraform + EKS ( Used Ingress ) + + Github Actions --> no observability
 
 ---
-✅ Splunk Logs to Opensearch Logs migration with opensearch pipelines with grok parameter & index alias with index lifecycle policy.  initially logs are coming to splunk via acquia server 
+✅ Log Migration
+- Splunk Logs to Opensearch Logs migration with opensearch pipelines with grok parameter & index alias with index lifecycle policy.  initially logs are coming to splunk via acquia server 
 
 ---
 ✅ On prem VM to AWS Cloud Migration
 - Check migration folder inside AWS
 
 ---
-✅ Acquia Cloud to AWS Cloud Migration
+✅ Platform Migration ❌ not decided to be included in CV or not
+- Acquia Cloud to AWS Cloud Migration 
 
 ---
-✅ AiOps Project
-- https://www.youtube.com/watch?v=D36ZkJ-sKyQ  --> Run AI based DevSecOps on every Pull request | No coding --> No coding
+✅ AiOps Project ❌ not decided to be included in CV or not
+- https://www.youtube.com/watch?v=D36ZkJ-sKyQ  --> Run AI based DevSecOps on every Pull request | No coding 
