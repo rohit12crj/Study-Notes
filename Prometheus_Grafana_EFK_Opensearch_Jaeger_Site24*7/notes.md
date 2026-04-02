@@ -1,8 +1,10 @@
-Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) ( Abhishek ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+✅  Videos
+- https://www.youtube.com/watch?v=n7WWme--U2I&t=204s  --> Devops Shack 
+- Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) ( Abhishek ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+- Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
-Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
-
-Difference between Observability and monitoring 
+---
+✅ Difference between Observability and monitoring 
 
 monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
 
