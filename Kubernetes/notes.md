@@ -17,7 +17,7 @@
 - https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
 - version upgrade is not reversible
 - version 1.33 needs to be upgraded to 1.34 first & not to 1.35 directly
-- list out all pre requite for k8s version upgrade
+- list out all pre requisite for k8s version upgrade
 
 ---
 ✅ eks nodegroup 
