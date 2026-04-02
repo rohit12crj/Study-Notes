@@ -5,6 +5,22 @@
 ✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ Difference between mount point & volumes in ecs . Upload pictures pending
+
+---
+✅  Cross account Terraform resource creation 
+
+---
+
+✅ Example where terraform says  destroying resources & is stuck in that scenario 
+
+---
+✅ In ecs cluster I have 1 service , running tasks with task definition v1 which is front footed by alb . Alb has 1 listener with 2 target group blue & green. Right now only blue has 100% traffic. If I create new task definition of v2 and launch task with it for green environment. How does these tasks get associated with green target group
+
+---
+✅ Check if Terraform lifecycle policy ignore is needed or not for ECS blue green deployment ?
+
+---
 ✅ backend.tf file ?
 - it stores location of remote state
 - s3 bucket name  --> name of bucket where all state files of dev & prod will be stored 
