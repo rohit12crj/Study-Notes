@@ -21,7 +21,7 @@
 - ⭐ SAST --> Github QL ( Code Quality ) + Secret Scanning
 - ⭐ DAST --> not supported natively by Github . Used External tools like OWASP ZAP
 - ⭐ Docker Image Storage & Scanning --> AWS ECR Advanced Scanning
-- ⭐ Artifact Storage --> Nexus Artifactory
+- ⭐ Artifact Management --> Nexus Artifactory
 - Observability Tools --> AWS Native
 
 #### Project Overview 
@@ -107,7 +107,7 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - ⭐ DAST --> OWASP ZAP
 - ⭐ Docker Image Storage --> AWS ECR
 - ⭐ Docker Image Scanning --> Trivy
-- ⭐ Artifact Storage --> Nexus Artifactory
+- ⭐ Artifact Management --> Nexus Artifactory
 - Observability Tools --> Prometheus , Grafana
  - https://youtu.be/fuiTqI3noTo?si=BCNP34883wALOj4f --> Abhishek --> Tech Stack --> Terraform + EKS ( Used Load Balancer Service Type ) + Github Actions --> no observability
 - <img width="614" height="457" alt="image" src="https://github.com/user-attachments/assets/e070ad78-d8c1-47f8-9bae-71489f7d2083" />
