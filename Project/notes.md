@@ -6,12 +6,15 @@
 - https://www.youtube.com/watch?v=TeD8jDem2gs&t=835s  --> DevOps Shack
 
 ---
-✅ ECS Project + Devsecops Pipeline --> Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party --> Used Terraform + ECS
+✅ ECS Project + Devsecops Pipeline 
 
 #### Tech Stack ####
-
+- Terraform
+- ECS
 
 #### Project Overview 
+- Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party 
+
 I have an ecs cluster with 3 service
 - caddy frontend --> which is a dashboard for editing caddy redirect rules , configuring proxy , viewing ssl certs
 - caddy core --> which is the actual caddy image from dockerhub
