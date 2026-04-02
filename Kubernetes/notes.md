@@ -10,13 +10,14 @@
 ---
 ✅ Gateway API 
 - https://www.youtube.com/watch?v=h-AabKgZw1s  --> Devops Shack  --> k8s Componenet not present in k8s_components.html
-- limitation of service & limitation of service
+- limitation of service & ingress 
 
 ---
 ✅ k8s Cluster Upgrade
 - https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
 - version upgrade is not reversible
-- version 1.33 needs to be upgraded to 1.34 first & not to 1.35 directly 
+- version 1.33 needs to be upgraded to 1.34 first & not to 1.35 directly
+- list out all pre requite for k8s version upgrade
 
 ---
 ✅ eks nodegroup 
