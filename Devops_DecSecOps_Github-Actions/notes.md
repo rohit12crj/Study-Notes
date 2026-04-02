@@ -25,7 +25,10 @@
 ✅  Among the above stages which all stages can go in parallel 
 
 ---
-✅ what are the artifacts produced ?
+✅ what are artifacts ? what is it necessary ?  what are the differnet types of artifacts generated ?
+- In a DevOps pipeline, artifacts like JAR and WAR files are packaged, deployable outputs of your build stage. Think of them as the final product that moves across pipeline stages (build → test → deploy)
+- <img width="368" height="281" alt="image" src="https://github.com/user-attachments/assets/3acee9d0-bfce-48eb-bec5-f3ac49001e53" />
+- <img width="377" height="132" alt="image" src="https://github.com/user-attachments/assets/40fab27d-3a74-467f-90a4-ebbb51417699" />
 - java --> jar/war
 - node --> need to check
 
@@ -88,14 +91,11 @@
 
 ---
 
-✅ Artifactory Concepts --> repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
+✅ Nexus Artifactory / Registry Concepts  
+- repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
+- https://www.youtube.com/watch?v=zH3cjXQmqJo&t=1147s  --> Devops Shack
 
 ---
-
-✅ EXplain nexus artifactory & jFrog artifactory
-
----
-
 ✅ Sonarqube concepts --> quality gates , quality profiles , project onboarding , branch/PR analysis 
 
 ---
