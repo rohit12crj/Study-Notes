@@ -178,7 +178,11 @@ Examples:
 ---
 ---
 ---
-Docker images are stored in Github Packages as GitHub Container Registry (GHCR)
+✅ GitHub Actions Artifacts vs Github Packages vs GitHub Container Registry (GHCR)
+- Only Docker images should be stored in GitHub Container Registry (GHCR)
+- npm packages & other similar packages should be stored in Github Packages . persistent storage
+- GitHub Actions artifacts are scoped to a single workflow run and cannot be directly shared across pipelines . To share artifacts across workflows, we typically use GitHub Packages
+- https://www.youtube.com/watch?v=p9ismkYDxWQ
 
 | Feature    | GitHub Actions Artifacts    | GitHub Packages            |
 | ---------- | --------------------------- | -------------------------- |
@@ -186,7 +190,7 @@ Docker images are stored in Github Packages as GitHub Container Registry (GHCR)
 | Retention  | Short-term                  | Persistent                 |
 | Versioning | ❌ No                        | ✅ Yes                      |
 | Use case   | Pipeline intermediate files | Production-ready packages  |
-| Example    | `.zip`, logs                | Docker image, npm package  |
+| Example    | `.zip`, logs                | npm package  |
 
 ---
 ✅ I want to use azure AD users to have access to github repos . how can i set it up ?
