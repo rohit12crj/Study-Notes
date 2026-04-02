@@ -12,7 +12,7 @@
 - SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy --> Generated report & saves it as an artifact
 - Build application --> Generates Artifact ( jar / war )--> Maven  --> mvm package 
 - Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry , check ai for commands )
-- Build & Tag Docker image
+- Build & Tag Docker image through Dockerfile using the artifact generated in the build step
 - Docker image vulnerability Scan --> Trivy
 - Push Docker image to AWS ECR Repository
 - Deploy Image to ECS Service
@@ -29,6 +29,8 @@
 - In a DevOps pipeline, artifacts like JAR and WAR files are packaged, deployable outputs of your build stage. Think of them as the final product that moves across pipeline stages (build → test → deploy)
 - <img width="368" height="281" alt="image" src="https://github.com/user-attachments/assets/3acee9d0-bfce-48eb-bec5-f3ac49001e53" />
 - <img width="377" height="132" alt="image" src="https://github.com/user-attachments/assets/40fab27d-3a74-467f-90a4-ebbb51417699" />
+- <img width="376" height="264" alt="image" src="https://github.com/user-attachments/assets/f5ad38d1-25e0-445e-83da-78449a13762c" />
+- <img width="319" height="239" alt="image" src="https://github.com/user-attachments/assets/c596cdc9-fcd3-4776-af99-0048f376eb46" />
 - java --> jar/war
 - node --> need to check
 
