@@ -15,13 +15,15 @@
 #### Tech Stack ####
 - Iaac = Terraform
 - Containerization Framework = ECS
+ 
 - Devsecops Pipeline
-⭐ Pipeline --> Github Actions
-⭐ SCA --> Github Dependabot
-⭐ SAST --> Github QL ( Code Quality ) + Secret Scanning
-⭐ DAST --> not supported natively by Github . Used External tools like OWASP ZAP
-⭐ Docker Image Storage & Scanning --> AWS ECR Advanced Scanning
-⭐ Artifact Storage --> Nexus Registry
+- ⭐ Pipeline --> Github Actions
+- ⭐ SCA --> Github Dependabot
+- ⭐ SAST --> Github QL ( Code Quality ) + Secret Scanning
+- ⭐ DAST --> not supported natively by Github . Used External tools like OWASP ZAP
+- ⭐ Docker Image Storage & Scanning --> AWS ECR Advanced Scanning
+- ⭐ Artifact Storage --> Nexus Registry
+
 - Devsecops Pipeline ( Github Actions , SCA + Docker Image Scanning --> Trivy , SAST --> Sonarqube , DAST --> OWASP ZAP )
 - Observability Tools --> AWS Native
 
@@ -101,14 +103,16 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 #### Tech Stack ####
 - Iaac = Terraform
 - Containerization Framework = EKS
+ 
 - Devsecops Pipeline
-⭐ Pipeline --> Github Actions
-⭐ SCA --> Trivy
-⭐ SAST --> Sonarqube
-⭐ DAST --> OWASP ZAP
-⭐ Docker Image Storage --> AWS
-⭐ Docker Image Scanning --> Trivy
-⭐ Artifact Storage --> Nexus Registry
+- ⭐ Pipeline --> Github Actions
+- ⭐ SCA --> Trivy
+- ⭐ SAST --> Sonarqube
+- ⭐ DAST --> OWASP ZAP
+- ⭐ Docker Image Storage --> AWS ECR
+- ⭐ Docker Image Scanning --> Trivy
+- ⭐ Artifact Storage --> Nexus Registry
+  
 - Observability Tools --> Prometheus , Grafana
  
 - https://youtu.be/fuiTqI3noTo?si=BCNP34883wALOj4f --> Abhishek --> Tech Stack --> Terraform + EKS ( Used Load Balancer Service Type ) + Github Actions --> no observability
