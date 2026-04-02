@@ -90,13 +90,9 @@
 ✅ Maven Vs Gradle
 
 ---
-
 ✅ Nexus Artifactory / Registry Concepts  
 - repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
 - https://www.youtube.com/watch?v=zH3cjXQmqJo&t=1147s  --> Devops Shack
-
----
-✅ Sonarqube concepts --> quality gates , quality profiles , project onboarding , branch/PR analysis 
 
 ---
 ✅ What is “Shift Left Security”?
@@ -108,6 +104,7 @@
 ✅ Sonarqube
 - Tool used in SAST
 - https://youtu.be/r2UVTDpIUj8?si=-_itvd9yclLW1s4j --> DevOps Shack
+- quality gates , quality profiles , project onboarding , branch/PR analysis 
 
 ---
 ✅ Trivy
