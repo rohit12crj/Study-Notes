@@ -1,7 +1,12 @@
 ✅ https://www.youtube.com/playlist?list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv --> DevOps Shack Project Playlist
 
 ---
-✅ Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party --> Used Terraform + ECS
+✅ Terraform Vault Setup in EKS with HA architecture
+- https://www.youtube.com/watch?v=rMG7XZqN0PM&list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv&index=5  --> DevOps Shack
+- https://www.youtube.com/watch?v=TeD8jDem2gs&t=835s  --> DevOps Shack
+
+---
+✅ ECS Project + Devsecops Pipeline --> Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party --> Used Terraform + ECS
 
 #### Tech Stack ####
 
