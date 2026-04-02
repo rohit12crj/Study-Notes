@@ -4,6 +4,9 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek 
 
 ---
+✅ what all resources in k8s appear as pods ?
+
+---
 ✅ if someone has done wrongful deploymnet in eks . how will u rollback it
 - seperate procedure for rolling deployment & blue green deploymnet
 
