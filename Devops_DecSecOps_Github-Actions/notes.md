@@ -25,6 +25,11 @@
 ✅  Among the above stages which all stages can go in parallel 
 
 ---
+✅ what are the artifacts produced ?
+- java --> jar/war
+- node --> need to check
+
+---
 ✅ How are code dependencies ensured?
 - java --> pom.xml
 - node --> package-lock.json
