@@ -22,7 +22,10 @@
 - ⭐ DAST --> not supported natively by Github . Used External tools like OWASP ZAP
 - ⭐ Docker Image Storage & Scanning --> AWS ECR Advanced Scanning
 - ⭐ Artifact Management --> Nexus Artifactory
-- Observability Tools --> AWS Native
+- Observability Tools
+- ⭐ metrics (what’s happening) --> 
+- ⭐ logs (why it happened) --> 
+- ⭐ traces (where it happened) -->
 
 #### Project Overview 
 - Implement caddy for URL redirection & reverse proxy , also use redis into it . Also explain how will u use API gateay with plans to sell it to 3rd party 
