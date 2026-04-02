@@ -179,6 +179,15 @@ Examples:
 ---
 ---
 
+| Feature    | GitHub Actions Artifacts    | GitHub Packages            |
+| ---------- | --------------------------- | -------------------------- |
+| Purpose    | Temporary build artifacts   | Long-term artifact storage |
+| Retention  | Short-term                  | Persistent                 |
+| Versioning | ❌ No                        | ✅ Yes                      |
+| Use case   | Pipeline intermediate files | Production-ready packages  |
+| Example    | `.zip`, logs                | Docker image, npm package  |
+
+---
 ✅ I want to use azure AD users to have access to github repos . how can i set it up ?
 
 ---
