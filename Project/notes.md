@@ -7,7 +7,7 @@
 
 ---
 ✅ Observability Project
-
+- https://www.youtube.com/watch?v=n7WWme--U2I&t=204s --> Devops Shack
 
 ---
 ✅ 3 Tier Web App 
