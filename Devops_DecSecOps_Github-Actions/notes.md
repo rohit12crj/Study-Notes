@@ -178,6 +178,7 @@ Examples:
 ---
 ---
 ---
+Docker images are stored in Github Packages as GitHub Container Registry (GHCR)
 
 | Feature    | GitHub Actions Artifacts    | GitHub Packages            |
 | ---------- | --------------------------- | -------------------------- |
