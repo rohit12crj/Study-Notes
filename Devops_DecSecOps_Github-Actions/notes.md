@@ -1,7 +1,8 @@
 ✅ Videos
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvLRR_KPxSKCJMf2qDNKrGd-  --> DevSecOps Playlist ( Abhishek )
 - https://github.com/iam-veeramalla/DevSecOps-Zero-to-Hero/ --> Github Repo ( Abhishek )
-- https://www.youtube.com/watch?v=NnkUGzaqqOc&t=18s --> DevSecOps Pipeline --> DevOps Shack
+- https://www.youtube.com/watch?v=NnkUGzaqqOc&t=18s --> DevSecOps Pipeline with Jenkins --> DevOps Shack
+- https://www.youtube.com/watch?v=FTrTFOLbdm4&list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv&index=24 --> DevSecOps Pipeline with Github Actions --> DevOps Shack
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
