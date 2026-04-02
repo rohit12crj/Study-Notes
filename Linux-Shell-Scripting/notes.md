@@ -6,6 +6,67 @@
 - https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
 
 ---
+What is the Linux boot process and its stages?
+
+What is the difference between BIOS and UEFI?
+
+What is GRUB and how does it work?
+
+What are systemd and init systems in Linux?
+
+What is the difference between systemctl and service commands?
+
+How does process management work in Linux?
+
+What is the difference between a process and a thread?
+
+How do you check running processes in Linux?
+
+What is nice and renice in Linux?
+
+What is a zombie process?
+
+What is file permission in Linux and how does it work?
+
+What is the difference between hard link and soft link?
+
+What is umask and how is it used?
+
+What are special permissions (SUID, SGID, Sticky Bit)?
+
+What is inode in Linux?
+
+What is LVM and why is it used?
+
+What is the difference between ext4, xfs, and other file systems?
+
+How do you check disk usage and disk performance?
+
+What is fstab and how does it work?
+
+What is swap space and how is it managed?
+
+What is networking in Linux and how do you troubleshoot it?
+
+What are common networking commands used in Linux?
+
+What is SSH and how does it work?
+
+What is DNS and how is it configured in Linux?
+
+What is the difference between private and public IP?
+
+What is a package manager and how does it work?
+
+What is the difference between apt and yum/dnf?
+
+How do you manage services in Linux?
+
+What is log management in Linux and where are logs stored?
+
+How do you troubleshoot a high CPU or memory issue in Linux?
+
+---
 ✅ tar command used for 
 
 ---
