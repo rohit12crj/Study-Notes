@@ -10,11 +10,12 @@
 
 
 ---
-✅ ECS Project + Devsecops Pipeline 
+✅ 3 Tier Web App 
 
 #### Tech Stack ####
 - Terraform
 - ECS
+- Devsecops Pipeline ( Github Actions , SCA + Docker Image Scanning --> Trivy , SAST --> Sonarqube , DAST --> OWASP ZAP )
 - Use AWS Native Observability Tools
 
 #### Project Overview 
