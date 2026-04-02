@@ -4,6 +4,12 @@
 - Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
 ---
+✅ Observability Tools
+- ⭐ metrics (what’s happening) --> 
+- ⭐ logs (why it happened) --> 
+- ⭐ traces (where it happened) -->
+
+---
 ✅ Difference between Observability and monitoring 
 
 monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
