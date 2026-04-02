@@ -8,7 +8,7 @@
 ✅ Difference between mount point & volumes in ecs . Upload pictures pending
 
 ---
-✅  Cross account Terraform resource creation 
+✅  how will u acheive Cross account Terraform resource creation 
 
 ---
 
