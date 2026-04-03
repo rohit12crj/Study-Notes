@@ -1,6 +1,7 @@
 ✅  Videos
 - https://www.youtube.com/watch?v=n7WWme--U2I&t=204s  --> Devops Shack 
-- Monitoring + Observability ( Only Prometheus , Grafana ) ( Theory + Project Playlist ) ( Study Only Day 1 to 4 ) ( Abhishek ) --> https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb
+- https://www.youtube.com/playlist?list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb --> Theory + Project Playlist --> Abhishek
+- https://www.youtube.com/watch?v=zoGWMg7sB5E&list=PLAdTNzDIZj_8BerYwx-rUjmVkj6A9vD9_&index=25 --> Grafana --> Devops Shack 
 - Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
 ---
