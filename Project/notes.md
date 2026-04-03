@@ -10,7 +10,10 @@
 - <img width="923" height="423" alt="image" src="https://github.com/user-attachments/assets/a555a41f-db0a-4f3b-a5b7-94b285691c91" />
 - <img width="798" height="446" alt="image" src="https://github.com/user-attachments/assets/207dddf1-5a9c-448a-a554-76734223d930" />
 - explain how you did Active / Passive Pilot Light for 3 Tier Web App .
-- Primary Region = Frankfurt ( eu-central-1 ) Explain Cross region Data Replication for Backup Region = us-east-1 ( N.Virginia ) for services like , RDS , EFS , Secret Manger , ECR images . Note --> ECS Cluster is created for both regions earlier beforehand
+- Explain Same region data replication for Primary Region = Frankfurt ( eu-central-1 )
+- Explain Cross region Data Replication for Backup Region = us-east-1 ( N.Virginia ) for services like , RDS , EFS , Secret Manger , ECR images . Note --> ECS Cluster is created for both regions earlier beforehand
+- what steps you would need to perform during a DR scenerio to shift traffic to Backup Region & make sure your app is running 
+- what was the actual RTO & RPO 
 
 ---
 ✅ Terraform Vault Setup in EKS with HA architecture
