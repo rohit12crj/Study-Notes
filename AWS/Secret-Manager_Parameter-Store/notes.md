@@ -1,4 +1,9 @@
-✅ AWS Secrets Manager is a regional service (not global), and ECS tasks in private subnets need a way to reach it — either via VPC endpoint OR NAT Gateway.
+✅ AWS Secrets Manager is a regional service (not global) , and ECS tasks in private subnets need a way to reach it — either via interface endpoint( private link ) OR NAT Gateway.
+- <img width="563" height="313" alt="image" src="https://github.com/user-attachments/assets/c1a5c922-5f0f-4f0d-8c3b-72b092c2dadc" />
+- <img width="435" height="242" alt="image" src="https://github.com/user-attachments/assets/d1288614-3567-4150-bffa-ab3a9fb643e1" />
+- <img width="619" height="332" alt="image" src="https://github.com/user-attachments/assets/e6ce719a-cdea-4bd1-a490-b64cb1550f4f" />
+- <img width="504" height="361" alt="image" src="https://github.com/user-attachments/assets/9ae47471-6f2d-4268-aafd-b13a4761ad82" />
+
 
 ---
 ✅ Secret Manager --> Automatic Secret Rotation Process
