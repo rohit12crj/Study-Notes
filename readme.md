@@ -9,7 +9,7 @@
 - Day 8 --> DevOps_DevSecOps_Github-Actions
 - Day 9 --> Jenkins + FinOps + SRE
 - Day 10 --> Terraform
-- Day 11 --> Observability_ Monitoring_Tracing
+- Day 11 --> Observability_Monitoring_Tracing
 - Day 12 + Day 13  --> k8s
 
 ##### Note - Ansible , HR , AiOps_MLOps , Project , Data Engineering , System Design & Cyber-Security folders are not included
