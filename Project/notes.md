@@ -1,7 +1,16 @@
 ✅ https://www.youtube.com/playlist?list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv --> DevOps Shack Project Playlist
 
 ---
-✅ DR Project
+✅ DR Project for 3 Tier web App 
+- https://www.youtube.com/watch?v=WYCbczFIj3E&t=1869s
+- <img width="949" height="461" alt="image" src="https://github.com/user-attachments/assets/fc0dbe03-84d3-4ce9-8f7c-8f6bb8e8712d" />
+- <img width="910" height="448" alt="image" src="https://github.com/user-attachments/assets/fe5a4b00-5ac5-426a-94f4-f7bf58785c35" />
+- <img width="937" height="440" alt="image" src="https://github.com/user-attachments/assets/2f117bf1-2d1a-4121-a2d3-118e198cc957" />
+- <img width="875" height="442" alt="image" src="https://github.com/user-attachments/assets/dc9f5941-7f21-443c-9788-663ad974af93" />
+- <img width="923" height="423" alt="image" src="https://github.com/user-attachments/assets/a555a41f-db0a-4f3b-a5b7-94b285691c91" />
+- <img width="798" height="446" alt="image" src="https://github.com/user-attachments/assets/207dddf1-5a9c-448a-a554-76734223d930" />
+- explain how you did Active / Passive Pilot Light for 3 Tier Web App .
+- Primary Region = Frankfurt ( eu-central-1 ) Explain Cross region Data Replication for Backup Region = us-east-1 ( N.Virginia ) for services like , RDS , EFS , Secret Manger , ECR images . Note --> ECS Cluster is created for both regions earlier beforehand
 
 ---
 ✅ Terraform Vault Setup in EKS with HA architecture
@@ -19,6 +28,7 @@
 #### Tech Stack ####
 - Iaac = Terraform
 - Containerization Framework = ECS
+- Storage = Postgre RDS + EFS + Secret Manager
 - Devsecops Pipeline
 - ⭐ Pipeline --> Github Actions
 - ⭐ SCA --> Github Dependabot
