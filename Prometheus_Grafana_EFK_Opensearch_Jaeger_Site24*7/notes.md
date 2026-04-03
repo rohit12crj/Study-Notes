@@ -10,7 +10,17 @@
 - ⭐ traces (where it happened) -->
 
 ---
-✅ Difference between Observability and monitoring 
+| Type                                               | Tool                             
+| ---------------------------------------------------|-------------------------------- 
+| ⭐ Metrics Collection & Storing                    | Prometheus                       
+| ⭐ Metrics Visualization                           | Grafana                          
+| ⭐ Logs Collection , Storing & Visualization       | Grafana + Loki                   
+| ⭐ Traces Collection , Storing & Visualization     | Jaeger                     
+| ⭐ All                                             | OpenTelemetry --> Open Standard data collection Framework for no vendor lockin
+
+
+---
+✅ Difference between Observability , monitoring , tracing 
 
 monitoring ( Prometheus , alert manager , grafana ) vs logging ( ELK ) vs traces ( Jaeger )
 
