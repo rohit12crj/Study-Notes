@@ -12,7 +12,8 @@
 - explain how you did Active / Passive Pilot Light for 3 Tier Web App .
 - Explain Same region data replication for Primary Region = Frankfurt ( eu-central-1 )
 - Explain Cross region Data Replication for Backup Region = us-east-1 ( N.Virginia ) for services like , RDS , EFS , Secret Manger , ECR images . Note --> ECS Cluster is created for both regions earlier beforehand
-- what steps you would need to perform during a DR scenerio to shift traffic to Backup Region & make sure your app is running 
+- what steps you would need to perform during a DR scenerio to shift traffic to Backup Region & make sure your app is running . how will u automate this ?
+- what is cloud endure ? --> on prem to aws cloud DR 
 - what was the actual RTO & RPO 
 
 ---
