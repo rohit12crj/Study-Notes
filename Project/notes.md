@@ -8,6 +8,7 @@
 ---
 ✅ Observability Project
 - https://www.youtube.com/watch?v=n7WWme--U2I&t=204s --> Devops Shack
+- https://www.youtube.com/watch?v=w2pnBa7eAbI&list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb&index=7&t=1475s  --> Abhishek 
 
 ---
 ✅ 3 Tier Web App 
