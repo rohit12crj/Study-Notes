@@ -6,6 +6,7 @@
 - Quicksight
 - Redshift
 - ACM
+- RAM ( Resource Access Manager ) --> https://youtu.be/I9aKCdLokOs?si=00I4LUEePWpihwvu
 - Glue --> check Data Engineering Folder 
 - MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder
 - EKS --> Check Kubernetes Folder
