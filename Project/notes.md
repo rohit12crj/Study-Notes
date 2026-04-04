@@ -16,6 +16,13 @@
 - what is cloud endure ? --> on prem to aws cloud DR 
 - what was the actual RTO & RPO
 - HA strategy means multi AZ deployment & DR strategy means multi Region deployment
+- RTO --> The maximum acceptable time to restore a system after a failure. If RTO = 30 minutes, the system must be restored within 30 minutes after an outage.
+- RPO --> The maximum acceptable amount of data loss measured in time. If RPO = 5 minutes, the system can only lose 5 minutes of data.
+- In our project the RTO was around 10–15 minutes and RPO was less than 5 minutes.
+- We achieved this using Multi-AZ architecture in AWS, where ECS services were deployed across multiple AZs behind an ALB.
+- The database was RDS Multi-AZ, which provides synchronous replication and automatic failover within 1–2 minutes.
+- We also configured automated backups, snapshots, and S3 cross-region replication for disaster recovery.
+- Infrastructure was managed using Terraform, so in case of a disaster we could recreate the infrastructure quickly through our CI/CD pipelines.
 
 ---
 ✅ Terraform Vault Setup in EKS with HA architecture
