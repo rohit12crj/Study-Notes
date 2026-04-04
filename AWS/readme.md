@@ -21,7 +21,11 @@
 - Codedeploy
 - Cognito ( User Pool , Identity Pool )
 - SES ( Simple Email Service )
-- Global Accelerator
+---
+- ✅ Global Accelerator
+- https://youtu.be/CUYvzTd9vKE?si=njv9D_89fG0YuovZ
+- when you should Accelerator vs Cloudfront
+---
 - Budget & Cost Explorer
 - Backup --> centrally manage & automate backup across various AWS services --> https://www.youtube.com/watch?v=6fvGbywTjsU&t=671s
 - Organization
@@ -58,14 +62,11 @@
 ✅ Explain security hub & security lake with respect to AWS 
 
 ---
-
 ✅ Difference between headers , querry string , cookies
 
 ---
-
 ✅ Difference between Forward Proxy & reverse proxy with examples 
-
-https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
+- https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 
 ---
 
