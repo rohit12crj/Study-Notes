@@ -98,34 +98,28 @@
 | Use Case          | Reverse proxy, static serving | Microservices API control     | Distribute traffic              |
 
 ---
-
 ✅ Why ALB & reverse Proxy are both used 
 - ALB can handle basic application-level routing like path and host-based rules, but it lacks advanced capabilities such as URL rewriting, caching, custom authentication logic, and internal container routing.
 - That’s why a reverse proxy like Nginx is often used alongside ALB to handle fine-grained application-level control.
-
-<img width="247" height="215" alt="image" src="https://github.com/user-attachments/assets/8d2fb7d8-0058-478b-ada2-2d0822b2a593" />
-
-<img width="290" height="113" alt="image" src="https://github.com/user-attachments/assets/76a8e2b4-0394-46e0-946d-d64f7346c506" />
+- <img width="247" height="215" alt="image" src="https://github.com/user-attachments/assets/8d2fb7d8-0058-478b-ada2-2d0822b2a593" />
+- <img width="290" height="113" alt="image" src="https://github.com/user-attachments/assets/76a8e2b4-0394-46e0-946d-d64f7346c506" />
 
 ---
-
 ✅ Different authentication techniques & when to use which with examples ?
+- Learn what authentication is, the basic methods like Basic Auth, Digest Auth, API keys, and sessions, then token-based authentication with Bearer tokens and JWTs, access and refresh tokens, OAuth2 and OpenID Connect, and SSO with SAML and OIDC
+- https://www.youtube.com/watch?v=iX8g4LqF8p8&t=97s
 
 ---
-
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
 - https://youtu.be/pI6glWVEkcY?si=Wc_B8NiUvt7_n0YS
 
 ---
-
 ✅ How does webhooks works actually & why should we use them ?
 
 ---
-
 ✅ Difference between SSL , TLS & mTLS
 
 ---
-
 ✅ Difference between Rest API , HTTP API & GraphQL API
 
 ---
@@ -144,17 +138,3 @@
 ---
 ✅ explain HA for all aws services in your project ?
 
----
-✅ RTO & RPO & what were these values in your project & how did u achieve this ?
-- RTO --> The maximum acceptable time to restore a system after a failure. If RTO = 30 minutes, the system must be restored within 30 minutes after an outage.
-- RPO --> The maximum acceptable amount of data loss measured in time. If RPO = 5 minutes, the system can only lose 5 minutes of data.
-- In our project the RTO was around 10–15 minutes and RPO was less than 5 minutes.
-- We achieved this using Multi-AZ architecture in AWS, where ECS services were deployed across multiple AZs behind an ALB.
-- The database was RDS Multi-AZ, which provides synchronous replication and automatic failover within 1–2 minutes.
-- We also configured automated backups, snapshots, and S3 cross-region replication for disaster recovery.
-- Infrastructure was managed using Terraform, so in case of a disaster we could recreate the infrastructure quickly through our CI/CD pipelines.
-
----
-✅ explain the various DR ( Disaster Recovery techniques ) & which one u used ?
-
----
