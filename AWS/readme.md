@@ -6,7 +6,14 @@
 - Quicksight
 - Redshift
 - ACM
-- RAM ( Resource Access Manager ) --> https://youtu.be/I9aKCdLokOs?si=00I4LUEePWpihwvu
+
+---
+- ✅ RAM ( Resource Access Manager )
+- https://youtu.be/I9aKCdLokOs?si=00I4LUEePWpihwvu
+- advantages of RAM
+
+---
+
 - Glue --> check Data Engineering Folder 
 - MSK ( Managed Streaming for Kafka ) --> check Data Engineering Folder
 - EKS --> Check Kubernetes Folder
@@ -22,7 +29,6 @@
 - ECR - images Lifecycle Policy --> image versioning --> Image vulnerability Scanning --> need to generate ECR login password before pushing docker images in pipeline --> password can be genertaed while running the command specified in " view & push images " from ECR Console
 
 ---
-
 ✅ AWS Secure Landing Zone with Control Tower & Account Factory 
 - https://tcsglobal.udemy.com/course/aws-secure-landing-zone-with-control-tower-and-aft/  --> not required but check for the terraform part if it is needed or not
 - https://www.youtube.com/watch?v=ew16ZDoAals
