@@ -1,5 +1,9 @@
 #### Cloudwatch
 
+✅ Eventbridge
+
+---
+
 ✅ How will u send custom cloudwatch logs from EC2 ?
 - To send custom logs from EC2 to CloudWatch, I would install the CloudWatch Agent, configure it with the log file paths and log group name , attach an IAM role with necessary permissions, and start the agent so it continuously streams logs to CloudWatch.
 
