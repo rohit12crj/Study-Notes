@@ -113,6 +113,7 @@ https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
 ---
 
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
+- https://youtu.be/pI6glWVEkcY?si=Wc_B8NiUvt7_n0YS
 
 ---
 
