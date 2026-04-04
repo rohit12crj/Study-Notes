@@ -1,4 +1,7 @@
+✅ Videos
+- Loadbalancer Full Course --> https://youtu.be/znQsN8KzF_o?si=del2XWtbFL2QnX6u
 
+---
 <img width="368" height="317" alt="image" src="https://github.com/user-attachments/assets/2848eca1-f1bd-47ea-aa74-e52c352ecdbc" />
 
 ---
