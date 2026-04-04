@@ -33,6 +33,7 @@
 - https://tcsglobal.udemy.com/course/aws-secure-landing-zone-with-control-tower-and-aft/  --> not required but check for the terraform part if it is needed or not
 - https://www.youtube.com/watch?v=ew16ZDoAals
 - difference between OU ( organization unit ) & actual AWS account
+- account factory
 
 ---
 
