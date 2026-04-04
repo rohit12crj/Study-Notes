@@ -1,3 +1,6 @@
+✅ after creating internet gateway & nat gateway , you need to attache it to VPC & also add the default routes for public route table & private route table accordingly 
+
+---
 ✅ Your EC2 instance is running in a private subnet, and it cannot access the internet to install packages
 - EC2 → NAT Gateway → Internet Gateway → Internet
   
