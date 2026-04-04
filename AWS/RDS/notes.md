@@ -1,4 +1,4 @@
-✅ why aurora vs normal RDS 
+✅ why aurora over normal RDS 
 
 ---
 ✅ How will u setup connetion to allow someone form on prem to login to aws rds & run querry running in private subnet ?
