@@ -1,3 +1,12 @@
+✅ Videos
+- Transit Gateway --> https://www.youtube.com/watch?v=GV4KreiF_D4
+- VPC Peering --> https://youtu.be/36qsohuPzMQ?si=R3EQ1wELh7ubU-b3
+- WAN  --> https://www.youtube.com/watch?v=fcHIRvZTods
+- VPC Flow Logs --> https://youtu.be/2PQIDssp9ts?si=974gn-WI20hk_2jT
+- on prem to AWS VPN i.e site to site VPN --> https://youtu.be/h6YuZ9k9nzo?si=_Se7cHiFMzsngF7_
+- Full networking course --> 
+
+---
 ✅ after creating internet gateway & nat gateway , you need to attache it to VPC & also add the default routes for public route table & private route table accordingly 
 
 ---
