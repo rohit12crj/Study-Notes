@@ -28,6 +28,7 @@
 ✅ Terraform Vault Setup in EKS with HA architecture
 - https://www.youtube.com/watch?v=rMG7XZqN0PM&list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv&index=5  --> DevOps Shack
 - https://www.youtube.com/watch?v=TeD8jDem2gs&t=835s  --> DevOps Shack
+- https://www.youtube.com/playlist?list=PL7iMyoQPMtAP7XeXabzWnNKGkCex1C_3C --> Rahul ( Playlist )
 
 ---
 ✅ Observability Project
