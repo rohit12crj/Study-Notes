@@ -129,7 +129,8 @@
 ✅ Difference between Rest API , HTTP API & GraphQL API
 
 ---
-✅ Dual Connectivity from on prem to AWS to Azure 
+✅ Dual Connectivity from on prem to AWS to Azure / GCP
+- https://youtu.be/doAVHFjWTqo?si=Zn1UOhFbslwsvGSZ
 - <img width="491" height="106" alt="image" src="https://github.com/user-attachments/assets/8099cae6-ba08-4cca-bf53-24388b37f41a" />
 
 - "In a hybrid multi-cloud setup, OSPF is used for internal routing within on-prem, while BGP is used for external connectivity with AWS Direct Connect and Azure ExpressRoute. Routes are redistributed between OSPF and BGP at the edge router. Primary and secondary paths are controlled using BGP attributes like Local Preference and AS Path Prepending. In case of failure of the primary path (AWS), BGP automatically fails over to the secondary path (Azure)."
