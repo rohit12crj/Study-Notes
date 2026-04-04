@@ -14,7 +14,8 @@
 - Explain Cross region Data Replication for Backup Region = us-east-1 ( N.Virginia ) for services like , RDS , EFS , Secret Manger , ECR images . Note --> ECS Cluster is created for both regions earlier beforehand
 - what steps you would need to perform during a DR scenerio to shift traffic to Backup Region & make sure your app is running . how will u automate this ?
 - what is cloud endure ? --> on prem to aws cloud DR 
-- what was the actual RTO & RPO 
+- what was the actual RTO & RPO
+- HA strategy means multi AZ deployment & DR strategy means multi Region deployment
 
 ---
 ✅ Terraform Vault Setup in EKS with HA architecture
