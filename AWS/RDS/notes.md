@@ -1,3 +1,6 @@
+✅ How will u setup connetion to allow someone form on prem to login to aws rds & run querry ?
+
+---
 ✅ What is RDS?
 - Amazon Relational Database Service — managed relational DB service 
 - Supported Engine --> MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server
