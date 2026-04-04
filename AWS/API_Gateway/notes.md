@@ -3,6 +3,7 @@
 
 ---
 ✅ How will u secure API Gateway ?
+- Lambda Authorizer
 
 ---
 
