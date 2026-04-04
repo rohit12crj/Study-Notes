@@ -5,7 +5,8 @@
 - Athena
 - Quicksight
 - Redshift
-- ACM
+- ACM --> https://youtu.be/_bEPuvrjB5Y?si=bQN1HauiAWRx1Z8b --> Rahul
+- Route53 --> https://youtu.be/tXgOSt80Mtg?si=OcMZWZCJPRd_YiVH --> Rahul
 
 ---
 - ✅ RAM ( Resource Access Manager )
