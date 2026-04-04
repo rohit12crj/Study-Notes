@@ -4,6 +4,9 @@
 - WAN  --> https://www.youtube.com/watch?v=fcHIRvZTods
 - VPC Flow Logs --> https://youtu.be/2PQIDssp9ts?si=974gn-WI20hk_2jT
 - on prem to AWS VPN i.e site to site VPN --> https://youtu.be/h6YuZ9k9nzo?si=_Se7cHiFMzsngF7_
+- NAT Gateway --> https://youtu.be/ydxEeVAqVdo?si=E4l8_m1ERj0rj_vd
+- VPC Endpoint --> https://youtu.be/vzTKr035ORQ?si=EMcFcrbJ0ah8HtGB
+- VPC Endpoint Service ( PrivateLink ) --> https://youtu.be/o0mzIlKHZdw?si=ocwE32uAtzUJYte9
 - Full networking course --> 
 
 ---
