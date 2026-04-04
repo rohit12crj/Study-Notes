@@ -1,7 +1,10 @@
-WAF operates at layer 7 , Shield operates at layer 4 & 7
+✅ Videos
+- https://youtu.be/FHRXXrQ765M?si=rE8LZ_XqJixihpYO  --> Rahul
 
 ---
+✅ WAF operates at layer 7 , Shield operates at layer 4 & 7
 
+---
 ✅  AWS Shield is a managed DDoS (Distributed Denial of Service) protection service that safeguards applications running on AWS. It provides always-on detection and automatic inline mitigations to minimize application downtime and latency.
 
 - Two tiers: Shield Standard ( Free ) and Shield Advanced
