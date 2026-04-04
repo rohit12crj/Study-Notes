@@ -3,7 +3,8 @@
 ✅ Videos
 - https://youtu.be/z8jraCN9Tf0?si=QnhXJb7tqNiCSVFg  --> Launch Template & Source Template --> Rahul
 - https://youtu.be/uxTi1iUu5gc?si=3-f-mKUvS73tiZBJ --> User Data --> Rahul
-- https://youtu.be/fwfkSxb1T-s?si=0gu_dir_Dx4-gN4l --> Autoscaling
+- https://youtu.be/fwfkSxb1T-s?si=0gu_dir_Dx4-gN4l --> Autoscaling  --> Rahul
+- https://youtu.be/b6oPVrDvV8E?si=BQR6edizm62Hv7NB --> Spot Instances --> Rahul 
 
 ---
 ✅ Explain how you would design a highly available EC2 architecture across multiple AZs for a web application.
