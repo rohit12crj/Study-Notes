@@ -200,7 +200,9 @@ Undoing the last commit in Git can mean different things depending on what you w
 
 ---
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
-Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
+- https://www.youtube.com/watch?v=GQQqf-C2ha4&t=11s  --> Nana
+- https://www.youtube.com/watch?v=MCyvYT8FS5w --> Abhishek
+- Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
 - GitFlow → structured, many long live branches
 
 | Branch            | Purpose                                                      |
