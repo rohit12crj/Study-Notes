@@ -148,13 +148,13 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - Splunk Logs to Opensearch Logs migration with opensearch pipelines with grok parameter & index alias with index lifecycle policy.  initially logs are coming to splunk via acquia server
 - explain below flow. no need to create doc.
 acquia --> syslog --> fluentbit ( EC2 ) --> sqs --> opensearch ingestion index 1 --> opensearch pipeline ( grok parameter ) --> opensearch ingestion index 2
-- 1. explain can syslog ng be used directly without fluentbit
-- 2. how does the fan out pattern works 
-- 3. how does messages from dlq goes for retyring 
-- 4. fluenbit be run on lambda
-- 5. if my ec2 breaks down . what will happen ? how will u modify the architecture 
-- 6. give 2 scenerios where grok will help me in this case 
-- 7. in which case will u use sns before sqs step
+- ⭐ explain can syslog ng be used directly without fluentbit
+- ⭐ how does the fan out pattern works 
+- ⭐ how does messages from dlq goes for retyring 
+- ⭐ can fluenbit be run on lambda ?
+- ⭐ if my ec2 breaks down . what will happen ? how will u modify the architecture 
+- ⭐ give 2 scenerios where grok will help me in this case 
+- ⭐ in which case will u use sns before sqs step
 
 ---
 ✅ On prem VM to AWS Cloud Migration
