@@ -144,7 +144,7 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - https://www.udemy.com/course/ultimate-devops-project-with-resume-preparation/  --> Abhishek --> Tech Stack --> Terraform + EKS ( Used Ingress ) + + Github Actions --> no observability
 
 ---
-✅ Splunk to OpenSearch Log Migration  --> Splunk_to_OpenSearch_Log_Migration.docx
+✅ Splunk to OpenSearch Log Migration  --> check Splunk_to_OpenSearch_Log_Migration.docx
 - ⭐Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> SQS --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index --> opensearch Dashboard
 - ⭐ difference between syslog & syslog-ng
 - ⭐ Can syslog-ng be used in place of fluentbit ?
