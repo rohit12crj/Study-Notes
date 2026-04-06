@@ -145,18 +145,20 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 
 ---
 ✅ Log Migration
-- Splunk Logs to Opensearch Logs migration with opensearch pipelines with grok parameter & index alias with index lifecycle policy.  initially logs are coming to splunk via acquia server
-- Flow = Logs from acquia --> syslog ( from acquia side ) --> fluentbit ( EC2 ) --> SQS --> opensearch index 1 --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index 2
-- ⭐ difference between syslog & syslog-ng
-- ⭐ Can syslog-ng be used in place of fluentbit ?
-- ⭐ what type of SQS queue will u use ? FIFO or Standard ?
-- ⭐ how does the fan out pattern works & on what triggers ?
-- ⭐ how does messages from dlq goes for retyring 
-- ⭐ can fluenbit run on lambda or ECS ?
-- ⭐ if my ec2 breaks down . what will happen ? how will u modify the architecture 
-- ⭐ give 2 scenerios where grok will help me in this case 
-- ⭐ in which case will u use sns before sqs step
-- ⭐ what monitoring will u use to monitor sqs queue ?
+- Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> SQS --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index --> opensearch Dashboard
+⭐ difference between syslog & syslog-ng
+⭐ Can syslog-ng be used in place of fluentbit ?
+⭐ what type of SQS queue will u use ? FIFO or Standard ?
+⭐ how does the fan out pattern works & on what triggers ?
+⭐ how does messages from dlq goes for retyring ? Add Lambda for DLQ auto-retry
+⭐ ECS Scale out patterns & on what triggers
+⭐ give 2 scenerios where grok will help me in this case
+⭐ in which case will u use sns before sqs step
+⭐ what metrics will u use to monitor sqs queue ?
+⭐ what happens if ecs container crashes ?
+⭐ For fluentbit ECS Cluster , write docker file with EFS Volume Mounting  
+⭐ why NLB & not ALB ? what should be the NLB listener port no , protocol & target group rules
+⭐ what is buffering & backpressure handling & how did u achieve this ?
 
 ---
 ✅ On prem VM to AWS Cloud Migration
