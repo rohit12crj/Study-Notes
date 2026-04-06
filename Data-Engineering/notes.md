@@ -1,5 +1,5 @@
 ✅ AWS DATA Pipeline Project
-- https://www.youtube.com/watch?v=yvAWbbQa8eE
+- https://www.youtube.com/watch?v=yvAWbbQa8eE  --> Study Only this
 
 ---
 ✅ Fundamentals of Data Engineer  Masterclass --> https://youtu.be/hf2go3E2m8g?si=ZQ0-f4NqROFkDpmE
