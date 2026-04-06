@@ -149,9 +149,10 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - Flow = Logs from acquia --> syslog ( from acquia side ) --> fluentbit ( EC2 ) --> SQS --> opensearch ingestion index 1 --> opensearch pipeline ( grok parameter ) --> opensearch ingestion index 2
 - ⭐ difference between syslog & syslog-ng
 - ⭐ Can syslog-ng be used in place of fluentbit ?
-- ⭐ how does the fan out pattern works 
+- ⭐ what type of SQS queue will u use ? FIFO or Standard ?
+- ⭐ how does the fan out pattern works & on what triggers ?
 - ⭐ how does messages from dlq goes for retyring 
-- ⭐ can fluenbit be run on lambda ?
+- ⭐ can fluenbit run on lambda or ECS ?
 - ⭐ if my ec2 breaks down . what will happen ? how will u modify the architecture 
 - ⭐ give 2 scenerios where grok will help me in this case 
 - ⭐ in which case will u use sns before sqs step
