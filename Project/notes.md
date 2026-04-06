@@ -144,21 +144,22 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - https://www.udemy.com/course/ultimate-devops-project-with-resume-preparation/  --> Abhishek --> Tech Stack --> Terraform + EKS ( Used Ingress ) + + Github Actions --> no observability
 
 ---
-✅ Log Migration
-- Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> SQS --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index --> opensearch Dashboard
-⭐ difference between syslog & syslog-ng
-⭐ Can syslog-ng be used in place of fluentbit ?
-⭐ what type of SQS queue will u use ? FIFO or Standard ?
-⭐ how does the fan out pattern works & on what triggers ?
-⭐ how does messages from dlq goes for retyring ? Add Lambda for DLQ auto-retry
-⭐ ECS Scale out patterns & on what triggers
-⭐ give 2 scenerios where grok will help me in this case
-⭐ in which case will u use sns before sqs step
-⭐ what metrics will u use to monitor sqs queue ?
-⭐ what happens if ecs container crashes ?
-⭐ For fluentbit ECS Cluster , write docker file with EFS Volume Mounting  
-⭐ why NLB & not ALB ? what should be the NLB listener port no , protocol & target group rules
-⭐ what is buffering & backpressure handling & how did u achieve this ?
+✅ Splunk to OpenSearch Log Migration  --> Splunk_to_OpenSearch_Log_Migration.docx
+- ⭐Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> SQS --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index --> opensearch Dashboard
+- ⭐ difference between syslog & syslog-ng
+- ⭐ Can syslog-ng be used in place of fluentbit ?
+- ⭐ what type of SQS queue will u use ? FIFO or Standard ?
+- ⭐ how does the fan out pattern works & on what triggers ?
+- ⭐ how does messages from dlq goes for retyring ? Add Lambda for DLQ auto-retry
+- ⭐ ECS Scale out patterns & on what triggers
+- ⭐ give 2 scenerios where grok will help me in this case
+- ⭐ in which case will u use sns before sqs step
+- ⭐ what metrics will u use to monitor sqs queue ?
+- ⭐ what happens if ecs container crashes ?
+- ⭐ For fluentbit ECS Cluster , write docker file with EFS Volume Mounting
+- ⭐ why NLB & not ALB ? what should be the NLB listener port no , protocol & target group rules
+- ⭐ what is buffering & backpressure handling & how did u achieve this ?
+- ⭐ what is sqs maxreceive count , visibility timeout  , message retention period
 
 ---
 ✅ On prem VM to AWS Cloud Migration
