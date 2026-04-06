@@ -146,7 +146,7 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 ---
 ✅ Log Migration
 - Splunk Logs to Opensearch Logs migration with opensearch pipelines with grok parameter & index alias with index lifecycle policy.  initially logs are coming to splunk via acquia server
-- Flow = Logs from acquia --> syslog ( from acquia side ) --> fluentbit ( EC2 ) --> SQS --> opensearch ingestion index 1 --> opensearch pipeline ( grok parameter ) --> opensearch ingestion index 2
+- Flow = Logs from acquia --> syslog ( from acquia side ) --> fluentbit ( EC2 ) --> SQS --> opensearch index 1 --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index 2
 - ⭐ difference between syslog & syslog-ng
 - ⭐ Can syslog-ng be used in place of fluentbit ?
 - ⭐ what type of SQS queue will u use ? FIFO or Standard ?
