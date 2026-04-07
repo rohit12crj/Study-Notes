@@ -109,6 +109,7 @@
 ✅ Different authentication techniques & when to use which with examples ?
 - Learn what authentication is, the basic methods like Basic Auth, Digest Auth, API keys, and sessions, then token-based authentication with Bearer tokens and JWTs, access and refresh tokens, OAuth2 and OpenID Connect, and SSO with SAML and OIDC
 - https://www.youtube.com/watch?v=iX8g4LqF8p8&t=97s
+- https://www.youtube.com/watch?v=_lTECv25N2U
 
 ---
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
@@ -127,15 +128,13 @@
 ✅ Dual Connectivity from on prem to AWS to Azure / GCP
 - https://youtu.be/doAVHFjWTqo?si=Zn1UOhFbslwsvGSZ
 - <img width="491" height="106" alt="image" src="https://github.com/user-attachments/assets/8099cae6-ba08-4cca-bf53-24388b37f41a" />
-
 - "In a hybrid multi-cloud setup, OSPF is used for internal routing within on-prem, while BGP is used for external connectivity with AWS Direct Connect and Azure ExpressRoute. Routes are redistributed between OSPF and BGP at the edge router. Primary and secondary paths are controlled using BGP attributes like Local Preference and AS Path Prepending. In case of failure of the primary path (AWS), BGP automatically fails over to the secondary path (Azure)."
-
-<img width="410" height="265" alt="image" src="https://github.com/user-attachments/assets/9ce85682-e0f6-4861-b7b3-cfcb8a65d4d4" />
+- <img width="410" height="265" alt="image" src="https://github.com/user-attachments/assets/9ce85682-e0f6-4861-b7b3-cfcb8a65d4d4" />
 
 ---
 ✅ Nginx Full Course of 1 hr 
 - https://youtu.be/9jZEfW8h5fQ?si=yt6wvKd30Btxn44d --> Abhishek
 
 ---
-✅ explain HA for all aws services in your project ?
+✅ explain HA for all aws services in your project ?  --> check DR Project
 
