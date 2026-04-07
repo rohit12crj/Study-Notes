@@ -1,4 +1,5 @@
 #### SQS
+✅ https://youtu.be/12CINbV4ptw?si=53s_DnoVCcQm3grZ
 
 ---
 ---
