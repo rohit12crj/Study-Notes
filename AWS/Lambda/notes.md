@@ -2,6 +2,9 @@
 - https://www.youtube.com/watch?v=XFGSuj83wdc  --> Rahul
 
 ---
+✅ Lmabda Batch Processing
+
+---
 ✅ Handler function
 - <img width="563" height="217" alt="image" src="https://github.com/user-attachments/assets/52cc35db-b1aa-4a24-94ef-9990b4f13941" />
 
