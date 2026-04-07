@@ -1,6 +1,9 @@
 ✅ https://www.youtube.com/playlist?list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv --> DevOps Shack Project Playlist
 
 ---
+✅ Self Hosted Github Runners in EKS / ECS
+
+---
 ✅ DR Project for 3 Tier web App 
 - https://www.youtube.com/watch?v=WYCbczFIj3E&t=1869s
 - <img width="949" height="461" alt="image" src="https://github.com/user-attachments/assets/fc0dbe03-84d3-4ce9-8f7c-8f6bb8e8712d" />
