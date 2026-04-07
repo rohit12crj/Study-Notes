@@ -145,10 +145,14 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 
 ---
 ✅ Splunk to OpenSearch Log Migration  --> check Splunk_to_OpenSearch_Log_Migration.docx
-- ⭐Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> SQS --> opensearch ingestion pipeline ( grok parameter ) --> opensearch index --> opensearch Dashboard
+- ⭐ Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> Writes to S3 --> S3 Object Notification -->  SQS --> opensearch ingestion pipeline ( grok parameter ) Polls SQS but reads from s3 --> opensearch index --> opensearch Dashboard  . Update the flow if required 
+- ⭐ is opensearch pipeline poll based or push based ?
+- ⭐ can syslog directly send the logs to sqs queue ?
 - ⭐ difference between syslog & syslog-ng
 - ⭐ Can syslog-ng be used in place of fluentbit ?
+- ⭐ Use of s3 ? how will u delete the s3 log files which have been successfully processed by sqs
 - ⭐ what type of SQS queue will u use ? FIFO or Standard ?
+- ⭐ since you are using SQS FIFO , how will u handle message duplication ?
 - ⭐ how does the fan out pattern works & on what triggers ?
 - ⭐ how does messages from dlq goes for retyring ? Add Lambda for DLQ auto-retry
 - ⭐ ECS Scale out patterns & on what triggers
@@ -159,7 +163,9 @@ Led an end-to-end migration of the organization's entire source control ecosyste
 - ⭐ For fluentbit ECS Cluster , write docker file with EFS Volume Mounting
 - ⭐ why NLB & not ALB ? what should be the NLB listener port no , protocol & target group rules
 - ⭐ what is buffering & backpressure handling & how did u achieve this ?
-- ⭐ what is sqs maxreceive count , visibility timeout  , message retention period
+- ⭐ what is sqs maxreceive count , visibility timeout  , message retention period set for your project
+- ⭐ write opensearch Ingestion pipeline configuration ( need to add in doc file )
+- ⭐ why sqs is being used ? can we omit it ? ( need to add in doc file )
 
 ---
 ✅ On prem VM to AWS Cloud Migration
