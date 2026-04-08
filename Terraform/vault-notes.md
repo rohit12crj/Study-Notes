@@ -8,3 +8,6 @@
 - steps on how to setup vault --> https://github.com/iam-veeramalla/terraform-zero-to-hero/blob/main/Day-7/02-vault-integration.md
 - vault comes in dev & prod mode
 - vault port no --> 8200 TCP
+
+---
+Prepare interview based question & answers from chat GPT
