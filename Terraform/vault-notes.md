@@ -1,0 +1,10 @@
+- https://www.youtube.com/watch?v=rMG7XZqN0PM&list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv&index=5 --> DevOps Shack
+- https://www.youtube.com/watch?v=TeD8jDem2gs&t=835s --> DevOps Shack
+- https://www.youtube.com/playlist?list=PL7iMyoQPMtAP7XeXabzWnNKGkCex1C_3C --> Rahul ( Playlist )
+- https://youtu.be/7xl4hY-W6Ts?si=lFPcBacoJWgNcr6G --> Abhishek
+- integrate Terraform vault with terraform tf files & access secret stored in vault in pass it to ec2 as tag -->  https://youtu.be/sIkRK33AY50?si=jgoAaf3ZRPvrQAxV --> Abhishek  --> needs vault provider & approle / azure ad authentication type
+- integrate Terraform vault with jenkins
+- integrate Terraform vault with github actions
+- steps on how to setup vault --> https://github.com/iam-veeramalla/terraform-zero-to-hero/blob/main/Day-7/02-vault-integration.md
+- vault comes in dev & prod mode
+- vault port no --> 8200 TCP
