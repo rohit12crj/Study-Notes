@@ -4,6 +4,11 @@
 - https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅  what are the managed services provide in terraform cloud ?
+- Vault
+- Drift detection
+  
+---
 ✅ if you are running aws cli on your local machine . never store the AWS keys & secret access key locally using aws-configure . Use tools like pulumi esc or Hashocorp Vault --> https://www.youtube.com/watch?v=z5N3zJuxv3M
 
 ---
