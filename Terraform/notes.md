@@ -1,8 +1,10 @@
-✅ https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf  --> Terraform ( Theory + Project Playlist ) ( Abhishek )
+✅ Videos
+- https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf  --> Terraform ( Theory + Project Playlist ) ( Abhishek )
+- https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
+- https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
-✅ https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
-
-✅ https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
+---
+✅ if you are running aws cli on your local machine . never store the AWS keys & secret access key locally using aws-configure . Use tools like pulumi esc or Hashocorp Vault --> https://www.youtube.com/watch?v=z5N3zJuxv3M
 
 ---
 ✅ Difference between mount point & volumes in ecs . Upload pictures pending
