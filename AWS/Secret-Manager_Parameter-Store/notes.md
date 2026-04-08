@@ -6,6 +6,8 @@
 - <img width="418" height="353" alt="image" src="https://github.com/user-attachments/assets/996a5695-8606-4f43-888f-96794fb8cffd" />
 - <img width="312" height="161" alt="image" src="https://github.com/user-attachments/assets/3ee49d40-bf00-43c8-ad5d-741d356fab91" />
 
+---
+✅ How will u generate dynamic secrets in secret manager ?
 
 ---
 ✅ Secret Manager --> Automatic Secret Rotation Process
