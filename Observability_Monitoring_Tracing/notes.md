@@ -5,6 +5,18 @@
 - Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
 ---
+✅ explain process of install prometheus , grafana  , alertmanager through helm in eks . how will u configure sso for these services , AWS SMTP for alert manager 
+
+---
+✅ explain process of using AMP ( AWS Managed Prometheus ) & AMG ( AWS Managed Grafana ) with EKS
+
+---
+✅ AWS Stack for observability
+- Metrics -->  Cloudwatch Metrics with alarms . how will u configure alarm fatigue , composite alarms & stop multiple alerts firing 
+- Log --> Cloudwatch Log groups
+- traces --> X-Ray
+
+---
 ✅ node exporter vs kube state metrics vs application level metrics
 - node exporter pod ( Node Level , runs as daemon set , used for hardware level metrics like CPU  Usage , memory usage, node exporter pod pulls info from host on which nodes are running & keeps the info at node_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB )
 - kube state metrics pods ( Cluster Level , runs as deploymnet , kube state metrics pulls the info from Kube API Server & keeps info at pod_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB from Kube API server  , common metrics include --> Pod status (Running, Pending, Failed) , Deployment replicas (desired vs available) 
