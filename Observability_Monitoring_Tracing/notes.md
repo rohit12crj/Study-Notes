@@ -6,12 +6,11 @@
 
 ---
 ✅ node exporter vs kube state metrics vs application level metrics
--node exporter pod ( Node Level , runs as daemon set , used for hardware level metrics like CPU  Usage , memory usage, node exporter pod pulls info from host on which nodes are running & keeps the info at node_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB )
+- node exporter pod ( Node Level , runs as daemon set , used for hardware level metrics like CPU  Usage , memory usage, node exporter pod pulls info from host on which nodes are running & keeps the info at node_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB )
 - kube state metrics pods ( Cluster Level , runs as deploymnet , kube state metrics pulls the info from Kube API Server & keeps info at pod_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB from Kube API server  , common metrics include --> Pod status (Running, Pending, Failed) , Deployment replicas (desired vs available) 
 - custom metrics ( Application level , from your_application/metrics endpoint --> application level metrics , u need to write service discovery manifest yaml file , else prometheus will not know from where to go to find the endpoint ) in prometheus . common metrics include HTTP request count , Latency (p95, p99) , Error rates . Exposed via 
 /metrics endpoint using libraries like --> Prometheus client (Java, Go, Python, Node.js)
 - There are also db exporters which are not installed by default
-
 
 ---
 ✅ Observability Tools
