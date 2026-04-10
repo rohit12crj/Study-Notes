@@ -3,6 +3,16 @@
 - https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions --> Abhishek
 
 ---
+✅  Miscellaneous items
+- <img width="484" height="71" alt="image" src="https://github.com/user-attachments/assets/d5b1d639-de8a-482c-bc37-df2716252bd1" />
+- <img width="373" height="221" alt="image" src="https://github.com/user-attachments/assets/74dc50ee-8ec0-4ea0-b4e9-bd1e4056052c" />
+- <img width="446" height="159" alt="image" src="https://github.com/user-attachments/assets/aa5c5226-8d76-4c5e-941c-46cb8770edd0" />
+- <img width="568" height="88" alt="image" src="https://github.com/user-attachments/assets/761a9478-37f3-4e9f-86a5-1f7e72a2b722" />
+
+
+
+
+---
 ✅ git force used for ?
 - It is used when you want to forcefully update the remote repository
 - when to use it ?
