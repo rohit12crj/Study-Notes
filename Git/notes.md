@@ -7,6 +7,13 @@
 - It is used when you want to forcefully update the remote repository
 - when to use it ?
 - <img width="339" height="125" alt="image" src="https://github.com/user-attachments/assets/54bc74bb-1e60-4816-88b7-12fb924dc693" />
+| Command                       | Meaning                        |
+| ----------------------------- | ------------------------------ |
+| `git push --force`            | Overwrite remote history       |
+| `git push --force-with-lease` | Safer force push               |
+| Used after                    | rebase, history rewrite |
+| Risk                          | Can delete teammates' commits  |
+
 
 ---
 ✅ Difference between PR manual review & codeowners file  
@@ -71,16 +78,16 @@
 ✅ git merging techniques & when to use which ?
 
 - Fast-Forward Merge
+- <img width="513" height="414" alt="image" src="https://github.com/user-attachments/assets/2068c668-2636-4de3-9538-e2ab58c537e7" />
+- <img width="346" height="237" alt="image" src="https://github.com/user-attachments/assets/54e97a68-3e08-44b4-8e64-7afa05065788" />
+- <img width="506" height="464" alt="image" src="https://github.com/user-attachments/assets/2c57185c-c557-4135-9c23-6998404f1f95" />
+- <img width="493" height="57" alt="image" src="https://github.com/user-attachments/assets/d60c1ac1-3988-4091-8abf-6199daf3733a" />
+- <img width="532" height="390" alt="image" src="https://github.com/user-attachments/assets/9ad647d8-d52c-4b9a-9939-2adc956b6830" />
+- <img width="542" height="425" alt="image" src="https://github.com/user-attachments/assets/2893a3ac-78a0-4645-b82e-35c976b360c0" />
+- <img width="536" height="392" alt="image" src="https://github.com/user-attachments/assets/03e8953d-b371-4faf-a4f9-df05d39e4f1f" />
+- <img width="609" height="442" alt="image" src="https://github.com/user-attachments/assets/c85aa776-04e3-450d-8706-c7627b53f13c" />
+- <img width="576" height="319" alt="image" src="https://github.com/user-attachments/assets/6d94f2f9-dc0a-46c5-ac41-19d620c2e31a" />
 
-<img width="513" height="414" alt="image" src="https://github.com/user-attachments/assets/2068c668-2636-4de3-9538-e2ab58c537e7" />
-
-
-<img width="346" height="237" alt="image" src="https://github.com/user-attachments/assets/54e97a68-3e08-44b4-8e64-7afa05065788" />
-
-
-<img width="506" height="464" alt="image" src="https://github.com/user-attachments/assets/2c57185c-c557-4135-9c23-6998404f1f95" />
-
-<img width="493" height="57" alt="image" src="https://github.com/user-attachments/assets/d60c1ac1-3988-4091-8abf-6199daf3733a" />
 
 ---
 ✅ What is HEAD in Git? explain detached HEAD ? When Detached HEAD is Useful ?
