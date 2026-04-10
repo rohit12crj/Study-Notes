@@ -4,6 +4,9 @@
 
 ---
 ✅ git force used for ?
+- It is used when you want to forcefully update the remote repository
+- when to use it ?
+- <img width="339" height="125" alt="image" src="https://github.com/user-attachments/assets/54bc74bb-1e60-4816-88b7-12fb924dc693" />
 
 ---
 ✅ Difference between PR manual review & codeowners file  
