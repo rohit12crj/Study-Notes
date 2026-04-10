@@ -11,6 +11,7 @@
 - custom metrics ( Application level , from your_application/metrics endpoint --> application level metrics , u need to write service discovery manifest yaml file , else prometheus will not know from where to go to find the endpoint ) in prometheus . common metrics include HTTP request count , Latency (p95, p99) , Error rates . Exposed via 
 /metrics endpoint using libraries like --> Prometheus client (Java, Go, Python, Node.js)
 - There are also db exporters which are not installed by default
+- all these metrics are stored in TSDB , which can be querried using prom QL
 
 ---
 ✅ Observability Tools
