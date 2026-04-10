@@ -87,7 +87,8 @@
 - <img width="536" height="392" alt="image" src="https://github.com/user-attachments/assets/03e8953d-b371-4faf-a4f9-df05d39e4f1f" />
 - <img width="609" height="442" alt="image" src="https://github.com/user-attachments/assets/c85aa776-04e3-450d-8706-c7627b53f13c" />
 - <img width="576" height="319" alt="image" src="https://github.com/user-attachments/assets/6d94f2f9-dc0a-46c5-ac41-19d620c2e31a" />
-
+- <img width="509" height="101" alt="image" src="https://github.com/user-attachments/assets/6cf3a645-918f-43c2-99a9-f23e37b95c43" />
+- Rebase does not preserve history because it rewrites commits by creating new ones with different IDs. While it produces a clean linear history, the original commit lineage is lost, unlike merge which preserves the full history including divergence.
 
 ---
 ✅ What is HEAD in Git? explain detached HEAD ? When Detached HEAD is Useful ?
@@ -126,8 +127,7 @@ These are two ways Git manages storage efficiency and performance. Git periodica
 
 ---
 ✅ Why doesn’t Git delete unreachable commits immediately?
-
-Because Git keeps them temporarily to allow recovery using git reflog, preventing accidental data loss.
+- Because Git keeps them temporarily to allow recovery using git reflog, preventing accidental data loss.
 
 ---
 ✅ what are rebase leftovers ?
@@ -181,8 +181,7 @@ Because Git keeps them temporarily to allow recovery using git reflog, preventin
 
 ---
 ✅ How do you undo the last commit? Soft vs Hard reset ?
-
-Undoing the last commit in Git can mean different things depending on what you want to keep:
+- Undoing the last commit in Git can mean different things depending on what you want to keep:
 - keep the changes but remove the commit
 - remove both commit and changes
 - undo a commit that was already pushed
@@ -196,11 +195,9 @@ Undoing the last commit in Git can mean different things depending on what you w
 | Edit last commit                  | `git commit --amend`      |
 
 ---
-
 ✅ How do you revert a merge commit?
 - Reverting a merge commit is different from reverting a normal commit because a merge has two parent commits. Git needs to know which parent branch should be considered the mainline.
-
-<img width="520" height="188" alt="image" src="https://github.com/user-attachments/assets/30d947e4-6263-4af5-9927-a68c46bfeb59" />
+- <img width="520" height="188" alt="image" src="https://github.com/user-attachments/assets/30d947e4-6263-4af5-9927-a68c46bfeb59" />
 
 ---
 ✅ How do you revert a revert commit?
@@ -260,8 +257,7 @@ Undoing the last commit in Git can mean different things depending on what you w
 
 ---
 ✅ What are Git Hooks (pre-commit, pre-push) & give example when to use then ?
-
-<img width="563" height="393" alt="image" src="https://github.com/user-attachments/assets/5be03484-9eb5-449c-b759-4e163d59c899" />
+- <img width="563" height="393" alt="image" src="https://github.com/user-attachments/assets/5be03484-9eb5-449c-b759-4e163d59c899" />
 
 ---
 ✅ Someone force-pushed and broke production. What do you do?
