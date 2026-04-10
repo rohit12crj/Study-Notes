@@ -5,6 +5,15 @@
 - Github Repo ( Abhishek )  --> https://github.com/iam-veeramalla/observability-zero-to-hero/
 
 ---
+✅ node exporter vs kube state metrics vs application level metrics
+-node exporter pod ( Node Level , runs as daemon set , used for hardware level metrics like CPU  Usage , memory usage, node exporter pod pulls info from host on which nodes are running & keeps the info at node_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB )
+- kube state metrics pods ( Cluster Level , runs as deploymnet , kube state metrics pulls the info from Kube API Server & keeps info at pod_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB from Kube API server  , common metrics include --> Pod status (Running, Pending, Failed) , Deployment replicas (desired vs available) 
+- custom metrics ( Application level , from your_application/metrics endpoint --> application level metrics , u need to write service discovery manifest yaml file , else prometheus will not know from where to go to find the endpoint ) in prometheus . common metrics include HTTP request count , Latency (p95, p99) , Error rates . Exposed via 
+/metrics endpoint using libraries like --> Prometheus client (Java, Go, Python, Node.js)
+- There are also db exporters which are not installed by default
+
+
+---
 ✅ Observability Tools
 - ⭐ metrics (what’s happening) --> 
 - ⭐ logs (why it happened) --> 
@@ -49,7 +58,7 @@ what metrics & custom metrics were u monitoring in your eks cluster
 
 installation of prometheus , grafana ( in the helm chart which abhishek uses both prometheus & grafana are installed ) , alert manager ( since alert manager is not a default component of prometheus , how will u install it ) on eks cluster ( https://github.com/iam-veeramalla/observability-zero-to-hero/blob/main/day-2/readme.md )
 
-difference between node exporter pod ( runs as daemon set , used for hardware level metrics like CPU , memory , node exporter pod pulls info from host on which nodes are running & keeps the info at node_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB ) , kube state metrics pods (  kube state metrics pulls the info from Kube API Server & keeps info at pod_ip/metrics endpoint , prometheus server scraps this endpoint & keeps in TSDB from Kube API server ) , custom metrics (from your_application/metrics endpoint --> application level metrics , u need to write service discovery manifest yaml file , else prometheus will not know from where to go to find the endpoint ) in prometheus ? There are also db exporters which are not installed by default ?
+
 
 suppose u have 5 eks custer . how will u setup 1 single setup prometheus & connect with all 5 cluster ?
 
