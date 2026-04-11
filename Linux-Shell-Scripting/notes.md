@@ -6,6 +6,15 @@
 - https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
 
 ---
+✅ Namespaces & Cgroups 
+-  Namespaces provide isolation, cgroups provide resource control — together they enable containers
+- <img width="239" height="45" alt="image" src="https://github.com/user-attachments/assets/6211dabf-d33e-4d6e-9f85-be040e4b7beb" />
+- <img width="367" height="232" alt="image" src="https://github.com/user-attachments/assets/cedb6386-0e21-45e4-adef-e44165c606c8" />
+- <img width="422" height="428" alt="image" src="https://github.com/user-attachments/assets/fc59a915-782d-49a6-a0d1-0e48b934c287" />
+- <img width="381" height="404" alt="image" src="https://github.com/user-attachments/assets/6fa9b283-c045-4f53-b8d2-3c73dbbf4438" />
+
+
+---
 ✅  CPU Bottlenek vs I/O Bottleneck
 
 ---
