@@ -13,9 +13,24 @@
 - <img width="422" height="428" alt="image" src="https://github.com/user-attachments/assets/fc59a915-782d-49a6-a0d1-0e48b934c287" />
 - <img width="381" height="404" alt="image" src="https://github.com/user-attachments/assets/6fa9b283-c045-4f53-b8d2-3c73dbbf4438" />
 
+---
+✅ Explain Linux architecture using diagram
 
 ---
-✅  CPU Bottlenek vs I/O Bottleneck
+✅ CPU Bottlenek vs I/O Bottleneck
+- A system is CPU bottlenecked when the processor is fully utilized and cannot handle more work
+- <img width="313" height="221" alt="image" src="https://github.com/user-attachments/assets/ae8053b7-779e-4ccf-bc14-983151afb5fe" />
+- <img width="297" height="135" alt="image" src="https://github.com/user-attachments/assets/eee1e9f3-de27-4fae-8285-9d52d1a2c2c5" />
+- I/O bottleneck occurs when the system spends time waiting on disk or network operations
+- <img width="304" height="208" alt="image" src="https://github.com/user-attachments/assets/d944b76e-bbbe-484a-8d8f-92a1f6eb0c3f" />
+- <img width="313" height="137" alt="image" src="https://github.com/user-attachments/assets/3c40b6c3-c63c-40b5-b97c-b4d59025ea06" />
+- I first check top. If CPU is ~100% and idle is near zero, it's CPU bound. If CPU is idle but wa% is high, it's I/O bound. Then I confirm using iostat for disk utilization and latency
+
+---
+✅ lsblk --> to check disk partition
+
+---
+✅ iostat command 
 
 ---
 Difference between TCP & UDP 
