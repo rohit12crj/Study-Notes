@@ -3,6 +3,25 @@
 - https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions --> Abhishek
 
 ---
+✅ Git Tag , relesase , release managenent , semantic versioning
+- A Git tag marks a specific commit, while a GitHub release turns that tag into a distributable version with metadata and artifacts
+- https://www.youtube.com/watch?v=4qwadZfPsik
+- https://www.youtube.com/watch?v=lws2wDaWfPw
+- <img width="297" height="121" alt="image" src="https://github.com/user-attachments/assets/efe4a637-c8a0-43b2-beb7-92b6978220ca" />
+| Feature        | Git Tag     | GitHub Release   |
+| -------------- | ----------- | ---------------- |
+| Created by     | Git CLI     | GitHub UI / API  |
+| Purpose        | Mark commit | Publish version  |
+| Contains code? | ❌ No        | ✅ Yes (snapshot) |
+| Release notes  | ❌ No        | ✅ Yes            |
+| Attach files   | ❌ No        | ✅ Yes            |
+| Visibility     | Dev-focused | User-friendly    |
+| Dependency     | Independent | Requires tag     |
+
+
+
+
+---
 ✅  where is git clone mirror used ?
 - <img width="562" height="31" alt="image" src="https://github.com/user-attachments/assets/ffe898b5-907f-44c0-a71d-b44a9b3e5ebf" />
 - <img width="596" height="35" alt="image" src="https://github.com/user-attachments/assets/fba5dd46-9f2d-4d25-af9d-02fd0a8410ac" />
