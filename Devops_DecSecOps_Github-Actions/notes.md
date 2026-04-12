@@ -203,11 +203,13 @@ Examples:
 - SCA --> dependency scanning  --> Create dependabot.yml in .github/
 - secret scanning  --> no yaml file presnet . But can configure push
 - no DAST tool from github
+- How do you control updates in dependabot ?
+- <img width="212" height="88" alt="image" src="https://github.com/user-attachments/assets/efdacda1-60da-4aaf-ae69-b40d8b5c374e" />
 - <img width="836" height="480" alt="image" src="https://github.com/user-attachments/assets/d4a6ecdf-b264-48b2-b004-59132311a81f" />
 - <img width="565" height="308" alt="image" src="https://github.com/user-attachments/assets/5972522e-c7d8-472e-9e56-d835a7bda2ae" />
 - <img width="560" height="127" alt="image" src="https://github.com/user-attachments/assets/cd898793-3183-43a9-87ed-27d9f7a65081" />
 - <img width="409" height="298" alt="image" src="https://github.com/user-attachments/assets/f39f93d8-9173-4576-a701-6f64d25c95f9" />
-
+- <img width="386" height="140" alt="image" src="https://github.com/user-attachments/assets/7a1cebd6-7a59-45f8-95b9-bf344aa756ca" />
 
 ---
 ✅ Different types of workflow 
