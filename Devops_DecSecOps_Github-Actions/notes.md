@@ -203,9 +203,16 @@ Examples:
 ---
 ---
 ---
+✅ how to write pipeline file for monorepos
+- <img width="590" height="329" alt="image" src="https://github.com/user-attachments/assets/0f0549f0-de11-4635-be39-34b7c085b34d" />
+- <img width="545" height="371" alt="image" src="https://github.com/user-attachments/assets/30a37e86-0b15-47a4-9396-78ca71502646" />
+- <img width="517" height="365" alt="image" src="https://github.com/user-attachments/assets/2b7b5f0b-b643-43aa-8cab-7186ebcc799b" />
+- <img width="570" height="268" alt="image" src="https://github.com/user-attachments/assets/a9f0af84-38b6-464d-9a45-8cd4e2dc830d" />
+- <img width="569" height="208" alt="image" src="https://github.com/user-attachments/assets/52bc8535-f169-4e81-927b-986404a9a594" />
+
+---
 ✅ Github SBOM ( Software Bill of Materials )
 - <img width="815" height="437" alt="image" src="https://github.com/user-attachments/assets/291ac125-7302-414f-91e4-5fb42762771d" />
-
 
 ---
 ✅ Branch Protection rules
