@@ -128,6 +128,8 @@
 - Tool used in SCA
 - Trivy command used --> trivy fs --format table -o trivy-fs-report.html
 - https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu --> DevOps Shack
+- SBOM with Trivy Explained (CycloneDX vs SPDX) --> https://www.youtube.com/watch?v=AsPEbZ21PdA
+- Generate SBOM with Trivy --> https://www.youtube.com/watch?v=QOVXr8Zmm_Q
 
 ---
 ✅ OWASP ZAP
