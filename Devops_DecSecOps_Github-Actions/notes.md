@@ -197,6 +197,10 @@ Examples:
 ---
 ---
 ---
+✅ what is github issue
+- A GitHub Issue is a built-in way in GitHub to track work, bugs, ideas, and discussions related to a repository.
+
+---
 ✅ my terraform deletion taking too much time . how many minutes will be github pipleine wait ?
 - GitHub Actions will wait up to the job timeout limit — by default 360 minutes (6 hours).
 - <img width="445" height="412" alt="image" src="https://github.com/user-attachments/assets/e7e18562-487d-40fc-adb3-91802b56917b" />
