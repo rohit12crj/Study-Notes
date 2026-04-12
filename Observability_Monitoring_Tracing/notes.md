@@ -58,7 +58,7 @@ hybrid cloud monitoring using site 24*7 --> https://youtu.be/jRc2vFmkILs?si=RAzc
 
 opensearch --> https://www.youtube.com/watch?v=OSShB_cXisE&list=PLdpzxOOAlwvJUIfwmmVDoPYqXXUNbdBmb&index=9  -> fetches the logs from k8s cluster using fluentbit into opensearch & visualizes using opensearch dashboards  . fluentbit needs to be deployed as daemon set with configuration of how to connect to aws managed opensearch in config maps or secrets
 
-ebpf
+ebpf --> https://www.youtube.com/watch?v=oVrvfWK2ci4
 
 what is push gateway ? give an example where u would use pushgateway ?
 
