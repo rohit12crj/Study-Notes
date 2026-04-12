@@ -214,6 +214,7 @@ Examples:
 ---
 ✅ Github Actions specific Devsecops tools
 - https://www.youtube.com/watch?v=BNCv2O6vQC8
+- https://www.youtube.com/watch?v=PHmnkhLZWj0&t=240s
 - SAST --> code scanning --> By adding a workflow (codeql.yml) inside .github/workflows/
 - SCA --> dependency scanning  --> Create dependabot.yml in .github/
 - secret scanning  --> no yaml file presnet . But can configure push
