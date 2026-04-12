@@ -197,6 +197,11 @@ Examples:
 ---
 ---
 ---
+✅ Branch Protection rules
+- <img width="687" height="254" alt="image" src="https://github.com/user-attachments/assets/eb474c99-3a82-41b6-b6e4-3226157a5e44" />
+
+
+---
 ✅ what is github issue
 - A GitHub Issue is a built-in way in GitHub to track work, bugs, ideas, and discussions related to a repository.
 
