@@ -203,6 +203,11 @@ Examples:
 ---
 ---
 ---
+✅ How to login to github hosted runners for troubleshooting
+- use tmate
+- https://www.youtube.com/watch?v=HWGot0-P1Ps
+
+---
 ✅ how to write pipeline file for monorepos
 - <img width="590" height="329" alt="image" src="https://github.com/user-attachments/assets/0f0549f0-de11-4635-be39-34b7c085b34d" />
 - <img width="545" height="371" alt="image" src="https://github.com/user-attachments/assets/30a37e86-0b15-47a4-9396-78ca71502646" />
