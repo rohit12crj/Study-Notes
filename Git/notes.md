@@ -3,6 +3,11 @@
 - https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions --> Abhishek
 
 ---
+✅  where is git clone mirror used ?
+- <img width="562" height="31" alt="image" src="https://github.com/user-attachments/assets/ffe898b5-907f-44c0-a71d-b44a9b3e5ebf" />
+- <img width="596" height="35" alt="image" src="https://github.com/user-attachments/assets/fba5dd46-9f2d-4d25-af9d-02fd0a8410ac" />
+
+---
 ✅  Miscellaneous items
 - <img width="484" height="71" alt="image" src="https://github.com/user-attachments/assets/d5b1d639-de8a-482c-bc37-df2716252bd1" />
 - <img width="373" height="221" alt="image" src="https://github.com/user-attachments/assets/74dc50ee-8ec0-4ea0-b4e9-bd1e4056052c" />
