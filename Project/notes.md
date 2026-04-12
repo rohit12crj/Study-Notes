@@ -76,57 +76,13 @@ caddy frontend & backend tasks are exposed via alb , with 2 separate target grou
 
 ---
 ✅ Gitlab to Github Enterprise Repo Migration
-#### Project Overview 
-Led an end-to-end migration of the organization's entire source control ecosystem ( around 500+ Repos ) from GitLab to GitHub Enterprise, encompassing repository migration, CI/CD pipeline conversion, secret management, commit history preservation, Git LFS asset migration, and user identity federation through Azure Active Directory and GitHub Teams. The migration was executed with zero data loss and minimal disruption to active development workflows.
-
-#### Process Flow
-⭐ Git Repository Migration
-- Audited all GitLab groups and projects to inventory repositories, including size, branch count, open MRs, and activity recency.
-- Used git clone --mirror to create bare clones of all GitLab repos, preserving all branches, tags, and full commit history.
-- Pushed mirrored repos to GitHub using git push --mirror to the new GitHub remote, ensuring 1:1 parity of all refs.
-- Validated post-migration integrity by comparing branch counts, latest commit SHAs, and tag lists between source and destination.
-- Configured GitLab repositories as read-only post-cutover with redirect notices pointing to new GitHub URLs.
-
-⭐ CI/CD Pipeline Conversion (GitLab CI → GitHub Actions)
-- Mapped GitLab CI/CD constructs (.gitlab-ci.yml) to GitHub Actions equivalents: stages → jobs, before_script → steps with run, artifacts → actions/upload-artifact, cache → actions/cache.
-- Rewrote pipeline YAML for all services, converting GitLab's DAG-based pipeline dependencies (needs:) to GitHub Actions' job-level needs: dependencies with matrix strategies where applicable.
-- Converted GitLab environment-specific deployments (deploy_staging, deploy_prod) to GitHub Actions environments with branch protection rules and required reviewers.
-- Replaced GitLab-specific Docker-in-Docker (dind) builds with GitHub Actions' native docker/build-push-action for container image builds.
-- Tested all converted pipelines in dry-run mode before decommissioning GitLab runners.
-
-⭐ Repository Secrets & Variables Migration
-- Inventoried all GitLab CI/CD variables (project-level, group-level, protected, masked) using the GitLab API.
-- Categorized secrets by scope (environment-specific vs. global) and sensitivity level to map them to GitHub's equivalent scopes: repository secrets, environment secrets, and organization secrets.
-- Used GitHub CLI (gh secret set) and GitHub API to bulk-import secrets programmatically, avoiding manual entry and ensuring consistency.
-- Validated secret availability within GitHub Actions workflows by running test pipeline runs post-migration.
-- Implemented secret rotation post-migration to ensure no credentials were retained in the old GitLab environment.
-
-⭐ Git Commit History Migration
-- Preserved complete commit history including author names, emails, commit timestamps, commit messages, and parent relationships using git clone --mirror.
-- Where author email mismatches existed between GitLab users and GitHub/Azure AD identities, used git-filter-repo to rewrite author metadata, ensuring commits in GitHub attributed correctly to active user accounts.
-- Verified history integrity post-migration by comparing git log --oneline output and commit counts between GitLab and GitHub for all critical repositories.
-
-⭐ Git LFS Migration
-- Identified all repositories using Git LFS by scanning .gitattributes files and running git lfs ls-files across all repos.
-- Used git lfs fetch --all and git lfs push --all to migrate LFS objects from GitLab's LFS storage to GitHub LFS, preserving all pointer files and actual binary assets (design files, media, large datasets).
-- Validated LFS integrity by checking out LFS-tracked files on developer machines post-migration and confirming file sizes and checksums matched pre-migration values.
-- Updated internal documentation to reflect GitHub LFS billing implications and storage quotas.
-
-⭐ GitLab Users to Azure AD — GitHub Teams Federation
-- Mapped all active GitLab users to their corresponding Azure AD identities, resolving discrepancies in usernames and email addresses with HR records
-- Configured GitHub Enterprise with Azure AD SAML SSO, enabling employees to authenticate to GitHub using their existing corporate credentials.
-- Enabled SCIM provisioning between Azure AD and GitHub Enterprise to automate user lifecycle management: new hires auto-provisioned, leavers auto-deprovisioned.
-- Recreated GitLab group structures as GitHub Teams, mirroring permission hierarchies (Owner → Admin, Maintainer → Maintain, Developer → Write, Reporter → Read).
-- Assigned GitHub Teams to repositories with equivalent access levels, validated by audit of repository permission reports post-migration.
-- Deactivated GitLab accounts post-migration to eliminate dual identity sprawl and reduce license costs.
-
-#### Outcomes Achieved
-- Migrated 100+ repositories with zero data loss and full commit history preservation
-•	All CI/CD pipelines converted and operational on GitHub Actions within the migration window
-•	Eliminated GitLab licensing costs post-migration
-•	Azure AD SSO + SCIM eliminated manual user provisioning, reducing onboarding time for new engineers
-•	Unified identity model via Azure AD improved security posture and simplified access reviews
-•	Git LFS assets fully intact with no broken large file references
+- <img width="437" height="443" alt="image" src="https://github.com/user-attachments/assets/d9a54ced-a2b9-498b-90cd-880653d79232" />
+- <img width="421" height="259" alt="image" src="https://github.com/user-attachments/assets/6f3723b3-7126-4c5f-a7c3-42fa62f25997" />
+- <img width="518" height="366" alt="image" src="https://github.com/user-attachments/assets/df8fde13-8fe0-4583-8be4-2f43a447c70b" />
+- <img width="431" height="302" alt="image" src="https://github.com/user-attachments/assets/68addc51-b331-486a-915c-f7f3e22a8abd" />
+- <img width="430" height="445" alt="image" src="https://github.com/user-attachments/assets/acc4b3b6-f8ef-461b-a479-19a978655b3d" />
+- <img width="450" height="343" alt="image" src="https://github.com/user-attachments/assets/38bac152-4cd0-4f63-bd0d-4eb3c500e698" />
+- <img width="569" height="305" alt="image" src="https://github.com/user-attachments/assets/66655eb1-3336-4615-aff3-e1dc9638d94e" />
 
 ---
 ✅ EKS Project + Devsecops Pipeline
