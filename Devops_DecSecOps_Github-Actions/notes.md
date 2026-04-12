@@ -197,6 +197,12 @@ Examples:
 ---
 ---
 ---
+✅ my terraform deletion taking too much time . how many minutes will be github pipleine wait ?
+- GitHub Actions will wait up to the job timeout limit — by default 360 minutes (6 hours).
+- <img width="445" height="412" alt="image" src="https://github.com/user-attachments/assets/e7e18562-487d-40fc-adb3-91802b56917b" />
+- <img width="574" height="334" alt="image" src="https://github.com/user-attachments/assets/50340f76-0cae-4b4c-a720-cd58d78c8e08" />
+
+---
 ✅ Github Actions specific Devsecops tools
 - https://www.youtube.com/watch?v=BNCv2O6vQC8
 - SAST --> code scanning --> By adding a workflow (codeql.yml) inside .github/workflows/
