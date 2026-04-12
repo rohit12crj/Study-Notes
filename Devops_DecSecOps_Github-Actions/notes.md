@@ -197,6 +197,16 @@ Examples:
 ---
 ---
 ---
+✅ Github Actions specific Devsecops tools
+- https://www.youtube.com/watch?v=BNCv2O6vQC8
+- code scanning using codeQl.yml
+- dependency scanning using dependabot.yml
+- secret scanning  --> no yaml file presnet . But can configure push
+- <img width="836" height="480" alt="image" src="https://github.com/user-attachments/assets/d4a6ecdf-b264-48b2-b004-59132311a81f" />
+- <img width="565" height="308" alt="image" src="https://github.com/user-attachments/assets/5972522e-c7d8-472e-9e56-d835a7bda2ae" />
+- <img width="560" height="127" alt="image" src="https://github.com/user-attachments/assets/cd898793-3183-43a9-87ed-27d9f7a65081" />
+
+---
 ✅ Different types of workflow 
 - <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9f9fa9e7-412d-430e-b1aa-3d1c45610ea4" />
 - <img width="539" height="252" alt="image" src="https://github.com/user-attachments/assets/e96fda19-e7cb-42a9-b9c8-6dd8f670ffbe" />
