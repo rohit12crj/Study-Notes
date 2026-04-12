@@ -23,7 +23,7 @@
 - <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
 
 ---
-✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
+✅ explain ci & cd with different pipelines & why to follow this approach 
 - ci pipeline worflow  final step --> Push Docker Image to ECR Repo
 - cd pipeline workflow --> download ECR Images --> updates Task definition ( if any ) --> deploy Image to ECS Services ( Update Task definition image section if necessary ) --> DAST Scan
 - cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part ( Update task definition ) , no need to build the images .
