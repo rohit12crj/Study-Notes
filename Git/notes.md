@@ -275,7 +275,10 @@ These are two ways Git manages storage efficiency and performance. Git periodica
 
 ---
 ✅ Git branching strategy used in companies (GitFlow vs Trunk-Based Development) ?
-- https://www.youtube.com/watch?v=GQQqf-C2ha4&t=11s  --> Nana
+- Git Flow ( Primarily used for  maintaining multiple versions , but not frequent release )
+- Github Flow ( not suitable for maintaining multiple versions , used for frequent release )
+- Trunk Based Development Flow ( not suitable for maintaining multiple versions , used for frequent release )
+- https://www.youtube.com/watch?v=GQQqf-C2ha4&t=11s  --> Nana --> very good video
 - https://www.youtube.com/watch?v=MCyvYT8FS5w --> Abhishek
 - Companies usually follow two main Git branching strategies depending on team size, release frequency, and CI/CD maturity:
 - GitFlow → structured, many long live branches
@@ -285,9 +288,13 @@ These are two ways Git manages storage efficiency and performance. Git periodica
 | `main` / `master` | production code                                              |
 | `develop`         | integration branch                                           |
 | `feature/*`       | new features --> Work on feature → merge back to develop.    |
-| `release/*`       | prepare release                                              |
+| `release/*`       | check below details                                          |
 | `hotfix/*`        | production fixes --> Fix → merge to both develop & main      |
-
+- Release branches are created from develop and merged into both main (prod) and back into develop.
+- <img width="425" height="225" alt="image" src="https://github.com/user-attachments/assets/b948ffee-d151-4b38-b545-0809065404cf" />
+- <img width="424" height="268" alt="image" src="https://github.com/user-attachments/assets/dea721cb-dc79-4b45-a9f4-2853c103fdfb" />
+- <img width="440" height="352" alt="image" src="https://github.com/user-attachments/assets/d4b8a0cb-03a6-4015-a888-47adf7725183" />
+- Once  release is created from the tag in Github UI , it has all the files as zip code . users acan download that code & launch that specif app version
 - Trunk-Based Development (TBD) → minimal branches, continuous integration , Trunk-Based Development uses one main branch (trunk) where developers integrate frequently.Short-lived feature branches may exist but are very short-lived.
 
 | Feature              | GitFlow     | Trunk-Based Development |
