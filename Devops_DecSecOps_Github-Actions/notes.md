@@ -130,6 +130,9 @@
 - https://youtu.be/dwce6Yl9N9Q?si=aiYFls_loIIN7PRu --> DevOps Shack
 - SBOM with Trivy Explained (CycloneDX vs SPDX) --> https://www.youtube.com/watch?v=AsPEbZ21PdA
 - Generate SBOM with Trivy --> https://www.youtube.com/watch?v=QOVXr8Zmm_Q
+- Centralized Trivy server for all pipleines to call --> https://www.youtube.com/watch?v=z65g9gFIYEA&list=PLBr8obKbpkYsGrdKwFXqRTYcvv1KELCLn&index=16
+- integrating Trivy with Jenkins & generating SBOM --> https://www.youtube.com/watch?v=FdbWJzvymkg&list=PLBr8obKbpkYsGrdKwFXqRTYcvv1KELCLn&index=17
+- <img width="465" height="231" alt="image" src="https://github.com/user-attachments/assets/28ecd50f-c56a-4b52-b549-624e33837ef6" />
 
 ---
 ✅ OWASP ZAP
