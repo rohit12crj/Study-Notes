@@ -197,9 +197,13 @@ Examples:
 ---
 ---
 ---
+✅ Github SBOM ( Software Bill of Materials )
+- <img width="815" height="437" alt="image" src="https://github.com/user-attachments/assets/291ac125-7302-414f-91e4-5fb42762771d" />
+
+
+---
 ✅ Branch Protection rules
 - <img width="687" height="254" alt="image" src="https://github.com/user-attachments/assets/eb474c99-3a82-41b6-b6e4-3226157a5e44" />
-
 
 ---
 ✅ what is github issue
