@@ -3,6 +3,9 @@
 - https://youtu.be/0J9xglafVuI?si=uK4obcxYLTd5Jpfj --> pagerduty --> used for end to end incident management , important for SRE , no need to go through the video ,just for reference
 
 ---
+✅  p50 vs p95 latency
+
+---
 ✅ what is a runbook 
 
 ---
