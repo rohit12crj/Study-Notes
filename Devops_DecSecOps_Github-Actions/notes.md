@@ -20,8 +20,18 @@
 - Deploy Image to ECS Service
 - DAST --> OWASP ZAP
 - Checkov --> (Terraform + K8s manifests) scanning
+- <img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
 
-<img width="623" height="416" alt="image" src="https://github.com/user-attachments/assets/83917fdd-4199-4c9d-b45d-087fbbbf6757" />
+---
+✅ explain ci & cd with different pipelines & why to follow this approach ( wait for abhishek pipeline video )
+- ci pipeline worflow  final step --> Push Docker Image to ECR Repo
+- cd pipeline workflow --> download ECR Images --> updates Task definition ( if any ) --> deploy Image to ECS Services ( Update Task definition image section if necessary ) --> DAST Scan
+- cd is seperate because if in ECS 2 task conatiners are required instead of 1 , then we should just modify the cd part ( Update task definition ) , no need to build the images .
+- ci pipeline should not run when task definition file is modified in the cd folder as it would create loop ( updating cd folder triggers ci pipleine which again triggers cd pipeline ) . use path ignore in ci pipeline to fix this 
+- cd pipleine should only run when ci is completed successfully without errors , check below images how it can be done in github actions
+- <img width="471" height="311" alt="image" src="https://github.com/user-attachments/assets/c86dc2e1-83fb-4050-974e-54d29e8a4723" />
+- <img width="513" height="335" alt="image" src="https://github.com/user-attachments/assets/5efe9241-2b18-43e1-81d4-a97bf221bb2e" />
+- <img width="368" height="163" alt="image" src="https://github.com/user-attachments/assets/c87c2f23-bebe-4f65-839e-bc7c4ebcc61b" />
 
 ---
 ✅  Among the above stages which all stages can go in parallel 
