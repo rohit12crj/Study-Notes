@@ -6,6 +6,9 @@
 ✅  where is git clone mirror used ?
 - <img width="562" height="31" alt="image" src="https://github.com/user-attachments/assets/ffe898b5-907f-44c0-a71d-b44a9b3e5ebf" />
 - <img width="596" height="35" alt="image" src="https://github.com/user-attachments/assets/fba5dd46-9f2d-4d25-af9d-02fd0a8410ac" />
+- <img width="327" height="68" alt="image" src="https://github.com/user-attachments/assets/6dc7239b-aba6-4bd4-a564-e9e48404f069" />
+- <img width="511" height="142" alt="image" src="https://github.com/user-attachments/assets/e32c6328-3909-402c-93f2-1681e8a87ec9" />
+
 
 ---
 ✅  Miscellaneous items
