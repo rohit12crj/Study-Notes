@@ -16,6 +16,12 @@
 - <img width="557" height="398" alt="image" src="https://github.com/user-attachments/assets/269e649e-dac3-4f86-9105-8139709f588f" />
 
 ---
+✅ what does .git folder contains
+- <img width="586" height="407" alt="image" src="https://github.com/user-attachments/assets/36eff103-ba23-4df0-8460-55cab750b79a" />
+- refs folder contains below items
+- <img width="404" height="255" alt="image" src="https://github.com/user-attachments/assets/8492f571-b36e-4af8-bad6-94085c2b1565" />
+
+---
 ✅  Miscellaneous items
 - <img width="484" height="71" alt="image" src="https://github.com/user-attachments/assets/d5b1d639-de8a-482c-bc37-df2716252bd1" />
 - <img width="373" height="221" alt="image" src="https://github.com/user-attachments/assets/74dc50ee-8ec0-4ea0-b4e9-bd1e4056052c" />
