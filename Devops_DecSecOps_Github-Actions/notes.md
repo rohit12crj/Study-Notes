@@ -197,7 +197,16 @@ Examples:
 ---
 ---
 ---
-✅  Github Cache --> https://www.youtube.com/watch?v=7PVUjRXUY0o
+✅ Different types of workflow 
+- <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9f9fa9e7-412d-430e-b1aa-3d1c45610ea4" />
+- <img width="539" height="252" alt="image" src="https://github.com/user-attachments/assets/e96fda19-e7cb-42a9-b9c8-6dd8f670ffbe" />
+- <img width="535" height="266" alt="image" src="https://github.com/user-attachments/assets/0eb875c3-a37d-4aca-8891-5a6dc182b3c0" />
+- <img width="511" height="254" alt="image" src="https://github.com/user-attachments/assets/a5c5cbcc-845a-44a9-a732-85e8cba0236b" />
+- <img width="472" height="229" alt="image" src="https://github.com/user-attachments/assets/f6c59f95-1944-4d96-ad57-4fe1cfe29492" />
+- <img width="476" height="117" alt="image" src="https://github.com/user-attachments/assets/1c0f4ad8-0b12-4be0-9b7e-ff1cbbbbaf0d" />
+
+---
+✅ Github Cache --> https://www.youtube.com/watch?v=7PVUjRXUY0o
 
 ---
 ✅ GitHub Actions Artifacts vs Github Packages vs GitHub Container Registry (GHCR)
