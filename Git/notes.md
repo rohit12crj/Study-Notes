@@ -9,8 +9,11 @@
 - <img width="327" height="68" alt="image" src="https://github.com/user-attachments/assets/6dc7239b-aba6-4bd4-a564-e9e48404f069" />
 - <img width="511" height="142" alt="image" src="https://github.com/user-attachments/assets/e32c6328-3909-402c-93f2-1681e8a87ec9" />
 - <img width="524" height="137" alt="image" src="https://github.com/user-attachments/assets/777ee69b-a40a-48b8-bf0a-df87341d1b9a" />
-
-
+- <img width="607" height="340" alt="image" src="https://github.com/user-attachments/assets/117103c5-599d-4dcd-9e8c-f7bd260dee52" />
+- <img width="539" height="428" alt="image" src="https://github.com/user-attachments/assets/ce0f961a-1e59-4564-8f06-bcc94b3add75" />
+- <img width="583" height="173" alt="image" src="https://github.com/user-attachments/assets/ffdfdb57-73ba-4b26-9db1-f2a481ff0775" />
+- <img width="645" height="443" alt="image" src="https://github.com/user-attachments/assets/ab77e93e-5aea-4aaf-b8ab-17b87086a1b0" />
+- <img width="557" height="398" alt="image" src="https://github.com/user-attachments/assets/269e649e-dac3-4f86-9105-8139709f588f" />
 
 ---
 ✅  Miscellaneous items
