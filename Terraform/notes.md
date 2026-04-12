@@ -4,6 +4,11 @@
 - https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
 
 ---
+✅ Targeted Destroy 
+- <img width="528" height="199" alt="image" src="https://github.com/user-attachments/assets/cf5cb3ea-f596-437f-b5bb-48ad6dbc7abe" />
+
+
+---
 ✅  what are the managed services provide in terraform cloud ?
 - Vault
 - Drift detection
