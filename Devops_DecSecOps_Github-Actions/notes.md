@@ -107,7 +107,16 @@
 ✅ Maven Vs Gradle
 
 ---
-✅ Nexus Artifactory / Registry Concepts  
+✅ Nexus Artifactory / Registry Concepts
+- Different Repo Types ( Hosted , Proxy , Group )
+| Feature     | Hosted                   | Proxy                    | Group           |
+| ----------- | ------------------------ | ------------------------ | --------------- |
+| Purpose     | Store internal artifacts | Cache external artifacts | Combine repos   |
+| Data Source | You upload               | Internet                 | Multiple repos  |
+| Write       | ✅ Yes                   | ❌ No                   | ❌ No           |
+| Read        | ✅ Yes                   | ✅ Yes                  | ✅ Yes         |
+| Example     | Internal JARs            | Maven Central cache      | Single endpoint |
+
 - repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
 - https://www.youtube.com/watch?v=zH3cjXQmqJo&t=1147s  --> Devops Shack
 
