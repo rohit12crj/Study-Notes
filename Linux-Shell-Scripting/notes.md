@@ -50,8 +50,10 @@
 
 ✅ What are systemd and init systems in Linux?
 
+---
 ✅ What is the difference between systemctl and service commands?
 
+---
 ✅ How does process management work in Linux?
 
 ✅ What is the difference between a process and a thread?
@@ -83,8 +85,6 @@
 ✅ What is swap space and how is it managed?
 
 ✅ What is networking in Linux and how do you troubleshoot it?
-
-✅ What are common networking commands used in Linux?
 
 ✅ What is SSH and how does it work?
 
