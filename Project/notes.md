@@ -1,4 +1,6 @@
-✅ https://www.youtube.com/playlist?list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv --> DevOps Shack Project Playlist
+✅ Videos
+- https://www.youtube.com/playlist?list=PLAdTNzDIZj_9c-o43WJ7yYBa5YEAkWiOv --> DevOps Shack Project Playlist
+- https://www.youtube.com/playlist?list=PLmPit9IIdzwSv2zwizysG6OwWUACpQFN0  --> k8s Project Playlist
 
 ---
 ✅ Self Hosted Github Runners in EKS / ECS  OR Jenkins master & slave setup in ECS / EKS
