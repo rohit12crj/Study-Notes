@@ -142,12 +142,15 @@
 ---
 ✅ OWASP ZAP
 - Tool used in DAST
-- https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm --> DevOps Shack
+- https://youtu.be/DjUPVrFHd1I?si=Tz2FfKUvfM-1LfIm --> DevOps Shack --> video made private
+- https://www.youtube.com/watch?v=wLfRz7rRsH4
 
 ---
 
 ✅ OWASP Top 10 security issues
-- https://youtu.be/cLOXIodlw74?si=7dWVwbcxbw-0dYmM --> DevOps Shack
+- https://youtu.be/cLOXIodlw74?si=7dWVwbcxbw-0dYmM --> DevOps Shack --> video made private
+- https://www.youtube.com/watch?v=HE244moNuXE --> Theory
+- https://www.youtube.com/playlist?list=PLa2xctTiNSCiUcETvRT7lbYuKTpgKDchD  --> Playlist --> Practical
 
 OWASP Top 10 security issues
 - Broken Access Control
