@@ -109,14 +109,9 @@
 ---
 ✅ Nexus Artifactory / Registry Concepts
 - Different Repo Types ( Hosted , Proxy , Group )
-| Feature     | Hosted                   | Proxy                    | Group           |
-| ----------- | ------------------------ | ------------------------ | --------------- |
-| Purpose     | Store internal artifacts | Cache external artifacts | Combine repos   |
-| Data Source | You upload               | Internet                 | Multiple repos  |
-| Write       | ✅ Yes                   | ❌ No                   | ❌ No           |
-| Read        | ✅ Yes                   | ✅ Yes                  | ✅ Yes         |
-| Example     | Internal JARs            | Maven Central cache      | Single endpoint |
-
+- <img width="581" height="201" alt="image" src="https://github.com/user-attachments/assets/1d12a10d-8089-4fb1-bb64-93daa48e2a2a" />
+- Snapshots are mutable development versions updated frequently, while releases are immutable, stable artifacts meant for production use
+- <img width="529" height="236" alt="image" src="https://github.com/user-attachments/assets/f90e1950-72bd-476e-ab0b-507f9bdbed6f" />
 - repositories ( maven/npm/pypi/nuget/docker) , permissions , retention , replication , build info .
 - https://www.youtube.com/watch?v=zH3cjXQmqJo&t=1147s  --> Devops Shack
 
