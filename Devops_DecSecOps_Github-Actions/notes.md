@@ -125,9 +125,14 @@
 ✅ Sonarqube
 - Tool used in SAST
 - https://youtu.be/r2UVTDpIUj8?si=-_itvd9yclLW1s4j --> DevOps Shack
-- explain quality gates , quality profiles , code coverage , code smells , project onboarding , branch/PR analysis
+- explain quality gates , quality profiles , code coverage , code smells , sonrqube server . sonarqube scanner
 - https://www.youtube.com/watch?v=qyYsLVZDieU --> Good Video
+- https://github.com/CloudWithVarJosh/SonarQube-For-DevOps --> Github Repo
 - <img width="887" height="377" alt="image" src="https://github.com/user-attachments/assets/886d552e-ed0b-4b6f-ab3c-7bfc6cfbe971" />
+- <img width="767" height="321" alt="image" src="https://github.com/user-attachments/assets/4e83f228-5c2b-4cf7-b24b-3dab41cf7ebd" />
+- <img width="632" height="371" alt="image" src="https://github.com/user-attachments/assets/37890674-fac0-4087-aad2-419156057d3f" />
+
+
 
 
 ---
