@@ -96,12 +96,12 @@
 
 ---
 ✅  Maven build cycle process
+- https://www.youtube.com/watch?v=3OKc5y_3wMM&list=PLmPit9IIdzwSiYCKOtXUGNwytXXiJ8Rv8&index=9  --> Very Good
 - https://www.youtube.com/watch?v=-KqyFvEJYz0&t=202s  --> Devops Shack
 - Maven has three lifecycles --> Clean (for removing old builds) --> Default (for building and deploying the application) -->  Site (for generating documentation).
 - The Default lifecycle is the most important as it handles the complete build process.
 - <img width="301" height="263" alt="image" src="https://github.com/user-attachments/assets/49ab700f-2a52-4050-a389-7cc1953d5d28" />
 - <img width="564" height="470" alt="image" src="https://github.com/user-attachments/assets/4eaddac2-1193-421e-b8fb-c7d0ab019ea9" />
-
 
 ---
 ✅ Maven Vs Gradle
