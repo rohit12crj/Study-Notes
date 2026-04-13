@@ -10,7 +10,7 @@
 - compile --> to find out syntax based errors --> Maven --> mvm compile / npm install / npm ci ( u need install maven in github action runner first)
 - unit testing --> to check functionality of code --> Maven --> mvm test / npm test
 - <img width="384" height="317" alt="image" src="https://github.com/user-attachments/assets/ac426d83-335c-450e-8059-9b0a209fd353" />
-- SAST --> code quality check --> sonarqube --> use quality gates . fail pipeline if quality gates requirement not satisfied 
+- SAST --> code quality check -->  --> use quality gates . fail pipeline if quality gates requirement not satisfied 
 - SCA --> package vulnerability Scan ( used for scanning package.json in node & pom.xml file in java ) --> trivy --> Generated report & saves it as an artifact
 - Build application --> Generates Artifact ( jar / war )--> Maven  --> mvm package / npm run build 
 - Push artifact to Repository --> Used for Artifact Versioning --> Nexus --> mvm deploy ( but deploy to nexus registry , check ai for commands ) / npm deploy
@@ -125,7 +125,10 @@
 ✅ Sonarqube
 - Tool used in SAST
 - https://youtu.be/r2UVTDpIUj8?si=-_itvd9yclLW1s4j --> DevOps Shack
-- quality gates , quality profiles , project onboarding , branch/PR analysis 
+- explain quality gates , quality profiles , code coverage , code smells , project onboarding , branch/PR analysis
+- https://www.youtube.com/watch?v=qyYsLVZDieU --> Good Video
+- <img width="887" height="377" alt="image" src="https://github.com/user-attachments/assets/886d552e-ed0b-4b6f-ab3c-7bfc6cfbe971" />
+
 
 ---
 ✅ Trivy
