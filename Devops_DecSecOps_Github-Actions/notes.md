@@ -131,9 +131,11 @@
 - <img width="887" height="377" alt="image" src="https://github.com/user-attachments/assets/886d552e-ed0b-4b6f-ab3c-7bfc6cfbe971" />
 - <img width="767" height="321" alt="image" src="https://github.com/user-attachments/assets/4e83f228-5c2b-4cf7-b24b-3dab41cf7ebd" />
 - <img width="632" height="371" alt="image" src="https://github.com/user-attachments/assets/37890674-fac0-4087-aad2-419156057d3f" />
-
-
-
+- <img width="503" height="171" alt="image" src="https://github.com/user-attachments/assets/32f15bec-2596-45b7-bf51-add7588a5d6c" />
+- <img width="704" height="446" alt="image" src="https://github.com/user-attachments/assets/951a5194-e3c7-4b41-b3bb-5065243b1511" />
+- <img width="770" height="485" alt="image" src="https://github.com/user-attachments/assets/418bec3e-fb77-4c21-8fd5-ba0e863dba55" />
+- <img width="747" height="442" alt="image" src="https://github.com/user-attachments/assets/100f3efc-6b4c-4e04-9d82-c4dfbe030b53" />
+- <img width="689" height="292" alt="image" src="https://github.com/user-attachments/assets/1d1ae395-f241-42f2-8ddd-76980a05328d" />
 
 ---
 ✅ Trivy
