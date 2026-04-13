@@ -33,74 +33,76 @@
 ✅ iostat command 
 
 ---
-Difference between TCP & UDP 
+✅ Difference between TCP & UDP 
+- <img width="545" height="304" alt="image" src="https://github.com/user-attachments/assets/ea7ca02b-51cc-4971-84f9-725ffa892b37" />
+- <img width="499" height="283" alt="image" src="https://github.com/user-attachments/assets/f1563979-714c-4862-9075-86d06cac0971" />
+- <img width="445" height="185" alt="image" src="https://github.com/user-attachments/assets/4e70fcb0-9177-4de8-9a74-848aef9d6e25" />
 
 ---
-What is the Linux boot process and its stages?
+✅ What is the Linux boot process and its stages?
+- Linux boot happens in 6 major stages
+- <img width="530" height="227" alt="image" src="https://github.com/user-attachments/assets/b1d91701-a69d-4c11-8737-261627b96c95" />
 
-What is the difference between BIOS and UEFI?
+---
+✅ What is the difference between BIOS and UEFI?
 
-What is GRUB and how does it work?
+✅ What is GRUB and how does it work?
 
-What are systemd and init systems in Linux?
+✅ What are systemd and init systems in Linux?
 
-What is the difference between systemctl and service commands?
+✅ What is the difference between systemctl and service commands?
 
-How does process management work in Linux?
+✅ How does process management work in Linux?
 
-What is the difference between a process and a thread?
+✅ What is the difference between a process and a thread?
 
-How do you check running processes in Linux?
+✅ How do you check running processes in Linux?
 
-What is nice and renice in Linux?
+✅ What is nice and renice in Linux?
 
-What is a zombie process?
+✅ What is a zombie process?
 
-What is file permission in Linux and how does it work?
+✅ What is file permission in Linux and how does it work?
 
-What is the difference between hard link and soft link?
+✅ What is the difference between hard link and soft link?
 
-What is umask and how is it used?
+✅ What is umask and how is it used?
 
-What are special permissions (SUID, SGID, Sticky Bit)?
+✅ What are special permissions (SUID, SGID, Sticky Bit)?
 
-What is inode in Linux?
+✅ What is inode in Linux?
 
-What is LVM and why is it used?
+✅ What is LVM and why is it used?
 
-What is the difference between ext4, xfs, and other file systems?
+✅ What is the difference between ext4, xfs, and other file systems?
 
-How do you check disk usage and disk performance?
+✅ How do you check disk usage and disk performance?
 
-What is fstab and how does it work?
+✅ What is fstab and how does it work?
 
-What is swap space and how is it managed?
+✅ What is swap space and how is it managed?
 
-What is networking in Linux and how do you troubleshoot it?
+✅ What is networking in Linux and how do you troubleshoot it?
 
-What are common networking commands used in Linux?
+✅ What are common networking commands used in Linux?
 
-What is SSH and how does it work?
+✅ What is SSH and how does it work?
 
-What is DNS and how is it configured in Linux?
+✅ What is DNS and how is it configured in Linux?
 
-What is the difference between private and public IP?
+✅ What is a package manager and how does it work?
 
-What is a package manager and how does it work?
+✅ What is the difference between apt and yum/dnf?
 
-What is the difference between apt and yum/dnf?
+✅ How do you manage services in Linux?
 
-How do you manage services in Linux?
-
-What is log management in Linux and where are logs stored?
-
-How do you troubleshoot a high CPU or memory issue in Linux?
+✅ What is log management in Linux and where are logs stored?
 
 ---
 ✅ tar command used for 
 
 ---
-✅  scp ( Secure Copy Protocol ) used for 
+✅ scp ( Secure Copy Protocol ) used for 
 
 ---
 ✅ which command can i use to check if caddy is running inside ecs task or not ?
