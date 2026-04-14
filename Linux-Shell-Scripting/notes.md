@@ -1,4 +1,4 @@
-<img width="455" height="125" alt="image" src="https://github.com/user-attachments/assets/d11d0419-7397-4dff-a189-6723970c6b09" />✅ Videos
+✅ Videos
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIZ7u-gtpX_bozrspUbTQ1S --> Shell Scripting Playlist ( Abhishek )
 - https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
 - https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
