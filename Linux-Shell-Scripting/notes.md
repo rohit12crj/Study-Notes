@@ -31,9 +31,15 @@
 - <img width="517" height="272" alt="image" src="https://github.com/user-attachments/assets/d12ddf0a-bc7e-47c4-bfdc-94974ba1288b" />
 
 ---
+✅ User Management in Linux
 - <img width="818" height="271" alt="image" src="https://github.com/user-attachments/assets/4abf9ab7-525d-45cc-bb70-41db85c8ce2b" />
 - <img width="495" height="342" alt="image" src="https://github.com/user-attachments/assets/1dd5dc89-1e39-4b2e-972c-85d1f98fe6b6" />
 - <img width="611" height="122" alt="image" src="https://github.com/user-attachments/assets/88779109-de3e-499e-8497-b1bd7efdadf1" />
+
+---
+✅ File Management in Linux 
+- <img width="458" height="248" alt="image" src="https://github.com/user-attachments/assets/cd5795a7-45ea-40c5-91ac-c4ad7603808b" />
+- <img width="478" height="266" alt="image" src="https://github.com/user-attachments/assets/8f6004e6-a43f-4280-8859-9b98a8aeb3e8" />
 
 ---
 ✅ CPU Bottlenek vs I/O Bottleneck
