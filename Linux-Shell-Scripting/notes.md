@@ -289,6 +289,11 @@ date | echo "today is "
 - <img width="509" height="217" alt="image" src="https://github.com/user-attachments/assets/b460f2c8-340b-4dce-8cf0-295d3ff42938" />
 - <img width="437" height="398" alt="image" src="https://github.com/user-attachments/assets/1b05cefa-81f5-46ec-acb5-1115509bb41d" />
 
+---
+✅ sed command used for 
+- <img width="569" height="370" alt="image" src="https://github.com/user-attachments/assets/3a069ab3-7d20-4103-a3b1-8ec47b925319" />
+
+
 
 
 
