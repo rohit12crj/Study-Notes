@@ -284,8 +284,6 @@ date | echo "today is "
 
 ---
 ✅ Difference between export & set ?
-- The export command in Linux is used to set environment variables and make them available to child processes started from the current shell.
-- <img width="630" height="431" alt="image" src="https://github.com/user-attachments/assets/19e8ee3c-bdec-4582-948c-d979d7c12350" />
-- <img width="620" height="242" alt="image" src="https://github.com/user-attachments/assets/9961aeca-1a65-4d45-9ce9-3106557559c6" />
+- <img width="776" height="232" alt="image" src="https://github.com/user-attachments/assets/bb7cd622-b120-43e2-82f0-acd79b0fd138" />
+- <img width="514" height="85" alt="image" src="https://github.com/user-attachments/assets/e7400d38-8726-4999-9a32-00cbbe88e7b2" />
 
----
