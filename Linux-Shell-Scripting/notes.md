@@ -44,8 +44,8 @@
 ---
 ✅ Process Management
 - <img width="827" height="200" alt="image" src="https://github.com/user-attachments/assets/0c935066-99ce-47fb-8906-4d395c4c619e" />
-- <img width="417" height="131" alt="image" src="https://github.com/user-attachments/assets/28e33f48-2914-46f1-8b15-8d1ee44b4d58" />
 - <img width="404" height="135" alt="image" src="https://github.com/user-attachments/assets/6d7d6d85-0e82-4992-b34b-021080859ec3" />
+- <img width="417" height="131" alt="image" src="https://github.com/user-attachments/assets/28e33f48-2914-46f1-8b15-8d1ee44b4d58" />
 - <img width="386" height="69" alt="image" src="https://github.com/user-attachments/assets/32a65ae2-b80f-4c7a-bee4-8ac3d9b79451" />
 - <img width="415" height="89" alt="image" src="https://github.com/user-attachments/assets/b9005fff-40d8-4dc8-87b1-9088dad21b38" />
 
