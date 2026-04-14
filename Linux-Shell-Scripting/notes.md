@@ -45,10 +45,24 @@
 ✅ Process Management
 - <img width="827" height="200" alt="image" src="https://github.com/user-attachments/assets/0c935066-99ce-47fb-8906-4d395c4c619e" />
 - <img width="404" height="135" alt="image" src="https://github.com/user-attachments/assets/6d7d6d85-0e82-4992-b34b-021080859ec3" />
-- <img width="419" height="25" alt="image" src="https://github.com/user-attachments/assets/23f1bccd-ee70-4093-b8c0-de4aa9b06253" />
+- <img width="254" height="26" alt="image" src="https://github.com/user-attachments/assets/11261206-304f-4b49-b9a6-815b452b7209" />
 - <img width="417" height="131" alt="image" src="https://github.com/user-attachments/assets/28e33f48-2914-46f1-8b15-8d1ee44b4d58" />
 - <img width="386" height="69" alt="image" src="https://github.com/user-attachments/assets/32a65ae2-b80f-4c7a-bee4-8ac3d9b79451" />
 - <img width="415" height="89" alt="image" src="https://github.com/user-attachments/assets/b9005fff-40d8-4dc8-87b1-9088dad21b38" />
+
+--
+✅ Daemon Process
+- <img width="526" height="146" alt="image" src="https://github.com/user-attachments/assets/706e0ec4-131a-43f1-a528-0e1992ecdd46" />
+
+---
+✅ Zombie Process
+- <img width="557" height="302" alt="image" src="https://github.com/user-attachments/assets/ca5be7f8-4a8c-4506-904c-9fa491e83b20" />
+- <img width="372" height="155" alt="image" src="https://github.com/user-attachments/assets/23059dfc-5de0-4db5-abac-15dcf8daec40" />
+
+---
+✅ Orphan Process
+- An orphan process is a child process whose parent process has terminated (died) while the child is still running.
+- <img width="470" height="112" alt="image" src="https://github.com/user-attachments/assets/b85305b4-c495-416c-8d3a-80cf83482f12" />
 
 ---
 ✅ CPU Bottlenek vs I/O Bottleneck
@@ -59,12 +73,6 @@
 - <img width="304" height="208" alt="image" src="https://github.com/user-attachments/assets/d944b76e-bbbe-484a-8d8f-92a1f6eb0c3f" />
 - <img width="313" height="137" alt="image" src="https://github.com/user-attachments/assets/3c40b6c3-c63c-40b5-b97c-b4d59025ea06" />
 - I first check top. If CPU is ~100% and idle is near zero, it's CPU bound. If CPU is idle but wa% is high, it's I/O bound. Then I confirm using iostat for disk utilization and latency
-
----
-✅ lsblk --> to check disk partition
-
----
-✅ iostat command 
 
 ---
 ✅ Difference between TCP & UDP 
@@ -89,10 +97,6 @@
 
 ---
 ✅ What is the difference between a process and a thread?
-
-✅ What is a zombie process?
-
-✅ What is file permission in Linux and how does it work?
 
 ✅ What is the difference between hard link and soft link?
 
@@ -229,11 +233,6 @@ date | echo "today is "
 | Performance     | Slower for large rule sets | Faster              |
 | Syntax          | Complex                    | Simpler             |
 | Data structures | Basic lists                | Efficient sets/maps |
-
----
-✅ What is the difference between netstat and ss?
-- ss is faster and modern
-- netstat is older and deprecated
 
 ---
 ✅ explain the full Linux packet flow (PREROUTING → INPUT → FORWARD → OUTPUT → POSTROUTING) in Netfilter framework ?
