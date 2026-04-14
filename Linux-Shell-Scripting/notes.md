@@ -87,13 +87,7 @@
 ✅ What is the difference between systemctl and service commands?
 
 ---
-✅ How does process management work in Linux?
-
 ✅ What is the difference between a process and a thread?
-
-✅ How do you check running processes in Linux?
-
-✅ What is nice and renice in Linux?
 
 ✅ What is a zombie process?
 
@@ -116,8 +110,6 @@
 ✅ What is fstab and how does it work?
 
 ✅ What is swap space and how is it managed?
-
-✅ What is networking in Linux and how do you troubleshoot it?
 
 ✅ What is SSH and how does it work?
 
@@ -147,33 +139,6 @@
 - ports exposed in dockerfile should be the same ports on which ALB listeners should listen
 - netstat -tulpn | grep caddy OR ss -tulpn | grep caddy
 - if still u r not able to find out on which port caddy is listening . exec into the ECS Task & do curl -v http://private_ip_of_ecs_task:80  --> u shoukd get 200 ok . if not 80 try with other common ports which u think it might be listening on
-
----
-✅ https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide ( Abhishek )
-- getting-started
-- folder-structure
-- user-management
-- file-management
-- vi-shortcuts
-- file-permissions
-- process-management
-- monitoring
-- networking
-- disk-management
-
----
-✅ https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking ( Abhishek )
-- IP Addressing & Subnetting
-- TCP/IP & OSI Model
-- DNS (Domain Name System)
-- HTTP/HTTPS & Web Protocols
-- Load Balancing
-- Firewalls & Security Groups
-- VPN & Tunneling
-- Proxies & Reverse Proxies
-- CDN (Content Delivery Network)
-- Docker Networking
-- Kubernetes Networking
 
 ---
 ✅ what shell scripting u did in your project ?
