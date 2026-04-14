@@ -1,4 +1,4 @@
-✅ Videos
+<img width="455" height="125" alt="image" src="https://github.com/user-attachments/assets/d11d0419-7397-4dff-a189-6723970c6b09" />✅ Videos
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIZ7u-gtpX_bozrspUbTQ1S --> Shell Scripting Playlist ( Abhishek )
 - https://www.youtube.com/watch?v=ygqjCxZTbuk --> 5 Linux Commands that will make you 10X ( Abhishek )
 - https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
@@ -90,18 +90,47 @@
 - <img width="530" height="227" alt="image" src="https://github.com/user-attachments/assets/b1d91701-a69d-4c11-8737-261627b96c95" />
 
 ---
-✅ What is the difference between BIOS and UEFI?
-
-✅ What is GRUB and how does it work?
-
-✅ What are systemd and init systems in Linux?
-
----
-✅ What is the difference between systemctl and service commands?
+✅ What is the difference between BIOS and UEFI
+- BIOS (Basic Input/Output System)
+- UEFI (Unified Extensible Firmware Interface)
+- <img width="545" height="135" alt="image" src="https://github.com/user-attachments/assets/85fffbde-d7e0-4d14-8f8d-84fe16ed5a87" />
 
 ---
-✅ What is the difference between a process and a thread?
+✅ What is GRUB
+- <img width="526" height="146" alt="image" src="https://github.com/user-attachments/assets/e64b0533-a5af-4a52-87b1-1db77a436b27" />
 
+---
+✅ What are systemd system and init system
+- <img width="442" height="109" alt="image" src="https://github.com/user-attachments/assets/a17afc63-3847-4816-bf9a-e7578569536c" />
+- systemd is the modern init system that provides fast, parallel service management with advanced features
+
+---
+✅ What is the difference between systemctl and service commands
+- <img width="335" height="236" alt="image" src="https://github.com/user-attachments/assets/fc8685f8-8b86-4a6e-895b-31f1d23d0351" />
+- <img width="296" height="219" alt="image" src="https://github.com/user-attachments/assets/d937f155-76ae-4f07-8f5d-f6307ecf0da6" />
+- <img width="366" height="119" alt="image" src="https://github.com/user-attachments/assets/3c655bec-a87e-4bbf-8d84-ab3d2b766fc2" />
+- <img width="426" height="99" alt="image" src="https://github.com/user-attachments/assets/6bd8327f-f3e7-4bb2-ba10-eb769094ac4f" />
+
+---
+✅ What is the difference between a process and a thread
+- <img width="453" height="204" alt="image" src="https://github.com/user-attachments/assets/22647fbd-b55a-472e-9a22-3586636c57ff" />
+- <img width="371" height="200" alt="image" src="https://github.com/user-attachments/assets/8f3cb0f7-1d7d-4a8b-b6fc-e8d4fa318a2d" />
+- <img width="455" height="125" alt="image" src="https://github.com/user-attachments/assets/70d66f9f-dbc1-4275-aa94-f5d99d26b2ff" />
+- <img width="335" height="192" alt="image" src="https://github.com/user-attachments/assets/d0d8ffd4-0222-4b89-85ed-58677064758f" />
+
+---
+✅ Multithreading vs multiprocessing (with real examples)
+- <img width="488" height="190" alt="image" src="https://github.com/user-attachments/assets/a6b62134-cb9d-4c65-a11d-28e52f23f1a3" />
+- <img width="467" height="194" alt="image" src="https://github.com/user-attachments/assets/70584610-37b1-4887-98a3-4c5ba1aa9c1e" />
+- <img width="468" height="146" alt="image" src="https://github.com/user-attachments/assets/cb8743b8-6d26-4e96-882c-0542e3a5a72d" />
+- <img width="362" height="399" alt="image" src="https://github.com/user-attachments/assets/056e5533-e628-433f-b918-45ebaa953e93" />
+- <img width="446" height="83" alt="image" src="https://github.com/user-attachments/assets/cba6c6fb-6d70-4503-8f92-091fefaee9b5" />
+- <img width="487" height="193" alt="image" src="https://github.com/user-attachments/assets/8454abfc-f3cf-49c7-8179-22bf585fa4ff" />
+
+---
+✅ Race condition, deadlock, mutex, semaphore 
+- 
+---
 ✅ What is umask and how is it used?
 
 ✅ What are special permissions (SUID, SGID, Sticky Bit)?
@@ -109,8 +138,6 @@
 ✅ What is LVM and why is it used?
 
 ✅ What is the difference between ext4, xfs, and other file systems?
-
-✅ How do you check disk usage and disk performance?
 
 ✅ What is fstab and how does it work?
 
@@ -167,7 +194,7 @@
 - <img width="369" height="122" alt="image" src="https://github.com/user-attachments/assets/b9110423-b649-40b8-95b3-015a06b64c84" />
 
 ---
-✅ inode 
+✅ inode , hard link , soft link
 - An inode is a metadata structure that stores all information about a file except its name and actual data.
 
 ---
@@ -177,7 +204,6 @@
 ---
 ✅ cron syntax
 - <img width="350" height="197" alt="image" src="https://github.com/user-attachments/assets/09ee0ef7-b588-4429-ac6b-aa854630631d" />
-
 
 ---
 ✅ How do u manage logs of a system which generates 1000s of logs files 
