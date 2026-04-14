@@ -193,16 +193,10 @@
 ✅ How to grant permissions in Linux?
 
 ---
-✅ chmod command and how to use?
-
----
 ✅ How to check CPU (nproc) , RAM  / memory ( free ) and disk space ( df -h ) of a Linux Machine?
 
 ---
 ✅ trapping signals in linux
-
----
-✅ What is "Top" command and why is it used?
 
 ---
 ✅ memory management with respect to swap memeory 
@@ -224,6 +218,7 @@ set -o
 
 ---
 ✅ curl vs wget
+- <img width="546" height="178" alt="image" src="https://github.com/user-attachments/assets/dc13bd82-9cb7-404d-9154-5948a3411ac4" />
 
 ---
 ✅ find command
@@ -242,16 +237,15 @@ date | echo "today is "
 ✅ how will u sort names in a file --> for particular shell scripting questions answer them using python
 
 ---
-✅ network troubleshooting commands 
-
----
 ✅ is bash dynamic or statically typed language ? --> dynamic
 
 ---
 ✅ disadvantages of shell scripting 
+- <img width="547" height="371" alt="image" src="https://github.com/user-attachments/assets/d067ac65-05ae-410f-9906-24af50ae187a" />
 
 ---
 ✅ open a  file in read only mode 
+- <img width="317" height="128" alt="image" src="https://github.com/user-attachments/assets/6a556b06-2cea-4122-ae62-43c3de7e8086" />
 
 ---
 ✅ write a script to print only errors from a remote log file --> curl pipe & grep
