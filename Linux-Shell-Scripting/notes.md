@@ -6,6 +6,10 @@
 - https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
 
 ---
+✅ What is the Linux kernel? 
+- The kernel is the core of the OS that manages CPU, memory, processes, hardware, and system calls.
+
+---
 ✅ Explain Linux architecture using diagram
 - <img width="667" height="275" alt="image" src="https://github.com/user-attachments/assets/340dde60-351d-4e2f-877b-2350fec6798c" />
 - <img width="665" height="418" alt="image" src="https://github.com/user-attachments/assets/cd57417b-0873-4b8e-9fd3-e58618857494" />
@@ -98,13 +102,9 @@
 ---
 ✅ What is the difference between a process and a thread?
 
-✅ What is the difference between hard link and soft link?
-
 ✅ What is umask and how is it used?
 
 ✅ What are special permissions (SUID, SGID, Sticky Bit)?
-
-✅ What is inode in Linux?
 
 ✅ What is LVM and why is it used?
 
@@ -114,23 +114,14 @@
 
 ✅ What is fstab and how does it work?
 
-✅ What is swap space and how is it managed?
-
-✅ What is SSH and how does it work?
-
 ✅ What is DNS and how is it configured in Linux?
 
 ✅ What is the difference between apt and yum/dnf?
 
 ✅ How do you manage services in Linux?
 
-✅ What is log management in Linux and where are logs stored?
-
----
-✅ tar command used for 
-
----
-✅ scp ( Secure Copy Protocol ) used for 
+✅ Where are logs stored?
+- Mostly under /var/log
 
 ---
 ✅ which command can i use to check if caddy is running inside ecs task or not ?
@@ -176,7 +167,8 @@
 - <img width="369" height="122" alt="image" src="https://github.com/user-attachments/assets/b9110423-b649-40b8-95b3-015a06b64c84" />
 
 ---
-✅ soft links vs hard links
+✅ inode 
+- An inode is a metadata structure that stores all information about a file except its name and actual data.
 
 ---
 ✅ why pipe command wont work with date comamnd like -->  date | echo "today is "
