@@ -120,8 +120,6 @@
 
 ✅ What is DNS and how is it configured in Linux?
 
-✅ What is a package manager and how does it work?
-
 ✅ What is the difference between apt and yum/dnf?
 
 ✅ How do you manage services in Linux?
@@ -152,56 +150,46 @@
 
 ---
 ✅ What is the purpose of #!/bin/bash or #!/bin/sh?
+- <img width="422" height="370" alt="image" src="https://github.com/user-attachments/assets/e74eca3c-5881-4c86-9e02-59ee641d5e2c" />
 
 ---
 ✅ What is the difference between ksh, bash and dash?
+- These are all Unix/Linux shells, but they differ in features, speed, and portability.
 
 ---
 ✅ How to execute a Shell Script?
+- <img width="403" height="382" alt="image" src="https://github.com/user-attachments/assets/1b47011d-68fd-4fc7-a3c6-642389f6266f" />
 
 ---
-✅ How to grant permissions in Linux?
+✅ Signals & Trapping
+ - A signal is a notification sent to a process to inform it that an event has occurred
+ - Trapping means Capturing a signal and defining custom behavior instead of default action
+ - <img width="373" height="227" alt="image" src="https://github.com/user-attachments/assets/3cebd961-fefa-48bd-a211-b992d4153202" />
+ - <img width="324" height="161" alt="image" src="https://github.com/user-attachments/assets/ca204fa1-2b14-402e-899d-4839f4f18d95" />
+ - <img width="272" height="133" alt="image" src="https://github.com/user-attachments/assets/f82d525a-c9dd-44b6-9627-f1cf37393eef" />
+ - <img width="318" height="178" alt="image" src="https://github.com/user-attachments/assets/7a176c19-355c-47a4-8e8c-941a414c77ed" />
 
 ---
-✅ How to check CPU (nproc) , RAM  / memory ( free ) and disk space ( df -h ) of a Linux Machine?
-
----
-✅ trapping signals in linux
-
----
-✅ memory management with respect to swap memeory 
+✅ Swap Memeory 
+- Swap memory is a portion of disk space used as virtual memory when your system’s RAM is full.
+- It acts like a backup for RAM, but much slower
+- <img width="369" height="122" alt="image" src="https://github.com/user-attachments/assets/b9110423-b649-40b8-95b3-015a06b64c84" />
 
 ---
 ✅ soft links vs hard links
 
 ---
-✅ ps -ef | grep "amazon" | awk -F" " '{print $2}' --> What are processes, how to list them and find process ID ?
-
----
-✅ grep command can also be used with files like below
-nano test
-grep name test
-
-set -x --> debug shell script 
-set -e --> exists scripts when there is error
-set -o
-
----
-✅ curl vs wget
-- <img width="546" height="178" alt="image" src="https://github.com/user-attachments/assets/dc13bd82-9cb7-404d-9154-5948a3411ac4" />
-
----
-✅ find command
-
----
-✅ why pipe command wont work with date comamnd like below 
-date | echo "today is "
+✅ why pipe command wont work with date comamnd like -->  date | echo "today is "
+- <img width="525" height="153" alt="image" src="https://github.com/user-attachments/assets/96b5000c-025f-4620-8c90-1af0b150b574" />
 
 ---
 ✅ cron syntax
+- <img width="350" height="197" alt="image" src="https://github.com/user-attachments/assets/09ee0ef7-b588-4429-ac6b-aa854630631d" />
+
 
 ---
-✅ How do u manage logs of a system which generates 1000s of logs files --> logrotate
+✅ How do u manage logs of a system which generates 1000s of logs files 
+- <img width="491" height="229" alt="image" src="https://github.com/user-attachments/assets/18cbfb10-cd56-4084-9b24-be29a7794d23" />
 
 ---
 ✅ how will u sort names in a file --> for particular shell scripting questions answer them using python
