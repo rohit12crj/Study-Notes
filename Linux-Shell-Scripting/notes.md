@@ -31,6 +31,11 @@
 - <img width="517" height="272" alt="image" src="https://github.com/user-attachments/assets/d12ddf0a-bc7e-47c4-bfdc-94974ba1288b" />
 
 ---
+- <img width="818" height="271" alt="image" src="https://github.com/user-attachments/assets/4abf9ab7-525d-45cc-bb70-41db85c8ce2b" />
+- <img width="495" height="342" alt="image" src="https://github.com/user-attachments/assets/1dd5dc89-1e39-4b2e-972c-85d1f98fe6b6" />
+- <img width="611" height="122" alt="image" src="https://github.com/user-attachments/assets/88779109-de3e-499e-8497-b1bd7efdadf1" />
+
+---
 ✅ CPU Bottlenek vs I/O Bottleneck
 - A system is CPU bottlenecked when the processor is fully utilized and cannot handle more work
 - <img width="313" height="221" alt="image" src="https://github.com/user-attachments/assets/ae8053b7-779e-4ccf-bc14-983151afb5fe" />
