@@ -6,6 +6,35 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ K8s Architecture
+
+Control Plane / Master
+--------------------
+- API server
+- etcd
+- Scheduler
+- Controller Manager
+- CCM ( Not presnet in local installations ) --> Cloud Controller Manager -->
+
+Data Plane / Worker
+------------------
+- Container Runtime
+- Kubelet
+- Kube Proxy
+
+---
+✅ why k8s is used over docker ?
+- Auto scaling  --> using replica sets
+- Auto healing  --> using health check
+
+---
+✅ what is conatiner runtime & what container runtime does k8s & docker supports ?
+- A container runtime is the software responsible for running containers.
+- Docker uses containerd
+- <img width="446" height="99" alt="image" src="https://github.com/user-attachments/assets/2eba02ae-8058-4a7c-9a42-5218ba00d2f0" />
+
+  
+---
 ✅ what all resources in k8s appear as pods ?
 
 ---
