@@ -14,8 +14,7 @@
 - A docker-compose.yml file is used to define, manage, and run multiple containers together as a single application.
 - it can also be used to define networking , volumes
 - docker-compose.yml schema = services + networking + storage + configuration in a structured YAML format.
-
-<img width="350" height="160" alt="image" src="https://github.com/user-attachments/assets/7a419138-1354-4951-87ef-60b020e790d2" />
+- <img width="350" height="160" alt="image" src="https://github.com/user-attachments/assets/7a419138-1354-4951-87ef-60b020e790d2" />
 
 ---
 ✅ docker-compose.yml schema 
@@ -28,7 +27,6 @@
 
 ---
 ✅ Best Pracrtices for writing docker-compose.yml file 
-
 <img width="527" height="347" alt="image" src="https://github.com/user-attachments/assets/555a9eca-a5ab-4ede-afd7-947968eee440" />
 
 ---
@@ -109,22 +107,44 @@
 - always use base images with a particular version to avoid auto upgrade when new images are added to dockerhub
   
 ---
-What is the difference between VM and Docker?
+✅ What is the difference between VM and Docker?
+- Docker containers share the host OS kernel and provide lightweight process-level isolation, whereas virtual machines run a full guest OS on a hypervisor, making them heavier but more isolated.
+- <img width="289" height="92" alt="image" src="https://github.com/user-attachments/assets/90d31cad-301f-4209-b3ca-77497f35c101" />
+- <img width="403" height="449" alt="image" src="https://github.com/user-attachments/assets/9b5fbd2d-8ee3-4a44-b147-38b46721384e" />
 
-how will u pass env variables when app is building like in a docker 
+---
+✅ type 1 hypervisor vs type 2 hypervisor
+- <img width="386" height="137" alt="image" src="https://github.com/user-attachments/assets/c2cc66d2-07cf-4420-9a3c-84a8c40ae976" />
+- <img width="496" height="329" alt="image" src="https://github.com/user-attachments/assets/7733c876-4109-4a9d-a953-470b1e72e896" />
 
+---
+✅ how will u pass env variables when app is building like in a docker without storing teh secret in docker layer
+- Secrets should never be passed using ENV or ARG in Dockerfile because they get stored in image layers. Instead, pass them at runtime using environment variables, Docker/Kubernetes secrets, or external secret managers. For build-time needs, use Docker BuildKit secrets which are not persisted in layers
+
+---
 how will u pass env variables when app is running  like in a ECS Task definition
 
-Difference between CMD and ENTRYPOINT?
+---
+✅ CMD and ENTRYPOINT?
 
-copy vs ADD
+---
+✅ copy vs ADD
+- <img width="477" height="90" alt="image" src="https://github.com/user-attachments/assets/3b58156c-69bd-4880-abd3-60c5b548664c" />
 
-Difference between bind mount and volume?
+---
+✅ Difference between bind mount and volume?
+- Bind mounts map a specific host directory into a container and are tightly coupled with the host, whereas volumes are managed by Docker, making them more portable, secure, and suitable for production use
+- <img width="423" height="350" alt="image" src="https://github.com/user-attachments/assets/98f8b4cb-44c3-466f-b922-4001f2d0d66b" />
 
-What are Docker Volumes?
+---
+✅ Named vs anonymous volumes
+- Named volumes are user-defined and reusable, making them ideal for persistent data, while anonymous volumes are auto-created by Docker with random names and are harder to manage, usually used for temporary data
+- <img width="443" height="83" alt="image" src="https://github.com/user-attachments/assets/c80805f3-5418-4538-be7c-cb91e82263dc" />
 
-What is Docker Networking?
+---
+✅ Docker host vs docker bridge netorking ?
 
+---
 distorless images along with advantage and disadvantage
 
 What is multi-stage build? along with advantage and disadvantage
