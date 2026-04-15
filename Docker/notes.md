@@ -126,6 +126,9 @@ how will u pass env variables when app is running  like in a ECS Task definition
 
 ---
 ✅ CMD and ENTRYPOINT?
+- <img width="515" height="128" alt="image" src="https://github.com/user-attachments/assets/a5b58096-6c50-4c58-8037-ae39606597b8" />
+- <img width="357" height="198" alt="image" src="https://github.com/user-attachments/assets/07a6ef26-c395-4d70-8097-10b439f6d09e" />
+- <img width="367" height="86" alt="image" src="https://github.com/user-attachments/assets/481e28b6-93ce-4e09-b7e5-7ecd9145544d" />
 
 ---
 ✅ copy vs ADD
