@@ -37,7 +37,7 @@
 - kubectl --> CLI
 - Pod --> 
 - Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
-- Service --> Nodeport , Cluster IP , Load Balancer
+- Service  --> Service ( also called as svc ) internally uses Kube Proxy . Can be of Nodeport , Cluster IP ( Default , Access to Pods avilable only within Cluster ) , Load Balancer ( Access to Pods avilable from internet ) . Service Discovery uses Labels & Selectors
 - Service Mesh
 - Isito
 - Ingress
