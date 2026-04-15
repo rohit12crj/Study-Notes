@@ -8,16 +8,14 @@
 ---
 ✅ K8s Architecture
 
-Control Plane / Master
---------------------
+####Control Plane / Master
 - API server
 - etcd
 - Scheduler
 - Controller Manager
 - CCM ( Not presnet in local installations ) --> Cloud Controller Manager -->
 
-Data Plane / Worker
-------------------
+####Data Plane / Worker
 - Container Runtime
 - Kubelet
 - Kube Proxy
