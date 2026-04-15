@@ -6,6 +6,14 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ ssl termination vs ssl passthrough vs ssl bridging
+- <img width="431" height="130" alt="image" src="https://github.com/user-attachments/assets/707c315f-7b95-4293-a545-b2ffd0e1cbf1" />
+
+---
+✅ ingress controller used for
+- <img width="547" height="167" alt="image" src="https://github.com/user-attachments/assets/db692341-b68e-4a32-88a6-c2d23a47120e" />
+
+---
 ✅ what is namespace in k8s and can 2 pods in 2 different namespace talk to each other & how to restrict talking ?
 - <img width="527" height="116" alt="image" src="https://github.com/user-attachments/assets/40818d0c-ea07-45ac-87db-b88aa11e9b97" />
 - <img width="404" height="104" alt="image" src="https://github.com/user-attachments/assets/7618d5c4-df65-4d67-8b93-ad4148d994ab" />
@@ -61,13 +69,16 @@
 - Secrets
 - Daemon Set
 - RBAC
+- Service Accounts -->
 - HA
 - Kyverno
 - Kustomize
+- Persistent Volume
+- Persistent Volume Claim
 - KEDA
 - Network Policy
 - Calico
-- Border0
+- Border0 --> 3rd party tool user for RBAC
 
 ---
 ✅ Kops
