@@ -25,6 +25,13 @@
 - <img width="423" height="250" alt="image" src="https://github.com/user-attachments/assets/247b701a-8c1d-4915-a1fc-8d0788bf4684" />
 
 ---
+✅ Why use Ingress over Service Load Balancers?
+- Ingress is preferred over LoadBalancer services because it allows exposing multiple services through a single external IP with advanced routing features like host and path-based routing, SSL termination, and lower cost, whereas LoadBalancer creates a separate external load balancer per service with limited routing capabilities
+- <img width="422" height="119" alt="image" src="https://github.com/user-attachments/assets/6dbb6dee-eb25-4940-85ca-2b40c35ce38a" />
+- <img width="308" height="143" alt="image" src="https://github.com/user-attachments/assets/62aea5c4-5cf7-4e7e-b76c-c75d1229edaa" />
+- <img width="328" height="99" alt="image" src="https://github.com/user-attachments/assets/734cf245-d1bb-4958-8f7c-d5ee3fd892ff" />
+
+---
 ✅ K8s Architecture
 
 #### Control Plane / Master
@@ -47,6 +54,7 @@
 - Service Mesh
 - Isito
 - Ingress
+- Ingress Controller
 - Gateway API
 - Replica Set
 - Config Map
@@ -59,6 +67,7 @@
 - KEDA
 - Network Policy
 - Calico
+- Border0
 
 ---
 ✅ Kops
