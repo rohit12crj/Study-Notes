@@ -6,6 +6,21 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ Config map vs secrets
+- <img width="368" height="117" alt="image" src="https://github.com/user-attachments/assets/b88da5a9-d0bb-4b0c-950a-538f6115b737" />
+
+---
+✅ Explain RBAC with respect to users , Service Account , Role / Cluster role , Role Binding / Cluster Role Binding
+- <img width="531" height="195" alt="image" src="https://github.com/user-attachments/assets/74f074f7-7bae-4fc8-a743-bc67bf661a04" />
+- <img width="332" height="148" alt="image" src="https://github.com/user-attachments/assets/b9cf9d11-f51d-4757-a3cc-baab7834b201" />
+- Users --> External identities (not managed by Kubernetes directly)
+- Service Account --> Kubernetes-managed identities for pods
+- Role / Cluster role --> Defines Permission
+- Role Binding / Cluster Role Binding --> Binds Role / Cluster role to Users / Service Account
+
+
+
+---
 ✅ ssl termination vs ssl passthrough vs ssl bridging
 - <img width="431" height="130" alt="image" src="https://github.com/user-attachments/assets/707c315f-7b95-4293-a545-b2ffd0e1cbf1" />
 
@@ -60,7 +75,7 @@
 - Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
 - Service  --> Service ( also called as svc ) internally uses Kube Proxy . Can be of Nodeport , Cluster IP ( Default , Access to Pods avilable only within Cluster ) , Load Balancer ( Access to Pods avilable from internet ) . Service Discovery uses Labels & Selectors
 - Service Mesh
-- Isito
+- Istio
 - Ingress
 - Ingress Controller
 - Gateway API
@@ -70,11 +85,17 @@
 - Daemon Set
 - RBAC
 - Service Accounts -->
+- Users
+- Cluster role
+- cluster role binding -->
+- Custom Resource
+- Custom Resource Controller
 - HA
 - Kyverno
 - Kustomize
 - Persistent Volume
 - Persistent Volume Claim
+- statefulset 
 - KEDA
 - Network Policy
 - Calico
