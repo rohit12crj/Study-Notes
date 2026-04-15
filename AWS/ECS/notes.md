@@ -14,6 +14,8 @@
 
 ---
 ✅ task role vs task exection role in ECS
+- In ECS, the task execution role is used by the ECS agent to perform actions like pulling container images and sending logs, whereas the task role is assumed by the application inside the container to access AWS services like S3 or DynamoDB
+- <img width="383" height="88" alt="image" src="https://github.com/user-attachments/assets/46df7bd1-632b-4352-aeed-35ed2a2aa1a9" />
 
 ---
 ✅ How will u setup monitoring for your ECS Cluster , service & tasks & which metrics will u be tracking . explain with just AWS tools . How will u handle alert grouping in case of multiple alerts of same nature ?
