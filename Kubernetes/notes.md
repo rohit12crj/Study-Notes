@@ -21,6 +21,10 @@
 - Kube Proxy
 
 ---
+✅ Kops
+- <img width="516" height="395" alt="image" src="https://github.com/user-attachments/assets/ad7bad6f-2537-4bc4-9637-62affb7bae02" />
+
+---
 ✅ why k8s is used over docker ?
 - Auto scaling  --> using replica sets
 - Auto healing  --> using health check
