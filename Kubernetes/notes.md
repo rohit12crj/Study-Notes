@@ -6,6 +6,12 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ what is namespace in k8s and can 2 pods in 2 different namespace talk to each other & how to restrict talking ?
+- <img width="527" height="116" alt="image" src="https://github.com/user-attachments/assets/40818d0c-ea07-45ac-87db-b88aa11e9b97" />
+- <img width="404" height="104" alt="image" src="https://github.com/user-attachments/assets/7618d5c4-df65-4d67-8b93-ad4148d994ab" />
+- <img width="398" height="174" alt="image" src="https://github.com/user-attachments/assets/1aab8f0b-7c96-459c-acb1-363f06a08dc8" />
+
+---
 ✅ Pods vs container
 - <img width="448" height="127" alt="image" src="https://github.com/user-attachments/assets/fe2e1f19-0f62-4962-bb92-847503b25260" />
 - <img width="320" height="143" alt="image" src="https://github.com/user-attachments/assets/63ce8ebc-a475-41be-befe-cf10d2d0fa12" />
@@ -51,6 +57,8 @@
 - Kyverno
 - Kustomize
 - KEDA
+- Network Policy
+- Calico
 
 ---
 ✅ Kops
