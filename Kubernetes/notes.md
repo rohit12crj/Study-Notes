@@ -17,7 +17,7 @@
 - Service Account --> Kubernetes-managed identities for pods
 - Role / Cluster role --> Defines Permission
 - Role Binding / Cluster Role Binding --> Binds Role / Cluster role to Users / Service Account
-
+- Differnce between Role vs Cluster Role --> Cluster Role have Cluster Level permission whereas normal roles dont have them
 
 
 ---
@@ -75,6 +75,7 @@
 - Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
 - Service  --> Service ( also called as svc ) internally uses Kube Proxy . Can be of Nodeport , Cluster IP ( Default , Access to Pods avilable only within Cluster ) , Load Balancer ( Access to Pods avilable from internet ) . Service Discovery uses Labels & Selectors
 - Service Mesh
+- Headless Service
 - Istio
 - Ingress
 - Ingress Controller
