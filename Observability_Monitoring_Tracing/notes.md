@@ -159,6 +159,7 @@ how will u setup custom dashboard & share ot with end users ? same process like 
 How will u setup authentication & authorization for grafana UI & give different users specific access to different dashboards ?
 
 which db is grfana using since  it needs to store user RBAC ?
+- Grafana stores RBAC data in its internal database, which is SQLite by default, and PostgreSQL or MySQL in production setups
 
 EFK/Opensearch for Logging & Jaeger for Traceing
 ===================================================
