@@ -6,6 +6,12 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ Pods vs container
+- <img width="448" height="127" alt="image" src="https://github.com/user-attachments/assets/fe2e1f19-0f62-4962-bb92-847503b25260" />
+- <img width="320" height="143" alt="image" src="https://github.com/user-attachments/assets/63ce8ebc-a475-41be-befe-cf10d2d0fa12" />
+- <img width="385" height="149" alt="image" src="https://github.com/user-attachments/assets/27f4b1ae-72a9-4ac9-b3f2-d59cdc526ad5" />
+
+---
 ✅ K8s Architecture
 
 #### Control Plane / Master
@@ -19,6 +25,19 @@
 - Container Runtime
 - Kubelet
 - Kube Proxy
+
+#### Other Notable parts
+- kubectl --> CLI
+- Service --> Nodeport , Cluster IP , Load Balancer
+- Service Mesh
+- Isito
+- Ingress
+- Gateway API
+- Replica Set
+- Config Map
+- Secrets
+- Daemon Set
+- 
 
 ---
 ✅ Kops
