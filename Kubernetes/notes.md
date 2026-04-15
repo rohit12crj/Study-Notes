@@ -6,6 +6,23 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ Node Cordone
+- <img width="480" height="155" alt="image" src="https://github.com/user-attachments/assets/91cdd169-ecf5-4dd3-a1fe-2b845ad518b1" />
+
+---
+✅ Resource Sharing and Blast Radius Control
+- When multiple teams share a single cluster, one service leaking memory can crash others. To mitigate this use
+- Namespaces: Use them to isolate projects or teams
+- Resource Quotas: Set these at the Namespace level to prevent one team from consuming cluster-wide resources
+- Resource Limits: Define these at the Pod level to ensure a single microservice failure doesn't impact other pods within the same namespace
+
+---
+✅ Handling OOM (Out of Memory) Killed Errors 
+- If a pod is in a CrashLoopBackOff state due to an OOMKilled error, simply adding more memory isn't always the solution.
+- Analysis: Log into the pod to capture Thread Dumps and Heap Dumps (e.g., using kill -3 or jstack for Java apps) to identify memory-leaking threads.
+- Collaboration: Share these dumps with the development team so they can perform a root cause analysis and deploy a fixed version of the application (22:40).
+
+---
 ✅ Config map vs secrets
 - <img width="368" height="117" alt="image" src="https://github.com/user-attachments/assets/b88da5a9-d0bb-4b0c-950a-538f6115b737" />
 
@@ -18,7 +35,6 @@
 - Role / Cluster role --> Defines Permission
 - Role Binding / Cluster Role Binding --> Binds Role / Cluster role to Users / Service Account
 - Differnce between Role vs Cluster Role --> Cluster Role have Cluster Level permission whereas normal roles dont have them
-
 
 ---
 ✅ ssl termination vs ssl passthrough vs ssl bridging
@@ -69,7 +85,7 @@
 - Kubelet
 - Kube Proxy
 
-#### Other Notable parts
+#### Other Notable Parts
 - kubectl --> CLI
 - Pod --> 
 - Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
@@ -101,6 +117,22 @@
 - Network Policy
 - Calico
 - Border0 --> 3rd party tool user for RBAC
+- namespace
+- Resource Quota
+- Resource Limit
+- Taints
+- Tolerations
+- Node Cordone
+- Node Drain
+- Pod Eviction
+- Distruption Budget
+
+---
+✅ K8s Common Errors
+- Image Pull Back Off
+- Crash Loop Back Off
+- OOM Killed
+- 
 
 ---
 ✅ Kops
@@ -133,9 +165,22 @@
 ---
 ✅ k8s Cluster Upgrade
 - https://www.youtube.com/watch?v=1l2agEQ1Ngo --> DevOps Shack
+- https://www.youtube.com/watch?v=Cfznp8jRh7I&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=17  --> Abhishek
 - version upgrade is not reversible
 - version 1.33 needs to be upgraded to 1.34 first & not to 1.35 directly
-- list out all pre requisite for k8s version upgrade
+  
+#### Core Prerequisites for Upgrades 
+- Node Cordone
+- Compatibility: Ensure the Control Plane, Nodes, Kubelet, and Cluster Autoscaler are all compatible with the target version 
+- Release Notes: Always review the changelog for API deprecations or major changes that could break existing resources (e.g., Ingress API shifts)
+- Environment Testing: Never upgrade production first. Always validate the upgrade in lower environments (dev/staging/pre-prod) first 
+- Networking: Ensure there are at least 5 available IP addresses in your subnet 
+
+#### The Three-Phase Upgrade Process:
+- Control Plane Upgrade: Use eksctl, the AWS CLI, or the AWS UI to trigger the version update for the management layer
+- Data Plane (Node) Upgrade: Upgrade the nodes. For managed node groups, the presenter recommends a rolling update strategy to achieve zero downtime
+- Add-ons Upgrade: Finally, update cluster add-ons like VPC CNI and CoreDNS to match the new version
+- Testing --> After the upgrade, the presenter advises running functional or regression tests to ensure that all services, controllers, and applications (such as Argo CD or Prometheus) are operating as expected 
 
 ---
 ✅ eks nodegroup 
