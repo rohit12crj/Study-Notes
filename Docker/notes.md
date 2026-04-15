@@ -146,6 +146,12 @@ how will u pass env variables when app is running  like in a ECS Task definition
 
 ---
 ✅ Docker host vs docker bridge netorking ?
+- docker bridge is also called docker 0 . default network
+- <img width="401" height="127" alt="image" src="https://github.com/user-attachments/assets/e375f8f2-29b8-47ad-82f3-f583326fb949" />
+- <img width="469" height="388" alt="image" src="https://github.com/user-attachments/assets/830363fa-c1cd-46d5-b578-e8b692c10b73" />
+- <img width="404" height="366" alt="image" src="https://github.com/user-attachments/assets/7b48ece5-aaef-4b73-9c5b-ca0f04f431b9" />
+- <img width="399" height="349" alt="image" src="https://github.com/user-attachments/assets/16bc570e-9209-471a-afb7-f07dfb43c327" />
+- <img width="554" height="305" alt="image" src="https://github.com/user-attachments/assets/1fef7b9f-42cd-430d-b7ab-20aa75f55c2a" />
 
 ---
 distorless images along with advantage and disadvantage
