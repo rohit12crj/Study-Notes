@@ -12,6 +12,13 @@
 - <img width="385" height="149" alt="image" src="https://github.com/user-attachments/assets/27f4b1ae-72a9-4ac9-b3f2-d59cdc526ad5" />
 
 ---
+✅ Init Container vs Side car Container
+- Init containers run before the main application container to perform setup tasks and must complete successfully, whereas sidecar containers run alongside the main container to provide supporting functionality like logging, proxying, or monitoring throughout the pod’s lifecycle
+- <img width="367" height="128" alt="image" src="https://github.com/user-attachments/assets/11b395a8-cdb1-4663-a7c5-351e1e98b2a8" />
+- <img width="348" height="277" alt="image" src="https://github.com/user-attachments/assets/abeb21d0-716a-4c1c-8451-c5ae3cc6e6b7" />
+- <img width="423" height="250" alt="image" src="https://github.com/user-attachments/assets/247b701a-8c1d-4915-a1fc-8d0788bf4684" />
+
+---
 ✅ K8s Architecture
 
 #### Control Plane / Master
@@ -19,7 +26,7 @@
 - etcd
 - Scheduler
 - Controller Manager
-- CCM ( Not presnet in local installations ) --> Cloud Controller Manager -->
+- CCM ( Not presnet in local installations ) = Cloud Controller Manager -->
 
 #### Data Plane / Worker
 - Container Runtime
@@ -28,6 +35,8 @@
 
 #### Other Notable parts
 - kubectl --> CLI
+- Pod --> 
+- Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
 - Service --> Nodeport , Cluster IP , Load Balancer
 - Service Mesh
 - Isito
@@ -37,7 +46,11 @@
 - Config Map
 - Secrets
 - Daemon Set
-- 
+- RBAC
+- HA
+- Kyverno
+- Kustomize
+- KEDA
 
 ---
 ✅ Kops
