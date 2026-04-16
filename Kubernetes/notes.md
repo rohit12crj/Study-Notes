@@ -118,14 +118,14 @@
 - cluster role binding -->
 - Custom Resource
 - Custom Resource Controller
-- HA
+- HPA
+- KEDA
 - Kyverno
 - Kustomize
 - Persistent Volume ( pv ) --> 
 - Persistent Volume Claim ( pvc ) --> 
 - Statefulset --> Flow ( Statefulset --> pvc --> sc ( storage class eg EBS  ) --> provisioner --> pv
 - CSI Driver -->
-- KEDA
 - Network Policy --> block frontend pods from reaching db pods directly . enforced using calico or kyverno
 - Calico
 - Admission Controller --> 
