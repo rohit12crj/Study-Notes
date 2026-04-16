@@ -3,6 +3,21 @@
 - https://www.youtube.com/watch?v=VmJpdIOiIaU  -->  Git Interview Questions --> Abhishek
 
 ---
+✅  What is git revert and how is it different from git reset? Explain different types of git reset ( soft , mixed , hard ) 
+- <img width="539" height="266" alt="image" src="https://github.com/user-attachments/assets/0f7037ea-8b66-4a57-9d63-4d8022a52016" />
+- <img width="521" height="229" alt="image" src="https://github.com/user-attachments/assets/e0850d7f-7018-4455-8c7f-eff942267e41" />
+- <img width="440" height="219" alt="image" src="https://github.com/user-attachments/assets/cee51205-076b-485f-88a7-8ee4a73a5e30" />
+
+---
+✅ What is the difference between origin, upstream, and local branches?
+- <img width="514" height="71" alt="image" src="https://github.com/user-attachments/assets/d046ff7a-8dd7-4ce0-9efe-7d9af97312c9" />
+- <img width="407" height="103" alt="image" src="https://github.com/user-attachments/assets/943e5cf5-75d8-4db3-8876-3613384e445c" />
+
+---
+✅ What is an annotated tag vs a lightweight tag?
+- <img width="419" height="196" alt="image" src="https://github.com/user-attachments/assets/b346fa37-9ec6-4a12-9d5f-a5dfeea9f676" />
+
+---
 ✅ Git Tag , relesase , release managenent , semantic versioning
 - A Git tag marks a specific commit, while a GitHub release turns that tag into a distributable version with metadata and artifacts
 - https://www.youtube.com/watch?v=4qwadZfPsik
