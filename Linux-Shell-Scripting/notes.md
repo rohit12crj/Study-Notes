@@ -13,7 +13,8 @@ Process Management
 ------------------------
 - ps --> list all process
 - pgrep -->  Find a process by name and return its PID
-- top --> 
+- top --> used to find out the CPU usage % & I/O usage % ( check under wa )
+- iotop --> used to find out which which process is consuming the most I/O 
 - kill PID – Terminate a process by PID
 - pkill processname – Terminate a process by name
 - kill -9 PID – Force kill a process
@@ -46,7 +47,7 @@ File Management
 
 System Monitoring
 ------------------------
-- iostat --> Display CPU and disk I/O statistics
+- iostat --> Check which disk ( like C Drive , D Drive ) is having I/O issues . need to check util%
 - vmstat --> 
 - free --> Check RAM
 
