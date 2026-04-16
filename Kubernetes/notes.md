@@ -99,66 +99,66 @@
 ✅ K8s Architecture
 
 #### Control Plane / Master
-- API server
-- etcd
-- Scheduler
-- Controller Manager
-- CCM ( Not presnet in local installations ) = Cloud Controller Manager -->
+- API server --> The API Server is the entry point to the Kubernetes cluster and exposes REST APIs. All components (kubectl, controllers, scheduler) communicate through it. It validates and processes requests, then updates the cluster state in etcd.
+- etcd --> etcd is a distributed key-value store that holds the entire cluster state (config, secrets, metadata). It is the single source of truth in Kubernetes. If etcd is lost, the cluster state is lost.
+- Scheduler --> The Scheduler assigns Pods to nodes based on resource availability and constraints. It considers factors like CPU/memory, affinity rules, taints/tolerations. It only decides placement—not execution
+- Controller Manager --> Controller Manager runs controllers that maintain the desired state (e.g., ReplicaSet, Node controller). It continuously compares desired vs actual state and takes corrective actions. Example: creates new pods if replicas are missing.
+- CCM ( Not presnet in local installations ) = Cloud Controller Manager --> CCM integrates Kubernetes with cloud providers (AWS, Azure, GCP) . It manages cloud resources like load balancers, volumes, and node lifecycle. Not present in local clusters like Minikube.
 
 #### Data Plane / Worker
-- Container Runtime
-- Kubelet
-- Kube Proxy
+- Container Runtime --> The container runtime (e.g., containerd, CRI-O) is responsible for running containers. It pulls images, starts/stops containers, and manages container lifecycle. It works via the CRI (Container Runtime Interface).
+- Kubelet --> Kubelet is an agent running on each node that communicates with the API Server. It ensures containers described in Pod specs are running. It also performs health checks and reports node status.
+- Kube Proxy --> Kube Proxy manages networking rules for Services
 
 #### Other Notable Parts
 - kubectl --> CLI
 - Pod --> 
 - Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod ( More detailed flow is Deployment --> API Server --> Scheduler --> Kubelet --> Pods )
 - Service  --> Service ( also called as svc ) internally uses Kube Proxy . Can be of Nodeport , Cluster IP ( Default , Access to Pods avilable only within Cluster ) , Load Balancer ( Access to Pods avilable from internet ) . Service Discovery uses Labels & Selectors
-- Service Mesh
-- Headless Service
-- Istio
+- Service Mesh ---> A Service Mesh manages service-to-service communication using sidecars. It provides traffic control, observability, and security. Example: Istio.
+- Headless Service --> A Headless Service does not assign a cluster IP. It directly exposes Pod IPs via DNS. Useful for StatefulSets and direct pod communication.
+- Istio --> Istio is a popular service mesh that provides traffic management, security, and observability. It uses Envoy sidecars to intercept traffic. Helps with retries, circuit breaking, and mTLS.
 - Ingress
-- Ingress Controller
-- Gateway API
-- Replica Set
-- Config Map
-- Secrets
-- Daemon Set
+- Ingress Controller --> Ingress Controller implements Ingress rules (e.g., NGINX, Traefik). It watches Ingress resources and configures routing. Without it, Ingress does nothing.
+- Gateway API --> Gateway API is the next-gen replacement for Ingress.
+- Replica Set --> ReplicaSet ensures a specified number of pod replicas are always running. It replaces failed pods automatically. Usually managed indirectly via Deployment.
+- Config Map --> ConfigMap stores non-sensitive configuration data (like env variables). It decouples config from application code. Can be mounted as files or env variables.
+- Secrets -->  Secrets store sensitive data like passwords, tokens, and keys. They are base64-encoded and can be mounted into Pods. More secure than ConfigMaps.
+- Daemon Set --> DaemonSet ensures a pod runs on every node (or selected nodes). Used for logging, monitoring, and networking agents. Example: Fluentd, Node Exporter.
 - RBAC --> Flow ( Pod --> Service Account --> Role --> Role Binding )
-- Service Account -->
+- Service Account --> Service Account provides identity to Pods. It is used for authentication with the API Server. Each Pod can be assigned a ServiceAccount.
 - Role --> used to give permission to a pod within a single namespace
-- Users
+- Users --> Users represent human or external identities. Kubernetes does not manage users directly—it relies on external auth providers. RBAC rules apply to them.
 - Cluster role --> used to give permission to a pod across all namepaces in a cluster
-- cluster role binding -->
-- Custom Resource
-- Custom Resource Controller
-- Admission Controller --> 
-- HPA
-- KEDA
-- Kyverno
+- cluster role binding --> Binds a ClusterRole to users or service accounts
+- Custom Resource --> CRDs allow you to extend Kubernetes with custom objects. Example: defining your own resource like “Database”. It makes Kubernetes extensible.
+- Custom Resource Controller --> This controller watches custom resources and ensures desired state. It works like built-in controllers but for CRDs
+- Admission Controller --> Admission Controllers intercept API requests before persistence. They validate or mutate requests. Example: enforcing security policies.
+- HPA --> Horizontal Pod Autoscaler --> HPA automatically scales pods based on metrics like CPU/memory. It adjusts replicas dynamically. Helps handle variable workloads.
+- KEDA --> KEDA enables event-driven autoscaling. It scales pods based on external metrics like queues (Kafka, RabbitMQ). Works alongside HPA.
+- Kyverno --> Kyverno is a policy engine for Kubernetes. It validates, mutates, and generates resources. Used for security and compliance enforcement.
 - Kustomize
-- Persistent Volume ( pv ) --> 
-- Persistent Volume Claim ( pvc ) --> 
-- Statefulset --> Flow ( Statefulset --> pvc --> sc ( storage class eg EBS  ) --> provisioner --> pv
-- CSI Driver -->
-- Network Policy --> block frontend pods from reaching db pods directly . enforced using calico or kyverno
-- Calico
+- Persistent Volume ( pv ) --> PV is a cluster-wide storage resource. It represents actual storage like EBS, NFS
+- Persistent Volume Claim ( pvc ) --> PVC is a request for storage by a Pod
+- Statefulset --> Flow ( Statefulset --> pvc --> sc ( storage class eg EBS  ) --> provisioner --> pv . Used for DBs.
+- CSI Driver --> CSI (Container Storage Interface) allows Kubernetes to interact with storage systems. It enables dynamic provisioning. Example: AWS EBS CSI. 
+- Network Policy --> control traffic between Pods. block frontend pods from reaching db pods directly . enforced using calico or kyverno
+- Calico --> Networking and security solution for Kubernetes. It enforces network policies. It uses BGP and iptables.
 - Border0 --> 3rd party tool user for RBAC
-- namespace
-- Resource Quota
-- Resource Limit
+- Namespace --> logically isolates resources in a cluster
+- Resource Quota --> limits total resource usage in a namespace.
+- Resource Limit --> limits total resource usage in a pod
 - Liveness Probe --> Health Check
-- Node Selector --> Node Selector is a simple way to constrain pods to nodes with specific labels. It allows you to specify a set of key-value pairs that must match the node's labels for a pod to be scheduled on that node. Usage: Include a nodeSelector field in the pod's YAML definition to specify the required labels.
-- Node Affinity --> Node Affinity is a more expressive way to specify rules about the placement of pods relative to nodes' labels. It allows you to specify rules that apply only if certain conditions are met. Usage: Define nodeAffinity rules in the pod's YAML definition, specifying required and preferred node selectors.
-- Taints --> Taints are applied to nodes to repel certain pods. They allow nodes to refuse pods unless the pods have a matching toleration. Usage: Use kubectl taint command to apply taints to nodes. Include tolerations field in the pod's YAML definition to tolerate specific taints.
-- Tolerations --> Tolerations are applied to pods and allow them to schedule onto nodes with matching taints. They override the effect of taints.
-- Node Cordone --> Implemented using Taint
-- Node Drain
-- Pod Eviction
-- Pod Distruption Budget
-- Voluntry & Involuntry Disruption
-- external secret operator 
+- Node Selector --> Node Selector is a simple way to schedule pods on specific nodes using labels. It matches exact key-value pairs. Basic scheduling constraint.
+- Node Affinity --> Node Affinity is an advanced version of nodeSelector. It supports required and preferred rules. Provides more flexibility in scheduling.
+- Taints --> Taints are applied to nodes to repel pods. Only pods with matching tolerations can be scheduled. Used to control placement
+- Tolerations --> Tolerations allow pods to be scheduled on tainted nodes.
+- Node Cordone --> Node cordon marks a node as unschedulable. No new pods are placed on it. Used during maintenance. Implemented using Taint
+- Node Drain --> Node drain safely evicts pods from a node. It prepares the node for maintenance. Respects Pod Disruption Budgets.
+- Pod Eviction --> Pod eviction is the process of removing pods gracefully. It ensures proper shutdown. Triggered during drain or resource pressure.
+- Pod Distruption Budget ( PDB ) --> PDB ensures minimum availability during voluntary disruptions. It limits how many pods can be down. Important for high availability.
+- Voluntry & Involuntry Disruption --> Voluntary disruptions are planned (e.g., node drain). Involuntary are unexpected (node crash). PDB mainly protects against voluntary ones.
+- External secret operator --> It syncs secrets from external systems (AWS Secrets Manager, Vault) into Kubernetes. Avoids storing secrets directly in cluster. Improves security.
 
 ---
 ✅ K8s Common Errors
