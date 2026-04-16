@@ -6,6 +6,21 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ encoding vs encrypting ?
+
+---
+✅ Pod Status ?
+- Iidentify the Pod's status:
+- Pending: Pod is not assigned to a node. Check for insufficient resources --> missing node affinity labels --> unbound persistent volume claims -->  or taints/tolerations 
+- Container Creation Issues: Pod is assigned but failing to start. Investigate missing ConfigMaps (35:10), missing Secrets (38:36), image pull failures (47:46), or resource quota restrictions (41:21).
+- Runtime Errors: Pod is running but crashing or unreachable. Check for Out of Memory (OOM) errors (52:28), liveness/readiness probe failures (58:06), init container failures (103:22), application log errors (106:08), or service endpoint connectivity issues (110:35).
+
+---
+✅ Advantage of KEDA over HPA ?
+- https://www.youtube.com/watch?v=LwC71u2DyD0&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=38  --> Abhishek
+- https://github.com/iam-veeramalla/KEDA-Zero-to-Hero
+
+---
 ✅ How to secure your EKS Cluster
 - <img width="776" height="258" alt="image" src="https://github.com/user-attachments/assets/311a61ad-1249-4577-a6bb-8c96e413c9d2" />
 - <img width="761" height="215" alt="image" src="https://github.com/user-attachments/assets/6c56905b-1ca4-49c0-a08f-dcc9303c6cdd" />
@@ -118,6 +133,7 @@
 - cluster role binding -->
 - Custom Resource
 - Custom Resource Controller
+- Admission Controller --> 
 - HPA
 - KEDA
 - Kyverno
@@ -128,7 +144,6 @@
 - CSI Driver -->
 - Network Policy --> block frontend pods from reaching db pods directly . enforced using calico or kyverno
 - Calico
-- Admission Controller --> 
 - Border0 --> 3rd party tool user for RBAC
 - namespace
 - Resource Quota
@@ -141,7 +156,9 @@
 - Node Cordone --> Implemented using Taint
 - Node Drain
 - Pod Eviction
-- Distruption Budget
+- Pod Distruption Budget
+- Voluntry & Involuntry Disruption
+- external secret operator 
 
 ---
 ✅ K8s Common Errors
