@@ -4,6 +4,7 @@
 - https://www.youtube.com/watch?v=Mlc0--DO3uE&list=WL&index=1 --> Linux Commands that makes you 10X --> Part 2 ( Abhishek )
 - https://github.com/iam-veeramalla/ultimate-linux-guide/  -->  Ultimate Linux Guide Repo ( Abhishek )
 - https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
+- https://www.youtube.com/watch?v=sjyLRS52zOg  --> CPU vs I/0 Bottleneck & how to troubleshoot
 
 ---
 ✅  Popular Linux Commands
