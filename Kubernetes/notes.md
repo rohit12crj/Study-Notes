@@ -12,6 +12,10 @@
 - Rest of the Doc --> https://github.com/iam-veeramalla/Kubernetes-Zero-to-Hero/blob/main/Security/Manage_Security_Like_Pro.md#enable-the-encryption-provider-feature-by-configuring-the-kubernetes-api-server
 
 ---
+✅ Kyverno
+- https://www.youtube.com/watch?v=o7-H8QWUPqI&t=2105s
+
+---
 ✅ Node Cordone
 - <img width="480" height="155" alt="image" src="https://github.com/user-attachments/assets/91cdd169-ecf5-4dd3-a1fe-2b845ad518b1" />
 
@@ -106,10 +110,11 @@
 - Config Map
 - Secrets
 - Daemon Set
-- RBAC
-- Service Accounts -->
+- RBAC --> Flow ( Pod --> Service Account --> Role --> Role Binding )
+- Service Account -->
+- Role --> used to give permission to a pod within a single namespace
 - Users
-- Cluster role
+- Cluster role --> used to give permission to a pod across all namepaces in a cluster
 - cluster role binding -->
 - Custom Resource
 - Custom Resource Controller
@@ -121,8 +126,9 @@
 - Statefulset --> Flow ( Statefulset --> pvc --> sc ( storage class eg EBS  ) --> provisioner --> pv
 - CSI Driver -->
 - KEDA
-- Network Policy
+- Network Policy --> block frontend pods from reaching db pods directly . enforced using calico or kyverno
 - Calico
+- Admission Controller --> 
 - Border0 --> 3rd party tool user for RBAC
 - namespace
 - Resource Quota
