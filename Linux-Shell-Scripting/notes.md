@@ -6,6 +6,80 @@
 - https://github.com/iam-veeramalla/a-to-z-of-networking/  -->  A to Z Networking Repo ( Abhishek )
 
 ---
+✅  Popular Linux Commands
+
+Process Management
+------------------------
+- ps --> list all process
+- pgrep -->  Find a process by name and return its PID
+- top --> 
+- kill PID – Terminate a process by PID
+- pkill processname – Terminate a process by name
+- kill -9 PID – Force kill a process
+- pkill -9 processname – Kill all instances of a process
+- nice -n 10 command – Run a command with a specific priority
+- renice -n -5 -p PID – Change priority of an existing process
+
+File Permission 
+-----------------
+- Owner --> Group --> Others
+- Read (r or 4)  --> Write (w or 2) --> Execute (x or 1)
+
+File Management 
+------------------------
+- curl --> https://example.com – Fetches a webpage's content.
+- wget --> https://example.com/file.zip – Downloads a file from the internet.
+- printenv --> Displays ll env variables on shell
+- sed --> used to process and transform text in a stream (file or input) — without opening an editor.
+- set --> displays all variables in the current shell & configure shell behaviour 
+- set -x --> debug shell script 
+- set -e --> exists scripts when there is error
+- set -o --> 
+- export --> to set environment variables and make them available to child processes started from the current shell.
+- awk --> text-processing tool used to scan, filter, and manipulate structured data based on patterns and field
+- find --> recursively search files and directories based on conditions like name, size, type, and time.
+- grep --> 
+- scp --> 
+- tar -->
+- rsync -->
+
+System Monitoring
+------------------------
+- iostat --> Display CPU and disk I/O statistics
+- vmstat --> 
+- free --> Check RAM
+
+Networking 
+------------------------
+- netstat -tulnp -->  Show active connections and listening ports , older and deprecated
+- ss -tulnp -->  Alternative to netstat for socket statistics , faster and modern
+- ifconfig -->  Show network interfaces (deprecated, use ip a)
+- ip a -->  Show network interface details
+- ping hostname -->  Test network connectivity
+- traceroute hostname -->  Show network path to a host
+- nslookup domain -->  Get DNS resolution details
+
+Log Monitoring
+------------------------
+- tail -f /var/log/syslog -->  Live monitoring of system logs
+- journalctl -f -->  Live system logs for systemd-based distros
+- dmesg | tail -->  View kernel logs
+- logrotate --> Linux utility to automatically rotate log files
+
+Disk Management
+---------------
+- lsblk --> Check Disk Partition
+- df -h --> Check Disk Space
+- du --> Check Directory Size
+- fdisk --> Partition a new disk	
+- mount --> Mount an existing partition	
+
+user management pending
+----------------------
+- useradd -->
+- adduser -->
+
+---
 ✅ What is the Linux kernel? 
 - The kernel is the core of the OS that manages CPU, memory, processes, hardware, and system calls.
 
