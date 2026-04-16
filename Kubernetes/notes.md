@@ -6,6 +6,12 @@
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
 
 ---
+✅ How to secure your EKS Cluster
+- <img width="776" height="258" alt="image" src="https://github.com/user-attachments/assets/311a61ad-1249-4577-a6bb-8c96e413c9d2" />
+- <img width="761" height="215" alt="image" src="https://github.com/user-attachments/assets/6c56905b-1ca4-49c0-a08f-dcc9303c6cdd" />
+- Rest of the Doc --> https://github.com/iam-veeramalla/Kubernetes-Zero-to-Hero/blob/main/Security/Manage_Security_Like_Pro.md#enable-the-encryption-provider-feature-by-configuring-the-kubernetes-api-server
+
+---
 ✅ Node Cordone
 - <img width="480" height="155" alt="image" src="https://github.com/user-attachments/assets/91cdd169-ecf5-4dd3-a1fe-2b845ad518b1" />
 
@@ -110,9 +116,10 @@
 - HA
 - Kyverno
 - Kustomize
-- Persistent Volume
-- Persistent Volume Claim
-- statefulset 
+- Persistent Volume ( pv ) --> 
+- Persistent Volume Claim ( pvc ) --> 
+- Statefulset --> Flow ( Statefulset --> pvc --> sc ( storage class eg EBS  ) --> provisioner --> pv
+- CSI Driver -->
 - KEDA
 - Network Policy
 - Calico
