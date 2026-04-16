@@ -272,6 +272,7 @@ user management pending
 ---
 ✅ inode , hard link , soft link
 - An inode is a metadata structure that stores all information about a file except its name and actual data.
+- <img width="353" height="79" alt="image" src="https://github.com/user-attachments/assets/fa17a4fb-809d-4cf9-be28-bd9ddb128f95" />
 
 ---
 ✅ why pipe command wont work with date comamnd like -->  date | echo "today is "
