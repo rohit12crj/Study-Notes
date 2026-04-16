@@ -88,7 +88,7 @@
 #### Other Notable Parts
 - kubectl --> CLI
 - Pod --> 
-- Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod
+- Deployment --> Flow = Deployment ( Yaml ) --> Replica Set ( Controller ) --> Pod ( More detailed flow is Deployment --> API Server --> Scheduler --> Kubelet --> Pods )
 - Service  --> Service ( also called as svc ) internally uses Kube Proxy . Can be of Nodeport , Cluster IP ( Default , Access to Pods avilable only within Cluster ) , Load Balancer ( Access to Pods avilable from internet ) . Service Discovery uses Labels & Selectors
 - Service Mesh
 - Headless Service
@@ -120,9 +120,12 @@
 - namespace
 - Resource Quota
 - Resource Limit
-- Taints
-- Tolerations
-- Node Cordone
+- Liveness Probe --> Health Check
+- Node Selector --> Node Selector is a simple way to constrain pods to nodes with specific labels. It allows you to specify a set of key-value pairs that must match the node's labels for a pod to be scheduled on that node. Usage: Include a nodeSelector field in the pod's YAML definition to specify the required labels.
+- Node Affinity --> Node Affinity is a more expressive way to specify rules about the placement of pods relative to nodes' labels. It allows you to specify rules that apply only if certain conditions are met. Usage: Define nodeAffinity rules in the pod's YAML definition, specifying required and preferred node selectors.
+- Taints --> Taints are applied to nodes to repel certain pods. They allow nodes to refuse pods unless the pods have a matching toleration. Usage: Use kubectl taint command to apply taints to nodes. Include tolerations field in the pod's YAML definition to tolerate specific taints.
+- Tolerations --> Tolerations are applied to pods and allow them to schedule onto nodes with matching taints. They override the effect of taints.
+- Node Cordone --> Implemented using Taint
 - Node Drain
 - Pod Eviction
 - Distruption Budget
@@ -130,7 +133,10 @@
 ---
 ✅ K8s Common Errors
 - Image Pull Back Off
+- <img width="816" height="197" alt="image" src="https://github.com/user-attachments/assets/fddf346c-5983-4004-bcf4-11c313bcacf1" />
 - Crash Loop Back Off
+- <img width="808" height="369" alt="image" src="https://github.com/user-attachments/assets/6098c3ef-0ba7-42a4-99c3-24e392124c8a" />
+- <img width="809" height="451" alt="image" src="https://github.com/user-attachments/assets/05de4405-c6f9-4e69-a747-54a3b191b437" />
 - OOM Killed
 - 
 
