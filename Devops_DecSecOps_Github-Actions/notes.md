@@ -220,6 +220,12 @@ Examples:
 ---
 ---
 ---
+✅ Github Organization Structure 
+- Single Org vs Multi Org . When will u choose which ?
+- https://www.youtube.com/watch?v=kpJWWIauuAU
+
+
+---
 ✅ Reusable workflow vs Composite Action
 - Reusable workflows are used to share entire CI/CD pipelines across repositories, while composite actions are used to reuse a set of steps within a job
 - <img width="481" height="432" alt="image" src="https://github.com/user-attachments/assets/86ffe1b8-79a5-4ee6-970d-9a50f79f9b95" />
