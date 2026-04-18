@@ -220,6 +220,10 @@ Examples:
 ---
 ---
 ---
+✅ Github Enterprise Type 
+- <img width="626" height="305" alt="image" src="https://github.com/user-attachments/assets/d566211e-1a8f-4609-9d2a-439c6c88c043" />
+
+---
 ✅ Github Actions Pricing Change
 - https://www.youtube.com/watch?v=FXYGeOA_TIo
 - <img width="263" height="256" alt="image" src="https://github.com/user-attachments/assets/9e2b3c01-2544-4d62-9515-374a4bb10c19" />
