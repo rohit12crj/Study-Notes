@@ -224,6 +224,13 @@ Examples:
 - <img width="626" height="305" alt="image" src="https://github.com/user-attachments/assets/d566211e-1a8f-4609-9d2a-439c6c88c043" />
 
 ---
+✅ Github Enterprise with entra ID , Enterprise Manged Users ( EMU ) , SCIM Provisioning
+- GitHub Enterprise Managed Users (EMU) vs Normal GitHub Accounts (Non-EMU) 
+- <img width="551" height="346" alt="image" src="https://github.com/user-attachments/assets/276292ab-851a-4404-8614-f5c0d124bb37" />
+- <img width="437" height="359" alt="image" src="https://github.com/user-attachments/assets/6ae49023-23e9-4577-a5a3-fe90aae305d7" />
+- https://www.youtube.com/watch?v=cFx_6XbiyqE&list=PL4cGGIOFnaaCLfEYHjOEaKBHCcUmetDHa&index=6
+
+---
 ✅ Github Actions Pricing Change
 - https://www.youtube.com/watch?v=FXYGeOA_TIo
 - <img width="263" height="256" alt="image" src="https://github.com/user-attachments/assets/9e2b3c01-2544-4d62-9515-374a4bb10c19" />
