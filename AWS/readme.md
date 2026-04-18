@@ -46,6 +46,9 @@
 #### Common Architecture Questions
 
 ---
+✅ Monolithic Vs Microservice architecture --> https://www.youtube.com/watch?v=7nz_VKeuFFc&t=1418s
+
+---
 ✅ Explain Network Layers with diagram ( Top to Bottom )
 - <img width="281" height="202" alt="image" src="https://github.com/user-attachments/assets/59c4053a-5ddf-43b9-896e-a2ba06683850" />
 
