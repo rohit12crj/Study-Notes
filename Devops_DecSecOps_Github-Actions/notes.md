@@ -220,10 +220,14 @@ Examples:
 ---
 ---
 ---
+✅ Github Actions Pricing Change
+- https://www.youtube.com/watch?v=FXYGeOA_TIo
+- <img width="263" height="256" alt="image" src="https://github.com/user-attachments/assets/9e2b3c01-2544-4d62-9515-374a4bb10c19" />
+
+---
 ✅ Github Organization Structure 
 - Single Org vs Multi Org . When will u choose which ?
 - https://www.youtube.com/watch?v=kpJWWIauuAU
-
 
 ---
 ✅ Reusable workflow vs Composite Action
