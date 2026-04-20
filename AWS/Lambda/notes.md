@@ -71,8 +71,8 @@ Lambda retries 2 times automatically if it fails for async
 ---
 
 ✅ Concurrency
-
-reserved concurrency vs provisioned concurrency 
+- reserved concurrency vs provisioned concurrency 
+- https://www.youtube.com/watch?v=7Bc97tAySkU
 
 ---
 
