@@ -84,16 +84,12 @@
 ---
 
 ✅ Key Exam / Interview Points
-
-<img width="570" height="367" alt="image" src="https://github.com/user-attachments/assets/87e585c0-6a1d-4be9-bfd4-d46a48ffe479" />
-
-<img width="557" height="180" alt="image" src="https://github.com/user-attachments/assets/ac4fdaa0-0e4a-4ebc-b62b-2f8842ccfd32" />
+- <img width="570" height="367" alt="image" src="https://github.com/user-attachments/assets/87e585c0-6a1d-4be9-bfd4-d46a48ffe479" />
+- <img width="557" height="180" alt="image" src="https://github.com/user-attachments/assets/ac4fdaa0-0e4a-4ebc-b62b-2f8842ccfd32" />
 
 ---
-
 ✅ Give me real world expample when you will use signed cookies vs signed urls 
-
-https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
+- https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
 
 | Feature      | Signed URL        | Signed Cookies   |
 | ------------ | ----------------- | ---------------- |
@@ -105,27 +101,22 @@ https://youtu.be/JIW_pV3zau8?si=QTc8DOxg7VgIE2w-
 ---
 
 ✅ difference between cloudfront signed url vs s3 signed url
-
-<img width="395" height="127" alt="image" src="https://github.com/user-attachments/assets/2558a3a0-4877-4b93-83a8-61a7d76f9fc9" />
+- <img width="395" height="127" alt="image" src="https://github.com/user-attachments/assets/2558a3a0-4877-4b93-83a8-61a7d76f9fc9" />
 
 ---
-
 ✅ Give me real world expample when u will use compression
-
-<img width="427" height="455" alt="image" src="https://github.com/user-attachments/assets/56304b87-87d4-421f-82aa-971bade47570" />
+- <img width="427" height="455" alt="image" src="https://github.com/user-attachments/assets/56304b87-87d4-421f-82aa-971bade47570" />
 
 ---
-
 ✅ Give me real world expample where u will use cloudfornt Function vs Lambda@edge functions
-
+- <img width="926" height="430" alt="image" src="https://github.com/user-attachments/assets/6aa9f56d-9e92-46e7-b8fa-5d7dd26b1683" />
+- https://www.youtube.com/watch?v=T6dDeVG6cgo
 
 ---
-
 ✅ Can cloudfront be used for dynamic content
-
-
+- yes
+  
 ---
-
 ✅ Security
 - Integrate with WAF
 
