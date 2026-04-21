@@ -12,7 +12,7 @@
 - Day 11 --> Observability_Monitoring_Tracing
 - Day 12 + Day 13  --> k8s
 
-##### Note - Ansible , HR , AiOps_MLOps , Project , Data Engineering , System Design & Cyber-Security folders are not included
+##### Note - Ansible , HR , AiOps_MLOps , Project , Data Engineering , Azure , System Design & Cyber-Security folders are not included
 
 ---
 ✅ Common Services & DevOps Tools Ports
