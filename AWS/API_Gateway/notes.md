@@ -3,8 +3,12 @@
 
 ---
 ✅ How will u secure API Gateway ?
-- Lambda Authorizer
+- Authorizer ( 2 types --> Lambda & Cognito )
 - API Keys
+
+---
+✅ Proxy vs Non Proxy Integration 
+- In proxy integration, API Gateway forwards the full request to Lambda with minimal processing, whereas in non-proxy integration, API Gateway transforms both request and response using mapping templates, giving more control over the API contract.
 
 ---
 ✅ Validators ?
@@ -17,14 +21,9 @@
 
 ---
 ✅ What is the difference between REST API and HTTP API?
-   
-| Feature  | REST API                              | HTTP API              |
-| -------- | ------------------------------------- | --------------------- |
-| Cost     | Higher                                | Lower (~70% cheaper)  |
-| Latency  | Higher                                | Lower                 |
-| Features | More features (API keys, usage plans) | Limited but improving |
-| Use case | Complex enterprise APIs               | Simple microservices  |
+- <img width="604" height="378" alt="image" src="https://github.com/user-attachments/assets/73bbc786-3cd1-4048-9efe-11083263ace0" />
 
+---
 4) What is a Stage in API Gateway?
 
 A Stage is a named reference to a deployment.
