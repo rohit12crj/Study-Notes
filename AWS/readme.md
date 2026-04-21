@@ -72,16 +72,16 @@
 ---
 ✅ Difference between Forward Proxy & reverse proxy with examples 
 - https://youtu.be/CmYI2R2D2M0?si=Wg0v_FmG1_agkMIn --> Abhishek
+- <img width="253" height="127" alt="image" src="https://github.com/user-attachments/assets/e6244c97-2be4-4911-bd77-9605d1cc4da3" />
+- <img width="260" height="296" alt="image" src="https://github.com/user-attachments/assets/5e1124d6-c3ce-4e46-972d-42955810a4f2" />
 
 ---
-
 ✅ What are the common Reverse proxy used ? 
 - Nginx
 - Apache
 - Caddy
 
 ---
-
 ✅ Explain Architecture flow
 - Internet -> ALB -> Reverse Proxy -> ECS Tasks
 
