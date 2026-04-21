@@ -110,10 +110,11 @@
 - <img width="290" height="113" alt="image" src="https://github.com/user-attachments/assets/76a8e2b4-0394-46e0-946d-d64f7346c506" />
 
 ---
-✅ Different authentication techniques & when to use which with examples ?
-- Learn what authentication is, the basic methods like Basic Auth, Digest Auth, API keys, and sessions, then token-based authentication with Bearer tokens and JWTs, access and refresh tokens, OAuth2 and OpenID Connect, and SSO with SAML and OIDC
+✅ SAML vs OIDC ?
+- SAML is an XML-based, enterprise-focused SSO protocol, while OIDC is a modern, lightweight authentication layer using JWT built on OAuth 2.0, better suited for web and mobile applications
 - https://www.youtube.com/watch?v=iX8g4LqF8p8&t=97s
 - https://www.youtube.com/watch?v=_lTECv25N2U
+- <img width="348" height="209" alt="image" src="https://github.com/user-attachments/assets/6dc0901e-2528-4061-8a30-854fee112901" />
 
 ---
 ✅ what are jump servers / bastion servers ? why do u need them ? How do u secure them ? Can we eliminate them using AWS Native services 
@@ -124,9 +125,24 @@
 
 ---
 ✅ Difference between SSL , TLS & mTLS
+- SSL is an outdated protocol, TLS is its secure successor used for encrypted communication, and mTLS extends TLS by enabling mutual authentication where both client and server verify each other
+- <img width="533" height="380" alt="image" src="https://github.com/user-attachments/assets/68677afe-1ad5-43b4-a68e-462fb90baa68" />
 
 ---
-✅ Difference between Rest API , HTTP API & GraphQL API
+✅ encoding vs encrption vs hashing
+- <img width="460" height="220" alt="image" src="https://github.com/user-attachments/assets/381a8e89-d257-4a38-8c63-c049b123b6d5" />
+- <img width="428" height="253" alt="image" src="https://github.com/user-attachments/assets/f50a5a8b-a0d2-4c76-914e-65cfd718cfd1" />
+- <img width="378" height="215" alt="image" src="https://github.com/user-attachments/assets/910fd02f-4e0e-43ae-b61a-29bf5b7a0a87" />
+- <img width="518" height="271" alt="image" src="https://github.com/user-attachments/assets/5bdbc904-23e0-4765-828f-a1b1c3ab457f" />
+- Remember passwords are always hashed (not encrypted)
+
+---
+✅ SSL termination vs passthrough vs bridging
+- SSL termination decrypts traffic at the load balancer, passthrough keeps it encrypted end-to-end, and bridging decrypts at the load balancer but re-encrypts before sending to the backend
+
+---
+✅ GraphQL API ?
+- REST requires multiple endpoints and calls for related data, GraphQL consolidates everything into a single flexible query, and HTTP API is a lightweight implementation (like AWS API Gateway HTTP API) used to expose APIs efficiently.
 
 ---
 ✅ Dual Connectivity from on prem to AWS to Azure / GCP
