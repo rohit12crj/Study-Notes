@@ -2,6 +2,12 @@
 - https://www.youtube.com/watch?v=jcibXVFiFek  --> Rahul
 
 ---
+✅  API Gateway Throttling --> Used to Protect API Gateway
+- youtube.com/watch?v=sCXejDwPGY4
+- Rate Limit vs Burst Limit
+- <img width="523" height="425" alt="image" src="https://github.com/user-attachments/assets/54badf55-4301-478c-8215-89d8d0f2ce07" />
+
+---
 ✅ How will u secure API Gateway ?
 - Authorizer ( 2 types --> Lambda & Cognito )
 - API Keys
