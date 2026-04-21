@@ -4,18 +4,19 @@
 ---
 ✅ How will u secure API Gateway ?
 - Lambda Authorizer
+- API Keys
 
 ---
+✅ Validators ?
 
-2) What are the types of APIs in API Gateway?
+---
+✅ What are the types of APIs in API Gateway?
+- REST API – Full-featured, supports advanced features.
+- HTTP API – Lightweight, cheaper, lower latency.
+- WebSocket API – For real-time communication (chat apps, live dashboards).
 
-REST API – Full-featured, supports advanced features.
-
-HTTP API – Lightweight, cheaper, lower latency.
-
-WebSocket API – For real-time communication (chat apps, live dashboards).
-
-3) What is the difference between REST API and HTTP API?
+---
+✅ What is the difference between REST API and HTTP API?
    
 | Feature  | REST API                              | HTTP API              |
 | -------- | ------------------------------------- | --------------------- |
