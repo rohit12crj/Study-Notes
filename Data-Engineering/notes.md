@@ -9,10 +9,6 @@
 - Give me real world examples where & how will u use AWS Glue 
 
 ---
-✅ Apache Kafka 
-- https://youtu.be/uRnUEe4Byf8?si=yqSEm_t8ZffVZFh6 --> DevOps Shack
-
----
 ✅ Apache Spark
 
 ---
