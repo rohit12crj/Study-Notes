@@ -6,6 +6,11 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ Gitleaks
+- used to detect secret in github repo
+- reports can be uploaded as a artifact in github action & pipleine can be made to fail if gitleaks finds a secret 
+
+---
 ✅ Pipeline Steps ( Java OR Node Based Application  )
 - compile --> to find out syntax based errors --> Maven --> mvm compile / npm install / npm ci ( u need install maven in github action runner first)
 - unit testing --> to check functionality of code --> Maven --> mvm test / npm test
