@@ -8,7 +8,17 @@
 ---
 ✅ Gitleaks
 - used to detect secret in github repo
-- reports can be uploaded as a artifact in github action & pipleine can be made to fail if gitleaks finds a secret 
+- reports can be uploaded as a artifact in github action & pipleine can be made to fail if gitleaks finds a secret
+- Gitleaks can generate SARIF output, and you can upload it to GitHub so findings show up in the Security tab (like CodeQL alerts).
+- <img width="565" height="289" alt="image" src="https://github.com/user-attachments/assets/36408525-242c-409d-b0bc-c33e723b482e" />
+- <img width="449" height="214" alt="image" src="https://github.com/user-attachments/assets/cd0af756-f87c-4a00-bc92-120fd309fb2a" />
+
+---
+✅ Checkov
+- Used for Terraform , Dockerfile & k8s Manifest
+- reports can be uploaded as a artifact in github action & pipleine can be made to fail if checkov finds a secret
+- Checkov can generate SARIF output, and you can upload it to GitHub so findings show up in the Security tab (like CodeQL alerts).
+- <img width="440" height="231" alt="image" src="https://github.com/user-attachments/assets/5d958a22-39e6-4b77-82df-6758af2d30ac" />
 
 ---
 ✅ Pipeline Steps ( Java OR Node Based Application  )
