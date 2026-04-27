@@ -2,7 +2,13 @@
 - https://www.youtube.com/watch?v=jcibXVFiFek  --> Rahul
 
 ---
-✅  API Gateway Throttling --> Used to Protect API Gateway
+✅ Difference between POST , PUT & PATCH
+- POST --> Create --> Used to create a new resource
+- PUT --> Replace --> Used to replace an entire resource (or create if it doesn’t exist)
+- PATCH --> Partial Update --> Used to update part of a resource
+
+---
+✅ API Gateway Throttling --> Used to Protect API Gateway
 - youtube.com/watch?v=sCXejDwPGY4
 - Rate Limit vs Burst Limit
 - <img width="523" height="425" alt="image" src="https://github.com/user-attachments/assets/54badf55-4301-478c-8215-89d8d0f2ce07" />
