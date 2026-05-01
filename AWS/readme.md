@@ -46,6 +46,9 @@
 #### Common Architecture Questions
 
 ---
+✅ How Internet Works --> https://youtu.be/_19JDSaxBiY?si=V6XeeJFzhYZyEQ2E --> Abhishek
+
+---
 ✅ Monolithic Vs Microservice architecture --> https://www.youtube.com/watch?v=7nz_VKeuFFc&t=1418s
 
 ---
