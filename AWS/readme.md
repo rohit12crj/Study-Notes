@@ -49,6 +49,11 @@
 ✅ How Internet Works --> https://youtu.be/_19JDSaxBiY?si=V6XeeJFzhYZyEQ2E --> Abhishek
 
 ---
+✅ HTTP Status Codes
+- https://www.youtube.com/watch?v=XULQYxBhti8 --> Abhishek
+- https://github.com/iam-veeramalla/http-status-codes
+
+---
 ✅ Monolithic Vs Microservice architecture --> https://www.youtube.com/watch?v=7nz_VKeuFFc&t=1418s
 
 ---
