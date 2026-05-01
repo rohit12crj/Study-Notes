@@ -51,7 +51,7 @@
 ---
 ✅ HTTP Status Codes
 - https://www.youtube.com/watch?v=XULQYxBhti8 --> Abhishek
-- https://github.com/iam-veeramalla/http-status-codes
+- https://github.com/iam-veeramalla/http-status-codes/blob/main/common-status-codes.md
 
 ---
 ✅ Monolithic Vs Microservice architecture --> https://www.youtube.com/watch?v=7nz_VKeuFFc&t=1418s
