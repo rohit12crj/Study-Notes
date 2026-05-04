@@ -34,6 +34,7 @@
 ---
 ✅ What is the difference between REST API and HTTP API?
 - <img width="604" height="378" alt="image" src="https://github.com/user-attachments/assets/73bbc786-3cd1-4048-9efe-11083263ace0" />
+- https://www.youtube.com/watch?v=O8RKpHQt6l4
 
 ---
 4) What is a Stage in API Gateway?
