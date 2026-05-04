@@ -163,6 +163,7 @@
 - integrating Trivy with Jenkins & generating SBOM --> https://www.youtube.com/watch?v=FdbWJzvymkg&list=PLBr8obKbpkYsGrdKwFXqRTYcvv1KELCLn&index=17
 - <img width="465" height="231" alt="image" src="https://github.com/user-attachments/assets/28ecd50f-c56a-4b52-b549-624e33837ef6" />
 - Github repo for Jenkins File integrating with Trivy --> https://github.com/theshubhamgour/trivy-tutorial/blob/main/9-trivy-artifact-project/Jenkinsfile
+- <img width="428" height="243" alt="image" src="https://github.com/user-attachments/assets/f7c1eaa1-f9e5-43bd-bd8f-a3094010191d" />
 
 ---
 ✅ OWASP ZAP
