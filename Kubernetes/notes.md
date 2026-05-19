@@ -3,7 +3,15 @@
 - https://www.youtube.com/watch?v=Axplgxm4K3U  --> Kubernetes Toughest Interview Scenarios & Questions  --> Abhishek
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc  --> k8s Playlist --> Abhishek
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek
-- https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass ¦ 13 Real-World Scenarios Explained by ADAM
+- https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass || 13 Real-World Scenarios Explained by ADAM
+
+---
+✅ TLS in Kubernetes MASTERCLASS 
+- mTLS, CSR, CA, SSH, kubeconfig & Cluster Security Explained --> https://www.youtube.com/watch?v=J2Rx2fEJftQ&list=PLmPit9IIdzwQzlveiZU1bhR6PaDGKwshI&index=1 --> Cloud With Var Josh
+
+---
+✅ Storage in Kubernetes MASTERCLASS 
+- PV, PVC, StorageClass, ConfigMap, Secret, CSI Explained --> https://www.youtube.com/watch?v=8oHoBCyg4eQ&list=PLmPit9IIdzwT1Oikl4_E_ZD_NS5WeO389&index=1 -->  Cloud With Var Josh
 
 ---
 ✅ encoding vs encrypting ?
