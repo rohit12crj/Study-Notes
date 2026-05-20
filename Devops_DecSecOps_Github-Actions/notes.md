@@ -6,6 +6,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ Continuous delivery vs continuous deployment
+- <img width="570" height="299" alt="image" src="https://github.com/user-attachments/assets/b19c5a0e-a2d9-4981-8975-f567205bc471" />
+
+---
 ✅ Gitleaks
 - used to detect secret in github repo
 - reports can be uploaded as a artifact in github action & pipleine can be made to fail if gitleaks finds a secret
