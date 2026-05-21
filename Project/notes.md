@@ -107,6 +107,7 @@ caddy frontend & backend tasks are exposed via alb , with 2 separate target grou
 
 ---
 ✅ Splunk to OpenSearch Log Migration  --> check Splunk_to_OpenSearch_Log_Migration.docx
+- Problems with opensearch --> https://www.youtube.com/watch?v=Le0NImBGIHQ&t=192s --> Abhishek
 - ⭐ Flow = Logs from acquia --> syslog ( from acquia side ) --> NLB --> fluentbit ( Running on ECS + EFS ) --> Writes to S3 --> S3 Object Notification -->  SQS --> opensearch ingestion pipeline ( grok parameter ) Polls SQS but reads from s3 --> opensearch index --> opensearch Dashboard  . Update the flow if required 
 - ⭐ is opensearch pipeline poll based or push based ?
 - ⭐ can syslog directly send the logs to sqs queue ?
