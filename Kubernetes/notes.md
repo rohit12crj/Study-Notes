@@ -4,6 +4,7 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc  --> k8s Playlist --> Abhishek
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass || 13 Real-World Scenarios Explained by ADAM
+- https://www.youtube.com/playlist?list=PLmPit9IIdzwSv2zwizysG6OwWUACpQFN0 --> k8s Projects Playlist --> Cloud With Var Josh
 
 ---
 ✅ TLS in Kubernetes MASTERCLASS 
