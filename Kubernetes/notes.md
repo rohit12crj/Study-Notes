@@ -7,6 +7,10 @@
 - https://www.youtube.com/playlist?list=PLmPit9IIdzwSv2zwizysG6OwWUACpQFN0 --> k8s Projects Playlist --> Cloud With Var Josh
 
 ---
+✅ 3 types of service types
+- <img width="635" height="169" alt="image" src="https://github.com/user-attachments/assets/c0bc69f9-cea2-47d3-bf6b-121fbb2b0538" />
+
+---
 ✅ TLS in Kubernetes MASTERCLASS 
 - mTLS, CSR, CA, SSH, kubeconfig & Cluster Security Explained --> https://www.youtube.com/watch?v=J2Rx2fEJftQ&list=PLmPit9IIdzwQzlveiZU1bhR6PaDGKwshI&index=1 --> Cloud With Var Josh
 
