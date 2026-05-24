@@ -5,6 +5,7 @@
 - https://youtu.be/LAYV7x_aIC0?si=ieOYjnGrUKqT4aeY  --> interview questions
 - https://www.youtube.com/watch?v=NnkUGzaqqOc&t=18s --> DevSecOps Pipeline --> DevOps Shack
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
+- https://www.youtube.com/playlist?list=PLmPit9IIdzwSiYCKOtXUGNwytXXiJ8Rv8  --> Jenkins Playlist --> Code With Var Josh --> Best
   
 ---
 ✅  How ill u monitor jenkins itself ?
