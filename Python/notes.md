@@ -4,7 +4,7 @@ https://github.com/iam-veeramalla/sandbox/blob/main/python/8-python-libraries-fo
 
 ---
 ✅ Give example of python scripting used in your project
-- static website hosting using Cloudfront . ststic website has sso login for which code was written in Cloudfront edge function 
+- static website hosting using Cloudfront . static website has sso login for which code was written in Cloudfront edge function 
 
 ---
 ## 1. Is poython compiler or interpreter ?
