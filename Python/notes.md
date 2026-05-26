@@ -2,6 +2,11 @@ https://github.com/iam-veeramalla/python-for-devops/blob/main/Day-16/README.md  
 
 https://github.com/iam-veeramalla/sandbox/blob/main/python/8-python-libraries-for-devops.md --> Python libraries used in your project ( Abhishek )
 
+---
+✅ Give example of python scripting used in your project
+- static website hosting using Cloudfront . ststic website has sso login for which code was written in Cloudfront edge function 
+
+---
 ## 1. Is poython compiler or interpreter ?
 
 Python is both compiled and interpreted - it's a two-step process:
