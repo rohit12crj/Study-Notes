@@ -5,7 +5,7 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX --> Troubleshooting k8s --> Abhishek
 - https://www.youtube.com/watch?v=viMWeRQnZOE --> Kubernetes Troubleshooting MasterClass || 13 Real-World Scenarios Explained by ADAM
 - https://www.youtube.com/playlist?list=PLmPit9IIdzwSv2zwizysG6OwWUACpQFN0 --> k8s Projects Playlist --> Cloud With Var Josh
-- https://www.udemy.com/share/103mKm3@HmlBarlkAAAE3wRoWirPW_xwVUz6nr4Nh31Uxf-V89ku3ySXAB5S7xFgC3a38GFn/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
+- https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
 ✅ 3 types of service types
