@@ -3,6 +3,7 @@
 
 ---
 ✅ How will u setup connetion to allow someone form on prem to login to aws rds & run querry running in private subnet ?
+- <img width="712" height="299" alt="image" src="https://github.com/user-attachments/assets/92e0e27c-0fa3-4a94-944e-f5193721535a" />
 
 ---
 ✅ What is RDS?
@@ -418,25 +419,20 @@ Example:
 
 ✅ Does RDS automatically shrink storage when usage drops?
 - No. RDS only scales up, not down.
+- <img width="577" height="302" alt="image" src="https://github.com/user-attachments/assets/5e0976d5-c529-4e9d-839d-1b91e6f0086b" />
+- <img width="665" height="196" alt="image" src="https://github.com/user-attachments/assets/a99868f6-1c53-4f83-bff3-d5b7b3ba57b1" />
+- <img width="674" height="373" alt="image" src="https://github.com/user-attachments/assets/a1da0cbe-be9b-4a58-b46f-21ed8899729f" />
+- <img width="631" height="167" alt="image" src="https://github.com/user-attachments/assets/bb858566-b59a-434d-886d-e811f1ac5fc1" />
+- <img width="581" height="57" alt="image" src="https://github.com/user-attachments/assets/19f2d2d2-0d87-450d-82cc-b464d227d2c0" />
 
-<img width="577" height="302" alt="image" src="https://github.com/user-attachments/assets/5e0976d5-c529-4e9d-839d-1b91e6f0086b" />
-
-<img width="665" height="196" alt="image" src="https://github.com/user-attachments/assets/a99868f6-1c53-4f83-bff3-d5b7b3ba57b1" />
-
-
-<img width="674" height="373" alt="image" src="https://github.com/user-attachments/assets/a1da0cbe-be9b-4a58-b46f-21ed8899729f" />
-
-
-<img width="631" height="167" alt="image" src="https://github.com/user-attachments/assets/bb858566-b59a-434d-886d-e811f1ac5fc1" />
-
-
-<img width="581" height="57" alt="image" src="https://github.com/user-attachments/assets/19f2d2d2-0d87-450d-82cc-b464d227d2c0" />
-
-What is the difference between Snapshot Restore and Point-in-Time Recovery in RDS
+---
+✅ What is the difference between Snapshot Restore and Point-in-Time Recovery in RDS
 - Snapshot Restore restores a database from a specific snapshot backup, while Point-in-Time Recovery restores the database to any exact timestamp using automated backups and transaction logs.
 - For PITR to work automated snapshots are mandatory
 - PITR never overwrites the existing DB. It creates a new database instance.
 
 ---
+✅ Explain RDS Event streaming & how will u achieve it & use cases where will u use it 
 
-Explain RDS Event streaming & how will u achieve it & use cases where will u use it 
+---
+✅ Explain audit login for AWS MYSQL DB
