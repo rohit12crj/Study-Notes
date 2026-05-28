@@ -320,6 +320,7 @@ Steps:
 - RDS performs maintenance during maintenance window:
 
 ✅ What is Performance Insights?
+- https://www.youtube.com/watch?v=4462hcfkApM
 - A monitoring tool that helps:
 - Identify slow queries
 - Detect database bottlenecks
@@ -435,4 +436,6 @@ Example:
 ✅ Explain RDS Event streaming & how will u achieve it & use cases where will u use it 
 
 ---
-✅ Explain audit login for AWS MYSQL DB
+✅ Explain audit login for AWS Postgre DB
+- https://www.youtube.com/watch?v=cIlFrYlYJBA
+  
