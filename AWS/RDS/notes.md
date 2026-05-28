@@ -1,4 +1,5 @@
 ✅ why aurora over normal RDS 
+- <img width="647" height="365" alt="image" src="https://github.com/user-attachments/assets/17409205-83a0-44ba-807c-f4558e39c3c8" />
 
 ---
 ✅ How will u setup connetion to allow someone form on prem to login to aws rds & run querry running in private subnet ?
