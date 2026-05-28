@@ -1,7 +1,7 @@
 ✅ Other Notable AWS Services
 
 - Opensearch , Opensearch Pipelines ( With Grok Parameter ) , Index Lifecycle Policy
-- Dynamo Db , DynamoDb Streams , DAX 
+- Dynamo Db , DynamoDb Streams , DAX , Global Tables --> https://www.youtube.com/watch?v=2X2SO3Y-af8
 - Athena
 - Quicksight
 - Redshift
