@@ -1,5 +1,5 @@
 #### SQS
-✅ https://youtu.be/12CINbV4ptw?si=53s_DnoVCcQm3grZ
+✅ https://youtu.be/12CINbV4ptw?si=53s_DnoVCcQm3grZ --> Peace of Code
 
 ---
 - Producer send messages to SQS Queue . Consumer should poll the message from SQS Queue . SQS will not push to consumer
