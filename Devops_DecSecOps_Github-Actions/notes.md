@@ -6,6 +6,9 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅  Explain Dind ( Docker In Docker ) with respect to pipelines ?
+
+---
 ✅ Continuous delivery vs continuous deployment
 - <img width="570" height="299" alt="image" src="https://github.com/user-attachments/assets/b19c5a0e-a2d9-4981-8975-f567205bc471" />
 
