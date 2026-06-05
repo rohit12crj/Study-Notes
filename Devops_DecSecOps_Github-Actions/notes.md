@@ -7,6 +7,11 @@
   
 ---
 ✅  Explain Dind ( Docker In Docker ) with respect to pipelines ?
+- https://www.youtube.com/watch?v=JNC7dcyenr8&list=PLAdTNzDIZj__JvG4m3hWz8s7bNJH0Xfcp&index=15&t=138s --> Devops Shack --> Explain with respect to Gitlab
+- <img width="650" height="125" alt="image" src="https://github.com/user-attachments/assets/8f0dc32c-e298-45f4-a00c-3c9ad48bc212" />
+- <img width="661" height="394" alt="image" src="https://github.com/user-attachments/assets/95b43dae-03f9-43b5-933e-5ee66733a0d7" />
+- <img width="659" height="298" alt="image" src="https://github.com/user-attachments/assets/8009594d-c69f-49a3-b173-9f4cbe9714ca" />
+- <img width="673" height="384" alt="image" src="https://github.com/user-attachments/assets/3a27c51b-b2d4-4364-b2bb-5f87c2c2f749" />
 
 ---
 ✅ Continuous delivery vs continuous deployment
