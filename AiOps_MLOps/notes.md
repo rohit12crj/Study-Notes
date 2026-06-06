@@ -14,4 +14,4 @@
 ---
 ---
 ✅ MLOps
-- https://tcsglobal.udemy.com/course/mlops-zero-to-hero/ --> Abhishek ( Udemy )
+- https://www.udemy.com/course/mlops-zero-to-hero --> Abhishek ( Udemy )
