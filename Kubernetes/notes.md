@@ -8,6 +8,9 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
+✅ https://www.youtube.com/watch?v=DQk8HOVlumI&t=5032s  --> Helm --> Rahul Wagh 
+
+---
 ✅ 3 types of service types
 - <img width="635" height="169" alt="image" src="https://github.com/user-attachments/assets/c0bc69f9-cea2-47d3-bf6b-121fbb2b0538" />
 
