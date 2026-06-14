@@ -282,7 +282,8 @@ Flow = Frontend --> Backend --> DB
 ✅ what is EKS auto mode ?
 - Karpenter is used internally by AWS
 - Both Control plane & Data plane managed by AWS
-- no need to create nodegroup , as soon as any deployment happens , karpenter creates a node & runs the pod on it 
+- no need to create nodegroup , as soon as any deployment happens , karpenter creates a node & runs the pod on it
+- https://www.youtube.com/watch?v=cbVwmdoVvAg&t=396s  --> Abhishek
 
 ---
 ✅ how will u connect ur local machine aws cli to use a specific EKS cluster 
