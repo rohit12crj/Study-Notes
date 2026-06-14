@@ -89,6 +89,23 @@ caddy frontend & backend tasks are exposed via alb , with 2 separate target grou
 ---
 ✅ EKS Project + Devsecops Pipeline
 
+EKS project should include below
+-------------------------------
+
+- 3 Distinct Tiers ( Frontend , Backend , DB )
+- For DB will u use AWS RDS or K8s Stateful Set.
+- If Stateful set were being used for DB . Explain PV , PVC , SC
+- DB must be initialized with table schema . How will u do this ? Config Map
+- Only Frontend Should be accessible to Internet . How will it be done ? ( Ingress , Service -> Nodeport , Service -> Loadbalancer )
+- Manifest files should take DB Password value from AWS Secret Manger . How will u do this ? External Secrets Operator
+- Cluster Autoscaling ( HPA , VPA , KEDA ) & on which metrics
+- Nodegroups Architecture style used ( EKS Auto-Mode , Nodegroup with EC2 , Nodegroup with Fargate )
+- What Add-ons were used & for what purpose ? EKS pod Identity , CSI Driver
+- Observability & Monitoring of EKS Cluster
+- User Management in EKS Cluster
+- How was helm used in all these ?
+- EKS cluster upgrade process
+
 #### Tech Stack ####
 - Iaac = Terraform
 - Containerization Framework = EKS
