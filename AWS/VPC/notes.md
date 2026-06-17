@@ -18,7 +18,7 @@
 - if multiple region are there u need to create multiple transit gateway peering  . then u should use Cloud WAN
 
 ---
-✅ Why VPC shoud be launched using only Service Catalogue
+✅ Why VPC shoud be launched using only Service Catalogue ?
 
 ---
 ✅ after creating internet gateway & nat gateway , you need to attache it to VPC & also add the default routes for public route table & private route table accordingly 
