@@ -7,6 +7,9 @@
 - <img width="312" height="161" alt="image" src="https://github.com/user-attachments/assets/3ee49d40-bf00-43c8-ad5d-741d356fab91" />
 
 ---
+✅  Secret Manger secrets can be replicated from one region to another 
+
+---
 ✅ How will u generate dynamic secrets in secret manager ?
 
 ---
