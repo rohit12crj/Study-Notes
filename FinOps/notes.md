@@ -21,6 +21,7 @@
 - Use Compute Spot in ECS/EKS – Run container workloads on cheaper spot capacity.
 - Use Data Transfer Optimization – Keep services in the same AZ/VPC to reduce data transfer charges
 - Use valkey cache instead of redis cache
+- Use Transit Gateway Sharing Across AWS Accounts through RAM for Cost Optimization
   
 ---
 ✅ How will u create Finops Rules & alert all aws account holder in your AWS org
