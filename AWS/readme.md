@@ -40,6 +40,7 @@
 - https://www.youtube.com/watch?v=ew16ZDoAals
 - difference between OU ( organization unit ) & actual AWS account
 - account factory
+- U need to allow only specific region while creating new accounts through Control Tower . How will u do that 
 
 ---
 
