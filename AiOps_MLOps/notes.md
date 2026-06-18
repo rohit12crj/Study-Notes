@@ -1,6 +1,7 @@
 ✅ AiOps
 - https://www.youtube.com/watch?v=BFY8-NtfBdM&t=628s --> AiOps Road Map
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvJ_qWyuqhbHteY84O1qr72a  --> Abhishek ( Playlist )
+- https://www.youtube.com/playlist?list=PLdpzxOOAlwvIJPKHM0t-6SC21CzqYtheY  --> AiOps Project --> Abhishek --> Best
 
 ---
 ✅AiOps Used in your project
