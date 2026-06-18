@@ -88,6 +88,7 @@ caddy frontend & backend tasks are exposed via alb , with 2 separate target grou
 
 ---
 ✅ EKS Project + Devsecops Pipeline
+- https://www.youtube.com/watch?v=nFddy7r3RPs&t=12662s  --> Best Video on EKS Project ( Microservice App in EKS , EFK stack for logging , Prometheus + Grafana + Slack for Observability , HPA for autoscaling , Gateway API for Load Balancing )
 
 EKS project should include below
 -------------------------------
