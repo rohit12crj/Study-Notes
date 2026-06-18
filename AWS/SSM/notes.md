@@ -1,27 +1,22 @@
+✅ Automate Patching through SSM --> https://www.youtube.com/watch?v=Dm4id0FVhtc&list=PLwQq6ffp1IA-5BJ3mqMvGFjWSbeSJOxlL&index=1
+
+---
 ✅ What is AWS SSM (Systems Manager) ?
 - Centralized management service for EC2, on-prem servers, and VMs
 - Helps with patching, automation, configuration, and remote command execution
 - Works via SSM Agent
 
 ---
-
 ✅ SSM Agent
 - Installed on instances
-
-<img width="621" height="154" alt="image" src="https://github.com/user-attachments/assets/7c48cd7a-139d-4fdd-a0a2-a232bdc656d1" />
-
-<img width="530" height="248" alt="image" src="https://github.com/user-attachments/assets/5a54a55a-de1e-4c7b-9b52-f324f4765300" />
-
-<img width="646" height="263" alt="image" src="https://github.com/user-attachments/assets/31fd923d-f5c8-468d-8341-bad5fb2eaeb4" />
-
-<img width="622" height="178" alt="image" src="https://github.com/user-attachments/assets/8af402cf-a321-4136-8499-feafc59cb352" />
-
-<img width="596" height="284" alt="image" src="https://github.com/user-attachments/assets/12487f2b-11e0-4406-a4d0-e2b2097fe960" />
-
-<img width="590" height="113" alt="image" src="https://github.com/user-attachments/assets/8e6e7a0c-ee48-4fae-80c3-e08da662f3c7" />
+- <img width="621" height="154" alt="image" src="https://github.com/user-attachments/assets/7c48cd7a-139d-4fdd-a0a2-a232bdc656d1" />
+- <img width="530" height="248" alt="image" src="https://github.com/user-attachments/assets/5a54a55a-de1e-4c7b-9b52-f324f4765300" />
+- <img width="646" height="263" alt="image" src="https://github.com/user-attachments/assets/31fd923d-f5c8-468d-8341-bad5fb2eaeb4" />
+- <img width="622" height="178" alt="image" src="https://github.com/user-attachments/assets/8af402cf-a321-4136-8499-feafc59cb352" />
+- <img width="596" height="284" alt="image" src="https://github.com/user-attachments/assets/12487f2b-11e0-4406-a4d0-e2b2097fe960" />
+- <img width="590" height="113" alt="image" src="https://github.com/user-attachments/assets/8e6e7a0c-ee48-4fae-80c3-e08da662f3c7" />
 
 ---
-
 ✅ SSM Run Command
 - Execute commands on instances without SSH.
 
@@ -39,7 +34,6 @@ Benefits:
 - All sessions logged
 
 ---
-
 ✅ SSM Patch Manager
 - Automates OS patching.
 - Supports --> Linux , Windows
@@ -50,7 +44,6 @@ Capabilities:
 - schedule patching
 
 ---
-
 ✅ SSM Automation
 - Run automated workflows.
 
@@ -100,11 +93,8 @@ Example:
 - Store database passwords securely --> Use AWS Secrets manager instead of SSM Paramter Store
 
 ---
-
-<img width="478" height="295" alt="image" src="https://github.com/user-attachments/assets/6ab62fce-2380-4278-a103-28d5b0f30f01" />
+- <img width="478" height="295" alt="image" src="https://github.com/user-attachments/assets/6ab62fce-2380-4278-a103-28d5b0f30f01" />
 
 ---
-
-<img width="563" height="167" alt="image" src="https://github.com/user-attachments/assets/76f432bc-d323-4e41-b88f-cc57342c2080" />
-
-<img width="515" height="418" alt="image" src="https://github.com/user-attachments/assets/30f36028-bb1d-49ac-b65a-247d72e998c2" />
+- <img width="563" height="167" alt="image" src="https://github.com/user-attachments/assets/76f432bc-d323-4e41-b88f-cc57342c2080" />
+- <img width="515" height="418" alt="image" src="https://github.com/user-attachments/assets/30f36028-bb1d-49ac-b65a-247d72e998c2" />
