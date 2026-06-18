@@ -13,6 +13,7 @@
 - ✅ RAM ( Resource Access Manager )
 - https://youtu.be/I9aKCdLokOs?si=00I4LUEePWpihwvu
 - advantages of RAM
+- Share Transit Gateway Across AWS Accounts using Resource Access Manager  --> https://www.youtube.com/watch?v=A_51fhOJfVY
 
 ---
 
