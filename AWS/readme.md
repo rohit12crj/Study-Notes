@@ -148,6 +148,7 @@
 ---
 ✅ SSL termination vs passthrough vs bridging
 - SSL termination decrypts traffic at the load balancer, passthrough keeps it encrypted end-to-end, and bridging decrypts at the load balancer but re-encrypts before sending to the backend
+- in SSL bridging End device wll need to have to decrypt the cert , but this puts an additional load on the end application
 
 ---
 ✅ GraphQL API ?
