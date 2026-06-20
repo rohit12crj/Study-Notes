@@ -10,12 +10,14 @@
 - Full networking course --> 
 
 ---
-✅ 
+✅ Useful Points
 - use VPC peering to connect 1:1 VPC .
 - If multiple VPC , use 1 Transit Gateway to connect to multiple VPC .
 - Transit geteway are generally 1 per region . u can create multiple transit getway per region , but that is a bad practice , but u can do so for compliance purpose like dev transit gateway , prod transit gateway.
 - to connect to vpc of another region use transit gateway peering.
 - if multiple region are there u need to create multiple transit gateway peering  . then u should use Cloud WAN
+- For transit Gateway also VPC CIDR range should not be the same
+- <img width="735" height="379" alt="image" src="https://github.com/user-attachments/assets/ada5fea8-f332-4fa0-8da4-96176f4ed8e7" />
 
 ---
 ✅ Why VPC shoud be launched using only Service Catalogue ?
