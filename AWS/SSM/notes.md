@@ -1,4 +1,4 @@
-✅ Automate Patching through SSM --> https://www.youtube.com/watch?v=Dm4id0FVhtc&list=PLwQq6ffp1IA-5BJ3mqMvGFjWSbeSJOxlL&index=1
+✅ https://www.youtube.com/watch?v=Dm4id0FVhtc&list=PLwQq6ffp1IA-5BJ3mqMvGFjWSbeSJOxlL&index=1  --> Playlist  -> Includes SSM agent , automatic Patching using Patch Manager , AMI Manager , RUN Command , Bastionless ( Access Private EC2 with Session Manager )
 
 ---
 ✅ What is AWS SSM (Systems Manager) ?
