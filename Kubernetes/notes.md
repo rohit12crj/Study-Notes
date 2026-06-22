@@ -8,10 +8,19 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
+✅  Steps of how to launch resources ( Like Cluster autoscaler , alb controller ) using helm in eks
+- enable oidc in eks cluster
+- create iam role granting required permission
+- create service account & bind the above role to it
+- add the respectibe helm repo
+- export the helm values &modify it accordingly
+- do helm upgrade to launch the respective resource
+
+---
 ✅ HPA vs VPA vs Cluster Autoscaler vs KEDA
-- HPA --> increases no of pods
+- HPA --> increases no of pods  --> k8s does automatically
 - VPA --> Increases CPU & RAM on same pod
-- Cluster Autoscaler --> Increases no of Nodes
+- Cluster Autoscaler --> Increases no of Nodes  --> needs to be deployed as pod in kube-system namespace through helm
 - KEDA --> increases no of pods based on external queue like kafka
 - https://youtu.be/bdIskf0DzBA?si=B0hzLM_23cFVFUu5  --> Devops Shack
 
