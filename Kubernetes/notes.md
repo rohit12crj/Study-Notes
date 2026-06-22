@@ -8,6 +8,9 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
+✅ Gateway API --> Check k8s Poject Folder
+
+---
 ✅ EKS Default Add-Ons
 - If for a particular service Add ons are available , dont go with helm chart installation
 - <img width="644" height="346" alt="image" src="https://github.com/user-attachments/assets/3b64e640-ae85-47b0-be0f-a018e2c9955d" />
