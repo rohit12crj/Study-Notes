@@ -9,7 +9,10 @@
   
 ---
 ✅ EKS Default Add-Ons
+- If for a particular service Add ons are available , dont go with helm chart installation
 - <img width="644" height="346" alt="image" src="https://github.com/user-attachments/assets/3b64e640-ae85-47b0-be0f-a018e2c9955d" />
+- <img width="227" height="193" alt="image" src="https://github.com/user-attachments/assets/7171fa08-30dc-4b6f-9dbc-cd9ac58213b2" />
+- <img width="214" height="186" alt="image" src="https://github.com/user-attachments/assets/efd195c9-2214-4476-887d-a84584462012" />
 
 ---
 ✅ EKS Cluster Endpoint Access Types
