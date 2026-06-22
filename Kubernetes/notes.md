@@ -8,6 +8,14 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
+✅ HPA vs VPA vs Cluster Autoscaler vs KEDA
+- HPA --> increases no of pods
+- VPA --> Increases CPU & RAM on same pod
+- Cluster Autoscaler --> Increases no of Nodes
+- KEDA --> increases no of pods based on external queue like kafka
+- https://youtu.be/bdIskf0DzBA?si=B0hzLM_23cFVFUu5  --> Devops Shack
+
+---
 ✅ https://www.youtube.com/watch?v=DQk8HOVlumI&t=5032s  --> Helm --> Rahul Wagh 
 
 ---
