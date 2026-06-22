@@ -8,7 +8,7 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
-✅ Gateway API --> Check k8s Poject Folder
+✅ Gateway API --> Check k8s section inside Poject Folder
 
 ---
 ✅ EKS Default Add-Ons
