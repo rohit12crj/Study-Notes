@@ -8,6 +8,19 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
+✅ EKS Default Add-Ons
+- <img width="644" height="346" alt="image" src="https://github.com/user-attachments/assets/3b64e640-ae85-47b0-be0f-a018e2c9955d" />
+
+---
+✅ EKS Cluster Endpoint Access Types
+- <img width="619" height="122" alt="image" src="https://github.com/user-attachments/assets/327e5d60-904c-4060-ac18-1a708d65bdb6" />
+
+---
+✅ K8s Secrets vs AWS Secret Manager
+- Drawbacks of K8S Secrets ( only base64 encoded , not encrypted )
+- https://www.youtube.com/watch?v=F1_k9Heh6Gs  --> Secret Manager implementation Video
+
+---
 ✅  Steps of how to launch resources ( Like Cluster autoscaler , alb controller ) using helm in eks
 - enable oidc in eks cluster
 - create iam role granting required permission
@@ -22,7 +35,7 @@
 - VPA --> Increases CPU & RAM on same pod
 - Cluster Autoscaler --> Increases no of Nodes  --> needs to be deployed as pod in kube-system namespace through helm
 - KEDA --> increases no of pods based on external queue like kafka
-- https://youtu.be/bdIskf0DzBA?si=B0hzLM_23cFVFUu5  --> Devops Shack
+- https://youtu.be/bdIskf0DzBA?si=B0hzLM_23cFVFUu5  --> Devops Shack  --> Cluster Autoscaler
 
 ---
 ✅ https://www.youtube.com/watch?v=DQk8HOVlumI&t=5032s  --> Helm --> Rahul Wagh 
