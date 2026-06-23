@@ -2,6 +2,7 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf  --> Terraform ( Theory + Project Playlist ) ( Abhishek )
 - https://youtu.be/3Ex-HtbgvyE?si=52d-xXioxDR89hCI  -->  Interview Questions ( Abhishek )
 - https://youtu.be/JEDp4orr_K8?si=8IeRZlswzb5-ZlL9  --> Most Common Terraform Task Used in Real-Time ( Abhishek )
+- https://www.youtube.com/playlist?list=PLl4APkPHzsUWr5H7mprC8O21Crq_NnbYx  --> Terraform Course Playlist --> Tech Tutorials with Piyush
 
 ---
 ✅ Targeted Destroy 
