@@ -12,6 +12,9 @@
 - https://www.youtube.com/watch?v=98UnaT2pki4&t=22s  --> Multi-Agent AI System Project ( 5 AI Agents in One Project) --> Devops Shack
 
 ---
+✅ https://youtu.be/t6shxqII3IQ?si=M0Q18c2VPqVC3faT --> Abhishek --> MCP Server
+
+---
 ---
 ---
 
