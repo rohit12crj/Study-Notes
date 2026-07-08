@@ -6,7 +6,9 @@
 - integrate Terraform vault with jenkins
 
 ---
+✅ https://www.youtube.com/watch?v=VkeViINjjXg  --> Devops Shack --> integrate Terraform vault with Gitlab 
 
+---
 - integrate Terraform vault with github actions
 - <img width="551" height="356" alt="image" src="https://github.com/user-attachments/assets/16b743e2-75ea-4eb5-bc3a-4d8f00ab90bd" />
 - <img width="431" height="409" alt="image" src="https://github.com/user-attachments/assets/b81baff1-3c71-434b-8618-a5260e23be2a" />
