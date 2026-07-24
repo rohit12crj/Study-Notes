@@ -7,6 +7,9 @@
 - https://www.youtube.com/watch?v=sjyLRS52zOg  --> CPU vs I/0 Bottleneck & how to troubleshoot
 
 ---
+✅  Difference beetween ps aux & ps ef ? where will u use which ?
+
+---
 ✅  Popular Linux Commands
 
 Process Management
