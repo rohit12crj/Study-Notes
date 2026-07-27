@@ -8,7 +8,7 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring --> BEST
   
 ---
-✅ Difference between chart.yml , template.yml & values.yml with respect to helm
+✅ Difference between chart.yml , templates folder & values.yml with respect to helm
 
 ---
 ✅ Different IAM roles in EKS Cluster
