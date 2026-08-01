@@ -1,6 +1,6 @@
 ### Study Core Subjects
 
-1. Terraform
+1. Infrastructure Provisioning --> Terraform
 2. DevOps & DevSecOps
 3. AWS
 4. Azure
