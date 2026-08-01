@@ -6,6 +6,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ GitHub Actions Self Hosted Runner (Autoscaling with Kubernetes using HPA )
+- https://www.youtube.com/watch?v=lD0t-UgKfEo&list=PLiMWaCMwGJXlDKL_-7dxdp7IGx6w8adz7&index=4  --> Anton Putra
+
+---
 ✅  Explain Dind ( Docker In Docker ) with respect to pipelines ?
 - https://www.youtube.com/watch?v=JNC7dcyenr8&list=PLAdTNzDIZj__JvG4m3hWz8s7bNJH0Xfcp&index=15&t=138s --> Devops Shack --> Explained with respect to Gitlab
 - <img width="650" height="125" alt="image" src="https://github.com/user-attachments/assets/8f0dc32c-e298-45f4-a00c-3c9ad48bc212" />
