@@ -1,18 +1,15 @@
-### Study Plan
+### Study Core Subjects
 
-- Day 1 --> Git
-- Day 2 --> Python
-- Day 3 --> Linux-Shell-Scripting
-- Day 4 --> DBMS
-- Day 5 + Day 6 --> AWS
-- Day 7 --> Docker
-- Day 8 --> DevOps_DevSecOps_Github-Actions
-- Day 9 --> Jenkins + FinOps + SRE
-- Day 10 --> Terraform
-- Day 11 --> Observability_Monitoring_Tracing
-- Day 12 + Day 13  --> k8s
-
-##### Note - Ansible , HR , AiOps_MLOps , Project , Data Engineering , Azure , Apache-Kafka , System Design , Cyber-Security , Gitlab folders are not included
+1. Terraform
+2. DevOps & DevSecOps
+3. AWS
+4. Azure
+5. K8s
+6. Logging ( EFK )
+7. Observability , Monitoring & Tracing
+8. Linux & Python Scripting
+9. DB & Server Migration
+10. Ai
 
 ---
 ✅ Common Services & DevOps Tools Ports
