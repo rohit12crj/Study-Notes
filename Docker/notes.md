@@ -1,7 +1,7 @@
 ✅ Videos
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC  --> Docker (Playlist ) --> Abhishek
 - https://www.youtube.com/watch?v=fBRgw5dyBd4&list=PLiMWaCMwGJXkB-toB7662AnwwYoauChMi&index=2&t=996s  --> Docker Networking Tutorial (Bridge - None - Host - IPvlan - Macvlan - Overlay) --> Anton Putra --> BEST 😁
-- https://www.youtube.com/watch?v=YMBT1NguJJw&list=PLiMWaCMwGJXkB-toB7662AnwwYoauChMi&index=1 --> Docker Compose Tutorial for Beginners (Networks - Volumes - Secrets - Postgres - Letsencrypt) --> Anton Putra --> BEST 😁
+- https://www.youtube.com/watch?v=YMBT1NguJJw&list=PLiMWaCMwGJXkB-toB7662AnwwYoauChMi&index=1 --> Docker Compose Tutorial for Beginners (Networks - Volumes - Secrets - Postgres - Nginx - Letsencrypt) --> Anton Putra --> BEST 😁
 
 ---
 ✅ Give common docker compose commands ?
