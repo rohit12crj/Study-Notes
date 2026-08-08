@@ -15,6 +15,11 @@
 ✅ https://youtu.be/t6shxqII3IQ?si=M0Q18c2VPqVC3faT --> Abhishek --> MCP Server
 
 ---
+✅ Claude Code
+- https://www.youtube.com/watch?v=GQ1SJf67nKw --> Abhishek --> Claude Code Crash Course in 60 Minutes
+- https://www.youtube.com/watch?v=1CShnHMx0Uk&t=306s --> Abhishek --> Run Claude Code with DeepSeek in 3 simple steps (using OpenRouter)
+
+---
 ---
 ---
 
