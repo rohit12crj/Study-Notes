@@ -6,6 +6,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ Github App
+- https://www.youtube.com/watch?v=xtXnIV20XQw
+
+---
 ✅ GitHub Actions Self Hosted Runner (Autoscaling with Kubernetes using HPA )
 - https://www.youtube.com/watch?v=lD0t-UgKfEo&list=PLiMWaCMwGJXlDKL_-7dxdp7IGx6w8adz7&index=4  --> Anton Putra
 
