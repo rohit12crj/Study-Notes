@@ -1,7 +1,7 @@
 ### Study Core Subjects
 
 1. Infrastructure Provisioning --> Terraform
-2. DevOps & DevSecOps
+2. DevOps & DevSecOps --> Github , Gitlab , Argo CD
 3. AWS
 4. Azure
 5. K8s
@@ -9,7 +9,7 @@
 7. Observability , Monitoring & Tracing
 8. Linux & Python Scripting
 9. DB & Server Migration
-10. Ai
+10. Ai --> MCP , RAG
 
 ---
 ✅ Common Services & DevOps Tools Ports
