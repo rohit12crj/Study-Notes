@@ -18,6 +18,7 @@
 ✅ AWS Bedrock + Claude + MCP Server: Build a Production AI Agent (Powered by Teleport)
 - https://youtu.be/BcWyJcOfbow?si=Db6gm0VdpdMueNJw  --> Rahul Wagh
 - <img width="541" height="191" alt="image" src="https://github.com/user-attachments/assets/32b1a801-1898-45a5-848b-60196206ef04" />
+- https://www.youtube.com/watch?v=GjfCXDMNtsA&list=PL7iMyoQPMtAO8MvEEqWCM-OqcNFw9g8WY&index=1 --> For Full video you need to subscripe to Pro Membership
 
 ---
 ✅ Claude Code
