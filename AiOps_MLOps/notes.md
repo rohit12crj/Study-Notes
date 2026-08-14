@@ -15,9 +15,8 @@
 ✅ https://youtu.be/t6shxqII3IQ?si=M0Q18c2VPqVC3faT --> Abhishek --> MCP Server
 
 ---
-✅ 
-- https://youtu.be/BcWyJcOfbow?si=Db6gm0VdpdMueNJw
-- AWS Bedrock + Claude + MCP Server: Build a Production AI Agent (Powered by Teleport) --> Rahul Wagh
+✅ AWS Bedrock + Claude + MCP Server: Build a Production AI Agent (Powered by Teleport)
+- https://youtu.be/BcWyJcOfbow?si=Db6gm0VdpdMueNJw  --> Rahul Wagh
 - <img width="541" height="191" alt="image" src="https://github.com/user-attachments/assets/32b1a801-1898-45a5-848b-60196206ef04" />
 
 ---
