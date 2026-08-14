@@ -5,8 +5,8 @@
 3. AWS
 4. Azure
 5. K8s
-6. Logging ( EFK )
-7. Observability , Monitoring & Tracing
+6. Logging --> EFK ( Elastic Search , Fluentbit , Kibana )
+7. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
 8. Linux & Python Scripting
 9. DB & Server Migration
 10. Ai --> MCP , RAG
