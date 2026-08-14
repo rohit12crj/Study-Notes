@@ -15,6 +15,12 @@
 ✅ https://youtu.be/t6shxqII3IQ?si=M0Q18c2VPqVC3faT --> Abhishek --> MCP Server
 
 ---
+✅ 
+- https://youtu.be/BcWyJcOfbow?si=Db6gm0VdpdMueNJw
+- AWS Bedrock + Claude + MCP Server: Build a Production AI Agent (Powered by Teleport) --> Rahul Wagh
+- <img width="541" height="191" alt="image" src="https://github.com/user-attachments/assets/32b1a801-1898-45a5-848b-60196206ef04" />
+
+---
 ✅ Claude Code
 - https://www.youtube.com/watch?v=GQ1SJf67nKw --> Abhishek --> Claude Code Crash Course in 60 Minutes
 - https://www.youtube.com/watch?v=1CShnHMx0Uk&t=306s --> Abhishek --> Run Claude Code with DeepSeek in 3 simple steps (using OpenRouter)
