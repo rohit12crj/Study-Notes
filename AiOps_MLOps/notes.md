@@ -4,6 +4,10 @@
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIJPKHM0t-6SC21CzqYtheY  --> AiOps Project --> Abhishek --> Best
 
 ---
+✅ RAG Zero to Hero in 40 minutes | Practical Guide
+- https://youtu.be/uRwSQdMMyGY?si=fAaVLeJqiRoECp0n --> Abhishek 
+
+---
 ✅ AiOps Used in your project
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvIJPKHM0t-6SC21CzqYtheY  --> AiOps Project Playlist --> Abhishek 
 - Automated PR Reviews using CodeRabbit & CoPilot --> https://www.youtube.com/watch?v=69Hh3f0v0Bs  --> Abhishek
