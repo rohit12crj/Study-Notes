@@ -6,6 +6,10 @@
 - https://www.youtube.com/watch?v=fuiTqI3noTo --> --> DevSecOps Pipeline --> Abhishek
   
 ---
+✅ Github Enterprise , Organization , EMU Users , SCIM 
+- https://www.youtube.com/playlist?list=PL61FvfSAmB65hQno3PylwEK_M9QtdcBoQ  --> Playlist 
+
+---
 ✅ Github App
 - https://www.youtube.com/watch?v=xtXnIV20XQw
 
