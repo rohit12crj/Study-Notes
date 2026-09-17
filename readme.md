@@ -9,7 +9,7 @@
 7. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
 8. Linux & Python Scripting
 9. DB & Server Migration
-10. Ai --> MCP , RAG , Vector DB , LangChain
+10. Ai --> MCP , RAG , Vector DB , LangChain , Harness , FDE , MlOps , AiOps ---> Focus on AI 
 
 ---
 ✅ Common Services & DevOps Tools Ports
