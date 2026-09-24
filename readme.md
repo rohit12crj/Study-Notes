@@ -2,8 +2,8 @@
 
 1. Infrastructure Provisioning --> Terraform
 2. DevOps & DevSecOps --> Github , Gitlab , Argo CD
-3. AWS
-4. Azure
+3. FinOps 
+4. AWS
 5. K8s
 6. Logging --> EFK ( Elastic Search , Fluentbit , Kibana )
 7. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
