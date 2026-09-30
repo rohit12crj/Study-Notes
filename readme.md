@@ -1,6 +1,6 @@
 ### Study Core Subjects
 
-1. Infrastructure Provisioning --> Terraform
+1. Infrastructure Provisioning --> Terraform , Terraform Vault ( Self-hosted ) , Terraform Cloud ( For Drift Detection )
 2. DevOps & DevSecOps --> Github , Gitlab , Argo CD
 3. FinOps 
 4. AWS
