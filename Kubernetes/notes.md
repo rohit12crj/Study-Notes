@@ -1,4 +1,4 @@
-✅ Videos
+✅ Videos ( First Watch Videos Marked with 😁 & then go through the below notes for Revision & Pending Topics )
 - https://youtu.be/QLbfY_Uh63c?si=QPOYoZkWQmIT1GpS --> Real Time Scenario Based Kubernetes Implementations --> DevOps Shack
 - https://www.youtube.com/watch?v=Axplgxm4K3U  --> Kubernetes Toughest Interview Scenarios & Questions  --> Abhishek
 - https://www.youtube.com/playlist?list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc  --> k8s Playlist --> Abhishek
@@ -8,6 +8,7 @@
 - https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/  --> Full EKS Udemy Course along with AWS Devops & Monitoring
 - https://www.youtube.com/playlist?list=PLiMWaCMwGJXnKY6XmeifEpjIfkWRo9v2l  --> AWS EKS Kubernetes Tutorial --> Anton Putra --> BEST 😁
 - https://www.youtube.com/playlist?list=PLiMWaCMwGJXnHmccp2xlBENZ1xr4FpjXF -->  Kubernetes Tutorials ---> Anton Putra --> BEST 😁
+- https://www.udemy.com/course/rocking-kubernetes-with-amazon-eks-fargate-and-devops  --> EKS Tutorials --> Udemy --> BEST 😁
   
 ---
 ✅ Difference between chart.yml , templates folder & values.yml with respect to helm
