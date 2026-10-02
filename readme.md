@@ -8,7 +8,7 @@
 6. Logging --> EFK ( Elastic Search , Fluentbit , Kibana )
 7. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
 8. Linux & Python Scripting
-9. DB & Server Migration
+9. DB & Server Migration ( Check Migration Folder inside AWS )
 10. Ai --> MCP , RAG , Vector DB , LangChain , Harness , FDE , MlOps , AiOps ---> Focus on AI 
 
 ---
