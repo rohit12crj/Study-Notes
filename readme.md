@@ -1,15 +1,16 @@
 ### Study Core Subjects
 
 1. Infrastructure Provisioning --> Terraform , Terraform Vault ( Self-hosted ) , Terraform Cloud ( For Drift Detection )
-2. DevOps & DevSecOps --> Github , Gitlab , Argo CD
-3. FinOps 
-4. AWS
-5. K8s
-6. Logging --> EFK ( Elastic Search , Fluentbit , Kibana )
-7. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
-8. Linux & Python Scripting
-9. DB & Server Migration ( Check Migration Folder inside AWS )
-10. Ai --> MCP , RAG , Vector DB , LangChain , Harness , FDE , MlOps , AiOps ---> Focus on AI 
+2. Configuration Management --> Ansible , AWS SSM
+3. DevOps & DevSecOps --> Github , Gitlab , Argo CD
+4. FinOps 
+5. AWS
+6. K8s
+7. Logging --> EFK ( Elastic Search , Fluentbit , Kibana )
+8. Observability , Monitoring & Tracing --> Prometheus , Grafana , Yaeger , OTel
+9. Linux & Python Scripting
+10. DB & Server Migration ( Check Migration Folder inside AWS )
+11. Ai --> MCP , RAG , Vector DB , LangChain , Harness , FDE , MlOps , AiOps ---> Focus on AI 
 
 ---
 ✅ Common Services & DevOps Tools Ports
