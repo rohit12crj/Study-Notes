@@ -1,7 +1,7 @@
 ### Study Core Subjects
 
 1. Infrastructure Provisioning --> Terraform , Terraform Vault ( Self-hosted ) , Terraform Cloud ( For Drift Detection )
-2. Configuration Management --> Ansible , AWS SSM
+2. Configuration Management --> Ansible OR AWS SSM
 3. DevOps & DevSecOps --> Github , Gitlab , Argo CD
 4. FinOps 
 5. AWS
